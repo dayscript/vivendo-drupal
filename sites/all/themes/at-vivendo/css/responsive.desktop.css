@@ -1,0 +1,17 @@
+/*
+ *   Important Information about this CSS File
+ *
+ * - Do not delete or rename this file, if you do not use it leave it blank (delete
+ *   everything) and the file will be skipped when you enable Production Mode in
+ *   the Global theme settings.
+ *
+ * - Read the _README file in this directory, it contains useful help and other information.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shared\/Dropbox\/DAYSCRIPT\/CLIENTES\/ACTIVOS\/VIVENDO\/site_drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.desktop\.scss}line{font-family:\0000315}}
+#footer .region-two-66-33-first {
+  width: 75%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shared\/Dropbox\/DAYSCRIPT\/CLIENTES\/ACTIVOS\/VIVENDO\/site_drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.desktop\.scss}line{font-family:\0000318}}
+#footer .region-two-66-33-second {
+  width: 25%;
+}
