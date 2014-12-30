@@ -1,0 +1,11 @@
+name = CalculadoraCredito
+description = Calculadora Credito Vivendo Simple.
+core = 7.x
+
+package = Dayscript
+version = 7.x - 1.0
+
+dependencies[] = views
+
+project = "CalculadoraCredito"
+datestamp = "1294378870"

@@ -1,0 +1,5 @@
+name = Global Filter Initial Selector
+description = Displays a modal window for initial selection of global filter value.
+core = 7.x
+dependencies[] = global_filter
+version = "7.x-1.0"

@@ -1,0 +1,121 @@
+<?php
+
+function CalculadoraCredito_block_info() {
+  $blocks = array();
+  $blocks['CalculadoraCredito_block'] = array(
+    'info' => t('Calculadora'),
+    );
+  $blocks['CalculadoraCredito_view_modal'] = array(
+    'info' => t('Calculadora Ventana'),
+    );
+    return $blocks;
+}
+
+function CalculadoraCredito_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'CalculadoraCredito_block':
+    $block['subject'] = '';
+    $block['content'] = CalculadoraCredito_block_content();
+    break;
+
+    case 'CalculadoraCredito_view_modal':
+    $block['subjet'] ='';
+    $block['content'] = modal_CalculadoraCredito_block_content();
+    break;
+  }
+  return $block;
+}
+
+function CalculadoraCredito_block_content(){
+  $module_path = drupal_get_path('module', 'CalculadoraCredito');
+  drupal_add_js($module_path.'/js/calculadora.js');  
+  $output = '<div class="contenedor">
+                     <div class="block_calculadora">
+                     <h2>CALCULE SU CR&Eacute;DITO</h2>
+                       <div id="mostrar_resultado">
+                           <span class="text-respuesta" id="text-respuesta"></span><br><br>
+                          <span class="respuesta" id="respuesta"></span>
+                          <div class="boton_recal">
+                          <button class="calcular_bn" onClick="recalcular()">VOLVER A CALCULAR</button>
+                          </div>
+                        </div>
+                      <div id="items_calculadora">
+                      <span>Valor de compra</span><br>
+                      <input type="text" name="valor_compra" id="valor_compra"/><br>
+                      <div id="mensaje1" class="errores"> Ingresa solo números</div>
+                      <span>Valor de cuota inicial</span><br>
+                      <input type="text"/ name="valor_inicial" id="valor_inicial"><br>
+                      <div id="mensaje2" class="errores"> Ingresa un valor mayor </div>
+                      <div class="select_calcular"><span>Tasa</span><br>
+                        <select name="tasa" id="tasa" >
+                          <option value="0.890">11,22% E.A</option>
+                        </select><br>
+                      </div>
+
+                      <div class="select_calcular periodos"  > <span>Periodos<span><br>
+                        <select name="periodos" id="periodos" >
+                          <option value="120">120 Meses</option>
+                          <option value="180">180 Meses</option>
+                          <option value="240">240 Meses</option>
+                        </select><br>
+                        </div>
+
+                        <div>
+                          <button name="calcular_bn" id="calcular_bn" class="calcular_bn" onClick="calcular()"><span class="text-boton">CALCULAR</span>
+                          </button>
+                        </div>
+                     </div>
+                    <div>
+             </div>
+          </div>
+        </div>
+       ';
+  return $output;
+}
+function modal_CalculadoraCredito_block_content(){
+  $module_path = drupal_get_path('module', 'CalculadoraCredito');
+  drupal_add_js($module_path.'/js/calculadora1.js');  
+  $output = '<div class="contenedor">
+                     <div class="block_calculadora">
+                     <h2>CALCULE SU CR&Eacute;DITO</h2>
+                       <div id="mostrar_resultado1">
+                           <span class="text-respuesta" id="text-respuesta1"></span><br><br>
+                          <span class="respuesta" id="respuesta1"></span>
+                          <div class="boton_recal">
+                          <button class="calcular_bn" onClick="recalcular1()">VOLVER A CALCULAR</button>
+                          </div>
+                        </div>
+                      <div id="items_calculadora1">
+                      <span>Valor de compra</span><br>
+                      <input type="text" name="valor_compra" id="valor_compra1"/><br>
+                      <div id="mensaje11" class="errores"> Ingresa solo números</div>
+                      <span>Valor de cuota inicial</span><br>
+                      <input type="text"/ name="valor_inicial" id="valor_inicial1"><br>
+                      <div id="mensaje21" class="errores"> Ingresa un valor mayor </div>
+                      <div class="select_calcular"><span>Tasa</span><br>
+                        <select name="tasa" id="tasa1" >
+                          <option value="0.890">11,22% E.A</option>
+                        </select><br>
+                      </div>
+
+                      <div class="select_calcular periodos"  > <span>Periodos<span><br>
+                        <select name="periodos" id="periodos1" >
+                          <option value="120">120 Meses</option>
+                          <option value="180">180 Meses</option>
+                          <option value="240">240 Meses</option>
+                        </select><br>
+                        </div>
+
+                        <div>
+                          <button name="calcular_bn" id="calcular_bn1" class="calcular_bn" onClick="calcular1()"><span class="text-boton">CALCULAR</span>
+                          </button>
+                        </div>
+                     </div>
+                    <div>
+             </div>
+          </div>
+        </div>
+       ';
+  return $output;
+}
