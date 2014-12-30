@@ -24,7 +24,7 @@ function ocultar1(){
 	jQuery("#mensaje11").fadeOut("slow");
 	jQuery("#mensaje21").fadeOut("slow");
 }
-setInterval("ocultar()",5000);
+setInterval("ocultar1()",5000);
 
 
 function calcular1(){
