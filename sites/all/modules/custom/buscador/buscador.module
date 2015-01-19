@@ -216,20 +216,19 @@ function buscador_formulario_form($node, &$form_state)
     }
     $proyectos_ids = $query->execute()->fetchAllAssoc("nid");
     $proyectos = entity_load("node",array_keys($proyectos_ids));
-    $form['wrapper']['googlemaps'] = array(
+    $form['maps']['googlemaps'] = array(
         '#type' => 'markup',
         '#prefix' => '<div id="mapa">',
         '#suffix' => '</div>',
         '#markup' => ''
     );
     foreach($proyectos as $proyecto){
-        $form['wrapper']['googlemaps']['#markup'] .= "<script>initialize();</script><a href='/node/" . $proyecto->nid . "'>" . $proyecto->title . "</a><br />";
+        $form['maps']['googlemaps']['#markup'] .= "<script>initialize();</script><a href='/node/" . $proyecto->nid . "'>" . $proyecto->title . "</a><br />";
     }
     return $form;
 }
 
 function reload_buscador($form, $form_state){
     //$form['wrapper']['redraw']['#markup'] = "";
-    drupal_add_js("initialize();", 'inline');
     return $form['wrapper'];
 }
