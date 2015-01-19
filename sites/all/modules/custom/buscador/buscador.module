@@ -39,6 +39,9 @@ function buscador_block_view($delta = '')
  */
 function buscador_formulario_form($node, &$form_state)
 {
+    drupal_add_js("http://maps.googleapis.com/maps/api/js?key=AIzaSyCiuczAs8cb-ThpKYue6hpFsaYHGCTORAI&sensor=false",'external');
+    drupal_add_js(drupal_get_path('module', 'buscador').'/js/googlemaps.js');
+
     $form['wrapper'] = array(
         '#prefix' => '<div id="buscador-wrapper">',
         '#suffix' => '</div>',
