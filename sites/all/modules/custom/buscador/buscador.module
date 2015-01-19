@@ -223,7 +223,7 @@ function buscador_formulario_form($node, &$form_state)
         '#markup' => ''
     );
     foreach($proyectos as $proyecto){
-        $form['maps']['googlemaps']['#markup'] .= "<script>initialize();</script><a href='/node/" . $proyecto->nid . "'>" . $proyecto->title . "</a><br />";
+        $form['maps']['googlemaps']['#markup'] .= "<script>initialize();</script><a href='//node/" . $proyecto->nid . "'>" . $proyecto->title . "</a><br />";
     }
     return $form;
 }
