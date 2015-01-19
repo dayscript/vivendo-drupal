@@ -2590,4 +2590,9 @@ body.cali #menu-718-1 {
   left: 0;
   z-index: 1;
   color: #000000;
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shared\/Dropbox\/DAYSCRIPT\/CLIENTES\/ACTIVOS\/VIVENDO\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033081}}
+#mapa a {
+  color: #000000;
 }
