@@ -272,7 +272,7 @@ body.not-front{
   }
 }
 #highlighted-wrapper{
-  border-top: 30px solid black;
+  background: #000000;
   .block-inner{
     margin: 0;
     p{
@@ -2608,7 +2608,10 @@ h2.pane-title.block-title{
     margin-bottom: 20px;
   }
   .item-list{
-    clear: both;
+    //clear: both;
+    width: 300px;
+    float: left;
+    text-align: center;
     ul{
       li{
         list-style: none;
@@ -2624,29 +2627,42 @@ h2.pane-title.block-title{
           display: inline-block;
           color: $red_text;
           background: url("../images/icons/general.png") no-repeat;
+          background-size: 100% auto;
           &.bogota{
-            background: url("../images/icons/bogota.png") no-repeat;
+            background-image: url("../images/icons/bogota.png");
           }
           &.cali{
-            background: url("../images/icons/cali.png") no-repeat;
+            background-image: url("../images/icons/cali.png");
           }
           &.medellin{
-            background: url("../images/icons/medellin.png") no-repeat;
-          }
-          &.palmira{
-            background: url("../images/icons/palmira.png") no-repeat;
+            background-image: url("../images/icons/medellin.png");
           }
           &.ejecafetero{
-            background: url("../images/icons/ejecafetero.png") no-repeat;
+            background-image: url("../images/icons/ejecafetero.png");
           }
-          &.antioquia{
-            background: url("../images/icons/antioquia.png") no-repeat;
+          &.costa{
+            background-image: url("../images/icons/caribe.png");
           }
-          &.caribe{
-            background: url("../images/icons/caribe.png") no-repeat;
-          }
-          &.disabled{
+        }
+      }
+    }
+    &.disabled{
+      .soon{
+        text-align: center;
+        font-size: 0.9em;
+        color: $light_text;
+        padding-bottom: 10px;
+      }
+      width: 500px;
+      text-align: center;
+      ul{
+        li{
+          font-weight: 400;
+          font-size: 0.9em;
+          a{
+            width: 70px;
             color: $light_text;
+            padding-top: 80px;
             &:hover{
               text-decoration: none;
               cursor: default;
@@ -2655,7 +2671,6 @@ h2.pane-title.block-title{
         }
       }
     }
-    
   }
 }
 #block-global-filter-selector-global-filter-selector,
@@ -3028,4 +3043,38 @@ body.bogota{
   .views-field-field-codigo{
     text-align: center;
   }
+}
+#block-buscador-busca-formulario{
+  margin: 0 auto;
+  width: 1140px;
+  background: #000000;
+  color: white;
+  position: static !important;
+  height: 455px;
+  .wrapper{
+    display: inline-block;
+    margin: 0 10px 0 0;
+    padding: 5px 0px 7px 0px;
+    width: 200px;
+    vertical-align: top;
+  }
+  .form-item{
+    display: inline-block;
+    margin: 0;
+    label{
+      font-weight: 600;
+    }
+    select{
+      width: 200px;
+    }
+  }
+}
+#mapa{
+  background: wheat;
+  min-height: 400px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  color: #000000;
 }

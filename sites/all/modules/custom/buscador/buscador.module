@@ -1,0 +1,230 @@
+<?php
+/**
+ * Implements hook_block_info().
+ */
+function buscador_block_info()
+{
+    $blocks = array();
+    $blocks['buscador_mapa'] = array(
+        'info' => t('Buscador - Mapa'),
+    );
+    $blocks['busca_formulario'] = array(
+        'info' => t('Buscador - Formulario '),
+        'cache' => DRUPAL_NO_CACHE,
+    );
+    return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function buscador_block_view($delta = '')
+{
+    $block = array();
+    switch ($delta) {
+        case 'buscador_mapa':
+            $block['subject'] = '';
+            $block['content'] = buscador_mapa_content();
+            break;
+        case 'busca_formulario':
+            $block['subject'] = '';
+            $block['content'] = drupal_get_form('buscador_formulario_form');
+            break;
+    }
+    return $block;
+}
+
+/**
+ * Implements hook_form().
+ */
+function buscador_formulario_form($node, &$form_state)
+{
+    $form['wrapper'] = array(
+        '#prefix' => '<div id="buscador-wrapper">',
+        '#suffix' => '</div>',
+    );
+    $value = global_filter_get_session_value('field_ciudad');
+    if (is_array($value) && isset($value[0]) && $value[0] == 2) {
+        $ciudad = "Cali";
+    } else {
+        $ciudad = "Bogotá";
+    }
+    $ciudad_id = false;
+    $voc = taxonomy_vocabulary_machine_name_load('zonas');
+    $zonas = taxonomy_get_tree($voc->vid);
+    $zonas_select = array();
+    $default = 0;
+    foreach ($zonas as $zona) {
+        if ($zona->name == $ciudad) $ciudad_id = $zona->tid;
+        if (!$ciudad_id) continue;
+        if (!isset($zona->parents) || !is_array($zona->parents) || !in_array($ciudad_id, $zona->parents)) continue;
+        if ($default == 0) $default = $zona->tid;
+        $key = $zona->tid;
+        $value = $zona->name;
+        $zonas_select[$key] = $value;
+    }
+    $form['wrapper']['zona'] = array(
+        '#prefix' => '<div id="zona-wrapper" class="wrapper">',
+        '#suffix' => '</div>',
+        '#type' => 'select',
+        '#options' => $zonas_select,
+        '#title' => 'Zona',
+        '#default_value' => $default,
+        '#ajax' => array(
+            'event' => 'change',
+            'callback' => 'reload_buscador',
+            'wrapper' => 'buscador-wrapper',
+        ),
+    );
+    if(!isset($form_state['values']['zona']))$form_state['values']['zona'] = $default;
+    $voc = taxonomy_vocabulary_machine_name_load('tipo_de_proyecto');
+    $tipos = taxonomy_get_tree($voc->vid);
+    $tipos_select = array(0=>"Todos");
+    $default = 0;
+    foreach ($tipos as $tipo) {
+        $key = $tipo->tid;
+        $value = $tipo->name;
+        $query = db_select('search_api_db_proyectos', 'p');
+        $query->fields('p', array('nid'))
+            ->condition('field_tipo', $tipo->tid, '=');
+        if (isset($form_state['values']['zona'])  && $form_state['values']['zona']>0) {
+            $query->condition('field_zona', $form_state['values']['zona'], '=');
+        }
+        if (isset($form_state['values']['constructora']) && $form_state['values']['constructora']>0) {
+            $query->condition('field_constructora', $form_state['values']['constructora'], '=');
+        }
+        if (isset($form_state['values']['rango']) && $form_state['values']['rango']>0) {
+            $rango = taxonomy_term_load($form_state['values']['rango']);
+            $data = explode("|",$rango->description);
+            $query->condition('field_precio', intval($data[0]) , '>=');
+            $query->condition('field_precio', intval($data[1]) , '<');
+        }
+        $num_rows = $query->countQuery()->execute()->fetchField();
+        if($num_rows>0)
+            $tipos_select[$key] = $value . " (" . $num_rows . ")";;
+    }
+
+    $form['wrapper']['tipo'] = array(
+        '#prefix' => '<div id="tipo-wrapper" class="wrapper">',
+        '#suffix' => '</div>',
+        '#type' => 'select',
+        '#options' => $tipos_select,
+        '#title' => 'Tipo',
+        '#default_value' => $default,
+        '#ajax' => array(
+            'event' => 'change',
+            'callback' => 'reload_buscador',
+            'wrapper' => 'buscador-wrapper',
+        ),
+    );
+    $constructoras = node_load_multiple(array(), array('type' => "constructora"));
+    $constructoras_select = array(0=>"Todas");
+    $default = 0;
+    foreach ($constructoras as $constructora) {
+        $key = $constructora->nid;
+        $value = $constructora->title;
+        $query = db_select('search_api_db_proyectos', 'p');
+        $query->fields('p', array('nid'))
+            ->condition('field_constructora', $constructora->nid, '=');
+        if (isset($form_state['values']['zona']) && $form_state['values']['zona']>0) {
+            $query->condition('field_zona', $form_state['values']['zona'], '=');
+        }
+        if (isset($form_state['values']['tipo']) && $form_state['values']['tipo']>0) {
+            $query->condition('field_tipo', $form_state['values']['tipo'], '=');
+        }
+        if (isset($form_state['values']['rango']) && $form_state['values']['rango']>0) {
+            $rango = taxonomy_term_load($form_state['values']['rango']);
+            $data = explode("|",$rango->description);
+            $query->condition('field_precio', intval($data[0]) , '>=');
+            $query->condition('field_precio', intval($data[1]) , '<');
+        }
+        $num_rows = $query->countQuery()->execute()->fetchField();
+        if($num_rows>0)
+            $constructoras_select[$key] = $value . " (" . $num_rows . ")";;
+    }
+
+    $form['wrapper']['constructora'] = array(
+        '#prefix' => '<div id="constructora-wrapper" class="wrapper">',
+        '#suffix' => '</div>',
+        '#type' => 'select',
+        '#options' => $constructoras_select,
+        '#title' => 'Constructora',
+        '#default_value' => $default,
+        '#ajax' => array(
+            'event' => 'change',
+            'callback' => 'reload_buscador',
+            'wrapper' => 'buscador-wrapper',
+        ),
+    );
+    $voc = taxonomy_vocabulary_machine_name_load('rango_de_precios');
+    $rangos = taxonomy_get_tree($voc->vid);
+    $rangos_select = array(0 => "Todos");
+    $default = 0;
+    foreach ($rangos as $rango) {
+        $key = $rango->tid;
+        $value = $rango->name;
+        $data = explode("|",$rango->description);
+        $query = db_select('search_api_db_proyectos', 'p');
+        $query->fields('p', array('nid'))
+            ->condition('field_precio', intval($data[0]), '>=')
+            ->condition('field_precio', intval($data[1]), '<');
+        if (isset($form_state['values']['zona'])  && $form_state['values']['zona']>0) {
+            $query->condition('field_zona', $form_state['values']['zona'], '=');
+        }
+        if (isset($form_state['values']['constructora']) && $form_state['values']['constructora']>0) {
+            $query->condition('field_constructora', $form_state['values']['constructora'], '=');
+        }
+        if (isset($form_state['values']['tipo']) && $form_state['values']['tipo']>0) {
+            $query->condition('field_tipo', $form_state['values']['tipo'], '=');
+        }
+        $num_rows = $query->countQuery()->execute()->fetchField();
+        if($num_rows>0)
+            $rangos_select[$key] = $value . " (" . $num_rows . ")";;
+    }
+    $form['wrapper']['rango'] = array(
+        '#prefix' => '<div id="rango-wrapper" class="wrapper">',
+        '#suffix' => '</div>',
+        '#type' => 'select',
+        '#options' => $rangos_select,
+        '#title' => 'Precio',
+        '#default_value' => $default,
+        '#ajax' => array(
+            'event' => 'change',
+            'callback' => 'reload_buscador',
+            'wrapper' => 'buscador-wrapper',
+        ),
+    );
+    $query = db_select('search_api_db_proyectos', 'p');
+    $query->fields('p', array('nid'));
+    if (isset($form_state['values']['rango']) && $form_state['values']['rango']>0) {
+        $rango = taxonomy_term_load($form_state['values']['rango']);
+        $data = explode("|",$rango->description);
+        $query->condition('field_precio', intval($data[0]) , '>=');
+        $query->condition('field_precio', intval($data[1]) , '<');
+    }
+    if (isset($form_state['values']['zona'])  && $form_state['values']['zona']>0) {
+        $query->condition('field_zona', $form_state['values']['zona'], '=');
+    }
+    if (isset($form_state['values']['constructora']) && $form_state['values']['constructora']>0) {
+        $query->condition('field_constructora', $form_state['values']['constructora'], '=');
+    }
+    if (isset($form_state['values']['tipo']) && $form_state['values']['tipo']>0) {
+        $query->condition('field_tipo', $form_state['values']['tipo'], '=');
+    }
+    $proyectos_ids = $query->execute()->fetchAllAssoc("nid");
+    $proyectos = entity_load("node",array_keys($proyectos_ids));
+    $form['wrapper']['googlemaps'] = array(
+        '#type' => 'markup',
+        '#prefix' => '<div id="mapa">',
+        '#suffix' => '</div>',
+        '#markup' => ''
+    );
+    foreach($proyectos as $proyecto){
+        $form['wrapper']['googlemaps']['#markup'] .= "<a href='/node/" . $proyecto->nid . "'>" . $proyecto->title . "</a><br />";
+    }
+    return $form;
+}
+
+function reload_buscador($form, $form_state){
+    return $form['wrapper'];
+}

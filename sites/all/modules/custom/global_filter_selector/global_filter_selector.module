@@ -75,8 +75,18 @@ function global_filter_selector_block_view($delta = '') {
           $items[] = array('data' => l("Santanderes", null,array('attributes'=>array('class'=>array('santanderes', 'disabled')))));
           $items[] = array('data' => l("Costa Atlántica", null,array('attributes'=>array('class'=>array('costa', 'disabled')))));
         }
-        $block['content'] = theme('item_list', array('items' => $items));
-        $block['content'] = "<div class='logo'><img alt='Vivendo.co' src='/sites/all/themes/at-vivendo/images/logos/logo-vivendo.png' 
+//        $block['content'] = theme('item_list', array('items' => $items));
+        $block['content'] = "<div class='item-list'><ul>";
+        $block['content'] .= "<li><a href='/?field_ciudad=1' class='bogota'>Bogot&aacute;<br />Cundinamarca</a></li>";
+        $block['content'] .= "<li><a href='/?field_ciudad=2' class='cali'>Cali<br />Valle</a></li>";
+        $block['content'] .= "</ul></div>";
+        $block['content'] .= "<div class='item-list disabled'><div class='soon'>Pr&oacute;ximamente</div><ul>";
+        $block['content'] .= "<li><a class='medellin'>Medell&iacute;n<br />Antioquia</a></li>";
+        $block['content'] .= "<li><a class='ejecafetero'>Eje<br />Cafetero</a></li>";
+        $block['content'] .= "<li><a class='santanderes'>Santander<br />&nbsp;</a></li>";
+        $block['content'] .= "<li><a class='costa'>Costa<br />Atl&aacute;ntica</a></li>";
+        $block['content'] .= "</ul></div>";
+        $block['content'] = "<div class='logo'><img alt='Vivendo.co' src='/sites/all/themes/at-vivendo/images/logos/logo-vivendo.png'
                               style='border-style:solid; border-width:0px; height:62px; width:71px'><span style='color:#89878c'>vivendo.</span>
                               <span style='color:#cd002d'>co</span></div>". $block['content'];
         $block['content'] = "<div class='intro'>Encuentre aquí la más completa oferta de vivenda, casas y apartamentos en Colombia</div>" . $block['content'];
