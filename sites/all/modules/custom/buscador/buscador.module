@@ -223,11 +223,12 @@ function buscador_formulario_form($node, &$form_state)
         '#markup' => ''
     );
     foreach($proyectos as $proyecto){
-        $form['wrapper']['googlemaps']['#markup'] .= "<a href='/node/" . $proyecto->nid . "'>" . $proyecto->title . "</a><br />";
+        $form['wrapper']['googlemaps']['#markup'] .= "<script>initialize();</script><a href='/node/" . $proyecto->nid . "'>" . $proyecto->title . "</a><br />";
     }
     return $form;
 }
 
 function reload_buscador($form, $form_state){
+    $form['wrapper']['redraw']['#markup'] = "";
     return $form['wrapper'];
 }
