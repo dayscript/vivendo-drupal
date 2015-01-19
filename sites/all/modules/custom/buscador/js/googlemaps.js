@@ -10,6 +10,15 @@ function initialize() {
     var map = new google.maps.Map(document.getElementById("mapa"),
         mapOptions);
 }
+function initialize2() {
+    var mapOptions = {
+        center: new google.maps.LatLng(3.427581, -76.497675),
+        zoom: 8,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById("mapa"),
+        mapOptions);
+}
 jQuery(document).ready( function(){
     initialize();
 });
