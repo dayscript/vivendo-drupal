@@ -229,6 +229,7 @@ function buscador_formulario_form($node, &$form_state)
 }
 
 function reload_buscador($form, $form_state){
-    $form['wrapper']['redraw']['#markup'] = "";
+    //$form['wrapper']['redraw']['#markup'] = "";
+    drupal_add_js("initialize();", 'inline')
     return $form['wrapper'];
 }
