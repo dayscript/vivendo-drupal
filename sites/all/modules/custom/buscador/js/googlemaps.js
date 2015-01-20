@@ -10,6 +10,7 @@ function initialize() {
     };
     map = new google.maps.Map(document.getElementById("mapa"), mapOptions);
     if(points && points.length){
+        var latlngbounds = new google.maps.LatLngBounds();
         for (var i = 0; i < points.length; i++) {
             new google.maps.Marker({
                 position: points[i].latlng,
