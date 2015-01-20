@@ -222,6 +222,10 @@ function buscador_formulario_form($node, &$form_state)
         '#suffix' => '</div>',
         '#markup' => ''
     );
+    $form['wrapper']['data'] = array(
+        '#type' => 'markup',
+        '#markup' => ''
+    );
     $points = "[";
     foreach($proyectos as $proyecto){
         if(isset($proyecto->field_coordenadas['und'][0]['value']) && $proyecto->field_coordenadas['und'][0]['value'] != "" && strstr($proyecto->field_coordenadas['und'][0]['value'],",")){
@@ -229,11 +233,11 @@ function buscador_formulario_form($node, &$form_state)
         }
     }
     $points .= "]";
-    $form['maps']['googlemaps']['#markup'] .= '<script> var points = ' . $points . ';</script>';
+    $form['wrapper']['data']['#markup'] .= '<script> var points = ' . $points . ';</script>';
     return $form;
 }
 
 function reload_buscador($form, $form_state){
-    $form['wrapper']['redraw']['#markup'] = "<script>update();</script>";
+    $form['wrapper']['data']['#markup'] .= "<script>update();</script>";
     return $form['wrapper'];
 }
