@@ -234,6 +234,6 @@ function buscador_formulario_form($node, &$form_state)
 }
 
 function reload_buscador($form, $form_state){
-    $form['wrapper']['redraw']['#markup'] = "<script></script>";
+    $form['wrapper']['redraw']['#markup'] = "<script>update();</script>";
     return $form['wrapper'];
 }
