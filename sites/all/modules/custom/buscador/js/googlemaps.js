@@ -4,12 +4,22 @@
 var map;
 function initialize() {
     var mapOptions = {
-        center: new google.maps.LatLng(-34.397, 150.644),
-        zoom: 8,
+        center: new google.maps.LatLng(4.565961, -74.078279),
+        zoom: 2,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
-    map = new google.maps.Map(document.getElementById("mapa"),
-        mapOptions);
+    map = new google.maps.Map(document.getElementById("mapa"), mapOptions);
+    if(points && points.length){
+        for (var i = 0; i < points.length; i++) {
+            new google.maps.Marker({
+                position: points[i].latlng,
+                map: map,
+                title: points[i].name
+            });
+            latlngbounds.extend(points[i].latlng);
+        }
+        map.fitBounds(latlngbounds);
+    }
 }
 function update( points ) {
     var latlngbounds = new google.maps.LatLngBounds();
@@ -34,5 +44,5 @@ function update( points ) {
     map.fitBounds(latlngbounds);
 }
 jQuery(document).ready( function(){
-    //initialize();
+    initialize();
 });
