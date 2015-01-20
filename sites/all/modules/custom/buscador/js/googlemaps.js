@@ -38,7 +38,8 @@ function update( ) {
             var marker = new google.maps.Marker({
                 position: points[i].latlng,
                 map: map,
-                title: points[i].name
+                title: points[i].name,
+                icon: '/sites/all/themes/at-vivendo/images/icons/marker.png'
             });
             gmarkers.push(marker);
             latlngbounds.extend(points[i].latlng);
