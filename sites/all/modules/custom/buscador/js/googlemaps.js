@@ -13,12 +13,25 @@ function initialize() {
 }
 function initialize2() {
     var latlngbounds = new google.maps.LatLngBounds();
-    var latlng = [{lat:3.427581, lng:-76.49767}, {lat:4.565961, lng:-74.078279}];
-    for (var i = 0; i < latlng.length; i++) {
-        latlngbounds.extend(latlng[i]);
+    var points = [
+        {
+            name: "Punto 1",
+            latlng: new google.maps.LatLng(4.565961, -74.078279)
+        },
+        {
+            name: "Punto 2",
+            latlng: new google.maps.LatLng(3.427581,-76.49767)
+        }
+    ];
+    for (var i = 0; i < points.length; i++) {
+        new google.maps.Marker({
+            position: points[i].latlng,
+            map: map,
+            title: points[i].name
+        });
+        latlngbounds.extend(points[i].latlng);
     }
     map.fitBounds(latlngbounds);
-    //map.panToBounds(new LatLngBounds({ sw:, ne: }));
 }
 jQuery(document).ready( function(){
     initialize();
