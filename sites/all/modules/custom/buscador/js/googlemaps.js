@@ -12,7 +12,13 @@ function initialize() {
         mapOptions);
 }
 function initialize2() {
-    map.panToBounds(new LatLngBounds({ sw:{lat:3.427581, lng:-76.49767}, ne:{lat:4.565961, lng:-74.078279} }));
+    var latlngbounds = new google.maps.LatLngBounds();
+    var latlng = [{lat:3.427581, lng:-76.49767}, {lat:4.565961, lng:-74.078279}];
+    for (var i = 0; i < latlng.length; i++) {
+        latlngbounds.extend(latlng[i]);
+    }
+    map.fitBounds(latlngbounds);
+    //map.panToBounds(new LatLngBounds({ sw:, ne: }));
 }
 jQuery(document).ready( function(){
     initialize();
