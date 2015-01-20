@@ -38,5 +38,5 @@ function update( ) {
 
 }
 jQuery(document).ready( function(){
-    //initialize();
+    initialize();
 });
