@@ -199,14 +199,14 @@ function buscador_formulario_form($node, &$form_state)
     );
     $query = db_select('search_api_db_proyectos', 'p');
     $query->fields('p', array('nid'));
+    if (isset($form_state['values']['zona'])  && $form_state['values']['zona']>0) {
+        $query->condition('field_zona', $form_state['values']['zona'], '=');
+    }
     if (isset($form_state['values']['rango']) && $form_state['values']['rango']>0) {
         $rango = taxonomy_term_load($form_state['values']['rango']);
         $data = explode("|",$rango->description);
         $query->condition('field_precio', intval($data[0]) , '>=');
         $query->condition('field_precio', intval($data[1]) , '<');
-    }
-    if (isset($form_state['values']['zona'])  && $form_state['values']['zona']>0) {
-        $query->condition('field_zona', $form_state['values']['zona'], '=');
     }
     if (isset($form_state['values']['constructora']) && $form_state['values']['constructora']>0) {
         $query->condition('field_constructora', $form_state['values']['constructora'], '=');
@@ -222,13 +222,18 @@ function buscador_formulario_form($node, &$form_state)
         '#suffix' => '</div>',
         '#markup' => ''
     );
+    $points = "[";
     foreach($proyectos as $proyecto){
-        $form['maps']['googlemaps']['#markup'] .= "<a href='/node/" . $proyecto->nid . "'>" . $proyecto->title . "</a><br />";
+        if($proyecto->field_coordenadas['und'][0]['value'] != ""){
+            $points .= '{name: "' .$proyecto->title . '", latlng: new google.maps.LatLng(' . $proyecto->field_coordenadas['und'][0]['value'] . ')},';
+        }
     }
+    $points .= "]";
+    $form['maps']['googlemaps']['#markup'] .= $points;
     return $form;
 }
 
 function reload_buscador($form, $form_state){
-    $form['wrapper']['redraw']['#markup'] = "<script>initialize2();</script>";
+    $form['wrapper']['redraw']['#markup'] = "<script></script>";
     return $form['wrapper'];
 }

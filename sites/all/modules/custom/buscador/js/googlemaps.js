@@ -11,7 +11,7 @@ function initialize() {
     map = new google.maps.Map(document.getElementById("mapa"),
         mapOptions);
 }
-function initialize2() {
+function update( points ) {
     var latlngbounds = new google.maps.LatLngBounds();
     var points = [
         {
@@ -34,5 +34,5 @@ function initialize2() {
     map.fitBounds(latlngbounds);
 }
 jQuery(document).ready( function(){
-    initialize();
+    //initialize();
 });
