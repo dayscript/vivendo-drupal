@@ -224,7 +224,7 @@ function buscador_formulario_form($node, &$form_state)
     );
     $points = "[";
     foreach($proyectos as $proyecto){
-        if($proyecto->field_coordenadas['und'][0]['value'] != ""){
+        if(isset($proyecto->field_coordenadas['und'][0]['value']) && $proyecto->field_coordenadas['und'][0]['value'] != ""){
             $points .= '{name: "' .$proyecto->title . '", latlng: new google.maps.LatLng(' . $proyecto->field_coordenadas['und'][0]['value'] . ')},';
         }
     }
