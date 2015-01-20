@@ -12,7 +12,7 @@ function initialize() {
         mapOptions);
 }
 function initialize2() {
-    map.panToBounds(LatLngBounds({ sw:{lat:3.427581, lng:-76.49767}, ne:{lat:4.565961, lng:-74.078279} }));
+    map.panToBounds(new LatLngBounds({ sw:{lat:3.427581, lng:-76.49767}, ne:{lat:4.565961, lng:-74.078279} }));
 }
 jQuery(document).ready( function(){
     initialize();
