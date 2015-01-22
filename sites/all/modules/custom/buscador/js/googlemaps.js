@@ -30,12 +30,12 @@ function initialize() {
                 icon: '/sites/all/themes/at-vivendo/images/icons/marker.png'
             });
             
-            google.maps.event.addListener(marker, 'click', (function(marker){
+            google.maps.event.addListener(marker, 'click', (function(marker, i){
               return function() {
-                infowindow.setContent('<strong>vivendo</strong>');
+                infowindow.setContent('<strong>vivendo ' + i +  '</strong>');
                 infowindow.open( map, marker );
               }
-            })(marker));
+            })(marker , i));
             
             gmarkers.push(marker);
             latlngbounds.extend(points[i].latlng);
