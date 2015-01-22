@@ -35,9 +35,6 @@ function initialize() {
                 infowindow.setContent( render_window(point) );
                 infowindow.open( map, marker );
               }
-              
-              
-              
             })(marker , points[i]));
             
             gmarkers.push(marker);
