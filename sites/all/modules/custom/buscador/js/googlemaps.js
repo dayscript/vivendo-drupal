@@ -3,20 +3,26 @@
  */
 var map;
 var gmarkers = [];
+
 function initialize() {
+  
     var mapOptions = {
         center: new google.maps.LatLng(4.565961, -74.078279),
         zoom: 2,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
+    
     map = new google.maps.Map(document.getElementById("mapa"), mapOptions);
-    if(points && points.length){
+    
+  if(points && points.length){
         var latlngbounds = new google.maps.LatLngBounds();
+        
+        var infowindow = new google.maps.InfoWindow({
+            content: ''
+        });
+        
         for (var i = 0; i < points.length; i++) {
 
-            var infowindow = new google.maps.InfoWindow({
-                content: '<h1>vivendo'+ i + '</h1>'
-            });
       
             var marker = new google.maps.Marker({
                 position: points[i].latlng,
@@ -26,6 +32,7 @@ function initialize() {
             });
             
             google.maps.event.addListener(marker, 'click', function(){
+              infowindow.set('<strong>vivendo</strong>');
               infowindow.open( map, marker );
             });
             
