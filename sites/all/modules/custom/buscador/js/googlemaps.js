@@ -30,12 +30,12 @@ function initialize() {
                 icon: '/sites/all/themes/at-vivendo/images/icons/marker.png'
             });
             
-            google.maps.event.addListener(marker, 'click', (function(marker, i){
+            google.maps.event.addListener(marker, 'click', (function(marker, point){
               return function() {
-                infowindow.setContent('<strong>vivendo ' + i +  '</strong>');
+                infowindow.setContent( render_window(point) );
                 infowindow.open( map, marker );
               }
-            })(marker , i));
+            })(marker , points[i]));
             
             gmarkers.push(marker);
             latlngbounds.extend(points[i].latlng);
@@ -43,6 +43,26 @@ function initialize() {
        map.fitBounds(latlngbounds);
     }
 }
+
+function render_window ( point ) {
+  
+  var output = '';
+  
+  output += '<div class="window-project">';
+  output +=   '<div class="col-left">';
+  output +=     '<img src="' + point.image_url + '" title="' + point.name + '" alt="' + point.name + '">';
+  output +=   '</div>';
+  output +=   '<div class="col-right">';
+  output +=     '<span class="title">' + point.name + '</span>';
+  output +=     '<span class="price">Desde $' + point.price + '</span>';
+  output +=     '<span class="address">' + point.address + '</span>';
+  output +=   '</div>';
+  output += '</div>';
+  
+  return output;
+  
+}
+
 function removeMarkers(){
     for(i=0; i<gmarkers.length; i++){
         gmarkers[i].setMap(null);

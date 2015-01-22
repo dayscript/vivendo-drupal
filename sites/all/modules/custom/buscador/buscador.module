@@ -216,20 +216,23 @@ function buscador_formulario_form($node, &$form_state)
     }
     $proyectos_ids = $query->execute()->fetchAllAssoc("nid");
     $proyectos = entity_load("node",array_keys($proyectos_ids));
+    
     $form['maps']['googlemaps'] = array(
         '#type' => 'markup',
         '#prefix' => '<div id="mapa">',
         '#suffix' => '</div>',
         '#markup' => ''
     );
+    
     $form['wrapper']['data'] = array(
         '#type' => 'markup',
         '#markup' => ''
     );
+    
     $points = "[";
     foreach($proyectos as $proyecto){
         if(isset($proyecto->field_coordenadas['und'][0]['value']) && $proyecto->field_coordenadas['und'][0]['value'] != "" && strstr($proyecto->field_coordenadas['und'][0]['value'],",")){
-            $points .= '{name: "' .$proyecto->title . '", latlng: new google.maps.LatLng(' . $proyecto->field_coordenadas['und'][0]['value'] . ')},';
+            $points .= '{name: "' .$proyecto->title . '", latlng: new google.maps.LatLng(' . $proyecto->field_coordenadas['und'][0]['value'] . '), address: "' . $proyecto->field_direccion['und'][0]['value']. '", price: "' . $proyecto->field_precio['und'][0]['value'] . '", images_url: "' . file_create_url($proyecto->field_image['und'][0]['uri']) . '"},';
         }
     }
     $points .= "]";
