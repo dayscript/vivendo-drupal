@@ -13,12 +13,22 @@ function initialize() {
     if(points && points.length){
         var latlngbounds = new google.maps.LatLngBounds();
         for (var i = 0; i < points.length; i++) {
+
+            var infowindow = new google.maps.InfoWindow({
+                content: '<h1>vivendo</h1>'
+            });
+      
             var marker = new google.maps.Marker({
                 position: points[i].latlng,
                 map: map,
                 title: points[i].name,
                 icon: '/sites/all/themes/at-vivendo/images/icons/marker.png'
             });
+            
+            google.maps.event.addListener(marker, 'click', function(){
+              infowindow.open( map, marker );
+            });
+            
             gmarkers.push(marker);
             latlngbounds.extend(points[i].latlng);
         }
