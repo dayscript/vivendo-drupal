@@ -50,7 +50,7 @@ function render_window ( point ) {
   
   output += '<div class="window-project">';
   output +=   '<div class="col-left">';
-  output +=     '<img src="' + point.image_url + '" title="' + point.name + '" alt="' + point.name + '">';
+  output +=     '<img src="' + point.images_url + '" title="' + point.name + '" alt="' + point.name + '">';
   output +=   '</div>';
   output +=   '<div class="col-right">';
   output +=     '<span class="title">' + point.name + '</span>';
