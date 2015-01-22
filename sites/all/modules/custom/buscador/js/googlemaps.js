@@ -46,7 +46,7 @@ function initialize() {
 
 function render_window ( point ) {
   
-  var output = '';
+  /*var output = '';
   
   output += '<div class="window-project">';
   output +=   '<div class="col-left">';
@@ -59,7 +59,7 @@ function render_window ( point ) {
   output +=   '</div>';
   output += '</div>';
   
-  return output;
+  return output;*/
   
 }
 
@@ -68,6 +68,7 @@ function removeMarkers(){
         gmarkers[i].setMap(null);
     }
 }
+
 function update( ) {
     if(points && points.length){
         var latlngbounds = new google.maps.LatLngBounds();
@@ -79,7 +80,6 @@ function update( ) {
                 title: points[i].name,
                 icon: '/sites/all/themes/at-vivendo/images/icons/marker.png'
             });
-            jQuery('.gm-style-iw').siblings().hide();
             gmarkers.push(marker);
             latlngbounds.extend(points[i].latlng);
         }
@@ -89,5 +89,4 @@ function update( ) {
 }
 jQuery(document).ready( function(){
     initialize();
-    
 });
