@@ -35,6 +35,9 @@ function initialize() {
                 infowindow.setContent( render_window(point) );
                 infowindow.open( map, marker );
               }
+              
+              
+              
             })(marker , points[i]));
             
             gmarkers.push(marker);
@@ -88,4 +91,5 @@ function update( ) {
 }
 jQuery(document).ready( function(){
     initialize();
+    jQuery('.gm-style-iw').prev().hide();
 });
