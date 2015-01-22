@@ -36,7 +36,7 @@ function initialize() {
                 infowindow.open( map, marker );
               }
               
-              
+              jQuery('.gm-style-iw').sibligns().hide();
               
             })(marker , points[i]));
             
@@ -91,5 +91,5 @@ function update( ) {
 }
 jQuery(document).ready( function(){
     initialize();
-    jQuery('.gm-style-iw').prev().hide();
+    
 });
