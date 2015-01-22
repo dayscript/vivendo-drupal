@@ -23,7 +23,6 @@ function initialize() {
         
         for (var i = 0; i < points.length; i++) {
 
-      
             var marker = new google.maps.Marker({
                 position: points[i].latlng,
                 map: map,
@@ -32,7 +31,7 @@ function initialize() {
             });
             
             google.maps.event.addListener(marker, 'click', function(){
-              infowindow.set('<strong>vivendo</strong>');
+              infowindow.setContent('<strong>vivendo '+ i.toString() + '</strong>');
               infowindow.open( map, marker );
             });
             
