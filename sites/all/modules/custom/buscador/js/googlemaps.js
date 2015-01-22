@@ -15,7 +15,7 @@ function initialize() {
         for (var i = 0; i < points.length; i++) {
 
             var infowindow = new google.maps.InfoWindow({
-                content: '<h1>vivendo</h1>'
+                content: '<h1>vivendo'+ i + '</h1>'
             });
       
             var marker = new google.maps.Marker({
