@@ -3082,3 +3082,28 @@ body.bogota{
     color: #000000;
   }
 }
+
+.window-project {
+    width: 239px;
+    height: 111px;
+    overflow: hidden;
+    background: none repeat scroll 0 0 #4e4e4e;
+    .col-left,
+    .col-right {
+        float: left;
+        padding: 9px 0 0 9px;
+    }
+    img{
+        width: 67px;
+        height: 81px;
+    }
+    span {
+        color: #fff;
+        display: block;
+        text-align: left;
+    }
+    .title {
+        margin: 25px 0 0 0;
+    }
+}
+

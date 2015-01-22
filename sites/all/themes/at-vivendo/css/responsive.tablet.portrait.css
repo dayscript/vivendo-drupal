@@ -8,7 +8,7 @@
  * - Read the _README file in this directory, it contains useful help and other information.
  */
 /* Increase the body font size on small devices */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/forge\/vivendo-drupal\.dayscript\.com\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.tablet\.portrait\.scss}line{font-family:\0000316}}
+/* line 16, ../sass/responsive.tablet.portrait.scss */
 html {
   font-size: 81.3%;
 }
