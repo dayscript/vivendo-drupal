@@ -15,7 +15,7 @@ function initialize() {
     map = new google.maps.Map(document.getElementById("mapa"), mapOptions);
     
   if(points && points.length){
-        //var latlngbounds = new google.maps.LatLngBounds();
+        var latlngbounds = new google.maps.LatLngBounds();
         
         var infowindow = new google.maps.InfoWindow({
             content: ''
