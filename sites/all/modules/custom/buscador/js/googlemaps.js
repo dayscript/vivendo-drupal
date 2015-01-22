@@ -91,5 +91,5 @@ function update( ) {
 }
 jQuery(document).ready( function(){
     initialize();
-    jQuery('.gm-style-iw').sibligns().hide();
+    jQuery('.gm-style-iw').siblings().hide();
 });
