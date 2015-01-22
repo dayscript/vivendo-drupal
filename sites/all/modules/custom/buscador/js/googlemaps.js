@@ -27,18 +27,18 @@ function initialize() {
                 position: points[i].latlng,
                 map: map,
                 title: points[i].name,
-                //icon: '/sites/all/themes/at-vivendo/images/icons/marker.png'
+                icon: '/sites/all/themes/at-vivendo/images/icons/marker.png'
             });
             
             google.maps.event.addListener(marker, 'click', function(){
               infowindow.setContent('<strong>vivendo</strong>');
-              infowindow.open( map, marker );
+              infowindow.open( map, this );
             });
             
-            //gmarkers.push(marker);
-            //latlngbounds.extend(points[i].latlng);
+            gmarkers.push(marker);
+            latlngbounds.extend(points[i].latlng);
         }
-       //map.fitBounds(latlngbounds);
+       map.fitBounds(latlngbounds);
     }
 }
 function removeMarkers(){
