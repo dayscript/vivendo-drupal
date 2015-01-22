@@ -79,6 +79,7 @@ function update( ) {
                 title: points[i].name,
                 icon: '/sites/all/themes/at-vivendo/images/icons/marker.png'
             });
+            jQuery('.gm-style-iw').siblings().hide();
             gmarkers.push(marker);
             latlngbounds.extend(points[i].latlng);
         }
@@ -88,5 +89,5 @@ function update( ) {
 }
 jQuery(document).ready( function(){
     initialize();
-    jQuery('.gm-style-iw').siblings().hide();
+    
 });
