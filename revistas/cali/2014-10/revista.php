@@ -42,8 +42,8 @@
 
 	swfobject.embedSWF("revista.swf",
 					"revista",
-					"1050",
-					"730",
+					"90%",
+					"90%",
 					"9.0.0",
 					'http://newvivendo.dayscript.com/sites/all/libraries/revistas/expressInstall.swf', flashvars, params, attributes );
 //]]>
