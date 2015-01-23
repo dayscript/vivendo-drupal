@@ -38,6 +38,7 @@ function initialize() {
               return function() {
                 infowindow.setContent( render_window(point) );
                 infowindow.open( map, marker );
+                jQuery('.gm-style-iw').hide().length();
               }
             })(marker , points[i]));
             
