@@ -1801,12 +1801,12 @@ div.modal-forms-modal-content .modal-title {
   font-size: 0.8em;
 }
 /* line 2405, ../sass/global.styles.scss */
-#block-views-constructoras-block-1 .views-field-php {
+#block-views-constructoras-block-1 .views-global-link {
   text-align: center;
   margin: 10px 0;
 }
 /* line 2408, ../sass/global.styles.scss */
-#block-views-constructoras-block-1 .views-field-php a.button {
+#block-views-constructoras-block-1 .views-global-link a.button {
   font-size: 0.9em;
   padding: 3px 7px;
 }
@@ -2732,4 +2732,24 @@ body.cali #menu-718-1 {
 /* line 3202, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner a {
   color: white;
+}
+
+/* line 3208, ../sass/global.styles.scss */
+.views-field-field-telefono1 {
+  display: block;
+  width: 201px;
+  overflow: hidden;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+/* line 3216, ../sass/global.styles.scss */
+.hide {
+  display: none;
+}
+
+/* line 3220, ../sass/global.styles.scss */
+.views-field-field-telefono1 > * {
+  float: left;
+  margin: 0 0 0 5px;
 }

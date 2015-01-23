@@ -2402,7 +2402,7 @@ div.modal-forms-modal-content {
     color: $medium_dark;
     font-size: 0.8em;
   }
-  .views-field-php{
+  .views-global-link{
     text-align: center;
     margin: 10px 0;
     a.button{
@@ -3203,4 +3203,21 @@ body.bogota{
       color: white;
     }
   }
+}
+
+.views-field-field-telefono1 {
+    display: block;
+    width: 201px;
+    overflow: hidden;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.hide {
+    display: none;
+}
+
+.views-field-field-telefono1 > * {
+    float: left;
+    margin: 0 0 0 5px;
 }
