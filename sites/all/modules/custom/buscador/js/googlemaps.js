@@ -65,6 +65,7 @@ function render_window ( point ) {
   output += '</div>';
   
   return output;*/
+    return 'OK';
   
 }
 
