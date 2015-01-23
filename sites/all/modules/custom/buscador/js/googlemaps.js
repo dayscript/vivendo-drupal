@@ -12,7 +12,8 @@ function initialize() {
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         scrollwheel:false,
         rotateControl: false,
-        zoomControl:false
+        zoomControl:false,
+        panControl:false
     };
     
     map = new google.maps.Map(document.getElementById("mapa"), mapOptions);
