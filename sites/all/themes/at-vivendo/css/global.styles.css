@@ -2583,8 +2583,8 @@ body.cali #menu-718-1 {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shared\/Dropbox\/DAYSCRIPT\/CLIENTES\/ACTIVOS\/VIVENDO\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033076}}
 #block-buscador-busca-formulario .ajax-progress {
   position: absolute;
-  top: 2px;
-  right: 2px;
+  top: 15px;
+  right: 10px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shared\/Dropbox\/DAYSCRIPT\/CLIENTES\/ACTIVOS\/VIVENDO\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033082}}
