@@ -3094,12 +3094,15 @@ body.bogota{
 }
 
 .gm-style-iw {
+    background: url('../images/shadow-window-marker.png') no-repeat scroll center bottom transparent;
+    height: 135px;
     margin: 15px 0 0 0;
 }
 
 .gm-style-iw > div {
     overflow: hidden;
     width: 285px;
+    margin: 0 auto;
 }
 
 .window-project {
@@ -3113,7 +3116,7 @@ body.bogota{
         padding: 17px 0 0 12px;
     }
     .col-right {
-        margin: 18px 0 0 0;
+        margin: 12px 0 0 0;
     }
     img{
         width: 116px;
@@ -3124,9 +3127,9 @@ body.bogota{
         display: block;
         text-align: left;
     }
-    /*.title {
-        margin: 25px 0 0 0;
-    }*/
+    .title {
+        font-size: 16px;
+    }
 }
 
 #block-views-proyectos-destacados-block {
