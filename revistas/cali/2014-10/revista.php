@@ -2,21 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-	<meta name="keywords" content="P�gina oficial <?= $sessionApp->getSite( )->getName( ) ?>" />
+	<meta name="keywords" content="Pagina oficial Vivendo" />
 	<meta name="description" content="" />
-	<meta name="title" content="<?= $sessionApp->getSite( )->getName( ) ?>" />
+	<meta name="title" content="<Revista" />
 	<meta name="Robots" content="All" />
 	<meta http-equiv="Pragma" content="No-Cache" />
 	<meta name="Rating" content="General" />
-    
-	<title><?= $sessionApp->getSite( )->getName( )  ?></title>
-	<link rel="icon" href="<?=INTRA_BASE_URL?>site/images/icon.png" type="image/png"/>
-	<link rel="image_src" type="image/jpeg" href="<?=INTRA_BASE_URL?>site/images/bigIcon.jpg" />
-	<link rev="made" href="mailto:soporte@dayscript.com" />
-	<link rev="start" href="<?=INTRA_BASE_HOST . INTRA_BASE_URL?>" title="Home Page" />
-	<style type="text/css" media="all">
-		@import "<?=INTRA_BASE_URL?>site/include/styles.css";
-	</style>
+	<title>Vivendo.co</title>
 	<style>
 		BODY {
 			margin:0;
@@ -24,10 +16,10 @@
 		}
 	</style>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-	<script language="javascript" type="text/javascript" src="http://dev-vivendo.pantheon.io/sites/libraries/functions.js"></script>
-	<script language="javascript" type="text/javascript" src="http://dev-vivendo.pantheon.io/sites/libraries/swfobject.js"></script>
-	<script language="javascript" type="text/javascript" src="http://dev-vivendo.pantheon.io/sites/libraries/HTTPRequest.js"></script>
-	<script language="javascript" type="text/javascript" src="http://dev-vivendo.pantheon.io/sites/libraries/zoom.js"></script>
+	<script language="javascript" type="text/javascript" src="/sites/all/libraries/revistas/functions.js"></script>
+	<script language="javascript" type="text/javascript" src="/sites/all/libraries/revistas/swfobject.js"></script>
+	<script language="javascript" type="text/javascript" src="/sites/all/libraries/revistas/HTTPRequest.js"></script>
+	<script language="javascript" type="text/javascript" src="/sites/all/libraries/revistas/zoom.js"></script>
 </head>
 <body>
 <div id="revista"><b><a href="http://get.adobe.com/flashplayer/">Descargar Flash Player para ver el contenido, haciendo clic aqu&iacute;.</a></b></div>
@@ -35,8 +27,8 @@
 //<![CDATA[
 	var flashvars = {
 		idFile: "0",
-		host: "<?= INTRA_BASE_HOST ?>",
-		path: "<?= INTRA_BASE_URL . "/" . 2 . "/" ?>",
+		host: "http://newvivendo.dayscript.com",
+		path: "http://newvivendo.dayscript.com/cali/",
 		page: ""
 	};
 	var params = {
@@ -53,7 +45,7 @@
 					"1050",
 					"730",
 					"9.0.0",
-					'<?= INTRA_BASE_URL ?>DayAdmin/swfs/expressInstall.swf', flashvars, params, attributes );
+					'http://newvivendo.dayscript.com/sites/all/libraries/revistas/expressInstall.swf', flashvars, params, attributes );
 //]]>
 </script>
 </body>

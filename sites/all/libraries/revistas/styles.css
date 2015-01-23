@@ -1,0 +1,591 @@
+/* CSS Document */
+body, html	{
+	width:100%;
+	height:100%;
+	padding: 0px;
+	margin: 0px;
+	background-color: #FFF;
+}
+
+html, table	{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	text-align:left;
+	line-height:15px;
+	vertical-align:top;
+	color:#000;
+}
+
+body, html, form	{
+	margin:0px;;
+	padding:0px;
+}
+
+table {
+	text-align:left;
+}
+
+label {
+	cursor:pointer;
+	vertical-align:middle;
+}
+
+input, select, textarea {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	vertical-align:middle;
+	text-shadow:none;
+	color:#000;
+}
+
+img {
+	border:0px;
+	vertical-align:middle;
+}
+
+a, a:hover, a:visited {
+	font-size:11px;
+	font-weight:normal;
+	vertical-align:middle;
+	text-decoration:none;
+	color:#000;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+.body, .bodySection	{
+	background-color:#000;
+	background-position:center top;
+	background-repeat:no-repeat;
+}
+
+/* MENU */
+ul.menu, ul.menu ul	{			/* Todos los contenedores de opciones */
+	list-style:none;			/* Sin estilos por defecto */
+	padding:0px;
+	border:0px none;
+	margin:0px;
+}
+ul.menu li ul	{				/* Los contenedores desde el segundo nivel en adelante */
+	position:absolute;			/* Para poderlo ocultar usando la posición */
+	left:-999em;				/* Oculto */
+	background-color:#000;
+	border:1px solid #FFEB00;
+	background-position:center -2px;
+	background-repeat:no-repeat;
+	padding:13px 10px 7px 10px;
+}
+ul.menu li ul ul	{			/* Contenedores del tercer nivel */
+	
+}
+ul.menu li:hover ul ul, 
+ul.menu li.sfhover ul ul, 
+ul.menu li:hover ul ul ul, 
+ul.menu li.sfhover ul ul ul	{	/* Ocultar submenús cuando el mouse pasa sobre el elemento del listado */
+	left:-999em;
+}
+ul.menu li:hover ul, 
+ul.menu li li:hover ul, 
+ul.menu li li li:hover ul, 
+ul.menu li.sfhover ul, 
+ul.menu li li.sfhover ul, 
+ul.menu li li li.sfhover ul	{	/* Corrección de posición para mostrar el submenú */
+	left:auto;
+}
+
+ul.menu li	{					/* Todos las opciones del menú */
+	float:left;					/* El primer nivel debe flotar para un listado horizontal */
+	white-space:nowrap;			/* Evitar cambios de línea */
+	padding:3px 1px 3px 3px;
+	margin:0px;
+	background-position:left center;
+	background-repeat:no-repeat;
+}
+ul.menu li li	{				/* Las opciones desde el segundo nivel en adelante */
+	float:none;					/* Eliminar el estilo de flotado del primer nivel */
+	/* IMPORTANTE:El valor por defecto para "border" en "IE quirks mode" (IE6, IE7 no estandar) es muy alto */
+	/* Es necesario agregar un valor con color ya que IE6 no admite "transparent" */
+	border:1px solid #000;
+	background:none;
+	margin:0px;
+	padding:0px;
+	border-bottom:1px solid #1D1D1D;
+	border-top:1px solid #2C2C2C;
+}
+ul.menu li:hover, 
+ul.menu li.sfhover	{			/* Cuando el mouse para sobre la opción */
+	
+}
+/* Support for the "ieFix" */
+ul.menu li	{
+	z-index:201;
+}
+ul.menu iframe	{
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:-1;
+	/* filter:progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0); */
+}
+/* this is for IE 5.0 */
+select.hide	{
+	visibility:hidden;
+}
+/* End Support for the "ieFix" */
+
+ul.menu a,
+ul.menu a:hover,
+ul.menu a:visited	{			/* Todos los links dentro del menú */
+	display:block;				/* Rellenado completo del contenedor (li) */
+	font-family:Arial;
+	font-size:11px;
+	color:#FFF;
+	text-decoration:none;
+	padding:13px 13px 7px 13px;
+	margin:0px 0px 3px 0px;
+	border-bottom:0px none;
+}
+ul.menu a:hover, 
+ul.menu li.selected a	{
+	color:#FFEB00;
+	margin:0px;
+	border-bottom:3px solid #FFEB00;
+}
+ul.menu a.daddy	{				/* Menú de primer nivel con submenú */
+	
+}
+ul.menu li ul a.daddy	{		/* Menú de segundo nivel o superior con submenú */
+	background:URL(../images/menuArrowH.gif) center right no-repeat;
+}
+ul.menu li ul a,
+ul.menu li ul a:hover,
+ul.menu li ul a:visited,
+ul.menu li.selected ul a	{	/* Todos los links dentro del menú */
+	display:block;				/* Rellenado completo del contenedor (li) */
+	font-family:Arial;
+	font-size:11px;
+	color:#CBCBCB;
+	text-decoration:none;
+	padding:5px;
+	margin:0px;
+	border:0px none;
+}
+ul.menu li ul a:hover, 
+ul.menu li ul li.selected a	{
+	color:#FFEB00;
+	border:0px none;
+}
+
+
+.gallerySep	{
+	height:3px;
+	margin:10px 0px 5px 0px;
+	background-color:#00BC44;
+	overflow:hidden;
+}
+
+.galleryScroll	{
+	position:relative;
+	overflow:hidden;
+	height:180px;
+}
+.galleryScroll .arrowLeft, .galleryScroll .arrowRight	{
+	position:absolute;
+	width:20px;
+	height:180px;
+	background-image:URL(../images/galleryArrows.png);
+	background-repeat:no-repeat;
+	cursor:pointer;
+}
+.galleryScroll .arrowLeft	{
+	left:0px;
+	background-position:left;
+}
+.galleryScroll .arrowRight	{
+	right:0px;
+	background-position:right;
+}
+.galleryScroll .galleryHolder	{
+	position:absolute;
+	left:0px;
+	top:0px;
+	height:180px;
+}
+.galleryScroll .galleryOpt	{
+	position:absolute;
+	top:0px;
+	height:180px;
+}
+
+.galleryScroll .galleryOpt a img	{
+	border:1px solid #FFF;
+}
+
+/* HTML POPUP */
+#mPHolderBack	{
+	background-color:#000; 
+}
+#mPHolderHolder	{
+	border:1px solid #666;	
+}
+#pHTMLHolder	{
+	padding:0px;
+	background-color:#333;
+	border:0px solid #000;	
+	border-top:1px solid #555;	
+	border-left:1px solid #555;	
+	cursor:default;
+}
+#pHTMLTitle	{
+	font-size:18px;
+	font-weight:bold;
+	line-height:50px;
+	color:#FFEB00;
+	text-align:left;
+	
+	//padding-left:20px;
+	//padding-right:30px;
+	white-space:nowrap;
+	background-image:URL(../images/tortugas/titleBack.jpg);
+	background-position:right center;
+	background-repeat:no-repeat;
+}
+#pHTMLButton	{
+	float:right;
+	display:inline;
+	cursor:pointer;
+}
+#pHTMLButton div, #pHTMLButton div:hover	{
+	
+	//background-image:url(../images/close.gif);
+	//background-repeat:no-repeat;
+	//background-position:center center;
+	//cursor:pointer;
+	//display:table;
+	//width:17px;
+	//height:17px;
+}
+#pHTMLContent	{
+	height:370;
+	width:635;
+	overflow:hidden;
+	margin:0px;
+	color:#999;
+	
+}
+#pHTMLDown	{
+	height:1px;
+}
+.pHTMLWait	{
+	height:280px;
+	width:400px;
+	background-image:URL(../images/loading.gif);
+	background-position:center center;
+	background-repeat:no-repeat;
+}
+
+.pager	{
+	padding: 7px;
+	text-align: right;
+	font-weight: bold;
+}
+.pager a, .pager a:hover, .pager a:visited	{
+	padding:4px 7px 4px 7px;
+	text-decoration: none;
+	color:#FFEB00;
+	border: 1px solid #FFEB00;
+}
+.pager a:hover	{
+	border: 1px solid #DDD;
+	color:#DDD;
+}
+.pager a.actualPage	{
+	border: 1px solid #FFF;
+	color:#FFF;
+}
+
+.header_tools{
+	height: 20px;
+	background-color: #666666;
+}
+.header_separator{
+	background-color: #FFF;
+	height: 1px;
+}
+.title_menu_content{
+	background-color: #C40000;
+	height: 100px;
+	width: 960px;
+}
+.footer{
+	background-color: #666666;
+	height: 100px;
+}
+.shadow_title_left{
+	background-image: url( ../images/shadow_title_left.jpg );
+	background-repeat: repeat-y;
+	background-color: #C40000;
+	background-position: 100%;
+}
+.shadow_title_right{
+	background-image: url( ../images/shadow_title_right.jpg );
+	background-repeat: repeat-y;
+	background-color: #C40000;
+	background-position: 0%;
+}
+.shadow_content_right{
+	background-image: url( ../images/shadow_content_right.jpg );
+	background-repeat: repeat-y;
+	background-color: #FFF;
+	background-position: 0%;
+}
+.shadow_content_left{
+	background-image: url( ../images/shadow_content_left.jpg );
+	background-repeat: repeat-y;
+	background-color: #FFF;
+	background-position: 100%;
+}
+
+.shadow_footer_right{
+	background-image: url( ../images/shadow_footer_right.jpg );
+	background-repeat: repeat-y;
+	background-color: #666;
+	background-position: 0%;
+}
+.shadow_footer_left{
+	background-image: url( ../images/shadow_footer_left.jpg );
+	background-repeat: repeat-y;
+	background-color: #666;
+	background-position: 100%; 
+}
+
+.project_type{
+	text-transform: uppercase; 
+	background-color: #FFF; 
+	position: absolute; 
+	top: 136px; 
+	left: 0px; 
+	width: 355px; 
+	height: 34px;
+	left: 4px;
+}
+.project_type_content{
+	text-transform: uppercase; 
+	font-weight: bold ;
+	font-size: 21px ;
+	position: absolute; 
+	top: 136px; 
+	left: 0px; 
+	width: 345px; 
+	height: 34px;
+	padding: 2px;
+	padding-left: 10px;
+	padding-top: 8px;
+}
+
+.project_name1{
+	text-transform: uppercase; 
+	background-color: #000; 
+	position: absolute; 
+	top: 100px; 
+	left: 0px; 
+	width: 305px; 
+	height: 35px;
+	left: 4px;
+}
+.project_name_content1{
+	font-weight: bold;
+	font-size: 22px;
+	position: absolute; 
+	top: 100px; 
+	left: 0px; 
+	width: 455px; 
+	height: 35px;
+	padding: 10px;
+	padding-left: 10px;
+	color: #FFF;
+}
+
+.project_name{
+	text-transform: uppercase; 
+	background-color: #000; 
+	position: absolute; 
+	top: 170px; 
+	left: 0px; 
+	width: 445px; 
+	height: 45px;
+	left: 4px;
+}
+.project_name_content{
+	font-weight: bold;
+	font-size: 32px;
+	position: absolute; 
+	top: 170px; 
+	left: 0px; 
+	width: 455px; 
+	height: 45px;
+	padding: 15px;
+	padding-left: 10px;
+	color: #FFF;
+}
+.controls_slide_home_content{
+	position: absolute; 
+	width: 309px; 
+	height: 66px; 
+	top: 213px; 
+	left: 624px;
+}
+
+.previews_content{
+	position: absolute;
+	height: 66px;
+	top: 0px;
+	left: 0px;
+}
+
+.controls_content_left{
+	background-color: #FFF;
+	width: 15px;
+	height: 66px;
+	position: absolute;
+	background-image: url( ../images/slide_left.gif );
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	cursor: pointer;
+}
+
+.controls_content_right{
+	background-color: #FFF;
+	width: 15px;
+	height: 66px;
+	right: 0px;
+	top: 0px;
+	position: absolute;
+	background-image: url( ../images/slide_right.gif );
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	cursor: pointer;
+}
+
+.title_red{
+	color: #DF2137;
+	font-weight: bolder;
+	line-height: 25px;
+}
+
+.prehome_top{
+	background-image: url( ../images/shadow_pre_up.jpg ); 
+	background-repeat: repeat-x; 
+	background-position: 100% 100%
+}
+
+.prehome_left{
+	background-position: 100% ;
+	background-image: url( ../images/shadow_content_left.jpg ); 
+	background-repeat: repeat-y;
+}
+
+.prehome_right{
+	background-position: 0% ;
+	background-image: url( ../images/shadow_content_right.jpg ); 
+	background-repeat: repeat-y;
+}
+#city_selector{
+	position: absolute;
+	list-style: none;
+	top: -9px;
+	left: 635px;
+	background-color: #CCC;
+	width: 95px;
+	padding-left: 8px;
+	padding-right: 8px;
+	display: none;
+}
+#city_selector li a {
+	color: #666;
+}
+.data_project tr td{
+	border-bottom: 1px #000 dotted;
+	color: #333;
+	padding: 7px;
+}
+.paginator_projects{
+	background-color: #666;
+	border: 1px solid #CCC;
+}
+.paginator_projects a {
+	color: #FFF;
+}
+
+.paginator_projects_selected{
+	background-color: #CCC;
+	border: 1px solid #FFF;
+}
+.paginator_projects_selected a {
+	color: #FFF;
+}
+
+#img_tags{
+	position: absolute;
+}
+
+.project_map{
+	text-align: center;
+	color: #FFF; 
+	font-size: 8px ;
+	position: absolute;
+	background-image: url( ../images/prj_map.gif );
+	background-repeat: no-repeat;
+	width: 22px; 
+	height: 22px;
+	padding-top: 3px;  
+	margin: 0 none;
+	cursor: pointer;
+}
+
+.project_map_description{
+	width: 130px; 
+	height: 120px;
+	position: absolute;
+	background-color: #FFF;
+	display: none;
+	padding: 5px;
+	font-size: 8px;
+	line-height: 3px;
+	z-index: 1;
+}
+
+.buscadorProyectos select  {
+	width: 220px;
+}
+
+.buscadorInmuebles select  {
+	width: 170px;
+}
+
+.buscadorInmuebles .wait,
+.buscadorProyectos .wait  {
+	font-size: 10px;
+	color: #666;
+	line-height: 20px;
+}
+
+.tel-project{
+	background-color: #E60C0D;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF !important;
+    display: inline-block;
+    font-weight: bold;
+    margin: 2px 0;
+    padding: 4px;
+}
+
+.tel-project:hover{
+	background-color: #C40000;
+    color: #FFFFFF !important;
+    font-weight: bold;
+}
+div#mPHolder {
+background: rgba(0, 0, 0, 0.89);
+}
