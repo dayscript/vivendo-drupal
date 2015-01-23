@@ -242,7 +242,10 @@ function buscador_formulario_form($node, &$form_state)
             } else {
                 $direccion = 0;
             }
-            $points .= '{name: "' .$proyecto->title . '", latlng: new google.maps.LatLng(' . $proyecto->field_coordenadas['und'][0]['value'] . '), address: "' . $direccion. '", price: "' . $precio . '", images_url: "' . file_create_url($proyecto->field_image['und'][0]['uri']) . '"},';
+            $image_style = "escalar-289x66-copy";
+            $image_path = $proyecto->field_image['und'][0]['uri'];
+            $image = image_style_url($image_style, $image_path);
+            $points .= '{name: "' .$proyecto->title . '", latlng: new google.maps.LatLng(' . $proyecto->field_coordenadas['und'][0]['value'] . '), address: "' . $direccion. '", price: "' . $precio . '", images_url: "' . $image . '"},';
         }
     }
     $points .= "]";
