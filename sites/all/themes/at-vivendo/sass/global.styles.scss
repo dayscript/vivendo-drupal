@@ -3122,21 +3122,23 @@ body.bogota{
     .block-content{
       padding: 10px;
       .views-row{
-        margin-bottom: ;
+        margin-bottom: 10px;
+        .views-field-title{
+          font-size: 1.4em;
+          font-weight: 600;
+          line-height: 1.2em;
+        }
+        .views-field-field-precio{
+          .views-label,
+          .field-content{
+            display: inline-block;
+          }
+        }
+        .views-field-field-fotos{
+          float: left;
+          margin-right: 5px;
+        }
       }
-    }
-    .views-field-title{
-      font-size: 1.4em;
-      font-weight: 600;
-    }
-    .views-field-field-precio{
-      .views-label,
-      .field-content{
-        display: inline-block;
-      }
-    }
-    .views-field-field-fotos{
-      float: left;
     }
     a{
       color: white;
