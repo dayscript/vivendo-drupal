@@ -232,7 +232,17 @@ function buscador_formulario_form($node, &$form_state)
     $points = "[";
     foreach($proyectos as $proyecto){
         if(isset($proyecto->field_coordenadas['und'][0]['value']) && $proyecto->field_coordenadas['und'][0]['value'] != "" && strstr($proyecto->field_coordenadas['und'][0]['value'],",")){
-            $points .= '{name: "' .$proyecto->title . '", latlng: new google.maps.LatLng(' . $proyecto->field_coordenadas['und'][0]['value'] . '), address: "' . $proyecto->field_direccion['und'][0]['value']. '", price: "' . $proyecto->field_precio['und'][0]['value'] . '", images_url: "' . file_create_url($proyecto->field_image['und'][0]['uri']) . '"},';
+            if(isset($proyecto->field_precio['und'][0]['value']) && $proyecto->field_precio['und'][0]['value'] != ""){
+                $precio = $proyecto->field_precio['und'][0]['value'];
+            } else {
+                $precio = 0;
+            }
+            if(isset($proyecto->field_direccion['und'][0]['value']) && $proyecto->field_direccion['und'][0]['value'] != ""){
+                $direccion = $proyecto->field_direccion['und'][0]['value'];
+            } else {
+                $direccion = 0;
+            }
+            $points .= '{name: "' .$proyecto->title . '", latlng: new google.maps.LatLng(' . $proyecto->field_coordenadas['und'][0]['value'] . '), address: "' . $direccion. '", price: "' . $precio . '", images_url: "' . file_create_url($proyecto->field_image['und'][0]['uri']) . '"},';
         }
     }
     $points .= "]";
