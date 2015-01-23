@@ -233,7 +233,7 @@ function buscador_formulario_form($node, &$form_state)
     foreach($proyectos as $proyecto){
         if(isset($proyecto->field_coordenadas['und'][0]['value']) && $proyecto->field_coordenadas['und'][0]['value'] != "" && strstr($proyecto->field_coordenadas['und'][0]['value'],",")){
             if(isset($proyecto->field_precio['und'][0]['value']) && $proyecto->field_precio['und'][0]['value'] != ""){
-                $precio = format_number($proyecto->field_precio['und'][0]['value']);
+                $precio = number_format($proyecto->field_precio['und'][0]['value']);
             } else {
                 $precio = 0;
             }
