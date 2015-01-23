@@ -80,6 +80,11 @@ function update( ) {
     if(points && points.length){
         var latlngbounds = new google.maps.LatLngBounds();
         removeMarkers();
+        
+        var infowindow = new google.maps.InfoWindow({
+            content: ''
+        });
+        
         for (var i = 0; i < points.length; i++) {
             var marker = new google.maps.Marker({
                 position: points[i].latlng,
@@ -87,6 +92,13 @@ function update( ) {
                 title: points[i].name,
                 icon: '/sites/all/themes/at-vivendo/images/icons/marker.png'
             });
+            google.maps.event.addListener(marker, 'click', (function(marker, point){
+              return function() {
+                infowindow.setContent( render_window(point) );
+                infowindow.open( map, marker );
+                jQuery('.gm-style-iw').siblings().hide();
+              }
+            })(marker , points[i]));
             gmarkers.push(marker);
             latlngbounds.extend(points[i].latlng);
         }
