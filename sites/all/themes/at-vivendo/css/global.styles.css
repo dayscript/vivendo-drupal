@@ -2642,7 +2642,7 @@ body.cali #menu-718-1 {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shared\/Dropbox\/DAYSCRIPT\/CLIENTES\/ACTIVOS\/VIVENDO\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033124}}
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shared\/Dropbox\/DAYSCRIPT\/CLIENTES\/ACTIVOS\/VIVENDO\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033126}}
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row .views-field-title {
@@ -2664,16 +2664,17 @@ body.cali #menu-718-1 {
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row .views-field-field-fotos {
   float: left;
   margin-right: 5px;
+  clear: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shared\/Dropbox\/DAYSCRIPT\/CLIENTES\/ACTIVOS\/VIVENDO\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033144}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shared\/Dropbox\/DAYSCRIPT\/CLIENTES\/ACTIVOS\/VIVENDO\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033145}}
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row .views-field-field-fotos img {
   border: 1px solid white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shared\/Dropbox\/DAYSCRIPT\/CLIENTES\/ACTIVOS\/VIVENDO\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033148}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shared\/Dropbox\/DAYSCRIPT\/CLIENTES\/ACTIVOS\/VIVENDO\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033149}}
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row .views-field-field-direccion {
   font-size: 0.9em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shared\/Dropbox\/DAYSCRIPT\/CLIENTES\/ACTIVOS\/VIVENDO\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033153}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/Shared\/Dropbox\/DAYSCRIPT\/CLIENTES\/ACTIVOS\/VIVENDO\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033154}}
 #block-views-proyectos-destacados-block .block-inner a {
   color: white;
 }

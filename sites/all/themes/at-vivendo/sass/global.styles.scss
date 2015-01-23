@@ -3122,7 +3122,7 @@ body.bogota{
     .block-content{
       padding: 10px;
       .views-row{
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         .views-field-title{
           font-size: 1.3em;
           font-weight: 600;
@@ -3141,6 +3141,7 @@ body.bogota{
         .views-field-field-fotos{
           float: left;
           margin-right: 5px;
+          clear: left;
           img{
             border: 1px solid white;
           }
