@@ -238,14 +238,15 @@ function buscador_formulario_form($node, &$form_state)
                 $precio = 0;
             }
             if(isset($proyecto->field_direccion['und'][0]['value']) && $proyecto->field_direccion['und'][0]['value'] != ""){
-                $direccion = $proyecto->field_direccion['und'][0]['value'];
+                $direccion = substr($proyecto->field_direccion['und'][0]['value'], 0, 24) . '...';
             } else {
                 $direccion = 0;
             }
             $image_style = "escalar_289x66-copy";
             $image_path = $proyecto->field_image['und'][0]['uri'];
             $image = image_style_url($image_style, $image_path);
-            $points .= '{name: "' .$proyecto->title . '", latlng: new google.maps.LatLng(' . $proyecto->field_coordenadas['und'][0]['value'] . '), address: "' . $direccion. '", price: "' . $precio . '", images_url: "' . $image . '"},';
+	    $url = drupal_get_path_alias( 'node/' . $proyecto->nid );
+            $points .= '{name: "' .$proyecto->title . '", latlng: new google.maps.LatLng(' . $proyecto->field_coordenadas['und'][0]['value'] . '), address: "' . $direccion. '", price: "' . $precio . '", images_url: "' . $image . '", url: "' . $url . '"},';
         }
     }
     $points .= "]";
