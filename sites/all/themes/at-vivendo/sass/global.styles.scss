@@ -3093,15 +3093,27 @@ body.bogota{
   }
 }
 
+.gm-style-iw {
+    margin: 15px 0 0 0;
+}
+
+.gm-style-iw > div {
+    overflow: hidden;
+    width: 285px;
+}
+
 .window-project {
-    width: 239px;
+    width: 283px;
     height: 111px;
     overflow: hidden;
     background: none repeat scroll 0 0 #4e4e4e;
     .col-left,
     .col-right {
         float: left;
-        padding: 9px 0 0 9px;
+        padding: 17px 0 0 12px;
+    }
+    .col-right {
+        margin: 18px 0 0 0;
     }
     img{
         width: 116px;
