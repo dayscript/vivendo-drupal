@@ -3117,6 +3117,7 @@ body.bogota{
     }
     .col-right {
         margin: 12px 0 0 0;
+        width: 143px;
     }
     img{
         width: 116px;
@@ -3129,6 +3130,9 @@ body.bogota{
     }
     .title {
         font-size: 16px;
+        a {
+            color: #fff !important;
+        }
     }
 }
 

@@ -238,7 +238,7 @@ function buscador_formulario_form($node, &$form_state)
                 $precio = 0;
             }
             if(isset($proyecto->field_direccion['und'][0]['value']) && $proyecto->field_direccion['und'][0]['value'] != ""){
-                $direccion = substr($proyecto->field_direccion['und'][0]['value'], 0, 24) . '...';
+                $direccion = substr($proyecto->field_direccion['und'][0]['value'], 0, 24);
             } else {
                 $direccion = 0;
             }
