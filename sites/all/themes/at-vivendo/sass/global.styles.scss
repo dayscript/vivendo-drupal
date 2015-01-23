@@ -273,6 +273,7 @@ body.not-front{
 }
 #highlighted-wrapper{
   background: #000000;
+  position: relative;
   .block-inner{
     margin: 0;
     p{
@@ -3107,3 +3108,12 @@ body.bogota{
     }
 }
 
+#block-views-proyectos-destacados-block {
+  position: absolute;
+  top: 80px;
+  right: 10px;
+  z-index: 2;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  width: 430px;
+}
