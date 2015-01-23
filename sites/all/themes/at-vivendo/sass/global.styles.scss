@@ -3133,10 +3133,11 @@ body.bogota{
 }
 
 #block-views-proyectos-destacados-block {
-  top: -390px;
+  top: 65px;
   z-index: 2;
   width: 1140px;
   margin: 0 auto;
+  position: absolute;
   .block-inner{
     position: absolute;
     background: rgba(0,0,0,0.8);
