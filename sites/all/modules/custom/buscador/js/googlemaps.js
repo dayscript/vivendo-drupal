@@ -43,7 +43,7 @@ function initialize() {
       map.fitBounds(latlngbounds);
       console.log(map.getZoom());
       map.setZoom(map.getZoom()-1);
-      map.panBy(-200);
+      map.panBy(-200,0);
       console.log(map.getZoom());
     }
 }
