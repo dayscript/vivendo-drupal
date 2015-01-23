@@ -1680,7 +1680,7 @@ div.messages ul {
   text-transform: uppercase;
   word-wrap: break-word;
 }
-/* line 208, C:/Users/Jorge/Projects/vivendo-drupal/sites/all/themes/at-vivendo/sass/_custom.scss */
+/* line 208, ../sass/_custom.scss */
 .ie6-7 .node-unpublished p.unpublished > *, .ie6-7
 .comment-unpublished p.unpublished > * {
   position: relative;
@@ -2620,6 +2620,9 @@ body.cali #menu-718-1 {
   height: 111px;
   overflow: hidden;
   background: none repeat scroll 0 0 #4e4e4e;
+  /*.title {
+      margin: 25px 0 0 0;
+  }*/
 }
 /* line 3111, ../sass/global.styles.scss */
 .window-project .col-left,
@@ -2641,10 +2644,6 @@ body.cali #menu-718-1 {
   color: #fff;
   display: block;
   text-align: left;
-}
-/* line 3127, ../sass/global.styles.scss */
-.window-project .title {
-  margin: 25px 0 0 0;
 }
 
 /* line 3132, ../sass/global.styles.scss */
