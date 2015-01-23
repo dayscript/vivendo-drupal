@@ -3115,7 +3115,7 @@ body.bogota{
   margin: 0 auto;
   .block-inner{
     position: absolute;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.8);
     color: white;
     width: 430px;
     right: 10px;
@@ -3124,19 +3124,29 @@ body.bogota{
       .views-row{
         margin-bottom: 10px;
         .views-field-title{
-          font-size: 1.4em;
+          font-size: 1.3em;
           font-weight: 600;
           line-height: 1.2em;
         }
         .views-field-field-precio{
-          .views-label,
+          .views-label{
+            display: inline-block;
+            font-size: 0.9em;
+          }
           .field-content{
             display: inline-block;
+            font-weight: 700;
           }
         }
         .views-field-field-fotos{
           float: left;
           margin-right: 5px;
+          img{
+            border: 1px solid white;
+          }
+        }
+        .views-field-field-direccion{
+          font-size: 0.9em;
         }
       }
     }
