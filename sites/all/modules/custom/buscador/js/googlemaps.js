@@ -59,8 +59,8 @@ function render_window ( point ) {
   output +=     '<img src="' + point.images_url + '" title="' + point.name + '" alt="' + point.name + '">';
   output +=   '</div>';
   output +=   '<div class="col-right">';
-  output +=     '<span class="title">' + point.name + '</span>';
-  output +=     '<span class="price">Desde $' + point.price + '</span>';
+  output +=     '<span class="title"><strong>' + point.name + '</strong></span>';
+  output +=     '<span class="price">Desde <strong>$' + point.price + '</strong></span>';
   output +=     '<span class="address">' + point.address + '</span>';
   output +=   '</div>';
   output += '</div>';
