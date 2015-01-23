@@ -3119,10 +3119,21 @@ body.bogota{
     color: white;
     width: 430px;
     right: 10px;
+    .block-title{
+      background: none;
+      text-transform: none;
+      font-size: 1.2em;
+      padding-left: 10px;
+    }
     .block-content{
       padding: 10px;
       .views-row{
         margin-bottom: 15px;
+        border-bottom: 1px solid rgba(255,255,255,0.5);
+        height: 80px;
+        &.views-row-last{
+          border-bottom: none;
+        }
         .views-field-title{
           font-size: 1.3em;
           font-weight: 600;
