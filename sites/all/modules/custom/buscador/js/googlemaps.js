@@ -51,7 +51,7 @@ function initialize() {
 
 function render_window ( point ) {
   
-  /*var output = '';
+  var output = '';
   
   output += '<div class="window-project">';
   output +=   '<div class="col-left">';
@@ -64,8 +64,8 @@ function render_window ( point ) {
   output +=   '</div>';
   output += '</div>';
   
-  return output;*/
-    return 'OK';
+  return output;
+    //return 'OK';
   
 }
 
