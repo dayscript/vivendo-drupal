@@ -233,7 +233,7 @@ function buscador_formulario_form($node, &$form_state)
     foreach($proyectos as $proyecto){
         if(isset($proyecto->field_coordenadas['und'][0]['value']) && $proyecto->field_coordenadas['und'][0]['value'] != "" && strstr($proyecto->field_coordenadas['und'][0]['value'],",")){
             if(isset($proyecto->field_precio['und'][0]['value']) && $proyecto->field_precio['und'][0]['value'] != ""){
-                $precio = $proyecto->field_precio['und'][0]['value'];
+                $precio = format_number($proyecto->field_precio['und'][0]['value']);
             } else {
                 $precio = 0;
             }
@@ -245,7 +245,7 @@ function buscador_formulario_form($node, &$form_state)
             $image_style = "escalar_289x66-copy";
             $image_path = $proyecto->field_image['und'][0]['uri'];
             $image = image_style_url($image_style, $image_path);
-            $points .= '{name: "' .$proyecto->title . '", latlng: new google.maps.LatLng(' . $proyecto->field_coordenadas['und'][0]['value'] . '), address: "' . $direccion. '", price: "' . number_format($precio) . '", images_url: "' . $image . '"},';
+            $points .= '{name: "' .$proyecto->title . '", latlng: new google.maps.LatLng(' . $proyecto->field_coordenadas['und'][0]['value'] . '), address: "' . $direccion. '", price: "' . $precio . '", images_url: "' . $image . '"},';
         }
     }
     $points .= "]";
