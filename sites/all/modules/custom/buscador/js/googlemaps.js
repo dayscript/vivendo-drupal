@@ -40,9 +40,10 @@ function initialize() {
             gmarkers.push(marker);
             latlngbounds.extend(points[i].latlng);
         }
-       map.fitBounds(latlngbounds);
+      map.fitBounds(latlngbounds);
       console.log(map.getZoom());
-      map.setZoom(map.getZoom()-2);
+      map.setZoom(map.getZoom()-1);
+      console.log(map.getZoom());
     }
 }
 
