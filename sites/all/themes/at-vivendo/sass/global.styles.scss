@@ -2363,7 +2363,8 @@ tr.error {
 span.button a,
 a.button,
 a.use-ajax.ajax-processed,
-input[type="submit"]{
+input[type="submit"],
+.block-views .more-link a{
   font-family: $opensans;
   font-weight: 600;
   font-size: 1.3em;
