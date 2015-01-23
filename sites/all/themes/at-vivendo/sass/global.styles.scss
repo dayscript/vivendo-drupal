@@ -3094,9 +3094,9 @@ body.bogota{
 }
 
 .gm-style-iw {
-    background: url('../images/shadow-window-marker.png') no-repeat scroll center bottom transparent;
+    background: url("../images/shadow-window-marker.png") no-repeat scroll 32px 87px transparent;
     height: 135px;
-    margin: 15px 0 0 0;
+    margin: 36px 0 0 0;
 }
 
 .gm-style-iw > div {
@@ -3106,7 +3106,7 @@ body.bogota{
 }
 
 .window-project {
-    width: 283px;
+    width: 285px;
     height: 111px;
     overflow: hidden;
     background: none repeat scroll 0 0 #4e4e4e;
@@ -3128,8 +3128,7 @@ body.bogota{
         text-align: left;
     }
     .title {
-        font-size: 17px;
-        color: red;
+        font-size: 16px;
     }
 }
 

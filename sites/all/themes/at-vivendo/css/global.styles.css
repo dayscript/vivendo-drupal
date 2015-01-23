@@ -1680,7 +1680,7 @@ div.messages ul {
   text-transform: uppercase;
   word-wrap: break-word;
 }
-/* line 208, ../sass/_custom.scss */
+/* line 208, C:/Users/Jorge/Projects/vivendo-drupal/sites/all/themes/at-vivendo/sass/_custom.scss */
 .ie6-7 .node-unpublished p.unpublished > *, .ie6-7
 .comment-unpublished p.unpublished > * {
   position: relative;
@@ -2605,9 +2605,9 @@ body.cali #menu-718-1 {
 
 /* line 3096, ../sass/global.styles.scss */
 .gm-style-iw {
-  background: url("../images/shadow-window-marker.png") no-repeat scroll center bottom transparent;
+  background: url("../images/shadow-window-marker.png") no-repeat scroll 32px 87px transparent;
   height: 135px;
-  margin: 15px 0 0 0;
+  margin: 36px 0 0 0;
 }
 
 /* line 3102, ../sass/global.styles.scss */
@@ -2619,7 +2619,7 @@ body.cali #menu-718-1 {
 
 /* line 3108, ../sass/global.styles.scss */
 .window-project {
-  width: 283px;
+  width: 285px;
   height: 111px;
   overflow: hidden;
   background: none repeat scroll 0 0 #4e4e4e;
@@ -2647,18 +2647,17 @@ body.cali #menu-718-1 {
 }
 /* line 3130, ../sass/global.styles.scss */
 .window-project .title {
-  font-size: 17px;
-  color: red;
+  font-size: 16px;
 }
 
-/* line 3136, ../sass/global.styles.scss */
+/* line 3135, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block {
   top: -390px;
   z-index: 2;
   width: 1140px;
   margin: 0 auto;
 }
-/* line 3141, ../sass/global.styles.scss */
+/* line 3140, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner {
   position: absolute;
   background: rgba(0, 0, 0, 0.8);
@@ -2666,64 +2665,64 @@ body.cali #menu-718-1 {
   width: 430px;
   right: 10px;
 }
-/* line 3147, ../sass/global.styles.scss */
+/* line 3146, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-title {
   background: none;
   text-transform: none;
   font-size: 1.2em;
   padding-left: 10px;
 }
-/* line 3153, ../sass/global.styles.scss */
+/* line 3152, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-content {
   padding: 10px;
 }
-/* line 3155, ../sass/global.styles.scss */
+/* line 3154, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row {
   margin-bottom: 15px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   height: 80px;
 }
-/* line 3159, ../sass/global.styles.scss */
+/* line 3158, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row.views-row-last {
   border-bottom: none;
 }
-/* line 3162, ../sass/global.styles.scss */
+/* line 3161, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row .views-field-title {
   font-size: 1.3em;
   font-weight: 600;
   line-height: 1.2em;
 }
-/* line 3168, ../sass/global.styles.scss */
+/* line 3167, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row .views-field-field-precio .views-label {
   display: inline-block;
   font-size: 0.9em;
 }
-/* line 3172, ../sass/global.styles.scss */
+/* line 3171, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row .views-field-field-precio .field-content {
   display: inline-block;
   font-weight: 700;
 }
-/* line 3177, ../sass/global.styles.scss */
+/* line 3176, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row .views-field-field-fotos {
   float: left;
   margin-right: 5px;
   clear: left;
 }
-/* line 3181, ../sass/global.styles.scss */
+/* line 3180, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row .views-field-field-fotos img {
   border: 1px solid white;
 }
-/* line 3185, ../sass/global.styles.scss */
+/* line 3184, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row .views-field-field-direccion {
   font-size: 0.9em;
 }
-/* line 3191, ../sass/global.styles.scss */
+/* line 3190, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .more-link a {
   width: 362px;
   display: block;
   text-align: center;
 }
-/* line 3197, ../sass/global.styles.scss */
+/* line 3196, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner a {
   color: white;
 }
