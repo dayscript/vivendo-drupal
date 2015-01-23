@@ -470,6 +470,8 @@
   settings[icon_rel] = 0
 
 
+cripts[] = scripts/global.js
+
   ; Custom CSS
   settings[custom_css] = ''
 
