@@ -3070,6 +3070,14 @@ body.bogota{
       width: 200px;
     }
   }
+  #buscador-wrapper{
+    position: relative;
+  }
+  .ajax-progress{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+  }
 }
 #mapa{
   background: wheat;
