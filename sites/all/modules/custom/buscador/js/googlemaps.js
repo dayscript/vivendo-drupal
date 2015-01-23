@@ -41,10 +41,7 @@ function initialize() {
             latlngbounds.extend(points[i].latlng);
         }
       map.fitBounds(latlngbounds);
-      console.log(map.getZoom());
-      map.setZoom(map.getZoom()-1);
-      map.panBy(-200,0);
-      console.log(map.getZoom());
+      map.panBy(200,0);
     }
 }
 
