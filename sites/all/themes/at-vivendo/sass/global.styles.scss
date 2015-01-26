@@ -3081,7 +3081,7 @@ body.bogota{
 }
 #mapa{
   background: wheat;
-  min-height: 400px;
+  height: 400px;
   width: 100%;
   position: absolute;
   left: 0;
@@ -3235,10 +3235,10 @@ body.bogota{
         text-indent: -9999px;
     }
     .b-up {
-        background: url( '../images/up.jpg' ) no repeat scroll center center transparent;
+        background: url( '../images/up.jpg' ) no-repeat scroll center center transparent;
     }
     .b-down {
-        background: url( '../images/down.jpg' ) no repeat scroll center center transparent;
+        background: url( '../images/down.jpg' ) no-repeat scroll center center transparent;
     }
 }
 
