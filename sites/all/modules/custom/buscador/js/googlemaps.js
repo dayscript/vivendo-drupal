@@ -80,12 +80,17 @@ function removeMarkers(){
 
 function update( ) {
     if(points && points.length){
+      
         var latlngbounds = new google.maps.LatLngBounds();
         removeMarkers();
         
         var infowindow = new google.maps.InfoWindow({
             content: ''
         });
+        
+        if ( $('#highlighted-wrapper').height() === 115 ) {
+          $('.up-down a').click();
+        }
         
         for (var i = 0; i < points.length; i++) {
             var marker = new google.maps.Marker({
