@@ -217,10 +217,12 @@ function buscador_formulario_form($node, &$form_state)
     $proyectos_ids = $query->execute()->fetchAllAssoc("nid");
     $proyectos = entity_load("node",array_keys($proyectos_ids));
     
+    $button = '<div class="up-down"><a class="b-up" href="#">click</a></div>';
+    
     $form['maps']['googlemaps'] = array(
         '#type' => 'markup',
         '#prefix' => '<div id="mapa">',
-        '#suffix' => '</div>',
+        '#suffix' => '</div>' . $button,
         '#markup' => ''
     );
     
@@ -251,9 +253,9 @@ function buscador_formulario_form($node, &$form_state)
     }
     $points .= "]";
     
-    $button = '<div class="up-down"><a class="b-up" href="#">click</a></div>';
+    //$button = '<div class="up-down"><a class="b-up" href="#">click</a></div>';
     
-    $form['wrapper']['data']['#markup'] .= '<script> var points = ' . $points . ';</script>' . $button;
+    $form['wrapper']['data']['#markup'] .= '<script> var points = ' . $points . ';</script>';
     return $form;
 }
 
