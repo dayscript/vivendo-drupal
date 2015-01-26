@@ -9,7 +9,7 @@
     
     
     $('.not-front .up-down').each(function(){
-      $(this).removeClass().addClass('b-down');
+      $(this).find('a').removeClass().addClass('b-down');
     });
     
     $('.up-down a').on('click', function(event){
