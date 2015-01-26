@@ -268,12 +268,13 @@ var {
 body.not-front{
   #highlighted-wrapper{
 //    overflow: hidden;
-//    height: 70px;
+    height: 115px;
   }
 }
 #highlighted-wrapper{
   background: #000000;
   position: relative;
+  height: 455px;
   .block-inner{
     margin: 0;
     p{
@@ -3099,9 +3100,6 @@ body.bogota{
 .front {
     #mapa {
         height: 400px;
-    }
-    #highlighted-wrapper {
-        height: 455px;
     }
 }
 
