@@ -250,7 +250,10 @@ function buscador_formulario_form($node, &$form_state)
         }
     }
     $points .= "]";
-    $form['wrapper']['data']['#markup'] .= '<script> var points = ' . $points . ';</script>';
+    
+    $button = '<div class="up-down"><a class="b-up" href="#">click</a></div>';
+    
+    $form['wrapper']['data']['#markup'] .= '<script> var points = ' . $points . ';</script>' . $button;
     return $form;
 }
 
