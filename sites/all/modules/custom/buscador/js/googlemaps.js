@@ -89,7 +89,9 @@ function update( ) {
         });
         
         if ( $('#highlighted-wrapper').height() === 115 ) {
+          console.log('entro');
           $('.up-down a').click();
+          
         }
         
         for (var i = 0; i < points.length; i++) {
