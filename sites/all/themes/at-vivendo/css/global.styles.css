@@ -1680,7 +1680,7 @@ div.messages ul {
   text-transform: uppercase;
   word-wrap: break-word;
 }
-/* line 208, ../sass/_custom.scss */
+/* line 208, C:/Users/Jorge/Projects/vivendo-drupal/sites/all/themes/at-vivendo/sass/_custom.scss */
 .ie6-7 .node-unpublished p.unpublished > *, .ie6-7
 .comment-unpublished p.unpublished > * {
   position: relative;
@@ -2752,4 +2752,27 @@ body.cali #menu-718-1 {
 .views-field-field-telefono1 > * {
   float: left;
   margin: 0 0 0 5px;
+}
+
+/* line 3226, ../sass/global.styles.scss */
+.up-down {
+  z-index: 99999;
+  position: absolute;
+  bottom: 0;
+  left: 610px;
+}
+/* line 3231, ../sass/global.styles.scss */
+.up-down a {
+  display: block;
+  width: 21px;
+  height: 21px;
+  text-indent: -9999px;
+}
+/* line 3237, ../sass/global.styles.scss */
+.up-down .b-up {
+  background: url("../images/up.jpg") no repeat scroll center center transparent;
+}
+/* line 3240, ../sass/global.styles.scss */
+.up-down .b-down {
+  background: url("../images/down.jpg") no repeat scroll center center transparent;
 }

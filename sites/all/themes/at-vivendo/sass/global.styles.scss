@@ -3221,3 +3221,24 @@ body.bogota{
     float: left;
     margin: 0 0 0 5px;
 }
+
+
+.up-down {
+    z-index: 99999;
+    position: absolute;
+    bottom: 0;
+    left: 610px;
+    a {
+        display: block;
+        width: 21px;
+        height: 21px;
+        text-indent: -9999px;
+    }
+    .b-up {
+        background: url( '../images/up.jpg' ) no repeat scroll center center transparent;
+    }
+    .b-down {
+        background: url( '../images/down.jpg' ) no repeat scroll center center transparent;
+    }
+}
+
