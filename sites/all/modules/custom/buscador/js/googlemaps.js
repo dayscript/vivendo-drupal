@@ -88,8 +88,10 @@ function update( ) {
             content: ''
         });
         
+        console.log('entro update');
+        
         if ( $('#highlighted-wrapper').height() === 115 ) {
-          console.log('entro');
+          console.log('entro if height');
           $('.up-down a').click();
           
         }
