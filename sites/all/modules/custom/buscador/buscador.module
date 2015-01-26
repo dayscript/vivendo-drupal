@@ -1,4 +1,22 @@
 <?php
+
+/**
+ * 
+ */
+
+function buscador_init() {
+  
+  $nId = is_numeric( arg(1) ) ? arg(1) : null;
+  
+  echo "<script>console.log('node: ". arg(0) ." ');</script>";
+  
+  if ( node_load($nId)->type == 'proyecto' ) {
+    variable_set( 'initLoad', TRUE );
+    //var_dump(variable_get( 'initLoad'));
+  } 
+  
+}
+
 /**
  * Implements hook_block_info().
  */
@@ -42,8 +60,12 @@ function buscador_formulario_form($node, &$form_state)
     drupal_add_js("http://maps.googleapis.com/maps/api/js?key=AIzaSyCiuczAs8cb-ThpKYue6hpFsaYHGCTORAI&sensor=false",'external');
     drupal_add_js(drupal_get_path('module', 'buscador').'/js/googlemaps.js');
 
+    echo "<script>console.log('node: ". arg(1) ." ');</script>";
+    
+    $initLoad = variable_get( 'initLoad' );
+    
     $form['wrapper'] = array(
-        '#prefix' => '<div id="buscador-wrapper">',
+        '#prefix' => '<div id="buscador-wrapper">' . arg(1),
         '#suffix' => '</div>',
     );
     $value = global_filter_get_session_value('field_ciudad');
@@ -214,6 +236,12 @@ function buscador_formulario_form($node, &$form_state)
     if (isset($form_state['values']['tipo']) && $form_state['values']['tipo']>0) {
         $query->condition('field_tipo', $form_state['values']['tipo'], '=');
     }
+    
+    if ( $initLoad ) {
+      $query->condition( 'nid', arg(1), '=' );
+      
+    }
+        
     $proyectos_ids = $query->execute()->fetchAllAssoc("nid");
     $proyectos = entity_load("node",array_keys($proyectos_ids));
     
@@ -252,8 +280,6 @@ function buscador_formulario_form($node, &$form_state)
         }
     }
     $points .= "]";
-    
-    //$button = '<div class="up-down"><a class="b-up" href="#">click</a></div>';
     
     $form['wrapper']['data']['#markup'] .= '<script> var points = ' . $points . ';</script>';
     return $form;
