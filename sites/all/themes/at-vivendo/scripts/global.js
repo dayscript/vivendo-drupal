@@ -12,14 +12,14 @@
       
       var button = $(this);
           
-          if ( button.hasClass('b-up') ) {
+          if ( $('#mapa').height() === 400 ) {
             
             $('.front .view-proyectos-destacados').hide();
             $('#highlighted-wrapper').css({overflow: 'hidden'}).animate({height: "115px"}, 700);
             $('#mapa').animate({height: "59px"}, 700);
             button.removeClass().addClass('b-down');
             
-          } else if ( button.hasClass('b-down') ) {
+          } else if ( $('#mapa').height() === 59 ) {
             
             $('.front .view-proyectos-destacados').show();
             $('#highlighted-wrapper').css({overflow: 'hidden'}).animate({height: "455px"}, 700);

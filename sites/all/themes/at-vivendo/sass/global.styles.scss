@@ -3079,9 +3079,12 @@ body.bogota{
     right: 10px;
   }
 }
+
+
+
 #mapa{
   background: wheat;
-  height: 400px;
+  height: 59px;
   width: 100%;
   position: absolute;
   left: 0;
@@ -3091,6 +3094,15 @@ body.bogota{
   a{
     color: #000000;
   }
+}
+
+.front {
+    #mapa {
+        height: 400px;
+    }
+    #highlighted-wrapper {
+        height: 455px;
+    }
 }
 
 .gm-style-iw {

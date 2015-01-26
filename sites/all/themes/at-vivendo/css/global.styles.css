@@ -2587,10 +2587,10 @@ body.cali #menu-718-1 {
   right: 10px;
 }
 
-/* line 3082, ../sass/global.styles.scss */
+/* line 3085, ../sass/global.styles.scss */
 #mapa {
   background: wheat;
-  height: 400px;
+  height: 59px;
   width: 100%;
   position: absolute;
   left: 0;
@@ -2598,72 +2598,81 @@ body.cali #menu-718-1 {
   color: #000000;
   text-align: center;
 }
-/* line 3091, ../sass/global.styles.scss */
+/* line 3094, ../sass/global.styles.scss */
 #mapa a {
   color: #000000;
 }
 
-/* line 3096, ../sass/global.styles.scss */
+/* line 3100, ../sass/global.styles.scss */
+.front #mapa {
+  height: 400px;
+}
+/* line 3103, ../sass/global.styles.scss */
+.front #highlighted-wrapper {
+  height: 455px;
+}
+
+/* line 3108, ../sass/global.styles.scss */
 .gm-style-iw {
   background: url("../images/shadow-window-marker.png") no-repeat scroll 32px 87px transparent;
   height: 135px;
   margin: 36px 0 0 0;
 }
 
-/* line 3102, ../sass/global.styles.scss */
+/* line 3114, ../sass/global.styles.scss */
 .gm-style-iw > div {
   overflow: hidden;
   width: 285px;
   margin: 0 auto;
 }
 
-/* line 3108, ../sass/global.styles.scss */
+/* line 3120, ../sass/global.styles.scss */
 .window-project {
   width: 285px;
   height: 111px;
   overflow: hidden;
   background: none repeat scroll 0 0 #4e4e4e;
 }
-/* line 3114, ../sass/global.styles.scss */
+/* line 3126, ../sass/global.styles.scss */
 .window-project .col-left,
 .window-project .col-right {
   float: left;
   padding: 17px 0 0 12px;
 }
-/* line 3118, ../sass/global.styles.scss */
+/* line 3130, ../sass/global.styles.scss */
 .window-project .col-right {
   margin: 2px 0 0 0;
   width: 143px;
 }
-/* line 3122, ../sass/global.styles.scss */
+/* line 3134, ../sass/global.styles.scss */
 .window-project img {
   width: 116px;
   height: 70px;
 }
-/* line 3126, ../sass/global.styles.scss */
+/* line 3138, ../sass/global.styles.scss */
 .window-project span {
   color: #fff;
   display: block;
   text-align: left;
 }
-/* line 3131, ../sass/global.styles.scss */
+/* line 3143, ../sass/global.styles.scss */
 .window-project .title {
   font-size: 16px;
 }
-/* line 3133, ../sass/global.styles.scss */
+/* line 3145, ../sass/global.styles.scss */
 .window-project .title a {
   color: #fff !important;
   line-height: 14px;
 }
 
-/* line 3140, ../sass/global.styles.scss */
+/* line 3152, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block {
   z-index: 2;
   width: 1140px;
   margin: 0 auto;
   position: relative;
 }
-/* line 3145, ../sass/global.styles.scss */
+/* line 3157, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner {
   position: absolute;
   background: rgba(0, 0, 0, 0.8);
@@ -2672,69 +2681,69 @@ body.cali #menu-718-1 {
   right: 10px;
   bottom: 10px;
 }
-/* line 3152, ../sass/global.styles.scss */
+/* line 3164, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-title {
   background: none;
   text-transform: none;
   font-size: 1.2em;
   padding-left: 10px;
 }
-/* line 3158, ../sass/global.styles.scss */
+/* line 3170, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-content {
   padding: 10px;
 }
-/* line 3160, ../sass/global.styles.scss */
+/* line 3172, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row {
   margin-bottom: 15px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   height: 80px;
 }
-/* line 3164, ../sass/global.styles.scss */
+/* line 3176, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row.views-row-last {
   border-bottom: none;
 }
-/* line 3167, ../sass/global.styles.scss */
+/* line 3179, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row .views-field-title {
   font-size: 1.3em;
   font-weight: 600;
   line-height: 1.2em;
 }
-/* line 3173, ../sass/global.styles.scss */
+/* line 3185, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row .views-field-field-precio .views-label {
   display: inline-block;
   font-size: 0.9em;
 }
-/* line 3177, ../sass/global.styles.scss */
+/* line 3189, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row .views-field-field-precio .field-content {
   display: inline-block;
   font-weight: 700;
 }
-/* line 3182, ../sass/global.styles.scss */
+/* line 3194, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row .views-field-field-fotos {
   float: left;
   margin-right: 5px;
   clear: left;
 }
-/* line 3186, ../sass/global.styles.scss */
+/* line 3198, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row .views-field-field-fotos img {
   border: 1px solid white;
 }
-/* line 3190, ../sass/global.styles.scss */
+/* line 3202, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row .views-field-field-direccion {
   font-size: 0.9em;
 }
-/* line 3196, ../sass/global.styles.scss */
+/* line 3208, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .more-link a {
   width: 362px;
   display: block;
   text-align: center;
 }
-/* line 3202, ../sass/global.styles.scss */
+/* line 3214, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner a {
   color: white;
 }
 
-/* line 3208, ../sass/global.styles.scss */
+/* line 3220, ../sass/global.styles.scss */
 .views-field-field-telefono1 {
   display: block;
   width: 201px;
@@ -2743,36 +2752,36 @@ body.cali #menu-718-1 {
   font-weight: bold;
 }
 
-/* line 3216, ../sass/global.styles.scss */
+/* line 3228, ../sass/global.styles.scss */
 .hide {
   display: none;
 }
 
-/* line 3220, ../sass/global.styles.scss */
+/* line 3232, ../sass/global.styles.scss */
 .views-field-field-telefono1 > * {
   float: left;
   margin: 0 0 0 5px;
 }
 
-/* line 3226, ../sass/global.styles.scss */
+/* line 3238, ../sass/global.styles.scss */
 .up-down {
   z-index: 99999;
   position: absolute;
   bottom: 0;
   left: 610px;
 }
-/* line 3231, ../sass/global.styles.scss */
+/* line 3243, ../sass/global.styles.scss */
 .up-down a {
   display: block;
   width: 21px;
   height: 21px;
   text-indent: -9999px;
 }
-/* line 3237, ../sass/global.styles.scss */
+/* line 3249, ../sass/global.styles.scss */
 .up-down .b-up {
   background: url("../images/up.jpg") no-repeat scroll center center transparent;
 }
-/* line 3240, ../sass/global.styles.scss */
+/* line 3252, ../sass/global.styles.scss */
 .up-down .b-down {
   background: url("../images/down.jpg") no-repeat scroll center center transparent;
 }
