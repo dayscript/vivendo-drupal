@@ -2788,8 +2788,3 @@ body.cali #menu-718-1 {
 .up-down .b-down {
   background: url("../images/down.jpg") no-repeat scroll center center transparent;
 }
-
-/* line 3258, ../sass/global.styles.scss */
-.not-front .up-down a {
-  background: url("../images/down.jpg") no-repeat scroll center center transparent;
-}

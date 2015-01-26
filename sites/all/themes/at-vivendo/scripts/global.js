@@ -8,6 +8,10 @@
     });
     
     
+    $('.not-front .up-down').each(function(){
+      $(this).removeClass().addClass('b-down');
+    });
+    
     $('.up-down a').on('click', function(event){
       
       var button = $(this);
