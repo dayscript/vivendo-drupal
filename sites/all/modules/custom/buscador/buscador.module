@@ -219,14 +219,20 @@ function buscador_formulario_form($node, &$form_state)
         $query->condition('field_tipo', $form_state['values']['tipo'], '=');
     }
     
-    if ( node_load( $nId )->type == 'proyecto' ) {
+    if ( $nId ) {
       
-      if ( $initLoad !== $nId ) {
-	$query->condition( 'nid', $nId, '=' );
-	variable_set( 'initLoad', $nId );
-      } 
+      if ( node_load( $nId )->type == 'proyecto' ) {
+      
+	if ( $initLoad !== $nId ) {
+	  $query->condition( 'nid', $nId, '=' );
+	  variable_set( 'initLoad', $nId );
+	} 
+
+      }
       
     }
+    
+    
         
     $proyectos_ids = $query->execute()->fetchAllAssoc("nid");
     $proyectos = entity_load("node",array_keys($proyectos_ids));
