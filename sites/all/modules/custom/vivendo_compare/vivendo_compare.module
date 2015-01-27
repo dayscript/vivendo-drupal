@@ -1,0 +1,139 @@
+<?php
+
+  /**
+   *  
+   * Implementation HOOK_MENU().
+   * 
+   * Use to create ajax link 'vivendo-compare/%'
+   * @see callback vivendo_compare_callback
+   * 
+   * @return $items. Array with information of new link.
+   * 
+   */
+  
+  function vivendo_compare_menu() {
+    
+    $items = array();
+    
+    $items['vivendo-compare/%'] = array(
+	'access arguments' => array( 'access content' ),
+	'page arguments'   => array( 1 ),
+	'page callback'    => 'vivendo_compare_project_add',
+	'title'            => t('Adicionar Proyecto'),
+	'type'             => MENU_CALLBACK,
+    );
+    
+    return $items;
+    
+  }
+  
+  /**
+   * 
+   * Implementation HOOK_BLOCK_INFO().
+   * 
+   * Create in drupal system compare block.
+   * 
+   * @return $blocks. Array with  information of new block.
+   * 
+   */
+
+  function vivendo_compare_block_info() {
+    
+    $blocks = array();
+
+    $blocks['compare'] = array(
+	'cache' => DRUPAL_CACHE_GLOBAL,
+	'info'  => t('Comparar'),
+    );
+
+    return $blocks;
+    
+  }
+  
+  /**
+   * 
+   * Implementation new HOOK_BLOOK_VIEW().
+   * 
+   * Use to create view of block 'video_export'.
+   * 
+   * @param string $delta with the system name of new block.
+   * @return array $blocks wigth title and content of block.
+   * 
+   */
+  
+  function vivendo_comparet_block_view( $delta = '' ) {
+    
+    $blocks = array();
+
+    if ( $delta == 'compare' ) {
+	$blocks['subject'] = t('Comparar');
+	$blocks['content'] = vivendo_compare_bottons_render();
+    }
+
+    return $blocks;
+    
+  }
+  
+  /**
+   *
+   * vivendo_compare_bottons_render().
+   * 
+   * function to render 2 bottons ...
+   * 
+   * @return string $output width content from block.
+   *  
+   */
+  
+  function vivendo_compare_bottons_render() {
+
+    $projectsCompare = variable_get( 'projectsCompare' );
+    $nId             = is_numeric( arg(1) ) ? arg(1) : null;
+    $output          = '';
+    
+    if ( count($projectsCompare) === 4 ) {
+      $linkCompare = l(t('+ comparar'), 'vivendo-compare/'. $nId . '/add', array('attributes' => array('class' => array('link-compare', 'disable'))));
+    } else {
+      $linkCompare = l(t('+ comparar'), 'vivendo-compare/'. $nId . '/add', array('attributes' => array('class' => array('link-compare', 'active', 'use-ajax'))));
+    }
+    
+    $output .= '<div class="content-compare">';
+    $output .=	$linkCompare;
+    $output .= '</div>';
+    
+    $output .= '<div class="content">';
+    $output .=	l(t('Lista de comparación (@projects)', array('@count' => count($projectsCompare))), 'comparar', array('attributes' => array('class' => array('link-list-compare'))));
+    $output .= '</div>';
+    
+    return $output;
+    
+  }
+  
+  /**
+   * 
+   * vivendo_compare_callback( $projectId, $action ).
+   * 
+   * @param int $projectId with the node id project.
+   * 
+   */
+  
+  function vivendo_compare_project_add( $projectId ) {
+    
+    $projectsCompare = variable_get( 'projectsCompare' );
+    $projectsCompare = !empty( $projectsCompare ) ? $projectsCompare : array();
+    
+    $projectsCompare[] = $projectId;
+    variable_set( 'projectsCompare', $projectsCompare );
+    
+    if ( count($projectsCompare) === 4 ) {
+      $attributes = array('class'=> array('link-compare', 'disable' ));
+    } else {
+      $attributes = array('class'=> array('link-compare', 'disable', 'use-ajax' ));
+    }
+    
+    $commands[] = ajax_command_html('.content-compare', l(t('+ comparar'), 'vivendo-compare/'. $nId . '/add', array($attributes)));
+    $commands[] = ajax_command_html('.link-list-compare', t('Lista de comparación (@count)', array( '@count' => count($projectsCompare)));
+    
+    ajax_deliver( array('#type' => 'ajax', '#commands' => $commands) );
+    
+  }
+    
