@@ -1,4 +1,4 @@
-name = Winsports - video export
-description = This module creates form to export the videos.
+name = Vivendo - Compare
+description = Make block in content type projects
 core = 7.x
-package = Winsports
+package = Vivendo
