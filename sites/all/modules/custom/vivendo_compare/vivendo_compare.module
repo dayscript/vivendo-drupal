@@ -131,7 +131,7 @@
     }
     
     $commands[] = ajax_command_html('.content-compare', l(t('+ comparar'), 'vivendo-compare/'. $nId . '/add', array($attributes)));
-    $commands[] = ajax_command_html('.link-list-compare', t('Lista de comparación (@count) >', array('@count' => count($projectsCompare)));
+    $commands[] = ajax_command_html('.link-list-compare', t('Lista de comparación (@count) >', array('@count' => count($projectsCompare))));
     
     ajax_deliver( array('#type' => 'ajax', '#commands' => $commands) );
     
