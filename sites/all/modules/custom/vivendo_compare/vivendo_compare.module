@@ -61,7 +61,7 @@
    * 
    */
   
-  function vivendo_comparet_block_view( $delta = '' ) {
+  function vivendo_compare_block_view( $delta = '' ) {
     
     $blocks = array();
 
