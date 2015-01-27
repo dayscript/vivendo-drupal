@@ -1,5 +1,12 @@
 <?php
 
+  function vivendo_compare_init() {
+    
+    drupal_add_library( 'system', 'drupal.ajax' );
+    
+  }
+
+
   /**
    *  
    * Implementation HOOK_MENU().
@@ -90,10 +97,10 @@
     $nId             = is_numeric( arg(1) ) ? arg(1) : null;
     $output          = '';
     
-    if ( count($projectsCompare) === 4 ) {
-      $linkCompare = l(t('+ comparar'), 'vivendo-compare/'. $nId . '/add', array('attributes' => array('class' => array('link-compare', 'disable'))));
+    if ( count($projectsCompare) === 4 || in_array(arg(1), $projectsCompare) ) {
+      $linkCompare = l(t('+ comparar'), 'vivendo-compare/'. $nId . '', array('attributes' => array('class' => array('link-compare', 'disable'))));
     } else {
-      $linkCompare = l(t('+ comparar'), 'vivendo-compare/'. $nId . '/add', array('attributes' => array('class' => array('link-compare', 'active', 'use-ajax'))));
+      $linkCompare = l(t('+ comparar'), 'vivendo-compare/'. $nId . '', array('attributes' => array('class' => array('link-compare', 'active', 'use-ajax'))));
     }
     
     $output .= '<div class="content-compare">';
@@ -101,7 +108,7 @@
     $output .= '</div>';
     
     $output .= '<div class="content">';
-    $output .=	l(t('Lista de comparación (@projects) >', array('@count' => count($projectsCompare))), 'comparar', array('attributes' => array('class' => array('link-list-compare'))));
+    $output .=	l(t('Lista de comparación (@count) >', array('@count' => count($projectsCompare))), 'comparar', array('attributes' => array('class' => array('link-list-compare'))));
     $output .= '</div>';
     
     return $output;
@@ -125,12 +132,24 @@
     variable_set( 'projectsCompare', $projectsCompare );
     
     if ( count($projectsCompare) === 4 ) {
-      $attributes = array('class'=> array('link-compare', 'disable' ));
+      
+      $attributes =  array(
+	  'attributes' => array(
+	      'class'=> array('link-compare', 'disable' )
+	  )
+      );
+      
     } else {
-      $attributes = array('class'=> array('link-compare', 'disable', 'use-ajax' ));
+      
+      $attributes = array(
+	  'attributes' => array(
+	      'class'=> array('link-compare', 'disable', 'use-ajax' )
+	  )
+      );
+      
     }
     
-    $commands[] = ajax_command_html('.content-compare', l(t('+ comparar'), 'vivendo-compare/'. $nId . '/add', array($attributes)));
+    $commands[] = ajax_command_html('.content-compare', l(t('+ comparar'), 'vivendo-compare/'. $projectId . '', $attributes));
     $commands[] = ajax_command_html('.link-list-compare', t('Lista de comparación (@count) >', array('@count' => count($projectsCompare))));
     
     ajax_deliver( array('#type' => 'ajax', '#commands' => $commands) );
