@@ -1687,7 +1687,7 @@ div.messages ul {
   text-transform: uppercase;
   word-wrap: break-word;
 }
-/* line 208, ../sass/_custom.scss */
+/* line 208, C:/Users/Jorge/Projects/vivendo-drupal/sites/all/themes/at-vivendo/sass/_custom.scss */
 .ie6-7 .node-unpublished p.unpublished > *, .ie6-7
 .comment-unpublished p.unpublished > * {
   position: relative;
@@ -2810,9 +2810,9 @@ body.cali #menu-718-1 {
   display: table;
 }
 /* line 3273, ../sass/global.styles.scss */
-.sharethis-buttons .content,
+.sharethis-buttons .content-link-redirect,
 .sharethis-buttons .content-compare,
-.field-name-comparar .content,
+.field-name-comparar .content-link-redirect,
 .field-name-comparar .content-compare {
   display: table-cell;
   padding: 9px 15px 0 0;
