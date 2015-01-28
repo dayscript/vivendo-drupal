@@ -93,7 +93,9 @@
   
   function vivendo_compare_bottons_render() {
 
-    $projectsCompare = variable_get( 'projectsCompare' );
+    if ( !isset($_SESSION) ) { session_start(); }
+    
+    $projectsCompare = isset($_SESSION['projectsCompare']) ? $_SESSION['projectsCompare'] : array();
     $nId             = is_numeric( arg(1) ) ? arg(1) : null;
     $output          = '';
     
@@ -125,11 +127,12 @@
   
   function vivendo_compare_project_add( $projectId ) {
     
-    $projectsCompare = variable_get( 'projectsCompare' );
-    $projectsCompare = !empty( $projectsCompare ) ? $projectsCompare : array();
+    if ( !isset($_SESSION) ) { session_start(); }
+    
+    $projectsCompare = isset($_SESSION['projectsCompare']) ? $_SESSION['projectsCompare'] : array();
     
     $projectsCompare[] = $projectId;
-    variable_set( 'projectsCompare', $projectsCompare );
+    $_SESSION['projectsCompare'] = $projectsCompare;
     
     if ( count($projectsCompare) === 4 ) {
       
