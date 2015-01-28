@@ -2856,3 +2856,9 @@ div#buscador-wrapper .link-list-compare {
 .page-comparar .main-content {
   visibility: hidden;
 }
+
+/* line 3316, ../sass/global.styles.scss */
+.view-plantas img {
+  display: block;
+  height: 250px;
+}
