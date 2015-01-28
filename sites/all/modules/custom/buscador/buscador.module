@@ -232,7 +232,11 @@ function buscador_formulario_form($node, &$form_state)
       
     }
     
+    global $base_url;
     
+    $form['wrapper']['cambiar_ciudad'] = array(
+	'#markup' => '<a class="link-list-compare" href="'.$base_url.'?clear-global-filters=field_ciudad">Cambiar Ciudad</a>'
+    );
         
     $proyectos_ids = $query->execute()->fetchAllAssoc("nid");
     $proyectos = entity_load("node",array_keys($proyectos_ids));
