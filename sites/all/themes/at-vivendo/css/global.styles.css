@@ -2392,25 +2392,26 @@ body.cali #menu-718-1 {
   width: 50%;
   font-weight: 600;
   font-size: 1.1em;
-  margin-top: -5px;
+  margin-top: -1px;
+  line-height: 15px;
 }
-/* line 2907, ../sass/global.styles.scss */
+/* line 2908, ../sass/global.styles.scss */
 .view-proyectos .views-table tr .views-field-field-codigo,
 .view-proyectos .views-table tr .views-field-title {
   float: left;
 }
-/* line 2912, ../sass/global.styles.scss */
+/* line 2913, ../sass/global.styles.scss */
 .view-proyectos .views-field-field-codigo {
   font-size: 0.8em;
   color: #666666;
   text-align: right;
 }
-/* line 2917, ../sass/global.styles.scss */
+/* line 2918, ../sass/global.styles.scss */
 .view-proyectos .views-field-field-codigo .views-label,
 .view-proyectos .views-field-field-codigo .field-content {
   display: inline-block;
 }
-/* line 2921, ../sass/global.styles.scss */
+/* line 2922, ../sass/global.styles.scss */
 .view-proyectos .views-row {
   float: left;
   margin: 0 10px 25px 0;
@@ -2418,38 +2419,38 @@ body.cali #menu-718-1 {
   padding-bottom: 10px;
   width: 270px;
 }
-/* line 2927, ../sass/global.styles.scss */
+/* line 2928, ../sass/global.styles.scss */
 .view-proyectos .views-row .views-field-field-fotos {
   height: 160px;
   width: 270px;
 }
-/* line 2931, ../sass/global.styles.scss */
+/* line 2932, ../sass/global.styles.scss */
 .view-proyectos .views-row .views-field-field-image {
   height: 65px;
   width: 268px;
   border: 1px solid #cccccc;
 }
-/* line 2938, ../sass/global.styles.scss */
+/* line 2939, ../sass/global.styles.scss */
 .view-proyectos .views-row .views-field-field-precio .views-label,
 .view-proyectos .views-row .views-field-field-precio .field-content {
   display: inline-block;
 }
-/* line 2941, ../sass/global.styles.scss */
+/* line 2942, ../sass/global.styles.scss */
 .view-proyectos .views-row .views-field-field-precio .views-label {
   font-size: 0.95;
 }
-/* line 2944, ../sass/global.styles.scss */
+/* line 2945, ../sass/global.styles.scss */
 .view-proyectos .views-row .views-field-field-precio .field-content {
   font-weight: 600;
   font-size: 1.1em;
 }
-/* line 2949, ../sass/global.styles.scss */
+/* line 2950, ../sass/global.styles.scss */
 .view-proyectos .views-row .views-field-field-direccion {
   height: 25px;
   overflow: hidden;
 }
 
-/* line 2956, ../sass/global.styles.scss */
+/* line 2957, ../sass/global.styles.scss */
 .pager-load-more a {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
@@ -2461,25 +2462,25 @@ body.cali #menu-718-1 {
   text-transform: uppercase;
 }
 
-/* line 2967, ../sass/global.styles.scss */
+/* line 2968, ../sass/global.styles.scss */
 #block-views-plantas-block {
   position: relative;
 }
-/* line 2970, ../sass/global.styles.scss */
+/* line 2971, ../sass/global.styles.scss */
 #block-views-plantas-block .block-inner {
   margin: 0;
 }
-/* line 2973, ../sass/global.styles.scss */
+/* line 2974, ../sass/global.styles.scss */
 #block-views-plantas-block .block-content {
   border: 1px solid #ccced0;
 }
-/* line 2976, ../sass/global.styles.scss */
+/* line 2977, ../sass/global.styles.scss */
 #block-views-plantas-block .view-content {
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   font-size: 0.9em;
 }
-/* line 2980, ../sass/global.styles.scss */
+/* line 2981, ../sass/global.styles.scss */
 #block-views-plantas-block .view-content .views-accordion-header {
   background: #f4f4f4;
   color: #e5001a;
@@ -2487,25 +2488,25 @@ body.cali #menu-718-1 {
   border-radius: 0;
   padding-left: 20px;
 }
-/* line 2986, ../sass/global.styles.scss */
+/* line 2987, ../sass/global.styles.scss */
 #block-views-plantas-block .view-content .views-accordion-header a {
   color: #e5001a;
 }
-/* line 2990, ../sass/global.styles.scss */
+/* line 2991, ../sass/global.styles.scss */
 #block-views-plantas-block .view-content .ui-accordion-content {
   border: none;
 }
-/* line 2995, ../sass/global.styles.scss */
+/* line 2996, ../sass/global.styles.scss */
 #block-views-plantas-block .quicktabs-tabs {
   padding: 15px;
   background: #eeeeee;
   text-transform: uppercase;
 }
-/* line 2999, ../sass/global.styles.scss */
+/* line 3000, ../sass/global.styles.scss */
 #block-views-plantas-block .quicktabs-tabs li {
   margin: 0;
 }
-/* line 3001, ../sass/global.styles.scss */
+/* line 3002, ../sass/global.styles.scss */
 #block-views-plantas-block .quicktabs-tabs li a {
   background: #c80016;
   padding: 3px 10px;
@@ -2516,22 +2517,22 @@ body.cali #menu-718-1 {
   display: inline-block;
   text-align: center;
 }
-/* line 3013, ../sass/global.styles.scss */
+/* line 3014, ../sass/global.styles.scss */
 #block-views-plantas-block .views-field-field-image {
   position: relative;
 }
-/* line 3016, ../sass/global.styles.scss */
+/* line 3017, ../sass/global.styles.scss */
 #block-views-plantas-block .camera {
   position: absolute;
   top: 0;
   cursor: pointer;
 }
-/* line 3020, ../sass/global.styles.scss */
+/* line 3021, ../sass/global.styles.scss */
 #block-views-plantas-block .camera img {
   height: 30px;
   width: 30px;
 }
-/* line 3026, ../sass/global.styles.scss */
+/* line 3027, ../sass/global.styles.scss */
 #block-views-plantas-block .views-field-php img {
   position: absolute;
   left: -788px;
@@ -2539,21 +2540,21 @@ body.cali #menu-718-1 {
   max-width: 778px;
 }
 
-/* line 3036, ../sass/global.styles.scss */
+/* line 3037, ../sass/global.styles.scss */
 .administrador .region-sidebar-second {
   margin-top: 145px;
 }
 
-/* line 3044, ../sass/global.styles.scss */
+/* line 3045, ../sass/global.styles.scss */
 #block-views-proyectos-block-1 li {
   text-align: center;
 }
-/* line 3047, ../sass/global.styles.scss */
+/* line 3048, ../sass/global.styles.scss */
 #block-views-proyectos-block-1 .views-field-field-codigo {
   text-align: center;
 }
 
-/* line 3051, ../sass/global.styles.scss */
+/* line 3052, ../sass/global.styles.scss */
 #block-buscador-busca-formulario {
   margin: 0 auto;
   width: 1140px;
@@ -2562,7 +2563,7 @@ body.cali #menu-718-1 {
   position: static !important;
   height: 455px;
 }
-/* line 3058, ../sass/global.styles.scss */
+/* line 3059, ../sass/global.styles.scss */
 #block-buscador-busca-formulario .wrapper {
   display: inline-block;
   margin: 0 10px 0 0;
@@ -2570,31 +2571,31 @@ body.cali #menu-718-1 {
   width: 200px;
   vertical-align: top;
 }
-/* line 3065, ../sass/global.styles.scss */
+/* line 3066, ../sass/global.styles.scss */
 #block-buscador-busca-formulario .form-item {
   display: inline-block;
   margin: 0;
 }
-/* line 3068, ../sass/global.styles.scss */
+/* line 3069, ../sass/global.styles.scss */
 #block-buscador-busca-formulario .form-item label {
   font-weight: 600;
 }
-/* line 3071, ../sass/global.styles.scss */
+/* line 3072, ../sass/global.styles.scss */
 #block-buscador-busca-formulario .form-item select {
   width: 200px;
 }
-/* line 3075, ../sass/global.styles.scss */
+/* line 3076, ../sass/global.styles.scss */
 #block-buscador-busca-formulario #buscador-wrapper {
   position: relative;
 }
-/* line 3078, ../sass/global.styles.scss */
+/* line 3079, ../sass/global.styles.scss */
 #block-buscador-busca-formulario .ajax-progress {
   position: absolute;
   top: 15px;
   right: 10px;
 }
 
-/* line 3087, ../sass/global.styles.scss */
+/* line 3088, ../sass/global.styles.scss */
 #mapa {
   background: wheat;
   height: 400px;
@@ -2605,78 +2606,78 @@ body.cali #menu-718-1 {
   color: #000000;
   text-align: center;
 }
-/* line 3096, ../sass/global.styles.scss */
+/* line 3097, ../sass/global.styles.scss */
 #mapa a {
   color: #000000;
 }
 
-/* line 3102, ../sass/global.styles.scss */
+/* line 3103, ../sass/global.styles.scss */
 .front #mapa {
   height: 400px;
 }
 
-/* line 3107, ../sass/global.styles.scss */
+/* line 3108, ../sass/global.styles.scss */
 .gm-style-iw {
   background: url("../images/shadow-window-marker.png") no-repeat scroll 32px 87px transparent;
   height: 135px;
   margin: 36px 0 0 0;
 }
 
-/* line 3113, ../sass/global.styles.scss */
+/* line 3114, ../sass/global.styles.scss */
 .gm-style-iw > div {
   overflow: hidden;
   width: 285px;
   margin: 0 auto;
 }
 
-/* line 3119, ../sass/global.styles.scss */
+/* line 3120, ../sass/global.styles.scss */
 .window-project {
   width: 285px;
   height: 111px;
   overflow: hidden;
   background: none repeat scroll 0 0 #4e4e4e;
 }
-/* line 3125, ../sass/global.styles.scss */
+/* line 3126, ../sass/global.styles.scss */
 .window-project .col-left,
 .window-project .col-right {
   float: left;
   padding: 17px 0 0 12px;
 }
-/* line 3129, ../sass/global.styles.scss */
+/* line 3130, ../sass/global.styles.scss */
 .window-project .col-right {
   margin: 2px 0 0 0;
   width: 143px;
 }
-/* line 3133, ../sass/global.styles.scss */
+/* line 3134, ../sass/global.styles.scss */
 .window-project img {
   width: 116px;
   height: 70px;
 }
-/* line 3137, ../sass/global.styles.scss */
+/* line 3138, ../sass/global.styles.scss */
 .window-project span {
   color: #fff;
   display: block;
   text-align: left;
 }
-/* line 3142, ../sass/global.styles.scss */
+/* line 3143, ../sass/global.styles.scss */
 .window-project .title {
   font-size: 16px;
 }
-/* line 3144, ../sass/global.styles.scss */
+/* line 3145, ../sass/global.styles.scss */
 .window-project .title a {
   color: #fff !important;
   line-height: 14px;
   display: block;
 }
 
-/* line 3152, ../sass/global.styles.scss */
+/* line 3153, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block {
   z-index: 2;
   width: 1140px;
   margin: 0 auto;
   position: relative;
 }
-/* line 3157, ../sass/global.styles.scss */
+/* line 3158, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner {
   position: absolute;
   background: rgba(0, 0, 0, 0.8);
@@ -2685,69 +2686,69 @@ body.cali #menu-718-1 {
   right: 10px;
   bottom: 10px;
 }
-/* line 3164, ../sass/global.styles.scss */
+/* line 3165, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-title {
   background: none;
   text-transform: none;
   font-size: 1.2em;
   padding-left: 10px;
 }
-/* line 3170, ../sass/global.styles.scss */
+/* line 3171, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-content {
   padding: 10px;
 }
-/* line 3172, ../sass/global.styles.scss */
+/* line 3173, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row {
   margin-bottom: 15px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   height: 80px;
 }
-/* line 3176, ../sass/global.styles.scss */
+/* line 3177, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row.views-row-last {
   border-bottom: none;
 }
-/* line 3179, ../sass/global.styles.scss */
+/* line 3180, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row .views-field-title {
   font-size: 1.3em;
   font-weight: 600;
   line-height: 1.2em;
 }
-/* line 3185, ../sass/global.styles.scss */
+/* line 3186, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row .views-field-field-precio .views-label {
   display: inline-block;
   font-size: 0.9em;
 }
-/* line 3189, ../sass/global.styles.scss */
+/* line 3190, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row .views-field-field-precio .field-content {
   display: inline-block;
   font-weight: 700;
 }
-/* line 3194, ../sass/global.styles.scss */
+/* line 3195, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row .views-field-field-fotos {
   float: left;
   margin-right: 5px;
   clear: left;
 }
-/* line 3198, ../sass/global.styles.scss */
+/* line 3199, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row .views-field-field-fotos img {
   border: 1px solid white;
 }
-/* line 3202, ../sass/global.styles.scss */
+/* line 3203, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row .views-field-field-direccion {
   font-size: 0.9em;
 }
-/* line 3208, ../sass/global.styles.scss */
+/* line 3209, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .more-link a {
   width: 362px;
   display: block;
   text-align: center;
 }
-/* line 3214, ../sass/global.styles.scss */
+/* line 3215, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner a {
   color: white;
 }
 
-/* line 3220, ../sass/global.styles.scss */
+/* line 3221, ../sass/global.styles.scss */
 .views-field-field-telefono1 {
   display: block;
   width: 201px;
@@ -2756,60 +2757,60 @@ body.cali #menu-718-1 {
   font-weight: bold;
 }
 
-/* line 3228, ../sass/global.styles.scss */
+/* line 3229, ../sass/global.styles.scss */
 .hide {
   display: none;
 }
 
-/* line 3232, ../sass/global.styles.scss */
+/* line 3233, ../sass/global.styles.scss */
 .views-field-field-telefono1 > * {
   float: left;
   margin: 0 0 0 5px;
 }
 
-/* line 3238, ../sass/global.styles.scss */
+/* line 3239, ../sass/global.styles.scss */
 .up-down {
   z-index: 99999;
   position: absolute;
   bottom: 0;
   left: 610px;
 }
-/* line 3243, ../sass/global.styles.scss */
+/* line 3244, ../sass/global.styles.scss */
 .up-down a {
   display: block;
   width: 21px;
   height: 21px;
   text-indent: -9999px;
 }
-/* line 3249, ../sass/global.styles.scss */
+/* line 3250, ../sass/global.styles.scss */
 .up-down .b-up {
   background: url("../images/up.jpg") no-repeat scroll center center transparent;
 }
-/* line 3252, ../sass/global.styles.scss */
+/* line 3253, ../sass/global.styles.scss */
 .up-down .b-down {
   background: url("../images/down.jpg") no-repeat scroll center center transparent;
 }
 
-/* line 3258, ../sass/global.styles.scss */
+/* line 3259, ../sass/global.styles.scss */
 .group-share-compare {
   padding: 15px 0;
   display: table;
   width: 100%;
 }
 
-/* line 3265, ../sass/global.styles.scss */
+/* line 3266, ../sass/global.styles.scss */
 .sharethis-buttons,
 .field-name-comparar {
   display: table-cell;
   width: 50%;
   vertical-align: top;
 }
-/* line 3269, ../sass/global.styles.scss */
+/* line 3270, ../sass/global.styles.scss */
 .sharethis-buttons .field-items,
 .field-name-comparar .field-items {
   display: table;
 }
-/* line 3273, ../sass/global.styles.scss */
+/* line 3274, ../sass/global.styles.scss */
 .sharethis-buttons .content-link-redirect,
 .sharethis-buttons .content-compare,
 .field-name-comparar .content-link-redirect,
@@ -2818,14 +2819,14 @@ body.cali #menu-718-1 {
   padding: 9px 15px 0 0;
 }
 
-/* line 3279, ../sass/global.styles.scss */
+/* line 3280, ../sass/global.styles.scss */
 a.link-compare {
   background: none repeat scroll 0 0 #000 !important;
   padding: 3px 15px !important;
   font-size: 13px !important;
 }
 
-/* line 3285, ../sass/global.styles.scss */
+/* line 3286, ../sass/global.styles.scss */
 a.link-compare.disable {
   background: none repeat scroll 0 0 #666 !important;
   color: #fff;
@@ -2833,14 +2834,14 @@ a.link-compare.disable {
   font-weight: bold;
 }
 
-/* line 3292, ../sass/global.styles.scss */
+/* line 3293, ../sass/global.styles.scss */
 a.link-list-compare {
   background: none repeat scroll 0 0 #dd0024;
   color: #fff;
   padding: 3px 15px;
 }
 
-/* line 3298, ../sass/global.styles.scss */
+/* line 3299, ../sass/global.styles.scss */
 div#buscador-wrapper .link-list-compare {
   margin-top: 14px;
   display: inline-block;
