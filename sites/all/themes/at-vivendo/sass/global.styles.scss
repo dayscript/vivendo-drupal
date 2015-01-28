@@ -3255,3 +3255,39 @@ body.bogota{
 }
 
 
+.group-share-compare {
+    padding: 15px 0;
+    display: table;
+    width: 100%;
+}
+
+.sharethis-buttons,
+.field-name-comparar {
+    display: table-cell;
+    width: 50%;
+    vertical-align: top;
+    .field-items {
+        display: table;
+    }
+    .content,
+    .content-compare {
+        display: table-cell;
+        padding: 9px 15px 0 0;
+    }
+}
+
+a.link-compare {
+    background: none repeat scroll 0 0 #000 !important;
+    padding: 3px 15px !important;
+    font-size: 13px !important;
+}
+
+a.link-compare.disable {
+    background: none repeat scroll 0 0 #666 !important;
+}
+
+a.link-list-compare {
+    background: none repeat scroll 0 0 #dd0024;
+    color: #fff;
+    padding: 3px 15px;
+}

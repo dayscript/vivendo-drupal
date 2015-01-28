@@ -2789,3 +2789,50 @@ body.cali #menu-718-1 {
 .up-down .b-down {
   background: url("../images/down.jpg") no-repeat scroll center center transparent;
 }
+
+/* line 3258, ../sass/global.styles.scss */
+.group-share-compare {
+  padding: 15px 0;
+  display: table;
+  width: 100%;
+}
+
+/* line 3265, ../sass/global.styles.scss */
+.sharethis-buttons,
+.field-name-comparar {
+  display: table-cell;
+  width: 50%;
+  vertical-align: top;
+}
+/* line 3269, ../sass/global.styles.scss */
+.sharethis-buttons .field-items,
+.field-name-comparar .field-items {
+  display: table;
+}
+/* line 3273, ../sass/global.styles.scss */
+.sharethis-buttons .content,
+.sharethis-buttons .content-compare,
+.field-name-comparar .content,
+.field-name-comparar .content-compare {
+  display: table-cell;
+  padding: 9px 15px 0 0;
+}
+
+/* line 3279, ../sass/global.styles.scss */
+a.link-compare {
+  background: none repeat scroll 0 0 #000 !important;
+  padding: 3px 15px !important;
+  font-size: 13px !important;
+}
+
+/* line 3285, ../sass/global.styles.scss */
+a.link-compare.disable {
+  background: none repeat scroll 0 0 #666 !important;
+}
+
+/* line 3289, ../sass/global.styles.scss */
+a.link-list-compare {
+  background: none repeat scroll 0 0 #dd0024;
+  color: #fff;
+  padding: 3px 15px;
+}
