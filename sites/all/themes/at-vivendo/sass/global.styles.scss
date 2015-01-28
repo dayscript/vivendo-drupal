@@ -372,7 +372,8 @@ body.not-front{
  * Wraps the main content column
  */
 #content-wrapper {
-  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #dd0024;
   .container {}
 }
 body.front{
@@ -2932,7 +2933,7 @@ body.bogota{
       width: 270px;
     }
     .views-field-field-image{
-      /*height: 65px;*/
+      /*height: 65px;*/ 
       width: 268px;
       border: 1px solid $light;
     }
