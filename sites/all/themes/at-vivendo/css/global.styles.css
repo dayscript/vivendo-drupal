@@ -1220,7 +1220,7 @@ ul.action-links {
   display: inline-block;
   width: 65%;
   float: right;
-  margin-top: 58px;
+  margin-top: 0;
 }
 /* line 1751, ../sass/global.styles.scss */
 .node-constructora.view-mode-full .group-right ul {
