@@ -6,7 +6,7 @@
     
       $projectsCompare = isset($_SESSION['projectsCompare']) ? $_SESSION['projectsCompare'] : array();
 
-      dpm( $view );
+      var_dump( $view );
       
       if ( $view->name == 'search' ) {
 	$query->where[2]['conditions'][0]['value'] = '%' . $search . '%';
