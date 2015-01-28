@@ -2844,6 +2844,6 @@ a.link-list-compare {
 div#buscador-wrapper .link-list-compare {
   margin-top: 14px;
   display: inline-block;
-  float: left;
+  float: right;
   margin-right: 12px;
 }
