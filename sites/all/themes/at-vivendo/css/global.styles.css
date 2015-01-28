@@ -1687,7 +1687,7 @@ div.messages ul {
   text-transform: uppercase;
   word-wrap: break-word;
 }
-/* line 208, C:/Users/Jorge/Projects/vivendo-drupal/sites/all/themes/at-vivendo/sass/_custom.scss */
+/* line 208, ../sass/_custom.scss */
 .ie6-7 .node-unpublished p.unpublished > *, .ie6-7
 .comment-unpublished p.unpublished > * {
   position: relative;
@@ -2828,9 +2828,12 @@ a.link-compare {
 /* line 3285, ../sass/global.styles.scss */
 a.link-compare.disable {
   background: none repeat scroll 0 0 #666 !important;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-/* line 3289, ../sass/global.styles.scss */
+/* line 3292, ../sass/global.styles.scss */
 a.link-list-compare {
   background: none repeat scroll 0 0 #dd0024;
   color: #fff;
