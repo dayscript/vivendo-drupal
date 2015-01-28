@@ -220,16 +220,12 @@ function buscador_formulario_form($node, &$form_state)
     }
     
     if ( $nId ) {
-      
       if ( node_load( $nId )->type == 'proyecto' ) {
-      
+	$query->condition( 'nid', $nId, '=' );
 	if ( $initLoad !== $nId ) {
-	  $query->condition( 'nid', $nId, '=' );
 	  variable_set( 'initLoad', $nId );
 	} 
-
       }
-      
     }
     
     global $base_url;

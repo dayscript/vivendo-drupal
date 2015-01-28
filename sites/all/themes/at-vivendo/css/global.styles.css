@@ -2544,8 +2544,8 @@ body.cali #menu-718-1 {
 }
 
 /* line 3040, ../sass/global.styles.scss */
-.administrador .region-sidebar-second {
-  margin-top: 145px;
+.administrador.node-type-proyecto .region-sidebar-second {
+  margin-top: 173px;
 }
 
 /* line 3048, ../sass/global.styles.scss */
