@@ -1746,6 +1746,8 @@ ul.action-links {
     .group-right{
       display: inline-block;
       width: 65%;
+      float: right;
+      margin-top: 58px; 
       ul{
         padding: 0;
         li{
