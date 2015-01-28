@@ -2850,3 +2850,8 @@ div#buscador-wrapper .link-list-compare {
   float: right;
   margin-right: 12px;
 }
+
+/* line 3310, ../sass/global.styles.scss */
+.page-comparar .main-content {
+  visibility: hidden;
+}
