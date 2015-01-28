@@ -16,7 +16,7 @@
   * 
   * 
 */
-      dpm( $view );
+      dpm( $query );
       
     }
 
