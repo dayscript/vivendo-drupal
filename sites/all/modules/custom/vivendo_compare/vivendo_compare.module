@@ -107,7 +107,7 @@
     $output .=	$linkCompare;
     $output .= '</div>';
     
-    $output .= '<div class="content">';
+    $output .= '<div class="content-link-redirect">';
     $output .=	l(t('Lista de comparación (@count) >', array('@count' => count($projectsCompare))), 'comparar', array('attributes' => array('class' => array('link-list-compare'))));
     $output .= '</div>';
     
@@ -150,7 +150,7 @@
     }
     
     $commands[] = ajax_command_html('.content-compare', l(t('+ comparar'), 'vivendo-compare/'. $projectId . '', $attributes));
-    $commands[] = ajax_command_html('.link-list-compare', t('Lista de comparación (@count) >', array('@count' => count($projectsCompare))));
+    $commands[] = ajax_command_html('.content-link-redirect', l(t('Lista de comparación (@count) >', array('@count' => count($projectsCompare))), 'comparar', array('attributes' => array('class' => array('link-list-compare')))));
     
     ajax_deliver( array('#type' => 'ajax', '#commands' => $commands) );
     
