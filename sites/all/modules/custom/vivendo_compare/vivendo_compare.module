@@ -1,10 +1,12 @@
 <?php
 
   function vivendo_compare_views_api() {
+    
     return array(
         'api'  => 3,
-        'path' => drupal_get_path( 'module',  'vivendo_compare_' )
+        'path' => drupal_get_path( 'module',  'vivendo_compare' )
     );
+    
   }
 
   function vivendo_compare_init() {

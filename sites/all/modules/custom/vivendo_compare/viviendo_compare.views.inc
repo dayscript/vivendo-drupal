@@ -13,6 +13,10 @@
 	$query->where[2]['conditions'][1]['value'] = '%' . $search . '%';
 	$query->where[2]['conditions'][2]['value'] = '%' . $search . '%';
       }
+  * 
+  * 
 */
+      dpm( $view );
+      
     }
 
