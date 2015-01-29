@@ -3395,11 +3395,19 @@ div#buscador-wrapper .link-list-compare {
     .views-label {
        margin-top: 8px; 
     }
+    li {
+        list-style-image: url("../images/icons/check.png");
+        list-style-position: inside;
+    }
 }
 
 .views-field-field-interiores {
     border-bottom: 2px solid #F4F4F4;
     overflow: hidden;
+    li {
+        list-style-image: url("../images/icons/check.png");
+        list-style-position: inside;
+    }
 }
 
 .views-field-remove-project {
