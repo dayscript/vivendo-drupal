@@ -175,6 +175,8 @@
     
     $projectsCompare[ array_search($nId, $$projectsCompare) ] = NULL;
     
+    $_SESSION['projectsCompare'] = $projectsCompare;
+    
     $commands[] = ajax_command_remove('.project-' . $nId );
     
     ajax_deliver( array('#type' => 'ajax', '#commands' => $commands) );
