@@ -3325,6 +3325,19 @@ div#buscador-wrapper .link-list-compare {
     }
 }
 
+.views-field.table-field {
+    display: table;
+    width: 270px;
+
+}
+
+.views-field.table-field > div {
+    display: table-cell;
+    width: 125px;
+    padding: 2px 5px;
+    color: #646464;
+}
+
 .table-field.first {
     border-top: 2px solid #F4F4F4;
 }

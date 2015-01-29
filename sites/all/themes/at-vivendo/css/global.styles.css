@@ -2866,51 +2866,65 @@ div#buscador-wrapper .link-list-compare {
 }
 
 /* line 3328, ../sass/global.styles.scss */
+.views-field.table-field {
+  display: table;
+  width: 270px;
+}
+
+/* line 3334, ../sass/global.styles.scss */
+.views-field.table-field > div {
+  display: table-cell;
+  width: 125px;
+  padding: 2px 5px;
+  color: #646464;
+}
+
+/* line 3341, ../sass/global.styles.scss */
 .table-field.first {
   border-top: 2px solid #F4F4F4;
 }
 
-/* line 3332, ../sass/global.styles.scss */
+/* line 3345, ../sass/global.styles.scss */
 .table-field.last {
   border-bottom: 2px solid #F4F4F4;
 }
 
-/* line 3336, ../sass/global.styles.scss */
+/* line 3349, ../sass/global.styles.scss */
 .table-field.odd {
   background: none repeat scroll 0 0 #F4F4F4;
 }
 
-/* line 3341, ../sass/global.styles.scss */
+/* line 3354, ../sass/global.styles.scss */
 .table-field .views-label {
   border-left: 2px solid #F4F4F4;
   font-weight: bold;
 }
-/* line 3345, ../sass/global.styles.scss */
+/* line 3358, ../sass/global.styles.scss */
 .table-field .field-content {
   border-right: 2px solid #F4F4F4;
 }
 
-/* line 3350, ../sass/global.styles.scss */
+/* line 3363, ../sass/global.styles.scss */
 .views-field-title {
   margin-top: 10px;
 }
 
-/* line 3354, ../sass/global.styles.scss */
+/* line 3367, ../sass/global.styles.scss */
 .views-field-field-barrio {
   margin-top: 10px;
 }
 
-/* line 3359, ../sass/global.styles.scss */
+/* line 3372, ../sass/global.styles.scss */
 .views-field-field-precio .views-label {
   font-size: 13px !important;
 }
 
-/* line 3365, ../sass/global.styles.scss */
+/* line 3378, ../sass/global.styles.scss */
 .views-field-field-direccion field-content {
   font-size: 13px !important;
 }
 
-/* line 3371, ../sass/global.styles.scss */
+/* line 3384, ../sass/global.styles.scss */
 .views-field-field-interiores .views-label,
 .views-field-field-exteriores .views-label {
   display: block;
@@ -2922,7 +2936,7 @@ div#buscador-wrapper .link-list-compare {
   padding-left: 21px;
 }
 
-/* line 3381, ../sass/global.styles.scss */
+/* line 3394, ../sass/global.styles.scss */
 .views-field-field-interiores {
   border-bottom: 2px solid #F4F4F4;
   overflow: hidden;
