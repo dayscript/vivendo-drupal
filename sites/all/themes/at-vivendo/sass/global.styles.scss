@@ -3313,7 +3313,11 @@ div#buscador-wrapper .link-list-compare {
     }
 }
 
-.view-plantas img {
-    display: block;
-    height: 250px;
+.view-plantas {
+    .views-field-field-image {
+        img {
+            display: block;
+            height: 250px;
+        }
+    }
 }
