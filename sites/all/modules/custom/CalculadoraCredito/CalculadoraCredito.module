@@ -76,9 +76,24 @@ function CalculadoraCredito_block_content(){
 function modal_CalculadoraCredito_block_content(){
   $module_path = drupal_get_path('module', 'CalculadoraCredito');
   drupal_add_js($module_path.'/js/calculadora1.js');  
+  
+  if ( is_numeric(arg(1)) ) {
+    $node = node_load( arg(1) );
+    if ( $node->type === 'proyecto' ) {
+      $price = $node->field_precio['und'][0]['value'];
+      $init  = ($price * 0.30);
+      $deuda = ($price - $init);
+    }
+  }
+  
   $output = '<div class="contenedor">
                      <div class="block_calculadora">
                      <h2>CALCULE SU CR&Eacute;DITO</h2>
+		       <div id="">
+		       <span class="text-respuesta">Precio: '. $price .'</span>
+		       <span class="text-respuesta">Cuota inicial: '. $$init .'</span>
+			<span class="text-respuesta">Valor a financiar: '. $deuda .'</span>
+		       </div>
                        <div id="mostrar_resultado1">
                            <span class="text-respuesta" id="text-respuesta1"></span><br><br>
                           <span class="respuesta" id="respuesta1"></span>

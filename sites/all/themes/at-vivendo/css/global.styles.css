@@ -3017,25 +3017,24 @@ div#buscador-wrapper .link-list-compare {
 /* line 3470, ../sass/global.styles.scss */
 .views-field-field-telefono1 {
   display: table;
-  visibility: hidden;
 }
 
-/* line 3477, ../sass/global.styles.scss */
+/* line 3476, ../sass/global.styles.scss */
 .views-field-field-telefono1 .views-label,
 .views-field-field-telefono1 .field-content {
   display: table-cell;
 }
-/* line 3480, ../sass/global.styles.scss */
+/* line 3479, ../sass/global.styles.scss */
 .views-field-field-telefono1 .views-label {
   width: 63%;
   text-align: center;
 }
-/* line 3484, ../sass/global.styles.scss */
+/* line 3483, ../sass/global.styles.scss */
 .views-field-field-telefono1 .field-content {
   width: 32%;
 }
 
-/* line 3490, ../sass/global.styles.scss */
+/* line 3489, ../sass/global.styles.scss */
 .flex-direction-nav a {
   color: rgba(255, 255, 255, 0.8);
 }
