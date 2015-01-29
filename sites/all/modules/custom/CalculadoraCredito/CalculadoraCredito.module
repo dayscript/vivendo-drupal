@@ -87,7 +87,7 @@ function modal_CalculadoraCredito_block_content(){
       $deuda = ($price - $init);
       
       $data = '<span class="text-respuesta">Precio: '. $price .'</span>
-	       <span class="text-respuesta">Cuota inicial: '. $$init .'</span>
+	       <span class="text-respuesta">Cuota inicial: '. $init .'</span>
 	       <span class="text-respuesta">Valor a financiar: '. $deuda .'</span>';
       
     }
