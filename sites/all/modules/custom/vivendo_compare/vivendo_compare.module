@@ -173,8 +173,9 @@
     
     $projectsCompare = isset($_SESSION['projectsCompare']) ? $_SESSION['projectsCompare'] : array();
     
-    $projectsCompare[ array_search($nId, $$projectsCompare) ] = NULL;
+    unset( $projectsCompare[ array_search($nId, $$projectsCompare) ] );
     
+    $projectsCompare             = array_values( $projectsCompare );
     $_SESSION['projectsCompare'] = $projectsCompare;
     
     $commands[] = ajax_command_remove('.project-' . $nId );
