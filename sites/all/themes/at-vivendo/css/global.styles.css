@@ -2936,8 +2936,30 @@ div#buscador-wrapper .link-list-compare {
   padding-left: 21px;
 }
 
-/* line 3394, ../sass/global.styles.scss */
+/* line 3395, ../sass/global.styles.scss */
+.views-field-field-exteriores .views-label {
+  margin-top: 8px;
+}
+
+/* line 3400, ../sass/global.styles.scss */
 .views-field-field-interiores {
   border-bottom: 2px solid #F4F4F4;
   overflow: hidden;
+}
+
+/* line 3406, ../sass/global.styles.scss */
+.views-field-remove-project a {
+  display: block;
+  padding: 5px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #989898;
+  font-weight: bold;
+  background: none repeat scroll 0 0 #E5E5E5;
+}
+
+/* line 3418, ../sass/global.styles.scss */
+.page-compare .views-row {
+  border-bottom: none;
+  margin-left: 15px;
 }

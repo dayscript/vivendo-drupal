@@ -3391,7 +3391,32 @@ div#buscador-wrapper .link-list-compare {
     padding-left: 21px;
 }
 
+.views-field-field-exteriores { 
+    .views-label {
+       margin-top: 8px; 
+    }
+}
+
 .views-field-field-interiores {
     border-bottom: 2px solid #F4F4F4;
     overflow: hidden;
 }
+
+.views-field-remove-project {
+    a {
+        display: block;
+        padding: 5px 0;
+        text-align: center;
+        text-transform: uppercase;
+        color: #989898;
+        font-weight: bold;
+        background: none repeat scroll 0 0 #E5E5E5;
+    }
+}
+
+.page-compare {
+  .views-row {
+    border-bottom: none;
+    margin-left: 15px;
+  }  
+} 
