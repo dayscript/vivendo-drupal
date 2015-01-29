@@ -3466,3 +3466,22 @@ div#buscador-wrapper .link-list-compare {
     }
     
 }
+
+.views-field-field-telefono1 {
+    display: table !important;
+}
+
+.views-field-field-telefono1 {
+    .views-label,
+    .field-content{
+        display: table-cell;
+    }  
+    .views-label {
+        width: 63%;
+        text-align: center;
+    }
+    .field-content {
+        width: 32%;
+    }
+} 
+
