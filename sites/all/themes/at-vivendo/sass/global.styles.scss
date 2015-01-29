@@ -3042,7 +3042,7 @@ body.bogota{
 
 .administrador.node-type-proyecto{
   .region-sidebar-second{
-    margin-top: 173px;    
+    margin-top: 145px;    
   }
   #block-views-plantas-block{
 //    margin-top: 145px;
@@ -3436,3 +3436,30 @@ div#buscador-wrapper .link-list-compare {
     margin: 0;
   }
 } 
+
+#block-menu-menu-volver {
+    margin: 35px 0 20px;
+    .block-inner {
+        margin-right: 0;
+    }
+    ul {
+        margin: 0;
+        display: block;
+        padding: 0;
+        overflow: hidden;
+        li {
+            display: block;
+            list-style: none;
+            float: right;
+            a {
+                background: none repeat scroll 0 0 #E01825;
+                color: #FFFFFF;
+                display: block;
+                padding: 3px 11px;
+                text-tranform: uppercase;
+                text-decoration: none;
+            }
+        }
+        
+    }
+}

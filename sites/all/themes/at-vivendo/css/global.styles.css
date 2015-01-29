@@ -2548,7 +2548,7 @@ body.cali #menu-718-1 {
 
 /* line 3044, ../sass/global.styles.scss */
 .administrador.node-type-proyecto .region-sidebar-second {
-  margin-top: 173px;
+  margin-top: 145px;
 }
 
 /* line 3052, ../sass/global.styles.scss */
@@ -2981,4 +2981,35 @@ div#buscador-wrapper .link-list-compare {
 /* line 3435, ../sass/global.styles.scss */
 .page-compare .views-row-last {
   margin: 0;
+}
+
+/* line 3440, ../sass/global.styles.scss */
+#block-menu-menu-volver {
+  margin: 35px 0 20px;
+}
+/* line 3442, ../sass/global.styles.scss */
+#block-menu-menu-volver .block-inner {
+  margin-right: 0;
+}
+/* line 3445, ../sass/global.styles.scss */
+#block-menu-menu-volver ul {
+  margin: 0;
+  display: block;
+  padding: 0;
+  overflow: hidden;
+}
+/* line 3450, ../sass/global.styles.scss */
+#block-menu-menu-volver ul li {
+  display: block;
+  list-style: none;
+  float: right;
+}
+/* line 3454, ../sass/global.styles.scss */
+#block-menu-menu-volver ul li a {
+  background: none repeat scroll 0 0 #E01825;
+  color: #FFFFFF;
+  display: block;
+  padding: 3px 11px;
+  text-tranform: uppercase;
+  text-decoration: none;
 }
