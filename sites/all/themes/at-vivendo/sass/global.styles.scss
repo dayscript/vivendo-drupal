@@ -2623,7 +2623,6 @@ h2.pane-title.block-title{
       li{
         list-style: none;
         display: inline-block;
-        text-transform: uppercase;
         text-align: center;
         font-weight: 600;
         margin: 0 0 0 10px;
@@ -2856,6 +2855,8 @@ body.bogota{
       a{
         color: $red_text;
         font-size: 1.2em;
+        font: normal normal normal 24px/1 FontAwesome !important;
+        padding-right: 15px;
       }
     }
   }
@@ -3243,7 +3244,7 @@ body.bogota{
 
 
 .up-down {
-    z-index: 99999;
+    z-index: 1000;
     position: absolute;
     bottom: 0;
     left: 610px;
