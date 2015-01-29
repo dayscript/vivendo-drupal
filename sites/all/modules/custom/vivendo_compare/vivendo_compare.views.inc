@@ -14,6 +14,10 @@
 	    'operator' => 'in'
 	);
 	
+      } else {
+	
+	drupal_goto( 'proyectos' );
+	
       }
       
     }
