@@ -81,7 +81,7 @@ function modal_CalculadoraCredito_block_content(){
   
   if ( is_numeric(arg(1)) ) {
     $node = node_load( arg(1) );
-    if ( $node->type === 'proyecto' ) {
+    if ( $node->type == 'proyecto' ) {
       $price = $node->field_precio['und'][0]['value'];
       $init  = ($price * 0.30);
       $deuda = ($price - $init);
