@@ -22,10 +22,18 @@
     
     $items = array();
     
-    $items['vivendo-compare/%'] = array(
+    $items['vivendo-compare/add/%'] = array(
 	'access arguments' => array( 'access content' ),
-	'page arguments'   => array( 1 ),
+	'page arguments'   => array( 2 ),
 	'page callback'    => 'vivendo_compare_project_add',
+	'title'            => t('Adicionar Proyecto'),
+	'type'             => MENU_CALLBACK,
+    );
+    
+    $items['vivendo-compare/remove/%'] = array(
+	'access arguments' => array( 'access content' ),
+	'page arguments'   => array( 2 ),
+	'page callback'    => 'vivendo_compare_project_remove',
 	'title'            => t('Adicionar Proyecto'),
 	'type'             => MENU_CALLBACK,
     );
@@ -100,9 +108,9 @@
     $output          = '';
     
     if ( count($projectsCompare) === 4 || in_array(arg(1), $projectsCompare) ) {
-      $linkCompare = l(t('+ comparar'), 'vivendo-compare/'. $nId . '', array('attributes' => array('class' => array('link-compare', 'disable'))));
+      $linkCompare = l(t('+ comparar'), 'vivendo-compare/add/'. $nId . '', array('attributes' => array('class' => array('link-compare', 'disable'))));
     } else {
-      $linkCompare = l(t('+ comparar'), 'vivendo-compare/'. $nId . '', array('attributes' => array('class' => array('link-compare', 'active', 'use-ajax'))));
+      $linkCompare = l(t('+ comparar'), 'vivendo-compare/add/'. $nId . '', array('attributes' => array('class' => array('link-compare', 'active', 'use-ajax'))));
     }
     
     $output .= '<div class="content-compare">';
@@ -110,7 +118,7 @@
     $output .= '</div>';
     
     $output .= '<div class="content-link-redirect">';
-    $output .=	l(t('Lista de comparación (@count) >', array('@count' => count($projectsCompare))), 'comparar', array('attributes' => array('class' => array('link-list-compare'))));
+    $output .=	l(t('Lista de comparación (@count) ›', array('@count' => count($projectsCompare))), 'comparar', array('attributes' => array('class' => array('link-list-compare'))));
     $output .= '</div>';
     
     return $output;
@@ -152,8 +160,22 @@
       
     }
     
-    $commands[] = ajax_command_html('.content-compare', l(t('+ comparar'), 'vivendo-compare/'. $projectId . '', $attributes));
+    $commands[] = ajax_command_html('.content-compare', l(t('+ comparar'), 'vivendo-compare/add/'. $projectId . '', $attributes));
     $commands[] = ajax_command_html('.content-link-redirect', l(t('Lista de comparación (@count) >', array('@count' => count($projectsCompare))), 'comparar', array('attributes' => array('class' => array('link-list-compare')))));
+    
+    ajax_deliver( array('#type' => 'ajax', '#commands' => $commands) );
+    
+  }
+  
+  function vivendo_compare_project_remove( $nId ) {
+    
+    if ( !isset($_SESSION) ) { session_start(); }
+    
+    $projectsCompare = isset($_SESSION['projectsCompare']) ? $_SESSION['projectsCompare'] : array();
+    
+    $projectsCompare[ array_search($nId, $$projectsCompare) ] = NULL;
+    
+    $commands[] = ajax_command_remove('.project-' . $nId );
     
     ajax_deliver( array('#type' => 'ajax', '#commands' => $commands) );
     

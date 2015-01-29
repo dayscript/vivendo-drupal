@@ -2961,5 +2961,9 @@ div#buscador-wrapper .link-list-compare {
 /* line 3418, ../sass/global.styles.scss */
 .page-compare .views-row {
   border-bottom: none;
-  margin-left: 15px;
+  margin: 0 13px 0 0;
+}
+/* line 3422, ../sass/global.styles.scss */
+.page-compare .views-row-last {
+  margin: 0;
 }

@@ -3417,6 +3417,9 @@ div#buscador-wrapper .link-list-compare {
 .page-compare {
   .views-row {
     border-bottom: none;
-    margin-left: 15px;
+    margin: 0 13px 0 0;
   }  
+  .views-row-last {
+    margin: 0;
+  }
 } 
