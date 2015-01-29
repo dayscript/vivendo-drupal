@@ -2548,7 +2548,7 @@ body.cali #menu-718-1 {
 
 /* line 3044, ../sass/global.styles.scss */
 .administrador.node-type-proyecto .region-sidebar-second {
-  margin-top: 145px;
+  margin-top: 91px;
 }
 
 /* line 3052, ../sass/global.styles.scss */
@@ -3010,6 +3010,6 @@ div#buscador-wrapper .link-list-compare {
   color: #FFFFFF;
   display: block;
   padding: 3px 11px;
-  text-tranform: uppercase;
+  text-transform: uppercase;
   text-decoration: none;
 }
