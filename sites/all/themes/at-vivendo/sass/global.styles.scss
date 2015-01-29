@@ -2929,8 +2929,11 @@ body.bogota{
     padding-bottom: 10px;
     width: 270px;
     .views-field-field-fotos{
+      border-left: 1px solid #cccccc;
+      border-right: 1px solid #cccccc;
       height: 160px;
-      width: 270px;
+      width: 268px;
+      
     }
     .views-field-field-image{
       /*height: 65px;*/ 
@@ -3320,4 +3323,62 @@ div#buscador-wrapper .link-list-compare {
             height: 250px;
         }
     }
+}
+
+.table-field.first {
+    border-top: 2px solid #F4F4F4;
+}
+
+.table-field.last {
+    border-bottom: 2px solid #F4F4F4;
+}
+
+.table-field.odd{
+    background: none repeat scroll 0 0 #F4F4F4;
+}
+
+.table-field {
+    .views-label {
+        border-left: 2px solid #F4F4F4;
+        font-weight: bold;
+    }
+    .field-content {
+        border-right: 2px solid #F4F4F4;
+    }
+}
+
+.views-field-title {
+    margin-top: 10px;
+}
+
+.views-field-field-barrio {
+    margin-top: 10px;
+}
+
+.views-field-field-precio {
+    .views-label {
+        font-size: 13px !important;
+    }
+}
+
+.views-field-field-direccion {
+    field-content{
+        font-size: 13px !important;
+    }
+}
+
+.views-field-field-interiores .views-label,
+.views-field-field-exteriores .views-label {
+    display: block;
+    text-transform: uppercase;
+    margin-top: 29px;
+    color: #666666;
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 21px;
+}
+
+.views-field-field-interiores {
+    border-bottom: 2px solid #F4F4F4;
+    overflow: hidden;
 }
