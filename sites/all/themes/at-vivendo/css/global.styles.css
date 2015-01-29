@@ -1690,7 +1690,7 @@ div.messages ul {
   text-transform: uppercase;
   word-wrap: break-word;
 }
-/* line 208, C:/Users/Jorge/Projects/vivendo-drupal/sites/all/themes/at-vivendo/sass/_custom.scss */
+/* line 208, ../sass/_custom.scss */
 .ie6-7 .node-unpublished p.unpublished > *, .ie6-7
 .comment-unpublished p.unpublished > * {
   position: relative;
@@ -3017,19 +3017,20 @@ div#buscador-wrapper .link-list-compare {
 /* line 3470, ../sass/global.styles.scss */
 .views-field-field-telefono1 {
   display: table !important;
+  visibility: hidden;
 }
 
-/* line 3476, ../sass/global.styles.scss */
+/* line 3477, ../sass/global.styles.scss */
 .views-field-field-telefono1 .views-label,
 .views-field-field-telefono1 .field-content {
   display: table-cell;
 }
-/* line 3479, ../sass/global.styles.scss */
+/* line 3480, ../sass/global.styles.scss */
 .views-field-field-telefono1 .views-label {
   width: 63%;
   text-align: center;
 }
-/* line 3483, ../sass/global.styles.scss */
+/* line 3484, ../sass/global.styles.scss */
 .views-field-field-telefono1 .field-content {
   width: 32%;
 }
