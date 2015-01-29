@@ -173,7 +173,7 @@
     
     $projectsCompare = isset($_SESSION['projectsCompare']) ? $_SESSION['projectsCompare'] : array();
     
-    unset( $projectsCompare[ array_search($nId, $$projectsCompare) ] );
+    unset( $projectsCompare[ array_search($nId, $projectsCompare) ] );
     
     $projectsCompare             = array_values( $projectsCompare );
     $_SESSION['projectsCompare'] = $projectsCompare;
