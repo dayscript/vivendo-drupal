@@ -4,7 +4,7 @@
     
     $('.show-telephone').click(function(event){
       event.preventDefault();
-      $('.hide').css('visibility', 'visible');
+      $('.hide').css('display', 'table');
     });
     
     

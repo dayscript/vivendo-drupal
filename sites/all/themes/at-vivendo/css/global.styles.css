@@ -3016,7 +3016,7 @@ div#buscador-wrapper .link-list-compare {
 
 /* line 3470, ../sass/global.styles.scss */
 .views-field-field-telefono1 {
-  display: table !important;
+  display: table;
   visibility: hidden;
 }
 
@@ -3033,4 +3033,9 @@ div#buscador-wrapper .link-list-compare {
 /* line 3484, ../sass/global.styles.scss */
 .views-field-field-telefono1 .field-content {
   width: 32%;
+}
+
+/* line 3490, ../sass/global.styles.scss */
+.flex-direction-nav a {
+  color: rgba(255, 255, 255, 0.8);
 }

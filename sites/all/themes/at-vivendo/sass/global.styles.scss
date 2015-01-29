@@ -3468,7 +3468,7 @@ div#buscador-wrapper .link-list-compare {
 }
 
 .views-field-field-telefono1 {
-    display: table !important;
+    display: table;
     visibility: hidden;
 }
 
@@ -3486,3 +3486,8 @@ div#buscador-wrapper .link-list-compare {
     }
 } 
 
+.flex-direction-nav {
+  a {
+    color: rgba(255, 255, 255, 0.8);  
+  }
+} 
