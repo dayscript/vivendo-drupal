@@ -3388,7 +3388,7 @@ div#buscador-wrapper .link-list-compare {
     color: #666666;
     font-weight: bold;
     font-size: 18px;
-    padding-left: 21px;
+    padding-left: 28px;
 }
 
 .views-field-field-exteriores { 
@@ -3396,8 +3396,10 @@ div#buscador-wrapper .link-list-compare {
        margin-top: 8px; 
     }
     li {
-        list-style-image: url("../images/icons/check.png");
-        list-style-position: inside;
+        background: url("../images/icons/check.png") no-repeat scroll 0 0 transparent;
+        display: block;
+        padding: 0 0 0 29px !important;
+        margin: 0 !important;
     }
 }
 
@@ -3405,8 +3407,10 @@ div#buscador-wrapper .link-list-compare {
     border-bottom: 2px solid #F4F4F4;
     overflow: hidden;
     li {
-        list-style-image: url("../images/icons/check.png");
-        list-style-position: inside;
+        background: url("../images/icons/check.png") no-repeat scroll 0 0 transparent;
+        display: block;
+        padding: 0 0 0 29px !important;
+        margin: 0 !important;
     }
 }
 
