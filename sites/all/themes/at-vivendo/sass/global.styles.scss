@@ -3442,24 +3442,27 @@ div#buscador-wrapper .link-list-compare {
     .block-inner {
         margin-right: 0;
     }
-    ul {
+    .block-content {
+        ul {
         margin: 0;
-        display: block;
-        padding: 0;
-        overflow: hidden;
-        li {
             display: block;
-            list-style: none;
-            float: right;
-            a {
-                background: none repeat scroll 0 0 #E01825;
-                color: #FFFFFF;
+            padding: 0;
+            overflow: hidden;
+            li {
                 display: block;
-                padding: 3px 11px;
-                text-transform: uppercase;
-                text-decoration: none;
+                list-style: none;
+                float: right;
+                a {
+                    background: none repeat scroll 0 0 #E01825;
+                    color: #FFFFFF;
+                    display: block;
+                    padding: 3px 11px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                }
             }
+
         }
-        
     }
+    
 }
