@@ -2948,7 +2948,7 @@ div#buscador-wrapper .link-list-compare {
 }
 
 /* line 3406, ../sass/global.styles.scss */
-.views-field-remove-project a {
+.views-field-remove-project a.remove-project {
   display: block;
   padding: 5px 0;
   text-align: center;
