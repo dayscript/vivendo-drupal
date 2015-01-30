@@ -39,9 +39,9 @@ function CalculadoraCredito_block_content(){
       $init  = ($price * 0.30);
       $deuda = ($price - $init);
       
-      $data = '<span class="text-respuesta"><strong>Precio:</strong> $'. number_format($price, 0, ',', '.') .'</span>
+      /*$data = '<span class="text-respuesta"><strong>Precio:</strong> $'. number_format($price, 0, ',', '.') .'</span>
 	       <span class="text-respuesta"><strong>Cuota inicial:</strong> $'. number_format($init, 0, ',', '.') .'</span>
-	       <span class="text-respuesta"><strong>Valor a financiar:</strong> $'. number_format($deuda, 0, ',', '.') .'</span>';
+	       <span class="text-respuesta"><strong>Valor a financiar:</strong> $'. number_format($deuda, 0, ',', '.') .'</span>';*/
       
     }
   }
@@ -49,7 +49,6 @@ function CalculadoraCredito_block_content(){
   $output = '<div class="contenedor">
                      <div class="block_calculadora">
                      <h2>CALCULE SU CR&Eacute;DITO</h2>
-		     <div class="content-default">'.$data.'</div>
                        <div id="mostrar_resultado">
                            <span class="text-respuesta" id="text-respuesta"></span><br><br>
                           <span class="respuesta" id="respuesta"></span>
@@ -59,10 +58,10 @@ function CalculadoraCredito_block_content(){
                         </div>
                       <div id="items_calculadora">
                       <span>Valor de compra</span><br>
-                      <input type="text" name="valor_compra" id="valor_compra"/><br>
+                      <input type="text" name="valor_compra" id="valor_compra" value="'.number_format($price, 0, ',', '.').'"/><br>
                       <div id="mensaje1" class="errores"> Ingresa solo números</div>
                       <span>Valor de cuota inicial</span><br>
-                      <input type="text"/ name="valor_inicial" id="valor_inicial"><br>
+                      <input type="text"/ name="valor_inicial" id="valor_inicial" value="'.number_format($init, 0, ',', '.').'"><br>
                       <div id="mensaje2" class="errores"> Ingresa un valor mayor </div>
                       <div class="select_calcular"><span>Tasa</span><br>
                         <select name="tasa" id="tasa" >
