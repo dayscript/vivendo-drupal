@@ -59,7 +59,7 @@ function CalculadoraCredito_block_content(){
                         </div>
                       <div id="items_calculadora">
                       <span>Valor de compra</span><br>
-                      <input type="text" name="valor_compra" id="valor_compra" value="'.number_format($price, 0, ',', '.').'"/><br>
+                      <input type="text" name="valor_compra" id="valor_compra" value="'.$price.'"/><br>
                       <div id="mensaje1" class="errores"> Ingresa solo números</div>
                       <span>Valor de cuota inicial</span><br>
                       <input type="text"/ name="valor_inicial" id="valor_inicial" value="'.$init.'"><br>
