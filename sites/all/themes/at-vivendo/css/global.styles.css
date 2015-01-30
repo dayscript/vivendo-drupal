@@ -198,7 +198,7 @@ body.not-front #highlighted-wrapper {
 #leaderboard-wrapper .container div.option {
   float: right;
   padding: 0 10px;
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0);
   height: 25px;
   vertical-align: text-top;
 }
@@ -794,7 +794,7 @@ ul.pager li.pager-current {
 /* line 1080, ../sass/global.styles.scss */
 #skip-link a {
   background: #444;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0);
   color: white;
   display: block;
   line-height: 2;
@@ -805,7 +805,7 @@ ul.pager li.pager-current {
 /* line 1091, ../sass/global.styles.scss */
 #skip-link a:link, #skip-link a:visited {
   background: #444;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0);
   color: white;
   display: block;
   line-height: 2;
@@ -2237,7 +2237,7 @@ h2.pane-title.block-title {
 }
 /* line 2757, ../sass/global.styles.scss */
 .block-calculadoracredito .contenedor .errores {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
   border-radius: 10px;
   background: #c80016;
   color: white;
@@ -2686,7 +2686,7 @@ body.cali #menu-718-1 {
 /* line 3165, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner {
   position: absolute;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0);
   color: white;
   width: 430px;
   right: 10px;
@@ -2706,7 +2706,7 @@ body.cali #menu-718-1 {
 /* line 3180, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row {
   margin-bottom: 15px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
   height: 80px;
 }
 /* line 3184, ../sass/global.styles.scss */
@@ -3036,24 +3036,29 @@ div#buscador-wrapper .link-list-compare {
 
 /* line 3490, ../sass/global.styles.scss */
 #flexslider-2 .flex-direction-nav a {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0);
 }
 
-/* line 3497, ../sass/global.styles.scss */
+/* line 3498, ../sass/global.styles.scss */
+#flexslider-1 .flex-direction-nav a {
+  color: rgba(0, 0, 0, 0);
+}
+
+/* line 3505, ../sass/global.styles.scss */
 .content-default {
   padding: 5px 11px 15px;
 }
 
-/* line 3502, ../sass/global.styles.scss */
+/* line 3510, ../sass/global.styles.scss */
 .content-default span {
   display: block;
 }
 
-/* line 3508, ../sass/global.styles.scss */
+/* line 3516, ../sass/global.styles.scss */
 #block-views-proyectos-block-1 ul.slides {
   padding: 0;
 }
-/* line 3510, ../sass/global.styles.scss */
+/* line 3518, ../sass/global.styles.scss */
 #block-views-proyectos-block-1 ul.slides li {
   border-bottom: 3px solid #ccc;
   height: 349px;
@@ -3062,11 +3067,11 @@ div#buscador-wrapper .link-list-compare {
   text-align: left !important;
   color: #333;
 }
-/* line 3517, ../sass/global.styles.scss */
+/* line 3525, ../sass/global.styles.scss */
 #block-views-proyectos-block-1 ul.slides li .views-field-field-image {
   border: 1px solid #ccc;
 }
-/* line 3520, ../sass/global.styles.scss */
+/* line 3528, ../sass/global.styles.scss */
 #block-views-proyectos-block-1 ul.slides li .views-field-field-fotos {
   border: 1px solid #ccc;
   border-bottom: none;
