@@ -89,12 +89,12 @@ function MostrarResultado(ResultadoFinal,ValorPeriodos,ValorCompra){
     }
 
     document.getElementById("text-respuesta").innerHTML = "A continuación se muestra el resultado obtenido con la información que usted a proporcionado. Tenga en cuenta que estos valores son de referencia únicamente.";
-    //document.getElementById("respuesta").innerHTML = "Valor del credito:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>"+ FormatNumber(ValorCompra)+ "</strong><br> Valor De Cuota:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>"+ FormatNumber(ResultadoFinal)+"</strong><br>Numero de coutas:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>"+ValorPeriodos+"  Meses</strong>";
     
-    jQuery( '#respuesta' ).each(function(){
+    jQuery( '#respuesta' ).html('').each(function(){
       jQuery(this).append('<div class="results credit">Valor del credito(70%): <strong>$'+ValorCompra+'</strong></div>');
       jQuery(this).append('<div class="results cout">Valor de cuota: <strong>$'+ResultadoFinal+'</strong></div>');
       jQuery(this).append('<div class="results counts">Numero de cuotas: <strong>$'+ValorPeriodos+'</strong></div>');
+      jQuery(this).append('<div>Modalidad couta fija en pesos.</div>');
       
       jQuery(this).find('.results').each(function(){
         jQuery(this).find('strong').number(true);

@@ -198,7 +198,7 @@ body.not-front #highlighted-wrapper {
 #leaderboard-wrapper .container div.option {
   float: right;
   padding: 0 10px;
-  border-left: 1px solid rgba(255, 255, 255, 0);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
   height: 25px;
   vertical-align: text-top;
 }
@@ -794,7 +794,7 @@ ul.pager li.pager-current {
 /* line 1080, ../sass/global.styles.scss */
 #skip-link a {
   background: #444;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.6);
   color: white;
   display: block;
   line-height: 2;
@@ -805,7 +805,7 @@ ul.pager li.pager-current {
 /* line 1091, ../sass/global.styles.scss */
 #skip-link a:link, #skip-link a:visited {
   background: #444;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.6);
   color: white;
   display: block;
   line-height: 2;
@@ -1690,7 +1690,7 @@ div.messages ul {
   text-transform: uppercase;
   word-wrap: break-word;
 }
-/* line 208, C:/Users/Jorge/Projects/vivendo-drupal/sites/all/themes/at-vivendo/sass/_custom.scss */
+/* line 208, ../sass/_custom.scss */
 .ie6-7 .node-unpublished p.unpublished > *, .ie6-7
 .comment-unpublished p.unpublished > * {
   position: relative;
@@ -2237,7 +2237,7 @@ h2.pane-title.block-title {
 }
 /* line 2757, ../sass/global.styles.scss */
 .block-calculadoracredito .contenedor .errores {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   background: #c80016;
   color: white;
@@ -2686,7 +2686,7 @@ body.cali #menu-718-1 {
 /* line 3165, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner {
   position: absolute;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.8);
   color: white;
   width: 430px;
   right: 10px;
@@ -2706,7 +2706,7 @@ body.cali #menu-718-1 {
 /* line 3180, ../sass/global.styles.scss */
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row {
   margin-bottom: 15px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   height: 80px;
 }
 /* line 3184, ../sass/global.styles.scss */
@@ -3036,12 +3036,12 @@ div#buscador-wrapper .link-list-compare {
 
 /* line 3490, ../sass/global.styles.scss */
 #flexslider-2 .flex-direction-nav a {
-  color: rgba(255, 255, 255, 0);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /* line 3498, ../sass/global.styles.scss */
 #flexslider-1 .flex-direction-nav a {
-  color: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /* line 3505, ../sass/global.styles.scss */
