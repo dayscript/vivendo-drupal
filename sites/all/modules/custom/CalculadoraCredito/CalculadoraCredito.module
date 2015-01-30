@@ -80,7 +80,7 @@ function CalculadoraCredito_block_content(){
                           <option value="240">240 Meses</option>
                         </select><br>
                         </div>
-			<span class="text-respuesta">Modalidad couta fija en pesos.</span>
+			<span class="text-respuesta">*Modalidad cuota fija en pesos.</span>
 			<div class="content-default">'.$data.'</div>
                         <div>
                           <button name="calcular_bn" id="calcular_bn" class="calcular_bn" onClick="calcular()"><span class="text-boton">CALCULAR</span>

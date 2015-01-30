@@ -94,7 +94,7 @@ function MostrarResultado(ResultadoFinal,ValorPeriodos,ValorCompra){
       jQuery(this).append('<div class="results credit">Valor del credito(70%): <strong>$'+ValorCompra+'</strong></div>');
       jQuery(this).append('<div class="results cout">Valor de cuota: <strong>$'+ResultadoFinal+'</strong></div>');
       jQuery(this).append('<div class="results counts">Numero de cuotas: <strong>$'+ValorPeriodos+'</strong></div>');
-      jQuery(this).append('<div>Modalidad couta fija en pesos.</div>');
+      jQuery(this).append('<div>*Modalidad couta fija en pesos.</div>');
       
       jQuery(this).find('.results').each(function(){
         jQuery(this).find('strong').number(true);
