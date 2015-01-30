@@ -49,7 +49,6 @@ function CalculadoraCredito_block_content(){
   $output = '<div class="contenedor">
                      <div class="block_calculadora">
                      <h2>CALCULE SU CR&Eacute;DITO</h2>
-		     <div class="content-default">'.$data.'</div>
                        <div id="mostrar_resultado">
                            <span class="text-respuesta" id="text-respuesta"></span><br><br>
                           <span class="respuesta" id="respuesta"></span>
