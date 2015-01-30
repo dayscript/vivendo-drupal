@@ -60,7 +60,7 @@ function CalculadoraCredito_block_content(){
                       <span>Valor de compra</span><br>
                       <input type="text" name="valor_compra" id="valor_compra" value="'.$price.'" '.$data.'/><br>
                       <div id="mensaje1" class="errores"> Ingresa solo números</div>
-                      <span>Valor de cuota inicial</span><br>
+                      <span>Valor de cuota inicial (30%)</span><br>
                       <input type="text"/ name="valor_inicial" id="valor_inicial" value="'.$init.'"><br>
                       <div id="mensaje2" class="errores"> Ingresa un valor mayor </div>
                       <div class="select_calcular"><span>Tasa</span><br>

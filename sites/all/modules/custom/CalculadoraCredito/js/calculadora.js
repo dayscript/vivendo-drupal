@@ -92,9 +92,9 @@ function MostrarResultado(ResultadoFinal,ValorPeriodos,ValorCompra){
     //document.getElementById("respuesta").innerHTML = "Valor del credito:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>"+ FormatNumber(ValorCompra)+ "</strong><br> Valor De Cuota:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>"+ FormatNumber(ResultadoFinal)+"</strong><br>Numero de coutas:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>"+ValorPeriodos+"  Meses</strong>";
     
     jQuery( '#respuesta' ).each(function(){
-      jQuery(this).append('<div class="results credit">Valor del credito: <strong>'+ValorCompra+'</strong></div>');
-      jQuery(this).append('<div class="results cout">Valor de cuota: <strong>'+ValorCompra+'</strong></div>');
-      jQuery(this).append('<div class="results counts">Numero de cuotas: <strong>'+ValorPeriodos+'</strong></div>');
+      jQuery(this).append('<div class="results credit">Valor del credito(70%): <strong>$'+ValorCompra+'</strong></div>');
+      jQuery(this).append('<div class="results cout">Valor de cuota: <strong>$'+ResultadoFinal+'</strong></div>');
+      jQuery(this).append('<div class="results counts">Numero de cuotas: <strong>$'+ValorPeriodos+'</strong></div>');
       
       jQuery(this).find('.results').each(function(){
         jQuery(this).find('strong').number(true);
