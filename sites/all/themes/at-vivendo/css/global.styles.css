@@ -3044,21 +3044,21 @@ div#buscador-wrapper .link-list-compare {
   color: rgba(0, 0, 0, 0.3);
 }
 
-/* line 3505, ../sass/global.styles.scss */
+/* line 3504, ../sass/global.styles.scss */
 .content-default {
   padding: 5px 11px 15px;
 }
 
-/* line 3510, ../sass/global.styles.scss */
+/* line 3509, ../sass/global.styles.scss */
 .content-default span {
   display: block;
 }
 
-/* line 3516, ../sass/global.styles.scss */
+/* line 3515, ../sass/global.styles.scss */
 #block-views-proyectos-block-1 ul.slides {
   padding: 0;
 }
-/* line 3518, ../sass/global.styles.scss */
+/* line 3517, ../sass/global.styles.scss */
 #block-views-proyectos-block-1 ul.slides li {
   border-bottom: 3px solid #ccc;
   height: 349px;
@@ -3067,12 +3067,36 @@ div#buscador-wrapper .link-list-compare {
   text-align: left !important;
   color: #333;
 }
-/* line 3525, ../sass/global.styles.scss */
+/* line 3524, ../sass/global.styles.scss */
 #block-views-proyectos-block-1 ul.slides li .views-field-field-image {
   border: 1px solid #ccc;
 }
-/* line 3528, ../sass/global.styles.scss */
+/* line 3527, ../sass/global.styles.scss */
 #block-views-proyectos-block-1 ul.slides li .views-field-field-fotos {
   border: 1px solid #ccc;
   border-bottom: none;
+}
+
+/* line 3536, ../sass/global.styles.scss */
+.view .fa-th {
+  background: url("../images/switch-list-grid_09.png") none no-repeat scroll 0 0 transparent;
+  width: 95px;
+  height: 29px;
+}
+
+/* line 3542, ../sass/global.styles.scss */
+.view.girl .fa-list {
+  background: url("../images/switch-list-grid_03.png") none no-repeat scroll 0 0 transparent;
+}
+
+/* line 3546, ../sass/global.styles.scss */
+.view .fa-list {
+  background: url("../images/switch-list-grid_07.png") none no-repeat scroll 0 0 transparent;
+  width: 95px;
+  height: 29px;
+}
+
+/* line 3552, ../sass/global.styles.scss */
+.view.list .fa-list {
+  background: url("../images/switch-list-grid_05.png") none no-repeat scroll 0 0 transparent;
 }

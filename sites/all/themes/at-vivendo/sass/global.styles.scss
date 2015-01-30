@@ -3500,7 +3500,6 @@ div#buscador-wrapper .link-list-compare {
     }
   }    
 }
- 
 
 .content-default {
     padding: 5px 11px 15px;
@@ -3534,3 +3533,22 @@ div#buscador-wrapper .link-list-compare {
     
 } 
 
+.view .fa-th {
+    background: url('../images/switch-list-grid_09.png') none no-repeat scroll 0 0 transparent;
+    width: 95px;
+    height: 29px;
+}
+
+.view.girl .fa-list {
+    background: url('../images/switch-list-grid_03.png') none no-repeat scroll 0 0 transparent;
+}
+
+.view .fa-list {
+    background: url('../images/switch-list-grid_07.png') none no-repeat scroll 0 0 transparent;
+    width: 95px;
+    height: 29px;
+}
+
+.view.list .fa-list {
+    background: url('../images/switch-list-grid_05.png') none no-repeat scroll 0 0 transparent;
+}
