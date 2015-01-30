@@ -19,8 +19,8 @@ jQuery(document).ready(function(){
 		                jQuery("#mensaje2").fadeIn("slow");
 		            }   
 	    });
-            jQuery('#valor_inicial').number(true, 2);
-            jQuery('#valor_compra').number(true, 2);
+            jQuery('#valor_inicial').number(true);
+            jQuery('#valor_compra').number(true);
  });
 
 function ocultar(){
