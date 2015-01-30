@@ -3079,7 +3079,7 @@ div#buscador-wrapper .link-list-compare {
 
 /* line 3536, ../sass/global.styles.scss */
 .view .fa-th {
-  background: url("../images/switch-list-grid_09.png") no-repeat scroll 0 0 transparent;
+  background: url("../images/switch-list-grid_05.png") no-repeat scroll 0 0 transparent;
   width: 95px;
   height: 29px;
   text-indent: -9999px;
@@ -3089,12 +3089,12 @@ div#buscador-wrapper .link-list-compare {
 /* line 3545, ../sass/global.styles.scss */
 .view.girl .fa-list,
 .view .fa-th:hover {
-  background: url("../images/switch-list-grid_03.png") no-repeat scroll 0 0 transparent;
+  background: url("../images/switch-list-grid_09.png") no-repeat scroll 0 0 transparent;
 }
 
 /* line 3549, ../sass/global.styles.scss */
 .view .fa-list {
-  background: url("../images/switch-list-grid_07.png") no-repeat scroll 0 0 transparent;
+  background: url("../images/switch-list-grid_03.png") no-repeat scroll 0 0 transparent;
   width: 95px;
   height: 29px;
   text-indent: -9999px;
@@ -3104,5 +3104,5 @@ div#buscador-wrapper .link-list-compare {
 /* line 3558, ../sass/global.styles.scss */
 .view.list .fa-list,
 .view .fa-list:hover {
-  background: url("../images/switch-list-grid_05.png") no-repeat scroll 0 0 transparent;
+  background: url("../images/switch-list-grid_07.png") no-repeat scroll 0 0 transparent;
 }
