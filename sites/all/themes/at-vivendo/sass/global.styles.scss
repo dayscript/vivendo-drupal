@@ -3500,3 +3500,18 @@ div#buscador-wrapper .link-list-compare {
     display: block;
   }  
 } 
+
+#block-views-proyectos-block-1 {
+    ul.slides{
+      padding: 0; 
+      li {
+        height: 388px;
+        margin-right: 6px;
+        border: 1px solid #cccccc;
+      }  
+    }
+    ul.flex-direction-nav {
+      display: none
+    }
+} 
+
