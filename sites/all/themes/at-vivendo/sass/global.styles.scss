@@ -3558,3 +3558,21 @@ div#buscador-wrapper .link-list-compare {
 .view .fa-list:hover {
     background: url('../images/switch-list-grid_03.png') no-repeat scroll 0 0 transparent;
 }
+
+
+.content-sponsor {
+    width: 203px;
+    margin: 0 auto;
+    padding: 10px 0 20px;
+    img.logo-vivendo{
+        width: 40px;
+        margin: 5px 0 0;
+    }
+    span {
+        font-size: 30px;
+        font-weight: bold;
+        line-height: -30px;
+    }
+}
+
+

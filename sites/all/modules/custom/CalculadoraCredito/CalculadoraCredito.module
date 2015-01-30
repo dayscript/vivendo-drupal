@@ -54,7 +54,7 @@ function CalculadoraCredito_block_content(){
 	$img = '<img src="'.$url.'" />';
       } else {
 	$url = $base_url . 'sites/all/themes/at-vivendo/images/logos/logo-vivendo.png';
-	$img = '<img src="'.$url.'" /><span style="color:#89878c">vivendo.</span style="color:#cd002d"><span>co</span>' ;
+	$img = '<img class="logo-vivendo" src="'.$url.'" /><span style="color:#89878c">vivendo.</span style="color:#cd002d"><span>co</span>' ;
       }
       
     }
