@@ -40,6 +40,12 @@
       event.preventDefault();
     });
     
+    $('.contruct').click(function(event){
+      event.preventDefault();
+      window.location =  '/node/' + $(this).attr('href'); 
+      
+    });
+    
   });
   
 })(jQuery);
