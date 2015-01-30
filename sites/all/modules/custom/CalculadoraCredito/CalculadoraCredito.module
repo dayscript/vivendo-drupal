@@ -106,7 +106,7 @@ function modal_CalculadoraCredito_block_content(){
                         </div>
                       <div id="items_calculadora1">
                       <span>Valor de compra</span><br>
-                      <input type="text" name="valor_compra" id="valor_compra1"/><br>
+                      <input type="text" name="valor_compra" id="valor_compra1" value="1000"/><br>
                       <div id="mensaje11" class="errores"> Ingresa solo números</div>
                       <span>Valor de cuota inicial</span><br>
                       <input type="text"/ name="valor_inicial" id="valor_inicial1"><br>
