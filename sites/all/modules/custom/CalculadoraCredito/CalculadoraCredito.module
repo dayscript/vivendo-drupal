@@ -93,10 +93,10 @@ function modal_CalculadoraCredito_block_content(){
     }
   }
   
-  $output = '<div class="contenedor">
+  $output = '<div class="contenedor">'.arg(1).'
                      <div class="block_calculadora">
                      <h2>CALCULE SU CR&Eacute;DITO</h2>
-		       <div id="">'.$data.'</div>;
+		       <div>'.$data.'</div>;
                        <div id="mostrar_resultado1">
                            <span class="text-respuesta" id="text-respuesta1"></span><br><br>
                           <span class="respuesta" id="respuesta1"></span>
