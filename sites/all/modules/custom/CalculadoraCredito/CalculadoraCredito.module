@@ -32,6 +32,8 @@ function CalculadoraCredito_block_content(){
   drupal_add_js($module_path.'/js/calculadora.js');  
   drupal_add_js($module_path.'/js/jquery.number.js');  
   
+  global $base_url;
+  
   $readonly = '';
   
   if ( is_numeric(arg(1)) ) {
@@ -52,7 +54,7 @@ function CalculadoraCredito_block_content(){
 	$img = '<img src="'.$url.'" />';
       } else {
 	$url = $base_url . 'sites/all/themes/at-vivendo/images/logos/logo-vivendo.png';
-	$img = '<img src="'.$url.'" /> vivendo.co' ;
+	$img = '<img src="'.$url.'" /><span style="color:#89878c">vivendo.</span style="color:#cd002d"><span>co</span>' ;
       }
       
     }
