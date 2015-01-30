@@ -1690,7 +1690,7 @@ div.messages ul {
   text-transform: uppercase;
   word-wrap: break-word;
 }
-/* line 208, ../sass/_custom.scss */
+/* line 208, C:/Users/Jorge/Projects/vivendo-drupal/sites/all/themes/at-vivendo/sass/_custom.scss */
 .ie6-7 .node-unpublished p.unpublished > *, .ie6-7
 .comment-unpublished p.unpublished > * {
   position: relative;
@@ -3034,26 +3034,26 @@ div#buscador-wrapper .link-list-compare {
   width: 32%;
 }
 
-/* line 3489, ../sass/global.styles.scss */
-.flex-direction-nav a {
+/* line 3490, ../sass/global.styles.scss */
+#flexslider-2 .flex-direction-nav a {
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* line 3494, ../sass/global.styles.scss */
+/* line 3497, ../sass/global.styles.scss */
 .content-default {
   padding: 5px 11px 15px;
 }
 
-/* line 3499, ../sass/global.styles.scss */
+/* line 3502, ../sass/global.styles.scss */
 .content-default span {
   display: block;
 }
 
-/* line 3505, ../sass/global.styles.scss */
+/* line 3508, ../sass/global.styles.scss */
 #block-views-proyectos-block-1 ul.slides {
   padding: 0;
 }
-/* line 3507, ../sass/global.styles.scss */
+/* line 3510, ../sass/global.styles.scss */
 #block-views-proyectos-block-1 ul.slides li {
   border-bottom: 3px solid #ccc;
   height: 349px;
@@ -3062,11 +3062,11 @@ div#buscador-wrapper .link-list-compare {
   text-align: left !important;
   color: #333;
 }
-/* line 3514, ../sass/global.styles.scss */
+/* line 3517, ../sass/global.styles.scss */
 #block-views-proyectos-block-1 ul.slides li .views-field-field-image {
   border: 1px solid #ccc;
 }
-/* line 3517, ../sass/global.styles.scss */
+/* line 3520, ../sass/global.styles.scss */
 #block-views-proyectos-block-1 ul.slides li .views-field-field-fotos {
   border: 1px solid #ccc;
   border-bottom: none;
