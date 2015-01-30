@@ -20,6 +20,7 @@ jQuery(document).ready(function(){
 		            }   
 	    });
             jQuery('#valor_inicial').number(true, 2);
+            jQuery('#valor_compra').number(true, 2);
  });
 
 function ocultar(){
