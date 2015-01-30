@@ -38,9 +38,9 @@ function CalculadoraCredito_block_content(){
       $init  = ($price * 0.30);
       $deuda = ($price - $init);
       
-      $data = '<span class="text-respuesta"><strong>Precio:</strong> '. number_format($price, 0, ',', '.') .'</span>
-	       <span class="text-respuesta"><strong>Cuota inicial:</strong> '. number_format($init, 0, ',', '.') .'</span>
-	       <span class="text-respuesta"><strong>Valor a financiar:</strong> '. number_format($deuda, 0, ',', '.') .'</span>';
+      $data = '<span class="text-respuesta"><strong>Precio:</strong> $'. number_format($price, 0, ',', '.') .'</span>
+	       <span class="text-respuesta"><strong>Cuota inicial:</strong> $'. number_format($init, 0, ',', '.') .'</span>
+	       <span class="text-respuesta"><strong>Valor a financiar:</strong> $'. number_format($deuda, 0, ',', '.') .'</span>';
       
     }
   }

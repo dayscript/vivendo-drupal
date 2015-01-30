@@ -49,14 +49,14 @@ function calcular(){
    
     var PotenciaInteres=  PotenciaTotal / Tasa;
     
-    Capital= ValorCompra-ValorInicial;
+    Capital = ValorCompra - ValorInicial;
  	
  	
-  	ResultadoFinal= Capital/PotenciaInteres;
+  	ResultadoFinal = Capital/PotenciaInteres;
 
-  	parseInt(ResultadoFinal);
+  	parseInt( ResultadoFinal );
 	   
-  	MostrarResultado(ResultadoFinal,ValorPeriodos,ValorCompra);
+  	MostrarResultado( ResultadoFinal, ValorPeriodos, Capital );
 }
 
 function MostrarResultado(ResultadoFinal,ValorPeriodos,ValorCompra){
@@ -87,7 +87,7 @@ function MostrarResultado(ResultadoFinal,ValorPeriodos,ValorCompra){
     }
 
     document.getElementById("text-respuesta").innerHTML = "A continuación se muestra el resultado obtenido con la información que usted a proporcionado. Tenga en cuenta que estos valores son de referencia únicamente.";
-    document.getElementById("respuesta").innerHTML = "Valor del credito:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>"+ formatNumber.new(ValorCompra, "$")+ "</strong><br> Valor De Cuota:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>"+ formatNumber.new(ResultadoFinal, "$")+"</strong><br>Numero de coutas:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>"+ValorPeriodos+"  Meses</strong>";
+    document.getElementById("respuesta").innerHTML = "Valor del credito:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>"+ FormatNumber(ValorCompra)+ "</strong><br> Valor De Cuota:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>"+ FormatNumber(ResultadoFinal)+"</strong><br>Numero de coutas:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>"+ValorPeriodos+"  Meses</strong>";
 }
 
 function recalcular(){
