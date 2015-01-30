@@ -3505,10 +3505,12 @@ div#buscador-wrapper .link-list-compare {
   ul.slides{
     padding: 0; 
     li {
-      height: 388px;
-      margin: 0 48px;
+      border-bottom: 3px solid #ccc;  
+      height: 349px;
+      margin: 0 48px 15px;
       width: 270px !important; 
       text-align: left !important;
+      color: #333;
       .views-field-field-image {
         border: 1px solid #ccc;
       }
