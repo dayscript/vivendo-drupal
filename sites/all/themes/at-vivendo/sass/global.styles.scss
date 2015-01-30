@@ -3485,11 +3485,14 @@ div#buscador-wrapper .link-list-compare {
     }
 } 
 
-.flex-direction-nav {
-  a {
-    color: rgba(255, 255, 255, 0.8);  
-  }
-} 
+#flexslider-2{
+  .flex-direction-nav {
+    a {
+      color: rgba(255, 255, 255, 0.8);  
+    }
+  }    
+}
+ 
 
 .content-default {
     padding: 5px 11px 15px;
