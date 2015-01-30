@@ -3056,10 +3056,16 @@ div#buscador-wrapper .link-list-compare {
 /* line 3507, ../sass/global.styles.scss */
 #block-views-proyectos-block-1 ul.slides li {
   height: 388px;
-  margin-right: 6px;
-  border: 1px solid #cccccc;
+  margin: 0 48px;
+  width: 270px !important;
+  text-align: left !important;
 }
-/* line 3513, ../sass/global.styles.scss */
-#block-views-proyectos-block-1 ul.flex-direction-nav {
-  display: none;
+/* line 3512, ../sass/global.styles.scss */
+#block-views-proyectos-block-1 ul.slides li .views-field-field-image {
+  border: 1px solid #ccc;
+}
+/* line 3515, ../sass/global.styles.scss */
+#block-views-proyectos-block-1 ul.slides li .views-field-field-fotos {
+  border: 1px solid #ccc;
+  border-bottom: none;
 }

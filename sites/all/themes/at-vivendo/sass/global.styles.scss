@@ -3502,16 +3502,22 @@ div#buscador-wrapper .link-list-compare {
 } 
 
 #block-views-proyectos-block-1 {
-    ul.slides{
-      padding: 0; 
-      li {
-        height: 388px;
-        margin-right: 6px;
-        border: 1px solid #cccccc;
-      }  
-    }
-    ul.flex-direction-nav {
-      display: none
-    }
+  ul.slides{
+    padding: 0; 
+    li {
+      height: 388px;
+      margin: 0 48px;
+      width: 270px !important; 
+      text-align: left !important;
+      .views-field-field-image {
+        border: 1px solid #ccc;
+      }
+      .views-field-field-fotos {
+        border: 1px solid #ccc;
+        border-bottom: none;
+      }
+    }  
+  }
+    
 } 
 
