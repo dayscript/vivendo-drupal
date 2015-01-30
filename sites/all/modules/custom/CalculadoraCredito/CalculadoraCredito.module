@@ -32,7 +32,7 @@ function CalculadoraCredito_block_content(){
   drupal_add_js($module_path.'/js/calculadora.js');  
   drupal_add_js($module_path.'/js/jquery.number.js');  
   
-  $data = '';
+  $readonly = ''
   
   if ( is_numeric(arg(1)) ) {
     $node = node_load( arg(1) );
@@ -41,7 +41,11 @@ function CalculadoraCredito_block_content(){
       $init  = ($price * 0.30);
       $deuda = ($price - $init);
       
-      $data = 'readonly="readonly"';
+      $readonly = 'readonly="readonly"';
+      
+      $data = '<span class="text-respuesta"><strong>Precio:</strong> $'. number_format($price, 0, ',', '.') .'</span>
+	       <span class="text-respuesta"><strong>Cuota inicial:</strong> $'. number_format($init, 0, ',', '.') .'</span>
+	       <span class="text-respuesta"><strong>Valor a financiar:</strong> $'. number_format($deuda, 0, ',', '.') .'</span>';
       
     }
   }
@@ -49,6 +53,7 @@ function CalculadoraCredito_block_content(){
   $output = '<div class="contenedor">
                      <div class="block_calculadora">
                      <h2>CALCULE SU CR&Eacute;DITO</h2>
+		     <div class="content-default">'.$data.'</div>
                        <div id="mostrar_resultado">
                            <span class="text-respuesta" id="text-respuesta"></span><br><br>
                           <span class="respuesta" id="respuesta"></span>
@@ -58,9 +63,9 @@ function CalculadoraCredito_block_content(){
                         </div>
                       <div id="items_calculadora">
                       <span>Valor de compra</span><br>
-                      <input type="text" name="valor_compra" id="valor_compra" value="'.$price.'" '.$data.'/><br>
+                      <input type="text" name="valor_compra" id="valor_compra" value="'.$price.'" '.$readonly.'/><br>
                       <div id="mensaje1" class="errores"> Ingresa solo números</div>
-                      <span>Valor de cuota inicial (30%)</span><br>
+                      <span>Valor de cuota inicial</span><br>
                       <input type="text"/ name="valor_inicial" id="valor_inicial" value="'.$init.'"><br>
                       <div id="mensaje2" class="errores"> Ingresa un valor mayor </div>
                       <div class="select_calcular"><span>Tasa</span><br>
@@ -76,7 +81,7 @@ function CalculadoraCredito_block_content(){
                           <option value="240">240 Meses</option>
                         </select><br>
                         </div>
-
+			<div class="content-default">'.$data.'</div>
                         <div>
                           <button name="calcular_bn" id="calcular_bn" class="calcular_bn" onClick="calcular()"><span class="text-boton">CALCULAR</span>
                           </button>
