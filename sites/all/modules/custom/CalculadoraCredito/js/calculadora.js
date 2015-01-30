@@ -19,6 +19,7 @@ jQuery(document).ready(function(){
 		                jQuery("#mensaje2").fadeIn("slow");
 		            }   
 	    });
+            jQuery('#valor_inicial').number(true, 2);
  });
 
 function ocultar(){

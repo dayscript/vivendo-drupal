@@ -30,6 +30,7 @@ function CalculadoraCredito_block_view($delta = '') {
 function CalculadoraCredito_block_content(){
   $module_path = drupal_get_path('module', 'CalculadoraCredito');
   drupal_add_js($module_path.'/js/calculadora.js');  
+  drupal_add_js($module_path.'/js/jquery.number.js');  
   
   if ( is_numeric(arg(1)) ) {
     $node = node_load( arg(1) );
