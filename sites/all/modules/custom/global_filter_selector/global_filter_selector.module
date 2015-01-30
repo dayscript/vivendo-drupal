@@ -84,7 +84,7 @@ function global_filter_selector_block_view($delta = '') {
         $block['content'] .= "<li><a class='medellin'>Medell&iacute;n<br />Antioquia</a></li>";
         $block['content'] .= "<li><a class='ejecafetero'>Eje<br />Cafetero</a></li>";
         $block['content'] .= "<li><a class='costa'>Costa<br />Atl&aacute;ntica</a></li>";
-	$block['content'] .= "<li><a class='santanderes'>Santander<br />&nbsp;</a></li>";
+	$block['content'] .= "<li><a class='santanderes'>Santanderes<br />&nbsp;</a></li>";
         $block['content'] .= "</ul></div>";
         $block['content'] = "<div class='logo'><img alt='Vivendo.co' src='/sites/all/themes/at-vivendo/images/logos/logo-vivendo.png'
                               style='border-style:solid; border-width:0px; height:62px; width:71px'><span style='color:#89878c'>vivendo.</span>
