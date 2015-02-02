@@ -35,6 +35,9 @@ function CalculadoraCredito_block_content(){
   global $base_url;
   
   $readonly = '';
+
+  $url = $base_url . '/sites/all/themes/at-vivendo/images/logos/logo-vivendo.png';
+  $img = '<img class="logo-vivendo" src="'.$url.'" /><span style="color:#89878c">vivendo.</span style="color:#cd002d"><span>co</span>' ;
   
   if ( is_numeric(arg(1)) ) {
     $node = node_load( arg(1) );
@@ -50,11 +53,8 @@ function CalculadoraCredito_block_content(){
 	       <span class="text-respuesta"><strong>Valor a financiar:</strong> $'. number_format($deuda, 0, ',', '.') .'</span>';
       
       if ( !empty($node->field_patrocinador) ) {
-	$url = file_create_url($node->field_patrocinador['und'][0]['uri']);
-	$img = '<img src="'.$url.'" />';
-      } else {
-	$url = $base_url . '/sites/all/themes/at-vivendo/images/logos/logo-vivendo.png';
-	$img = '<img class="logo-vivendo" src="'.$url.'" /><span style="color:#89878c">vivendo.</span style="color:#cd002d"><span>co</span>' ;
+	       $url = file_create_url($node->field_patrocinador['und'][0]['uri']);
+	       $img = '<img src="'.$url.'" />';
       }
       
     }
