@@ -34,7 +34,7 @@ function initialize() {
                 icon: '/sites/all/themes/at-vivendo/images/icons/marker.png'
             });
             
-            google.maps.event.addListener(marker, 'click', (function(marker, point){
+            google.maps.event.addListener(marker, 'mouseover', (function(marker, point){
               return function() {
                 infowindow.setContent( render_window(point) );
                 infowindow.open( map, marker );
