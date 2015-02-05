@@ -1,0 +1,4 @@
+name = Vivendo - constructor
+description = Add form contruct block to with field in view
+core = 7.x
+package = Vivendo
