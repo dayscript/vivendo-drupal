@@ -2393,6 +2393,7 @@ div.modal-forms-modal-content {
   width: 66%;
 }
 #block-views-constructoras-block-1{
+  margin: 0;
   .block-inner{
     margin: 0;
   }
@@ -2409,7 +2410,7 @@ div.modal-forms-modal-content {
   }
   .views-global-link{
     text-align: center;
-    margin: 10px 0;
+    margin: 10px 0 17px;
     a.button{
       font-size: 0.9em;
       padding: 3px 7px;
@@ -3598,6 +3599,9 @@ div#buscador-wrapper .link-list-compare {
         }
 
     }
+    #edit-submit {
+      width: 100%;
+    }
 
 }
 
@@ -3606,7 +3610,7 @@ div#buscador-wrapper .link-list-compare {
     display: none;
   }
   .form-item {
-    float: left;
+    overflow: hidden;
     margin: 3px 0 0 0;  
     .form-checkbox {
       float: left;
