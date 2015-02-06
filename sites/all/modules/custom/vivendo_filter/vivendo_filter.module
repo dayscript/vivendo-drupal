@@ -1,0 +1,10 @@
+<?php
+
+	function vivendo_filter_views_api() {
+		
+		return array(
+			'api' => 3,
+			'path' => drupal_get_path( 'module',  'vivendo_filter' )
+		);
+
+	}
