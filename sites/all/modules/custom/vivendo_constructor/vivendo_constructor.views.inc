@@ -1,6 +1,6 @@
 <?php
 
-	function vivendo_constructor_data_alter( &$data ) {
+	function vivendo_constructor_views_data_alter( &$data ) {
 
 		$data['node']['constructor_form'] = array(
 	        'title' => t('Constructor form'),
@@ -16,8 +16,8 @@
 
 		function render( $node ) {
 
-			$block = module_invoke('search', 'block_view', 'contacto_contructores');
-          	return render( $block ); 
+			//$block = module_invoke('search', 'block_view', 'contacto_contructores');
+          	return 'form';//render( $block ); 
 
 		}
 
