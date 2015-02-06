@@ -73,7 +73,7 @@ function buscador_formulario_form($node, &$form_state)
     $voc = taxonomy_vocabulary_machine_name_load('zonas');
     $zonas = taxonomy_get_tree($voc->vid);
     $zonas_select = array();
-    $default = isset($filterValue['zona']) ? $filterValue['zona'] : 0;
+    $default = 0;
     foreach ($zonas as $zona) {
         if ($zona->name == $ciudad) $ciudad_id = $zona->tid;
         if (!$ciudad_id) continue;
@@ -96,7 +96,7 @@ function buscador_formulario_form($node, &$form_state)
             'wrapper' => 'buscador-wrapper',
         ),
     );
-    if(!isset($form_state['values']['zona']) && (!isset($filterValue['zona']))) {
+    if(!isset($form_state['values']['zona']) && ( empty($filterValue['zona']))) {
         $form_state['values']['zona'] = $default;   
     } elseif ( isset($filterValue['zona']) ) {
         $form_state['values']['zona'] = $filterValue['zona'];
