@@ -3,7 +3,7 @@
   function vivendo_compare_init() {
     
     drupal_add_library( 'system', 'drupal.ajax' );
-    drupal_add_css(drupal_get_path('module', 'viviendo_compare') . '/css/viviendo_commpare.css', array('group' => CSS_DEFAULT, 'every_page' => TRUE));
+    drupal_add_css(drupal_get_path('module', 'viviendo_compare') . '/css/viviendo_commpare.css');
     
   }
 
