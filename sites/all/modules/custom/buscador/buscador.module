@@ -54,7 +54,7 @@ function buscador_formulario_form($node, &$form_state)
         'rango'        => ''
     );
 
-    $filterValue = issert( $_SESSION['filterValue'] ) ? $_SESSION['filterValue'] : $filterValue;
+    $filterValue = isset( $_SESSION['filterValue'] ) ? $_SESSION['filterValue'] : $filterValue;
 
     $nId      = is_numeric( arg(1) ) ? arg(1) : null;
     $initLoad = variable_get( 'initLoad' );
