@@ -3,6 +3,6 @@
 	function vivendo_constructor_views_api() {
 		return array(
 		    'api'  => 3,
-		    'path' => drupal_get_path( 'module',  'vivendo_joinder' )
+		    'path' => drupal_get_path( 'module',  'vivendo_constructor' )
 		);
 	}
