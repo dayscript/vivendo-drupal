@@ -17,8 +17,8 @@
 		function render( $node ) {
 
 			$block = module_invoke('entityform_block', 'block_view', 'contacto_contructores');
-			
-          	renturn render( $block['content'] ); 
+
+          	return render( $block['content'] ); 
 
 		}
 
