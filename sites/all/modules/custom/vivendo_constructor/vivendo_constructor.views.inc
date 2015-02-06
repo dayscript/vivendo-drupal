@@ -16,8 +16,7 @@
 
 		function render( $node ) {
 
-			//$block = module_invoke('search', 'block_view', 'contacto_contructores');
-          	return 'form';//render( $block ); 
+			return drupal_render( drupal_get_form('contacto_contructores_entityform_edit_form') );
 
 		}
 
