@@ -471,7 +471,7 @@
 
 
 scripts[] = scripts/global.js
-stylesheets[all][] =  = css/style-temp.css
+stylesheets[all][] =  = css-temp/style-temp.css
 
   ; Custom CSS
   settings[custom_css] = ''

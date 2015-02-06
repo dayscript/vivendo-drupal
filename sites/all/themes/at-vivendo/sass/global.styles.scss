@@ -274,7 +274,7 @@ body.not-front{
 #highlighted-wrapper{
   background: #000000;
   position: relative;
-  height: 455px;
+  height: 475px;
   overflow: hidden;
   .block-inner{
     margin: 0;
@@ -3575,4 +3575,6 @@ div#buscador-wrapper .link-list-compare {
     }
 }
 
-
+.text-test {
+  width: 150px;
+}
