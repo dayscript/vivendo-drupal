@@ -190,7 +190,7 @@ function buscador_formulario_form($node, &$form_state)
     $voc = taxonomy_vocabulary_machine_name_load('rango_de_precios');
     $rangos = taxonomy_get_tree($voc->vid);
     $rangos_select = array(0 => "Todos");
-    $default = isset($filterValue['rango']) ? $filterValue['rango'] : 0;
+    $default = $filterValue['rango'] !== '' ? $filterValue['rango'] : '';
     foreach ($rangos as $rango) {
         $key = $rango->tid;
         $value = $rango->name;
