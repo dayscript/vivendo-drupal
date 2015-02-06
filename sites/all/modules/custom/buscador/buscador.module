@@ -175,7 +175,7 @@ function buscador_formulario_form($node, &$form_state)
     }
 
     $form['wrapper']['constructora'] = array(
-        '#prefix' => '<div id="constructora-wrapper" class="wrapper">',
+        '#prefix' => '<div id="constructora-wrapper" class="wrapper">' . $filterValue['rango'],
         '#suffix' => '</div>',
         '#type' => 'select',
         '#options' => $constructoras_select,
