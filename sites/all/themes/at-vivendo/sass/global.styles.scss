@@ -3226,7 +3226,7 @@ body.bogota{
 }
 
 .views-field-field-telefono1 {
-    display: hidden;
+    display: none;
     width: 201px;
     margin: 0 auto;
     font-weight: bold;
@@ -3469,14 +3469,14 @@ div#buscador-wrapper .link-list-compare {
 .views-field-field-telefono1 {
     .views-label,
     .field-content{
-        display: table-cell;
+        display: block;
+        float: left;
     }  
     .views-label {
-        width: 63%;
         text-align: center;
     }
     .field-content {
-        width: 32%;
+        width: 106px;
     }
 } 
 

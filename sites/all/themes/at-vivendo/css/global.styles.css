@@ -2756,7 +2756,7 @@ body.cali #menu-718-1 {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033228}}
 .views-field-field-telefono1 {
-  display: hidden;
+  display: none;
   width: 201px;
   margin: 0 auto;
   font-weight: bold;
@@ -3016,16 +3016,16 @@ div#buscador-wrapper .link-list-compare {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033471}}
 .views-field-field-telefono1 .views-label,
 .views-field-field-telefono1 .field-content {
-  display: table-cell;
+  display: block;
+  float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033474}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033475}}
 .views-field-field-telefono1 .views-label {
-  width: 63%;
   text-align: center;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033478}}
 .views-field-field-telefono1 .field-content {
-  width: 32%;
+  width: 106px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033485}}
