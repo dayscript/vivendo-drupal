@@ -3587,4 +3587,38 @@ div#buscador-wrapper .link-list-compare {
     .description {
         font-style: italic;
     }
+    .group-locacion {
+        overflow: hidden;
+        #edit-field-pais, 
+        #edit-field-ciudad-contact{
+            float: left;
+        }
+        #edit-field-pais {
+            margin: 0 10px 0 0;
+        }
+
+    }
+
 }
+
+#edit-field-ley-1581 {
+  label {
+    display: none;
+  }
+  .form-item {
+    float: left;
+    margin: 3px 0 0 0;  
+    .form-checkbox {
+      float: left;
+      margin: 3px 0 0 0;
+    }
+    label.option {
+      display: block;
+      float: left;
+      width: 248px;
+      margin: 0 0 0 5px;
+      font-style: italic; 
+    }
+  }
+}
+
