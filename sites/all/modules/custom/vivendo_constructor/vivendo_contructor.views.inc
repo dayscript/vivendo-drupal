@@ -16,8 +16,8 @@
 
 		function render( $node ) {
 
-			$block = module_invoke('search', 'block_view', 'contacto_contructores');
-          	return render( $block ); 
+			//$block = module_invoke('search', 'block_view', 'contacto_contructores');
+          	return 'form';//render( $block ); 
 
 		}
 
