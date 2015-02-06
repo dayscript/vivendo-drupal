@@ -3571,6 +3571,20 @@ div#buscador-wrapper .link-list-compare {
     }
 }
 
-.text-test {
-  width: 150px;
+.block-contacto-contructores {
+    background: none repeat scroll 0 0 #f4f4f4;
+    .block-inner {
+        width: 284px;
+        margin: 0 auto;
+        padding: 5px 0 0 0;
+    }
+    label,
+    .description {
+        color: #333;
+        font-weight:normal;
+        font-size: 13px;
+    }
+    .description {
+        font-style: italic;
+    }
 }
