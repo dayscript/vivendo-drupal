@@ -2,7 +2,7 @@
 
     function vivendo_filter_views_query_alter(&$view, &$query) {
   
-    	dpm( $views );
+    	dpm( $view );
     	dpm( $query );
 
 		/*if ( !isset($_SESSION) ) { session_start(); }
