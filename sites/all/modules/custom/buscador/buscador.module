@@ -104,7 +104,7 @@ function buscador_formulario_form($node, &$form_state)
     $voc = taxonomy_vocabulary_machine_name_load('tipo_de_proyecto');
     $tipos = taxonomy_get_tree($voc->vid);
     $tipos_select = array(0=>"Todos");
-    $default = isset($filterValue['tipo']) ? $filterValue['tipo'] : 0;
+    $default = 0;
     foreach ($tipos as $tipo) {
         $key = $tipo->tid;
         $value = $tipo->name;
@@ -147,7 +147,7 @@ function buscador_formulario_form($node, &$form_state)
     );
     $constructoras = node_load_multiple(array(), array('type' => "constructora"));
     $constructoras_select = array(0=>"Todas");
-    $default = isset($filterValue['constructora']) ? $filterValue['constructora'] : 0;
+    $default = 0;
     foreach ($constructoras as $constructora) {
         $key = $constructora->nid;
         $value = $constructora->title;
@@ -190,7 +190,7 @@ function buscador_formulario_form($node, &$form_state)
     $voc = taxonomy_vocabulary_machine_name_load('rango_de_precios');
     $rangos = taxonomy_get_tree($voc->vid);
     $rangos_select = array(0 => "Todos");
-    $default = !isset($filterValue['rango']) ? $filterValue['rango'] : '';
+    $default = 0;
     foreach ($rangos as $rango) {
         $key = $rango->tid;
         $value = $rango->name;
