@@ -3226,9 +3226,8 @@ body.bogota{
 }
 
 .views-field-field-telefono1 {
-    display: block;
+    display: hidden;
     width: 201px;
-    overflow: hidden;
     margin: 0 auto;
     font-weight: bold;
 }
@@ -3465,10 +3464,6 @@ div#buscador-wrapper .link-list-compare {
         }
     }
     
-}
-
-.views-field-field-telefono1 {
-    display: table;
 }
 
 .views-field-field-telefono1 {
