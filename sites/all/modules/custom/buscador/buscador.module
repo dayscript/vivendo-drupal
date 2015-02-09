@@ -103,6 +103,7 @@ function buscador_formulario_form($node, &$form_state)
     $tipos = taxonomy_get_tree($voc->vid);
     $tipos_select = array(0=>"Todos");
     $default = ($filterValue['tipo'] > 0 && !isset($form_state['values']['tipo'])) ? $filterValue['tipo'] : 0;
+    if(!isset($form_state['values']['tipo']) ) { $form_state['values']['tipo'] = $default; } 
     foreach ($tipos as $tipo) {
         $key = $tipo->tid;
         $value = $tipo->name;
