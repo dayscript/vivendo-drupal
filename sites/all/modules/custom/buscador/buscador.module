@@ -96,11 +96,9 @@ function buscador_formulario_form($node, &$form_state)
             'wrapper' => 'buscador-wrapper',
         ),
     );
-    if(!isset($form_state['values']['zona']) && ( empty($filterValue['zona']))) {
+    if(!isset($form_state['values']['zona'])) {
         $form_state['values']['zona'] = $default;   
-    } elseif ( isset($filterValue['zona']) ) {
-        $form_state['values']['zona'] = $filterValue['zona'];
-    }
+    } 
     $voc = taxonomy_vocabulary_machine_name_load('tipo_de_proyecto');
     $tipos = taxonomy_get_tree($voc->vid);
     $tipos_select = array(0=>"Todos");
@@ -111,18 +109,18 @@ function buscador_formulario_form($node, &$form_state)
         $query = db_select('search_api_db_proyectos', 'p');
         $query->fields('p', array('nid'))
             ->condition('field_tipo', $tipo->tid, '=');
-        if ( (isset($form_state['values']['zona'])  && $form_state['values']['zona']>0) || $filterValue['zona']>0 ) {
+        if ( (isset($form_state['values']['zona'])  && $form_state['values']['zona']>0) /*|| $filterValue['zona']>0*/) {
             $filterValue['zona'] = isset($form_state['values']['zona']) ? $form_state['values']['zona'] : $filterValue['zona'];
-            $query->condition('field_zona', $filterValue['zona'], '=');
+            $query->condition('field_zona', $form_state['values']['zona'], '=');
         }
-        if ( (isset($form_state['values']['constructora']) && $form_state['values']['constructora']>0) || $filterValue['constructora']>0)  {
+        if ( (isset($form_state['values']['constructora']) && $form_state['values']['constructora']>0)/* || $filterValue['constructora']>0*/)  {
             $filterValue['constructora'] = isset($form_state['values']['constructora']) 
                 ? $form_state['values']['constructora'] : $filterValue['constructora'];
-            $query->condition('field_constructora', $filterValue['constructora'], '=');
+            $query->condition('field_constructora', $form_state['values']['constructora'], '=');
         }
-        if ((isset($form_state['values']['rango']) && $form_state['values']['rango']>0) || $filterValue['rango']>0) {
+        if ((isset($form_state['values']['rango']) && $form_state['values']['rango']>0)/* || $filterValue['rango']>0*/) {
             $filterValue['rango'] = isset($form_state['values']['rango']) ? $form_state['values']['rango'] : $filterValue['rango'];
-            $rango = taxonomy_term_load($filterValue['rango']);
+            $rango = taxonomy_term_load($form_state['values']['rango']);
             $data = explode("|",$rango->description);
             $query->condition('field_precio', intval($data[0]) , '>=');
             $query->condition('field_precio', intval($data[1]) , '<');
@@ -154,17 +152,17 @@ function buscador_formulario_form($node, &$form_state)
         $query = db_select('search_api_db_proyectos', 'p');
         $query->fields('p', array('nid'))
             ->condition('field_constructora', $constructora->nid, '=');
-        if ( (isset($form_state['values']['zona'])  && $form_state['values']['zona']>0) || $filterValue['zona']>0 ) {
+        if ( (isset($form_state['values']['zona'])  && $form_state['values']['zona']>0)/* || $filterValue['zona']>0 */) {
             $filterValue['zona'] = isset($form_state['values']['zona']) ? $form_state['values']['zona'] : $filterValue['zona'];
-            $query->condition('field_zona', $filterValue['zona'], '=');
+            $query->condition('field_zona', $form_state['values']['zona'], '=');
         }
-        if ((isset($form_state['values']['tipo']) && $form_state['values']['tipo']>0) || $filterValue['tipo']>0) {
+        if ((isset($form_state['values']['tipo']) && $form_state['values']['tipo']>0)/* || $filterValue['tipo']>0*/) {
             $filterValue['tipo'] = isset($form_state['values']['tipo']) ? $form_state['values']['tipo'] : $filterValue['tipo'];
-            $query->condition('field_tipo', $filterValue['tipo'], '=');
+            $query->condition('field_tipo', $form_state['values']['tipo'], '=');
         }
-        if ((isset($form_state['values']['rango']) && $form_state['values']['rango']>0) || $filterValue['rango']>0) {
+        if ((isset($form_state['values']['rango']) && $form_state['values']['rango']>0)/* || $filterValue['rango']>0*/) {
             $filterValue['rango'] = isset($form_state['values']['rango']) ? $form_state['values']['rango'] : $filterValue['rango'];
-            $rango = taxonomy_term_load($filterValue['rango']);
+            $rango = taxonomy_term_load($form_state['values']['rango']);
             $data = explode("|",$rango->description);
             $query->condition('field_precio', intval($data[0]) , '>=');
             $query->condition('field_precio', intval($data[1]) , '<');
@@ -199,18 +197,18 @@ function buscador_formulario_form($node, &$form_state)
         $query->fields('p', array('nid'))
             ->condition('field_precio', intval($data[0]), '>=')
             ->condition('field_precio', intval($data[1]), '<');
-        if ( (isset($form_state['values']['zona'])  && $form_state['values']['zona']>0) || $filterValue['zona']>0 ) {
+        if ( (isset($form_state['values']['zona'])  && $form_state['values']['zona']>0)/* || $filterValue['zona']>0 */) {
             $filterValue['zona'] = isset($form_state['values']['zona']) ? $form_state['values']['zona'] : $filterValue['zona'];
-            $query->condition('field_zona', $filterValue['zona'], '=');
+            $query->condition('field_zona', $form_state['values']['zona'], '=');
         }
-        if ( (isset($form_state['values']['constructora']) && $form_state['values']['constructora']>0) || $filterValue['constructora']>0)  {
+        if ( (isset($form_state['values']['constructora']) && $form_state['values']['constructora']>0)/* || $filterValue['constructora']>0*/)  {
             $filterValue['constructora'] = isset($form_state['values']['constructora']) 
                 ? $form_state['values']['constructora'] : $filterValue['constructora'];
-            $query->condition('field_constructora', $filterValue['constructora'], '=');
+            $query->condition('field_constructora', $form_state['values']['constructora'], '=');
         }
-        if ((isset($form_state['values']['tipo']) && $form_state['values']['tipo']>0) || $filterValue['tipo']>0) {
+        if ((isset($form_state['values']['tipo']) && $form_state['values']['tipo']>0)/* || $filterValue['tipo']>0*/) {
             $filterValue['tipo'] = isset($form_state['values']['tipo']) ? $form_state['values']['tipo'] : $filterValue['tipo'];
-            $query->condition('field_tipo', $filterValue['tipo'], '=');
+            $query->condition('field_tipo', $form_state['values']['tipo'], '=');
         }
         $num_rows = $query->countQuery()->execute()->fetchField();
         if($num_rows>0)
@@ -231,25 +229,25 @@ function buscador_formulario_form($node, &$form_state)
     );
     $query = db_select('search_api_db_proyectos', 'p');
     $query->fields('p', array('nid'));
-    if ( (isset($form_state['values']['zona'])  && $form_state['values']['zona']>0) || $filterValue['zona']>0 ) {
+    if ( (isset($form_state['values']['zona'])  && $form_state['values']['zona']>0)/* || $filterValue['zona']>0 */) {
             $filterValue['zona'] = isset($form_state['values']['zona']) ? $form_state['values']['zona'] : $filterValue['zona'];
-            $query->condition('field_zona', $filterValue['zona'], '=');
+            $query->condition('field_zona', $form_state['values']['zona'], '=');
         }
-    if ((isset($form_state['values']['rango']) && $form_state['values']['rango']>0) || $filterValue['rango']>0) {
+    if ((isset($form_state['values']['rango']) && $form_state['values']['rango']>0)/* || $filterValue['rango']>0*/) {
             $filterValue['rango'] = isset($form_state['values']['rango']) ? $form_state['values']['rango'] : $filterValue['rango'];
-            $rango = taxonomy_term_load($filterValue['rango']);
+            $rango = taxonomy_term_load($form_state['values']['rango']);
             $data = explode("|",$rango->description);
             $query->condition('field_precio', intval($data[0]) , '>=');
             $query->condition('field_precio', intval($data[1]) , '<');
         }
-    if ( (isset($form_state['values']['constructora']) && $form_state['values']['constructora']>0) || $filterValue['constructora']>0)  {
+    if ( (isset($form_state['values']['constructora']) && $form_state['values']['constructora']>0)/* || $filterValue['constructora']>0*/)  {
             $filterValue['constructora'] = isset($form_state['values']['constructora']) 
                 ? $form_state['values']['constructora'] : $filterValue['constructora'];
-            $query->condition('field_constructora', $filterValue['constructora'], '=');
+            $query->condition('field_constructora', $form_state['values']['constructora'], '=');
     }
-    if ((isset($form_state['values']['tipo']) && $form_state['values']['tipo']>0) || $filterValue['tipo']>0) {
+    if ((isset($form_state['values']['tipo']) && $form_state['values']['tipo']>0) /*|| $filterValue['tipo']>0*/) {
         $filterValue['tipo'] = isset($form_state['values']['tipo']) ? $form_state['values']['tipo'] : $filterValue['tipo'];
-        $query->condition('field_tipo', $filterValue['tipo'], '=');
+        $query->condition('field_tipo', $form_state['values']['tipo'], '=');
     }
 
     $_SESSION['filterValue'] = $filterValue;
