@@ -113,7 +113,7 @@ function buscador_formulario_form($node, &$form_state)
         $query = db_select('search_api_db_proyectos', 'p');
         $query->fields('p', array('nid'))
             ->condition('field_tipo', $tipo->tid, '=');
-        if ( (isset($form_state['values']['zona'])  && $form_state['values']['zona']>0)/* || $filterValue['zona']>0*/) {
+        if ( (isset($form_state['values']['zona'])  && $form_state['values']['zona']>0)) {
             $filterValue['zona'] = isset($form_state['values']['zona']) ? $form_state['values']['zona'] : $filterValue['zona'];
             $query->condition('field_zona', $form_state['values']['zona'], '=');
         } elseif (!isset($form_state['values']['zona']) && $filterValue['zona']>0 ) {
