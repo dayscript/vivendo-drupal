@@ -48,6 +48,7 @@ function buscador_formulario_form($node, &$form_state)
     global $base_url;
 
     $filterValue = array(
+        'ciudad'       => '',
         'zona'         => 0,
         'tipo'         => 0,
         'constructora' => 0,
@@ -69,6 +70,7 @@ function buscador_formulario_form($node, &$form_state)
     } else {
         $ciudad = "Bogotá";
     }
+    $filterValue['ciudad'] = $ciudad;
     $ciudad_id = false;
     $voc = taxonomy_vocabulary_machine_name_load('zonas');
     $zonas = taxonomy_get_tree($voc->vid);
@@ -96,9 +98,11 @@ function buscador_formulario_form($node, &$form_state)
             'wrapper' => 'buscador-wrapper',
         ),
     );
-    if(!isset($form_state['values']['zona'])) {
+    if(!isset($form_state['values']['zona']) && $filterValue['zona'] == ) {
         $form_state['values']['zona'] = $default;   
-    } 
+    } else {
+        $form_state['values']['zona'] = $filterValue['zona'];
+    }
     $voc = taxonomy_vocabulary_machine_name_load('tipo_de_proyecto');
     $tipos = taxonomy_get_tree($voc->vid);
     $tipos_select = array(0=>"Todos");

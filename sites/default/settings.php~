@@ -218,8 +218,8 @@ $databases = array (
     'default' => 
     array (
       'database' => 'vivendo_drupal',
-      'username' => 'vivendo',
-      'password' => 'ntAvRaY6sPQ4c5Vx',
+      'username' => 'root',
+      'password' => 'admin123',
       'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',
