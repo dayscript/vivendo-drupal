@@ -107,7 +107,7 @@ function buscador_formulario_form($node, &$form_state)
         $key = $tipo->tid;
         $value = $tipo->name;
         $query = db_select('search_api_db_proyectos', 'p');
-        $query->fields('p', array('nid'))
+        $query->fields('p', array('nid'));
         if ( $default > 0 ) {
             $query->condition('field_tipo', $default, '=');
         }  else {
