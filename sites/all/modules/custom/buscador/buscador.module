@@ -99,7 +99,8 @@ function buscador_formulario_form($node, &$form_state)
         ),
     );
     if(!isset($form_state['values']['zona'])) {
-        $form_state['values']['zona'] = $default;   
+        $form_state['values']['zona'] = $default;
+        //Mess.
     } 
     $voc = taxonomy_vocabulary_machine_name_load('tipo_de_proyecto');
     $tipos = taxonomy_get_tree($voc->vid);
