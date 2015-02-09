@@ -103,13 +103,16 @@ function buscador_formulario_form($node, &$form_state)
     $tipos = taxonomy_get_tree($voc->vid);
     $tipos_select = array(0=>"Todos");
     $default = ($filterValue['tipo'] > 0 && !isset($form_state['values']['tipo'])) ? $filterValue['tipo'] : 0;
-    if(!isset($form_state['values']['tipo']) ) { $form_state['values']['tipo'] = $default; } 
     foreach ($tipos as $tipo) {
         $key = $tipo->tid;
         $value = $tipo->name;
         $query = db_select('search_api_db_proyectos', 'p');
         $query->fields('p', array('nid'))
-            ->condition('field_tipo', $tipo->tid, '=');
+        if ( $default > 0 ) {
+            $query->condition('field_tipo', $default, '=');
+        }  else {
+            $query->condition('field_tipo', $tipo->tid, '=');
+        }   
         if ( (isset($form_state['values']['zona'])  && $form_state['values']['zona']>0)) {
             $filterValue['zona'] = $form_state['values']['zona'];
             $query->condition('field_zona', $form_state['values']['zona'], '=');
