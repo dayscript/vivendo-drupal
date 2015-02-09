@@ -98,7 +98,7 @@ function buscador_formulario_form($node, &$form_state)
             'wrapper' => 'buscador-wrapper',
         ),
     );
-    if(!isset($form_state['values']['zona']) && $filterValue['zona'] == ) {
+    if(!isset($form_state['values']['zona']) && $filterValue['zona'] == 0) {
         $form_state['values']['zona'] = $default;   
     } else {
         $form_state['values']['zona'] = $filterValue['zona'];
