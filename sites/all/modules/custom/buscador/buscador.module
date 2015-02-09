@@ -98,10 +98,11 @@ function buscador_formulario_form($node, &$form_state)
             'wrapper' => 'buscador-wrapper',
         ),
     );
-    if(!isset($form_state['values']['zona'])) {
-        $form_state['values']['zona'] = $default;
-        //Mess.
-    } 
+    if(!isset($form_state['values']['zona']) && $filterValue['zona'] == 0 ) {
+        $form_state['values']['zona'] = $default;   
+    } else {
+        $form_state['values']['zona'] = $filterValue['zona'];
+    }
     $voc = taxonomy_vocabulary_machine_name_load('tipo_de_proyecto');
     $tipos = taxonomy_get_tree($voc->vid);
     $tipos_select = array(0=>"Todos");
