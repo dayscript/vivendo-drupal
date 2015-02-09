@@ -102,7 +102,7 @@ function buscador_formulario_form($node, &$form_state)
     $voc = taxonomy_vocabulary_machine_name_load('tipo_de_proyecto');
     $tipos = taxonomy_get_tree($voc->vid);
     $tipos_select = array(0=>"Todos");
-    $default = 0;
+    $default = ($filterValue['tipo'] > 0) ? $filterValue['tipo'] : 0;
     foreach ($tipos as $tipo) {
         $key = $tipo->tid;
         $value = $tipo->name;
