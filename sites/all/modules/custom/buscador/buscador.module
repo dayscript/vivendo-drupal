@@ -107,12 +107,8 @@ function buscador_formulario_form($node, &$form_state)
         $key = $tipo->tid;
         $value = $tipo->name;
         $query = db_select('search_api_db_proyectos', 'p');
-        $query->fields('p', array('nid'));
-        if ( $default > 0 ) {
-            $query->condition('field_tipo', $default, '=');
-        }  else {
-            $query->condition('field_tipo', $tipo->tid, '=');
-        }   
+        $query->fields('p', array('nid'))
+            ->condition('field_tipo', $tipo->tid, '=');
         if ( (isset($form_state['values']['zona'])  && $form_state['values']['zona']>0)) {
             $filterValue['zona'] = $form_state['values']['zona'];
             $query->condition('field_zona', $form_state['values']['zona'], '=');
@@ -321,6 +317,8 @@ function buscador_formulario_form($node, &$form_state)
         '#markup' => ''
     );
     
+    $_SESSION['proyectos']  = $proyectos;
+
     $points = "[";
     foreach($proyectos as $proyecto){
         if(isset($proyecto->field_coordenadas['und'][0]['value']) && $proyecto->field_coordenadas['und'][0]['value'] != "" && strstr($proyecto->field_coordenadas['und'][0]['value'],",")){
