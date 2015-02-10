@@ -2646,10 +2646,16 @@ h2.pane-title.block-title{
             background-image: url("../images/icons/medellin.png");
           }
           &.ejecafetero{
-            background-image: url("../images/icons/ejecafetero.png");
+            background-image: url("../images/icons/eje_cafetero.png");
           }
           &.costa{
-            background-image: url("../images/icons/caribe.png");
+            background-image: url("../images/icons/costa.png");
+          }
+          &.santanderes{
+            background-image: url("../images/icons/santanderes.png");
+          }
+          &.florida{
+            background-image: url("../images/icons/florida.png");
           }
         }
       }
@@ -3628,6 +3634,8 @@ div#buscador-wrapper .link-list-compare {
       font-style: italic; 
       a {
         color: #dd0024;
+      }
+    }
   }
 }
 
