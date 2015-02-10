@@ -3222,8 +3222,12 @@ div#buscador-wrapper .link-list-compare {
   float: right;
   margin-top: 31px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033660}}
+.simplenews-subscribe .form-text {
+  width: 400px;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033662}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033665}}
 .simplenews-subscribe > div {
   overflow: hidden;
   width: 570px;
