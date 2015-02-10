@@ -2928,7 +2928,7 @@ body.bogota{
   .views-row{
     float: left;
     margin: 0 10px 25px 0;
-    border: 3px solid #cccccc;
+    border: 1px solid #cccccc;
     padding-bottom: 10px;
     width: 270px;
     .views-field-field-fotos{
@@ -3628,8 +3628,14 @@ div#buscador-wrapper .link-list-compare {
       font-style: italic; 
       a {
         color: #dd0024;
-      }
-    }
+  }
+}
+
+.gird {
+  .views-field-title,
+  .views-field-field-precio,
+  .views-field-field-direccion {
+    padding-left: 15px;
   }
 }
 
