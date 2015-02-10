@@ -26,9 +26,7 @@
 				'#required' => TRUE
 			);
 
-			uset( $form['mail'] );
-
-			var_dump( $form );
+			unset( $form['mail'] );
 		}
 
 	}
