@@ -96,6 +96,10 @@ function CalculadoraCredito_block_content(){
                         </div>
 			<div class="content-default">'.$data.'</div>
 			  <span class="text-respuesta">*Modalidad cuota fija en pesos.</span>
+        <span class="text-respuesta"><br/><strong>*Nota:</strong> 
+las cifras mostradas aquí son una aproximación 
+ESTE VALOR NO INCLUYE SEGUROS 
+El porcentaje de financiación de crédito varía dependiendo las políticas de cada constructora.<br/></span>
                         <div>
                           <button name="calcular_bn" id="calcular_bn" class="calcular_bn" onClick="calcular()"><span class="text-boton">CALCULAR</span>
                           </button>
@@ -177,6 +181,10 @@ function modal_CalculadoraCredito_block_content(){
                         </div>
       <div class="content-default">'.$data.'</div>
         <span class="text-respuesta">*Modalidad cuota fija en pesos.</span>
+        <span class="text-respuesta"><br/><strong>*Nota:</strong> 
+las cifras mostradas aquí son una aproximación 
+ESTE VALOR NO INCLUYE SEGUROS 
+El porcentaje de financiación de crédito varía dependiendo las políticas de cada constructora.<br/></span>
                         <div>
                           <button name="calcular_bn" id="calcular_bn" class="calcular_bn" onClick="calcular()"><span class="text-boton">CALCULAR</span>
                           </button>

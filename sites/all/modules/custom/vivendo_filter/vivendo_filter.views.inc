@@ -2,7 +2,7 @@
 
     function vivendo_filter_views_query_alter(&$view, &$query) {
   
-    	if ( !isset($_SESSION) ) { session_start(); }
+    	/*if ( !isset($_SESSION) ) { session_start(); }
 
     	$filterValue = isset($_SESSION['filterValue']) ? $_SESSION['filterValue'] : array();
 
@@ -32,6 +32,6 @@
 
 			}
 
-		}
+		}*/
 
     }
