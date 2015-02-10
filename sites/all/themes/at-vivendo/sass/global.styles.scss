@@ -2710,14 +2710,17 @@ h2.pane-title.block-title{
     /*float: left;*/
     font-size: 1em;
     margin: 17px 0 0 0;
+    width: 100%;
   }
   #edit-mail{
     width: 90%;
   }
   .form-item-mail{
     float: left;
-    width: 54%;
     margin: 0 0 10px 0;
+  }
+  .form-text {
+    width: 90%;
   }
 }
 
