@@ -3648,24 +3648,23 @@ div#buscador-wrapper .link-list-compare {
   }
 }
 
-.simplenews-subscribe {
-  .content-field-simplenews {
-    float: left;
-    height: 112px;
+.cboxLoadedContent {
+  .simplenews-subscribe {
+    .content-field-simplenews {
+      float: left;
+      height: 112px;
+    } 
+    #edit-submit {
+      float: right;
+      margin-top: 31px;
+    } 
+    .form-text {
+      width: 400px;
+    }
   } 
-  #edit-submit {
-    float: right;
-    margin-top: 31px;
+  .simplenews-subscribe > div {
+    overflow: hidden;
+    width: 570px;
   } 
-  .form-text {
-    width: 400px;
-  }
 }
-
-.simplenews-subscribe > div {
-  overflow: hidden;
-  width: 570px;
-}
-
-
 
