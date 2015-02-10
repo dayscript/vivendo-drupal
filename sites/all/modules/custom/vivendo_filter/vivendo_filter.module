@@ -13,9 +13,7 @@
 
 		if ( $form_id == 'simplenews_block_form_310' ) {
 
-			if ( isset($form['mail']) && !empty($form['mail']) ) {
-
-				var_dump($form);
+			if ( $form['action'] !== 'unsubscribe' ) {
 
 				$form['content'] = array(
 					'#prefix' => '<div id="content-field-simplenews">',
