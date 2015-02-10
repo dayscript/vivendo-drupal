@@ -110,9 +110,18 @@ function CalculadoraCredito_block_content(){
 }
 function modal_CalculadoraCredito_block_content(){
   $module_path = drupal_get_path('module', 'CalculadoraCredito');
-  drupal_add_js($module_path.'/js/calculadora1.js');  
+  drupal_add_js($module_path.'/js/calculadora.js');  
+  drupal_add_js($module_path.'/js/jquery.number.js');  
   
-  $data = '';
+  global $base_url;
+  
+  $readonly = '';
+  $price    = '';
+  $init     = '';
+  $data     = '';
+
+  $url = $base_url . '/sites/all/themes/at-vivendo/images/logos/logo-vivendo.png';
+  $img = '<img class="logo-vivendo" src="'.$url.'" /><span style="color:#89878c">vivendo.</span style="color:#cd002d"><span>co</span>' ;
   
   if ( is_numeric(arg(1)) ) {
     $node = node_load( arg(1) );
@@ -121,9 +130,16 @@ function modal_CalculadoraCredito_block_content(){
       $init  = ($price * 0.30);
       $deuda = ($price - $init);
       
-      $data = '<span class="text-respuesta">Precio: '. $price .'</span>
-	       <span class="text-respuesta">Cuota inicial: '. $init .'</span>
-	       <span class="text-respuesta">Valor a financiar: '. $deuda .'</span>';
+      $readonly = 'readonly="readonly"';
+      
+      $data = '<span class="text-respuesta"><strong>Precio:</strong> $'. number_format($price, 0, ',', '.') .'</span>
+         <span class="text-respuesta"><strong>Cuota inicial:</strong> $'. number_format($init, 0, ',', '.') .'</span>
+         <span class="text-respuesta"><strong>Valor a financiar:</strong> $'. number_format($deuda, 0, ',', '.') .'</span>';
+      
+      if ( !empty($node->field_patrocinador) ) {
+         $url = file_create_url($node->field_patrocinador['und'][0]['uri']);
+         $img = '<img src="'.$url.'" />';
+      }
       
     }
   }
@@ -131,37 +147,38 @@ function modal_CalculadoraCredito_block_content(){
   $output = '<div class="contenedor">
                      <div class="block_calculadora">
                      <h2>CALCULE SU CR&Eacute;DITO</h2>
-		       <div>'.$data.'</div>
-                       <div id="mostrar_resultado1">
-                           <span class="text-respuesta" id="text-respuesta1"></span><br><br>
-                          <span class="respuesta" id="respuesta1"></span>
+         <div class="content-sponsor">'.$img.'</div>
+                       <div id="mostrar_resultado">
+                           <span class="text-respuesta" id="text-respuesta"></span><br><br>
+                          <span class="respuesta" id="respuesta"></span>
                           <div class="boton_recal">
-                          <button class="calcular_bn" onClick="recalcular1()">VOLVER A CALCULAR</button>
+                          <button class="calcular_bn" onClick="recalcular()">VOLVER A CALCULAR</button>
                           </div>
                         </div>
-                      <div id="items_calculadora1">
+                      <div id="items_calculadora">
                       <span>Valor de compra</span><br>
-                      <input type="text" name="valor_compra" id="valor_compra1" value="1000"/><br>
-                      <div id="mensaje11" class="errores"> Ingresa solo números</div>
+                      <input type="text" name="valor_compra" id="valor_compra" value="'.$price.'" '.$readonly.'/><br>
+                      <div id="mensaje1" class="errores"> Ingresa solo números</div>
                       <span>Valor de cuota inicial</span><br>
-                      <input type="text"/ name="valor_inicial" id="valor_inicial1"><br>
-                      <div id="mensaje21" class="errores"> Ingresa un valor mayor </div>
+                      <input type="text"/ name="valor_inicial" id="valor_inicial" value="'.$init.'"><br>
+                      <div id="mensaje2" class="errores"> Ingresa un valor mayor </div>
                       <div class="select_calcular"><span>Tasa</span><br>
-                        <select name="tasa" id="tasa1" >
+                        <select name="tasa" id="tasa" >
                           <option value="0.890">11,22% E.A</option>
                         </select><br>
                       </div>
 
                       <div class="select_calcular periodos"  > <span>Periodos<span><br>
-                        <select name="periodos" id="periodos1" >
+                        <select name="periodos" id="periodos" >
                           <option value="120">120 Meses</option>
                           <option value="180">180 Meses</option>
                           <option value="240">240 Meses</option>
                         </select><br>
                         </div>
-
+      <div class="content-default">'.$data.'</div>
+        <span class="text-respuesta">*Modalidad cuota fija en pesos.</span>
                         <div>
-                          <button name="calcular_bn" id="calcular_bn1" class="calcular_bn" onClick="calcular1()"><span class="text-boton">CALCULAR</span>
+                          <button name="calcular_bn" id="calcular_bn" class="calcular_bn" onClick="calcular()"><span class="text-boton">CALCULAR</span>
                           </button>
                         </div>
                      </div>
