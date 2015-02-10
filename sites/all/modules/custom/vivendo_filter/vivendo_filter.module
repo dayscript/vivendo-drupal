@@ -13,7 +13,7 @@
 
 		if ( $form_id == 'simplenews_block_form_310' ) {
 
-			if ( $form['action'] !== 'unsubscribe' ) {
+			if ( $form['action']['#value'] !== 'unsubscribe' ) {
 
 				$form['content'] = array(
 					'#prefix' => '<div id="content-field-simplenews">',
