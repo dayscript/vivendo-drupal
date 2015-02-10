@@ -11,23 +11,29 @@
 
 	function vivendo_filter_form_alter( &$form, &$form_state, $form_id ) {
 
-		if ( $form_id == 'simplenews_block_form_310' && isset($form['mail']) ) {
+		if ( $form_id == 'simplenews_block_form_310' ) {
 
-			$form['content'] = array(
-				'#prefix' => '<div id="content-field-simplenews">',
-				'#suffix' => '</div>',
-				'#weight' => -1
-			);
+			if ( isset($form['mail']) && !empty($form['mail']) ) {
 
-			$form['content'][] = $form['mail'];
+				$form['content'] = array(
+					'#prefix' => '<div id="content-field-simplenews">',
+					'#suffix' => '</div>',
+					'#weight' => -1
+				);
 
-			$form['content']['ley'] = array(
-				'#type'     => 'checkbox',
-				'#title'    => 'Acepto y autorizo de conformidad la Ley <a href="http://newvivendo.dayscript.com/terminos-y-condiciones">1581 de 2012</a>',
-				'#required' => TRUE
-			);
+				$form['content'][] = $form['mail'];
 
-			unset( $form['mail'] );
+				$form['content']['ley'] = array(
+					'#type'     => 'checkbox',
+					'#title'    => 'Acepto y autorizo de conformidad la Ley <a href="http://newvivendo.dayscript.com/terminos-y-condiciones">1581 de 2012</a>',
+					'#required' => TRUE
+				);
+
+				unset( $form['mail'] );
+
+			}
+
+			
 		}
 
 	}
