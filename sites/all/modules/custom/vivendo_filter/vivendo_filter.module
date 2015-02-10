@@ -9,7 +9,7 @@
 
 	}
 
-	function vivendo_filter_form_alter( &$from, &$form_state, $form_id ) {
+	function vivendo_filter_form_alter( &$form, &$form_state, $form_id ) {
 
 		if ( $form_id == 'simplenews_block_form_310' ) {
 			$form['ley'] = array(
