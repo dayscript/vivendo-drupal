@@ -333,7 +333,7 @@ function buscador_formulario_form($node, &$form_state)
                 $direccion = 0;
             }
             $image_style = "escalar_289x66-copy";
-            $image_path = !empty($proyecto->field_image) ? $proyecto->field_image['und'][0]['uri'] : '';
+            $image_path = !empty($proyecto->field_fotos) ? $proyecto->field_fotos['und'][0]['uri'] : '';
             $image = image_style_url($image_style, $image_path);
 	    $url = drupal_get_path_alias( 'node/' . $proyecto->nid );
             $points .= '{name: "' .$proyecto->title . '", latlng: new google.maps.LatLng(' . $proyecto->field_coordenadas['und'][0]['value'] . '), address: "' . $direccion. '", price: "' . $precio . '", images_url: "' . $image . '", url: "' . $url . '"},';
