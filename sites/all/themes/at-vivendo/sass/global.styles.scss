@@ -2928,20 +2928,19 @@ body.bogota{
   .views-row{
     float: left;
     margin: 0 10px 25px 0;
-    border-bottom: 3px solid $line;
+    border: 3px solid #cccccc;
     padding-bottom: 10px;
     width: 270px;
     .views-field-field-fotos{
-      border-left: 1px solid #cccccc;
-      border-right: 1px solid #cccccc;
+      border-bottom: 1px solid #cccccc;
       height: 160px;
-      width: 268px;
+      width: 270px;
       
     }
     .views-field-field-image{
       /*height: 65px;*/ 
-      width: 268px;
-      border: 1px solid $light;
+      width: 270px;
+      border-bottom: 1px solid #cccccc;
     }
     .views-field-field-precio{
       .views-label,
