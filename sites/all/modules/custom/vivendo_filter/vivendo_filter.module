@@ -11,7 +11,7 @@
 
 	function vivendo_filter_form_alter( &$form, &$form_state, $form_id ) {
 
-		if ( $form_id == 'simplenews_block_form_310' ) {
+		if ( $form_id == 'simplenews_block_form_310' && isset($form['mail']) ) {
 
 			$form['content'] = array(
 				'#prefix' => '<div id="content-field-simplenews">',
