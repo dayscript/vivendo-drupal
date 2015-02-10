@@ -13,11 +13,20 @@
 
 		if ( $form_id == 'simplenews_block_form_310' ) {
 
-			$form['ley'] = array(
+			$form['content'] = array(
+				'#prefix' => '<div id="content-field-simplenews">',
+				'#suffix' => '</div>'
+			);
+
+			$form['content'][] = $form['mail'];
+
+			$form['content']['ley'] = array(
 				'#type'     => 'checkbox',
 				'#title'    => 'Acepto y autorizo de conformidad la Ley <a href="http://newvivendo.dayscript.com/terminos-y-condiciones">1581 de 2012</a>',
 				'#required' => TRUE
 			);
+
+			uset( $form['mail'] );
 
 			var_dump( $form );
 		}
