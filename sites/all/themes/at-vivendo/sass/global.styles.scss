@@ -2936,12 +2936,12 @@ body.bogota{
   }
   .views-row{
     float: left;
-    margin: 0 10px 25px 0;
-    border: 1px solid #cccccc;
+    margin: 0 0 25px 8px;
+    border: 1px solid #f1f1f1;
     padding-bottom: 10px;
     width: 270px;
     .views-field-field-fotos{
-      border-bottom: 1px solid #cccccc;
+      border-bottom: 1px solid #f1f1f1;
       height: 160px;
       width: 270px;
       
@@ -2949,7 +2949,7 @@ body.bogota{
     .views-field-field-image{
       /*height: 65px;*/ 
       width: 270px;
-      border-bottom: 1px solid #cccccc;
+      border-bottom: 1px solid #f1f1f1;
     }
     .views-field-field-precio{
       .views-label,
