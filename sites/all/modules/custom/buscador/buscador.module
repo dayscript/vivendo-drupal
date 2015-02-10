@@ -43,11 +43,11 @@ function buscador_formulario_form($node, &$form_state)
     drupal_add_js("http://maps.googleapis.com/maps/api/js?key=AIzaSyCiuczAs8cb-ThpKYue6hpFsaYHGCTORAI&sensor=false",'external');
     drupal_add_js(drupal_get_path('module', 'buscador').'/js/googlemaps.js');
 
-    if( !isset($_SESSION) ) { session_start(); }
+    //if( !isset($_SESSION) ) { session_start(); }
 
     global $base_url;
 
-    if (isset($_GET['field_ciudad'])) {
+    /*if (isset($_GET['field_ciudad'])) {
         unset($_SESSION['filterValue']);
     }
 
@@ -59,8 +59,8 @@ function buscador_formulario_form($node, &$form_state)
     );
 
     $filterValue = isset( $_SESSION['filterValue'] ) ? $_SESSION['filterValue'] : $filterValue;
-
-    
+*/
+    //337
 
     $nId      = is_numeric( arg(1) ) ? arg(1) : null;
     $initLoad = variable_get( 'initLoad' );

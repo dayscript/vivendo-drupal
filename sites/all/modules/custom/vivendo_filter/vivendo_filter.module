@@ -12,14 +12,14 @@
 	function vivendo_filter_form_alter( &$form, &$form_state, $form_id ) {
 
 		if ( $form_id == 'simplenews_block_form_310' ) {
-			if ( !isset($_SESSION) ) { session_start(); }
-			$_SESSION['form_simplenew'] = $form;
 
 			$form['ley'] = array(
 				'#type'     => 'checkbox',
 				'#title'    => 'Acepto y autorizo de conformidad la Ley <a href="http://newvivendo.dayscript.com/terminos-y-condiciones">1581 de 2012</a>',
 				'#required' => TRUE
 			);
+
+			var_dump( $form );
 		}
 
 	}
