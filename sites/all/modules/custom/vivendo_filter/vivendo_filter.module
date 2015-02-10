@@ -15,6 +15,8 @@
 
 			if ( isset($form['mail']) && !empty($form['mail']) ) {
 
+				var_dump($form);
+
 				$form['content'] = array(
 					'#prefix' => '<div id="content-field-simplenews">',
 					'#suffix' => '</div>',
