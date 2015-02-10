@@ -3648,3 +3648,21 @@ div#buscador-wrapper .link-list-compare {
   }
 }
 
+.simplenews-subscribe {
+  .content-field-simplenews {
+    float: left;
+    height: 112px;
+  } 
+  #edit-submit {
+    float: right;
+    margin-top: 31px;
+  } 
+}
+
+.simplenews-subscribe > div {
+  overflow: hidden;
+  width: 570px;
+}
+
+
+

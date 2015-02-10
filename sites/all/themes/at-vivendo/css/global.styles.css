@@ -3211,3 +3211,20 @@ div#buscador-wrapper .link-list-compare {
 .gird .views-field-field-direccion {
   padding-left: 15px;
 }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033652}}
+.simplenews-subscribe .content-field-simplenews {
+  float: left;
+  height: 112px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033656}}
+.simplenews-subscribe #edit-submit {
+  float: right;
+  margin-top: 31px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033662}}
+.simplenews-subscribe > div {
+  overflow: hidden;
+  width: 570px;
+}
