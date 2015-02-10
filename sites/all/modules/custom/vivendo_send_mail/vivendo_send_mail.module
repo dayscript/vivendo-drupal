@@ -1,0 +1,11 @@
+<?php
+  
+  function vivendo_send_mail_form_alter( &$form, &$form_state, $form_id ) {
+    
+    if ( $form_id == 'contacto_contructores_entityform_edit_form' ) {
+      if (!isset($_SESSION)) {session_start();}
+      $_SESSION['contacto_form'] = $form;
+    }
+    
+  }
+
