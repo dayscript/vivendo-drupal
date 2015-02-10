@@ -57,6 +57,10 @@ function buscador_formulario_form($node, &$form_state)
 
     $filterValue = isset( $_SESSION['filterValue'] ) ? $_SESSION['filterValue'] : $filterValue;
 
+    if (isset($_GET['field_ciudad'])) {
+        unset($_SESSION['filterValue']);
+    }
+
     $nId      = is_numeric( arg(1) ) ? arg(1) : null;
     $initLoad = variable_get( 'initLoad' );
   
