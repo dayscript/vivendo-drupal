@@ -73,6 +73,8 @@ function buscador_formulario_form($node, &$form_state)
         $filterValue['ciudad'] = 'Bogota';
     }
 
+    var_dump($filterValue);
+
     if ( $ciudad !== $filterValue['ciudad'] ) { 
         $filterValue = $filterValueDefault;
     }
