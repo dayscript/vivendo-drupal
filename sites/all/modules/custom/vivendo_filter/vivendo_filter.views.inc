@@ -6,8 +6,6 @@
 
     	$filterValue = isset($_SESSION['filterValue']) ? $_SESSION['filterValue'] : array();
 
-    	
-
 		if ( isset($filterValue['zona']) ) {
 
 			if ( $view->display_handler->display->id === 'page_list' || $view->display_handler->display->id === 'page_grid' ) {
@@ -36,7 +34,7 @@
 
 		}
 
-		dpm( $filterValue );
-    	dpm( $query );
+		dpm( $query );
+		dpm( $view );
 
     }
