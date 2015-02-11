@@ -9,32 +9,32 @@
     	dpm( $filterValue );
     	dpm( $query );
 
-		/*if ( isset($filterValue['zona']) ) {
+		if ( isset($filterValue['zona']) ) {
 
 			if ( $view->display_handler->display->id === 'page_list' || $view->display_handler->display->id === 'page_grid' ) {
 
 				if ( $filterValue['zona'] > 0 ) {
-					$query->where[2]['conditions'][0]['operator'] = '=';
-					$query->where[2]['conditions'][0]['value']    = $filterValue['zona'];
+					$query->where[1]['conditions'][3]['operator'] = '=';
+					$query->where[1]['conditions'][3]['value']    = $filterValue['zona'];
 				}
 
 				if ( $filterValue['tipo'] > 0 ) {
-					$query->where[2]['conditions'][1]['operator'] = '=';
-					$query->where[2]['conditions'][1]['value']    = $filterValue['tipo'];
+					$query->where[1]['conditions'][4]['operator'] = '=';
+					$query->where[1]['conditions'][4]['value']    = $filterValue['tipo'];
 				}
 
 				if ( $filterValue['constructora'] > 0 ) {
-					$query->where[2]['conditions'][2]['operator'] = '=';
-					$query->where[2]['conditions'][2]['value']    = $filterValue['constructora'];
+					$query->where[1]['conditions'][5]['operator'] = '=';
+					$query->where[1]['conditions'][5]['value']    = $filterValue['constructora'];
 				}
 
 				if ( $filterValue['rango'] !== '' ) {
-					$query->where[2]['conditions'][3]['operator'] = 'BETWEEN';
-					$query->where[2]['conditions'][3]['value']    = explode( "|", $filterValue['rango'] );
+					$query->where[1]['conditions'][6]['operator'] = 'BETWEEN';
+					$query->where[1]['conditions'][6]['value']    = explode( "|", $filterValue['rango'] );
 				}
 
 			}
 
-		}*/
+		}
 
     }
