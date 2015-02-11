@@ -38,7 +38,7 @@
 
 		}
 
-		if ( $view->display_handler->display->id === 'block_1' ) {
+		if ( $view->name == 'proyectos' && $view->display_handler->display->id === 'block_1' ) {
 
 			$nId = arg(1);
 
@@ -49,7 +49,7 @@
 				if ( $projectWrapper->type->value() == 'proyecto' ) {
 
 					$price = $projectWrapper->field_precio->value();
-					
+
 					if ( $price > 0 && $price !== '' ) {
 						$rang = $price * 0.25;
 						$query->where[1]['conditions'][6]['operator'] = 'BETWEEN';
