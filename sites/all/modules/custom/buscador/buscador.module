@@ -78,6 +78,8 @@ function buscador_formulario_form($node, &$form_state)
     if ( $ciudad !== $filterValue['ciudad'] ) { 
         $filterValue = $filterValueDefault;
     }
+    var_dump($ciudad);
+    var_dump($filterValue);
 
     $ciudad_id = false;
     $voc = taxonomy_vocabulary_machine_name_load('zonas');
