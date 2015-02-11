@@ -2663,7 +2663,7 @@ body.cali #menu-718-1 {
 .window-project .col-left,
 .window-project .col-right {
   float: left;
-  padding: 17px 0 0 12px;
+  padding: 17px 0 0 10px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033147}}
 .window-project .col-right {
@@ -3245,4 +3245,26 @@ div#buscador-wrapper .link-list-compare {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033684}}
 #cboxLoadedContent .block_calculadora {
   width: 316px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033689}}
+.webform-client-form-1 {
+  width: 400px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033692}}
+.webform-client-form-1 .form-text,
+.webform-client-form-1 .form-textarea {
+  width: 393px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033695}}
+.webform-client-form-1 .grippie {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033699}}
+.webform-client-form-1 .webform-component-checkboxes label {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033703}}
+.webform-client-form-1 a {
+  color: #e5001a;
 }

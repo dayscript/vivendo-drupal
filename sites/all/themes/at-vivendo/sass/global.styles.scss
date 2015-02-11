@@ -3142,7 +3142,7 @@ body.bogota{
     .col-left,
     .col-right {
         float: left;
-        padding: 17px 0 0 12px;
+        padding: 17px 0 0 10px;
     }
     .col-right {
         margin: 2px 0 0 0;
@@ -3683,6 +3683,25 @@ div#buscador-wrapper .link-list-compare {
 #cboxLoadedContent {
   .block_calculadora {
     width: 316px;
+  }
+}
+
+.webform-client-form-1 {
+  width: 400px;
+  .form-text,
+  .form-textarea {
+    width: 393px;
+  }
+  .grippie {
+      display: none;
+  }
+  .webform-component-checkboxes{
+    label {
+      display: none;  
+    }
+  }
+  a{ 
+    color: #e5001a;
   }
 }
 
