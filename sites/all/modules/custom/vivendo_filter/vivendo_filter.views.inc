@@ -36,22 +36,24 @@
 
 		if ( $view->display_handler->display->id === 'block_1' ) {
 
-			$nId            = arg(1);
-			$projectWrapper = entity_metadata_wrapper( 'node', $nId );
-			$price          = $projectWrapper->field_precio->value();
-			
+			$nId = arg(1);
 
-			if ( $price > 0 && $price !== '' ) {
+			if ( is_numeric($nId) ) {
 
-				$rang = $price * 0.25;
+				$projectWrapper = entity_metadata_wrapper( 'node', $nId );
+				$price          = $projectWrapper->field_precio->value();
 
-				$query->where[1]['conditions'][6]['operator'] = 'BETWEEN';
-				$query->where[1]['conditions'][6]['value']    = array( ($price - $rang), ($price + $rang) );
+				if ( $price > 0 && $price !== '' ) {
+
+					$rang = $price * 0.25;
+
+					$query->where[1]['conditions'][6]['operator'] = 'BETWEEN';
+					$query->where[1]['conditions'][6]['value']    = array( ($price - $rang), ($price + $rang) );
+
+				}
 
 			}
-				
+
 		}
-
 		
-
     }
