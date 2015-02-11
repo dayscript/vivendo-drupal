@@ -2861,7 +2861,7 @@ body.bogota{
     color: $medium_dark;
     font-size: 0.95em;
     margin-bottom: 10px;
-    overflow: hidde;
+    overflow: hidden;
     .switcher{
       float: left;
       a{
@@ -3059,6 +3059,13 @@ body.bogota{
 //    margin-top: 145px;
   }
 }
+
+.node-type-proyecto {
+  .region-sidebar-second{
+    margin-top: 29px;
+  }
+}
+
 #block-views-proyectos-block-1{
   li{
     text-align: center;
@@ -3710,5 +3717,8 @@ div#buscador-wrapper .link-list-compare {
 .simplenews-subscribe {
   a {
     color: #e5001a; 
+  }
+  .form-submit {
+    width: 100%;
   }
 }

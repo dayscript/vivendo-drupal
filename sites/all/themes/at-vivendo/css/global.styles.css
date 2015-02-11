@@ -2353,7 +2353,7 @@ body.cali #menu-718-1 {
   color: #666666;
   font-size: 0.95em;
   margin-bottom: 10px;
-  overflow: hidde;
+  overflow: hidden;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000032865}}
 .view-proyectos .view-header .switcher {
@@ -2568,16 +2568,21 @@ body.cali #menu-718-1 {
   margin-top: 91px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033063}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033064}}
+.node-type-proyecto .region-sidebar-second {
+  margin-top: 29px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033070}}
 #block-views-proyectos-block-1 li {
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033066}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033073}}
 #block-views-proyectos-block-1 .views-field-field-codigo {
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033070}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033077}}
 #block-buscador-busca-formulario {
   margin: 0 auto;
   width: 1140px;
@@ -2586,7 +2591,7 @@ body.cali #menu-718-1 {
   position: static !important;
   height: 455px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033077}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033084}}
 #block-buscador-busca-formulario .wrapper {
   display: inline-block;
   margin: 0 10px 0 0;
@@ -2594,31 +2599,31 @@ body.cali #menu-718-1 {
   width: 200px;
   vertical-align: top;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033084}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033091}}
 #block-buscador-busca-formulario .form-item {
   display: inline-block;
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033087}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033094}}
 #block-buscador-busca-formulario .form-item label {
   font-weight: 600;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033090}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033097}}
 #block-buscador-busca-formulario .form-item select {
   width: 200px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033094}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033101}}
 #block-buscador-busca-formulario #buscador-wrapper {
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033097}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033104}}
 #block-buscador-busca-formulario .ajax-progress {
   position: absolute;
   top: 15px;
   right: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033106}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033113}}
 #mapa {
   background: wheat;
   height: 400px;
@@ -2629,79 +2634,79 @@ body.cali #menu-718-1 {
   color: #000000;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033115}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033122}}
 #mapa a {
   color: #000000;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033121}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033128}}
 .front #mapa {
   height: 419px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033126}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033133}}
 .gm-style-iw {
   background: url("../images/shadow-window-marker.png") no-repeat scroll 32px 87px transparent;
   height: 135px;
   margin: 36px 0 0 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033132}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033139}}
 .gm-style-iw > div {
   overflow: hidden;
   width: 285px;
   margin: 0 auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033138}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033145}}
 .window-project {
   width: 285px;
   height: 111px;
   overflow: hidden;
   background: none repeat scroll 0 0 #4e4e4e;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033144}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033151}}
 .window-project .col-left,
 .window-project .col-right {
   float: left;
   padding: 17px 0 0 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033148}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033155}}
 .window-project .col-right {
   margin: 2px 0 0 0;
   width: 143px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033152}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033159}}
 .window-project img {
   border: 1px solid #fff;
   width: 116px;
   height: 70px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033157}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033164}}
 .window-project span {
   color: #fff;
   display: block;
   text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033162}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033169}}
 .window-project .title {
   font-size: 16px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033164}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033171}}
 .window-project .title a {
   color: #fff !important;
   line-height: 14px;
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033172}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033179}}
 #block-views-proyectos-destacados-block {
   z-index: 2;
   width: 1140px;
   margin: 0 auto;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033177}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033184}}
 #block-views-proyectos-destacados-block .block-inner {
   position: absolute;
   background: rgba(0, 0, 0, 0.8);
@@ -2710,69 +2715,69 @@ body.cali #menu-718-1 {
   right: 10px;
   bottom: -7px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033184}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033191}}
 #block-views-proyectos-destacados-block .block-inner .block-title {
   background: none;
   text-transform: none;
   font-size: 1.2em;
   padding-left: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033190}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033197}}
 #block-views-proyectos-destacados-block .block-inner .block-content {
   padding: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033192}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033199}}
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row {
   margin-bottom: 15px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   height: 80px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033196}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033203}}
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row.views-row-last {
   border-bottom: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033199}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033206}}
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row .views-field-title {
   font-size: 1.3em;
   font-weight: 600;
   line-height: 1.2em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033205}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033212}}
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row .views-field-field-precio .views-label {
   display: inline-block;
   font-size: 0.9em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033209}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033216}}
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row .views-field-field-precio .field-content {
   display: inline-block;
   font-weight: 700;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033214}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033221}}
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row .views-field-field-fotos {
   float: left;
   margin-right: 5px;
   clear: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033218}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033225}}
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row .views-field-field-fotos img {
   border: 1px solid white;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033222}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033229}}
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row .views-field-field-direccion {
   font-size: 0.9em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033228}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033235}}
 #block-views-proyectos-destacados-block .block-inner .more-link a {
   width: 362px;
   display: block;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033234}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033241}}
 #block-views-proyectos-destacados-block .block-inner a {
   color: white;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033240}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033247}}
 .views-field-field-telefono1 {
   display: none;
   width: 244px;
@@ -2781,60 +2786,60 @@ body.cali #menu-718-1 {
   overflow: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033248}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033255}}
 .hide {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033252}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033259}}
 .views-field-field-telefono1 > * {
   float: left;
   margin: 0 0 0 5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033258}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033265}}
 .up-down {
   z-index: 1000;
   position: absolute;
   bottom: 0;
   left: 610px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033263}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033270}}
 .up-down a {
   display: block;
   width: 21px;
   height: 21px;
   text-indent: -9999px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033269}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033276}}
 .up-down .b-up {
   background: url("../images/up.jpg") no-repeat scroll center center transparent;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033272}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033279}}
 .up-down .b-down {
   background: url("../images/down.jpg") no-repeat scroll center center transparent;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033278}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033285}}
 .group-share-compare {
   padding: 15px 0;
   display: table;
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033285}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033292}}
 .sharethis-buttons,
 .field-name-comparar {
   display: table-cell;
   width: 50%;
   vertical-align: top;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033289}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033296}}
 .sharethis-buttons .field-items,
 .field-name-comparar .field-items {
   display: table;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033293}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033300}}
 .sharethis-buttons .content-link-redirect,
 .sharethis-buttons .content-compare,
 .field-name-comparar .content-link-redirect,
@@ -2843,14 +2848,14 @@ body.cali #menu-718-1 {
   padding: 9px 15px 0 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033299}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033306}}
 a.link-compare {
   background: none repeat scroll 0 0 #000 !important;
   padding: 3px 15px !important;
   font-size: 13px !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033305}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033312}}
 a.link-compare.disable {
   background: none repeat scroll 0 0 #666 !important;
   color: #fff;
@@ -2858,14 +2863,14 @@ a.link-compare.disable {
   font-weight: bold;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033319}}
 a.link-list-compare {
   background: none repeat scroll 0 0 #dd0024;
   color: #fff;
   padding: 3px 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033325}}
 div#buscador-wrapper .link-list-compare {
   margin-top: 14px;
   display: inline-block;
@@ -2873,24 +2878,24 @@ div#buscador-wrapper .link-list-compare {
   margin-right: 12px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033334}}
 .page-comparar .main-content {
   visibility: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033334}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033341}}
 .view-plantas .views-field-field-image img {
   display: block;
   height: 250px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033348}}
 .views-field.table-field {
   display: table;
   width: 270px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033354}}
 .views-field.table-field > div {
   display: table-cell;
   width: 125px;
@@ -2898,52 +2903,52 @@ div#buscador-wrapper .link-list-compare {
   color: #646464;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033361}}
 .table-field.first {
   border-top: 2px solid #F4F4F4;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033365}}
 .table-field.last {
   border-bottom: 2px solid #F4F4F4;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033369}}
 .table-field.odd {
   background: none repeat scroll 0 0 #F4F4F4;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033374}}
 .table-field .views-label {
   border-left: 2px solid #F4F4F4;
   font-weight: bold;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033371}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033378}}
 .table-field .field-content {
   border-right: 2px solid #F4F4F4;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033376}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033383}}
 .views-field-title {
   margin-top: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033387}}
 .views-field-field-barrio {
   margin-top: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033392}}
 .views-field-field-precio .views-label {
   font-size: 13px !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033398}}
 .views-field-field-direccion field-content {
   font-size: 13px !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033404}}
 .views-field-field-interiores .views-label,
 .views-field-field-exteriores .views-label {
   display: block;
@@ -2955,11 +2960,11 @@ div#buscador-wrapper .link-list-compare {
   padding-left: 28px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033408}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033415}}
 .views-field-field-exteriores .views-label {
   margin-top: 8px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033411}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033418}}
 .views-field-field-exteriores li {
   background: url("../images/icons/check.png") no-repeat scroll 0 0 transparent;
   display: block;
@@ -2967,12 +2972,12 @@ div#buscador-wrapper .link-list-compare {
   margin: 0 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033419}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033426}}
 .views-field-field-interiores {
   border-bottom: 2px solid #F4F4F4;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033422}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033429}}
 .views-field-field-interiores li {
   background: url("../images/icons/check.png") no-repeat scroll 0 0 transparent;
   display: block;
@@ -2980,7 +2985,7 @@ div#buscador-wrapper .link-list-compare {
   margin: 0 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033431}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033438}}
 .views-field-remove-project a.remove-project {
   display: block;
   padding: 5px 0;
@@ -2991,38 +2996,38 @@ div#buscador-wrapper .link-list-compare {
   background: none repeat scroll 0 0 #E5E5E5;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033443}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033450}}
 .page-compare .views-row {
   border-bottom: none;
   margin: 0 13px 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033447}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033454}}
 .page-compare .views-row-last {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033452}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033459}}
 #block-menu-menu-volver {
   margin: 35px 0 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033454}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033461}}
 #block-menu-menu-volver .block-inner {
   margin-right: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033458}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033465}}
 #block-menu-menu-volver .block-content ul {
   margin: 0;
   display: block;
   padding: 0;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033463}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033470}}
 #block-menu-menu-volver .block-content ul li {
   display: block;
   list-style: none;
   float: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033467}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033474}}
 #block-menu-menu-volver .block-content ul li a {
   background: none repeat scroll 0 0 #E01825;
   color: #FFFFFF;
@@ -3032,46 +3037,46 @@ div#buscador-wrapper .link-list-compare {
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033484}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033491}}
 .views-field-field-telefono1 .views-label,
 .views-field-field-telefono1 .field-content {
   display: block;
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033488}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033495}}
 .views-field-field-telefono1 .views-label {
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033491}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033498}}
 .views-field-field-telefono1 .field-content {
   width: 106px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033498}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033505}}
 #flexslider-2 .flex-direction-nav a {
   color: rgba(255, 255, 255, 0.8);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033506}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033513}}
 #flexslider-1 .flex-direction-nav a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033512}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033519}}
 .content-default {
   padding: 5px 11px 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033517}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033524}}
 .content-default span {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033523}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033530}}
 #block-views-proyectos-block-1 ul.slides {
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033525}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033532}}
 #block-views-proyectos-block-1 ul.slides li {
   border: 1px solid #f1f1f1;
   height: 349px;
@@ -3080,17 +3085,17 @@ div#buscador-wrapper .link-list-compare {
   text-align: left !important;
   color: #333;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033532}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033539}}
 #block-views-proyectos-block-1 ul.slides li .views-field-field-image {
   border-bottom: 1px solid #f1f1f1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033535}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033542}}
 #block-views-proyectos-block-1 ul.slides li .views-field-field-fotos {
   border: 1px solid #f1f1f1;
   border-bottom: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033544}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033551}}
 .view .fa-th {
   background: url("../images/switch-list-grid_09.png") no-repeat scroll 0 0 transparent;
   width: 80px;
@@ -3099,13 +3104,13 @@ div#buscador-wrapper .link-list-compare {
   padding-bottom: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033553}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033560}}
 .view.gird .fa-th,
 .view .fa-th:hover {
   background: url("../images/switch-list-grid_05.png") no-repeat scroll 0 0 transparent;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033557}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033564}}
 .view .fa-list {
   background: url("../images/switch-list-grid_07.png") no-repeat scroll 0 0 transparent;
   width: 95px;
@@ -3114,90 +3119,90 @@ div#buscador-wrapper .link-list-compare {
   padding-bottom: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033566}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033573}}
 .view.list .fa-list,
 .view .fa-list:hover {
   background: url("../images/switch-list-grid_03.png") no-repeat scroll 0 0 transparent;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033571}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033578}}
 .content-sponsor {
   width: 203px;
   margin: 0 auto;
   padding: 10px 0 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033575}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033582}}
 .content-sponsor img.logo-vivendo {
   width: 40px;
   margin: 5px 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033579}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033586}}
 .content-sponsor span {
   font-size: 30px;
   font-weight: bold;
   line-height: -30px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033586}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033593}}
 .block-contacto-contructores {
   background: none repeat scroll 0 0 #f4f4f4;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033588}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033595}}
 .block-contacto-contructores .block-inner {
   width: 284px;
   margin: 0 auto;
   padding: 5px 0 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033594}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033601}}
 .block-contacto-contructores label,
 .block-contacto-contructores .description {
   color: #333;
   font-weight: normal;
   font-size: 13px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033599}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033606}}
 .block-contacto-contructores .description {
   font-style: italic;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033602}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033609}}
 .block-contacto-contructores .group-locacion {
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033605}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033612}}
 .block-contacto-contructores .group-locacion #edit-field-pais,
 .block-contacto-contructores .group-locacion #edit-field-ciudad-contact {
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033608}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033615}}
 .block-contacto-contructores .group-locacion #edit-field-pais {
   margin: 0 10px 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033612}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033619}}
 .block-contacto-contructores #edit-submit {
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033616}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033623}}
 .block-contacto-contructores .form-text,
 .block-contacto-contructores .form-textarea {
   background: none repeat scroll 0 0 #FFFFFF;
   border: 1px solid #999999;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033624}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033631}}
 #edit-field-ley-1581 label {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033627}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033634}}
 #edit-field-ley-1581 .form-item {
   overflow: hidden;
   margin: 3px 0 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033630}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033637}}
 #edit-field-ley-1581 .form-item .form-checkbox {
   float: left;
   margin: 3px 0 0 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033634}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033641}}
 #edit-field-ley-1581 .form-item label.option {
   display: block;
   float: left;
@@ -3205,39 +3210,39 @@ div#buscador-wrapper .link-list-compare {
   margin: 0 0 0 5px;
   font-style: italic;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033640}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033647}}
 #edit-field-ley-1581 .form-item label.option a {
   color: #dd0024;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033650}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033657}}
 .gird .views-field-title,
 .gird .views-field-field-precio,
 .gird .views-field-field-direccion {
   padding-left: 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033657}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033664}}
 .cboxLoadedContent .simplenews-subscribe .content-field-simplenews {
   float: left;
   height: 112px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033661}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033668}}
 .cboxLoadedContent .simplenews-subscribe #edit-submit {
   float: right;
   margin-top: 31px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033665}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033672}}
 .cboxLoadedContent .simplenews-subscribe .form-text {
   width: 400px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033669}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033676}}
 .cboxLoadedContent .simplenews-subscribe > div {
   overflow: hidden;
   width: 570px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033678}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033685}}
 .simplenews-unsubscribe .form-submit {
   font-size: 12px;
   padding: 3px 12px;
@@ -3245,40 +3250,44 @@ div#buscador-wrapper .link-list-compare {
   margin: 0 0 8px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033687}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033694}}
 #cboxLoadedContent .block_calculadora {
   width: 316px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033693}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033700}}
 .webform-client-form-1,
 .webform-client-form-225 {
   width: 400px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033696}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033703}}
 .webform-client-form-1 .form-text,
 .webform-client-form-1 .form-textarea,
 .webform-client-form-225 .form-text,
 .webform-client-form-225 .form-textarea {
   width: 393px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033699}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033706}}
 .webform-client-form-1 .grippie,
 .webform-client-form-225 .grippie {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033702}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033709}}
 .webform-client-form-1 .webform-component-checkboxes > label,
 .webform-client-form-225 .webform-component-checkboxes > label {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033705}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033712}}
 .webform-client-form-1 a,
 .webform-client-form-225 a {
   color: #e5001a;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033711}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033718}}
 .simplenews-subscribe a {
   color: #e5001a;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033721}}
+.simplenews-subscribe .form-submit {
+  width: 100%;
 }

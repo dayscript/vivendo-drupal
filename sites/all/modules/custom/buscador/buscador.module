@@ -79,6 +79,7 @@ function buscador_formulario_form($node, &$form_state)
     $voc = taxonomy_vocabulary_machine_name_load('zonas');
     $zonas = taxonomy_get_tree($voc->vid);
     $zonas_select = array();
+    //$zonas_select = array( 0 => t('Todas') );
     $default = ($filterValue['zona'] > 0 && !isset($form_state['values']['zona'])) ? $filterValue['zona'] : 0;
     foreach ($zonas as $zona) {
         if ($zona->name == $ciudad) $ciudad_id = $zona->tid;
