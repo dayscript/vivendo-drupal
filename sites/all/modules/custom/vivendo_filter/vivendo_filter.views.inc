@@ -2,11 +2,14 @@
 
     function vivendo_filter_views_query_alter(&$view, &$query) {
   
-    	/*if ( !isset($_SESSION) ) { session_start(); }
+    	if ( !isset($_SESSION) ) { session_start(); }
 
     	$filterValue = isset($_SESSION['filterValue']) ? $_SESSION['filterValue'] : array();
 
-		if ( isset($filterValue['zona']) ) {
+    	dpm( $filterValue );
+    	dpm( $query );
+
+		/*if ( isset($filterValue['zona']) ) {
 
 			if ( $view->display_handler->display->id === 'page_list' || $view->display_handler->display->id === 'page_grid' ) {
 
