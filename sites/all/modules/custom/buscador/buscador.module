@@ -47,14 +47,15 @@ function buscador_formulario_form($node, &$form_state)
 
     global $base_url;
 
-    $filterValue = array(
+    $filterValueDefault = array(
+        'ciudad'       => '',
         'zona'         => 0,
         'tipo'         => 0,
         'constructora' => 0,
         'rango'        => 0
     );
 
-    $filterValue = isset( $_SESSION['filterValue'] ) ? $_SESSION['filterValue'] : $filterValue;
+    $filterValue = isset( $_SESSION['filterValue'] ) ? $_SESSION['filterValue'] : $filterValueDefault;
 
     $nId      = is_numeric( arg(1) ) ? arg(1) : null;
     $initLoad = variable_get( 'initLoad' );
@@ -66,9 +67,16 @@ function buscador_formulario_form($node, &$form_state)
     $value = global_filter_get_session_value('field_ciudad');
     if (is_array($value) && isset($value[0]) && $value[0] == 2) {
         $ciudad = "Cali";
+        $filterValue['ciudad'] = 'Cali';
     } else {
         $ciudad = "Bogotá";
+        $filterValue['ciudad'] = 'Bogota';
     }
+
+    if ( $ciudad !== $filterValue['ciudad'] ) { 
+        $filterValue = $filterValueDefault;
+    }
+
     $ciudad_id = false;
     $voc = taxonomy_vocabulary_machine_name_load('zonas');
     $zonas = taxonomy_get_tree($voc->vid);
