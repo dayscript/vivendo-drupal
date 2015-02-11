@@ -6,13 +6,13 @@
     
       $projectsCompare = isset($_SESSION['projectsCompare']) ? $_SESSION['projectsCompare'] : array();
 
-      if ( $view->display_handler->display->id === 'page_compare' && count($projectsCompare) >= 2 ) {
+      if ( $view->display_handler->display->id === 'page_compare' ) {
 	
-	$query->where[1]['conditions'][2] = array( 
-	    'field'    => 'node.nid',
-	    'value'    => $projectsCompare,
-	    'operator' => 'in'
-	);
+		$query->where[1]['conditions'][2] = array( 
+		    'field'    => 'node.nid',
+		    'value'    => $projectsCompare,
+		    'operator' => 'in'
+		);
 	
       } 
       
