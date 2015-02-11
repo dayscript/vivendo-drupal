@@ -39,17 +39,15 @@
 			$nId = arg(1);
 
 			if ( is_numeric($nId) ) {
-
+				
 				$projectWrapper = entity_metadata_wrapper( 'node', $nId );
-				$price          = $projectWrapper->field_precio->value();
-
-				if ( $price > 0 && $price !== '' ) {
-
-					$rang = $price * 0.25;
-
-					$query->where[1]['conditions'][6]['operator'] = 'BETWEEN';
-					$query->where[1]['conditions'][6]['value']    = array( ($price - $rang), ($price + $rang) );
-
+				if ( $projectWrapper->type->value() == 'proyecto' ) {
+					$price = $projectWrapper->field_precio->value();
+					if ( $price > 0 && $price !== '' ) {
+						$rang = $price * 0.25;
+						$query->where[1]['conditions'][6]['operator'] = 'BETWEEN';
+						$query->where[1]['conditions'][6]['value']    = array( ($price - $rang), ($price + $rang) );
+					}
 				}
 
 			}
