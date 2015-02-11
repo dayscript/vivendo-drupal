@@ -6,8 +6,7 @@
 
     	$filterValue = isset($_SESSION['filterValue']) ? $_SESSION['filterValue'] : array();
 
-    	dpm( $filterValue );
-    	dpm( $query );
+    	
 
 		if ( isset($filterValue['zona']) ) {
 
@@ -36,5 +35,8 @@
 			}
 
 		}
+
+		dpm( $filterValue );
+    	dpm( $query );
 
     }
