@@ -3695,10 +3695,8 @@ div#buscador-wrapper .link-list-compare {
   .grippie {
       display: none;
   }
-  .webform-component-checkboxes{
-    label {
-      display: none;  
-    }
+  .webform-component-checkboxes > label{
+    display: none;  
   }
   a{ 
     color: #e5001a;
