@@ -34,7 +34,4 @@
 
 		}
 
-		dpm( $query );
-		dpm( $view );
-
     }
