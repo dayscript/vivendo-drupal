@@ -8,7 +8,7 @@
 
 		if ( isset($filterValue['zona']) ) {
 
-			if ( $view->display_handler->display->id === 'page_1' || $view->display_handler->display->id === 'page_grid' ) {
+			if ( $view->name == 'proyectos' && ($view->display_handler->display->id === 'page_1' || $view->display_handler->display->id === 'page') ) {
 
 				if ( $filterValue['zona'] > 0 ) {
 					$query->where[1]['conditions'][3]['operator'] = '=';
@@ -25,10 +25,10 @@
 					$query->where[1]['conditions'][5]['value']    = $filterValue['constructora'];
 				}
 
-				/*if ( $filterValue['rango'] > 0 ) {
+				if ( $filterValue['rango'] != 0 ) {
 					$query->where[1]['conditions'][6]['operator'] = 'BETWEEN';
 					$query->where[1]['conditions'][6]['value']    = explode( "|", $filterValue['rango'] );
-				}*/
+				}
 
 			}
 
