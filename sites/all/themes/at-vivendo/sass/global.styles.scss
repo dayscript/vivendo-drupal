@@ -1884,7 +1884,7 @@ ul.action-links {
       margin-right: 10px;
       display: inline-block;
       vertical-align: top;
-      padding: 5px;
+      padding: 3px;
       .field-label{
         width: 40%;
         padding: 5px;
@@ -2699,7 +2699,7 @@ h2.pane-title.block-title{
 .block-simplenews{
   background: black;
   color: white;padding: 10px;
-  margin: 0;
+  margin: 0 0 30px;
   h2.block-title{
     text-transform: uppercase;
     font-size: 1.4em;
@@ -3677,6 +3677,8 @@ div#buscador-wrapper .link-list-compare {
   .form-submit {
     font-size: 12px;
     padding: 3px 12px;
+    width: 100%;
+    margin: 0 0 8px;
   }
 }
 

@@ -45,6 +45,14 @@
       window.location =  '/node/' + $(this).attr('href'); 
       
     });
+
+    $('.group-datos section').each(function(i){
+      if ( i % 2 == 0 ) {
+        jQuery(this).css('background', '#ffffff');
+      } else {
+        jQuery(this).css('background', '#f4f4f4');
+      }
+    });
     
   });
   
