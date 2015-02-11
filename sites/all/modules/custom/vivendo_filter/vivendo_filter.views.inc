@@ -8,7 +8,7 @@
 
 		if ( isset($filterValue['zona']) ) {
 
-			if ( $view->display_handler->display->id === 'page_list' || $view->display_handler->display->id === 'page_grid' ) {
+			if ( $view->display_handler->display->id === 'page_1' || $view->display_handler->display->id === 'page_grid' ) {
 
 				if ( $filterValue['zona'] > 0 ) {
 					$query->where[1]['conditions'][3]['operator'] = '=';
