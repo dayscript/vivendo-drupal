@@ -3522,17 +3522,17 @@ div#buscador-wrapper .link-list-compare {
   ul.slides{
     padding: 0; 
     li {
-      border-bottom: 3px solid #ccc;  
+      border: 1px solid #f1f1f1;  
       height: 349px;
       margin: 0 48px 15px;
       width: 270px !important; 
       text-align: left !important;
       color: #333;
       .views-field-field-image {
-        border: 1px solid #ccc;
+        border-bottom: 1px solid #f1f1f1;
       }
       .views-field-field-fotos {
-        border: 1px solid #ccc;
+        border: 1px solid #f1f1f1;
         border-bottom: none;
       }
     }  
@@ -3705,3 +3705,8 @@ div#buscador-wrapper .link-list-compare {
   }
 }
 
+.simplenews-subscribe {
+  a {
+    color: #e5001a; 
+  }
+}

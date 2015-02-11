@@ -3072,7 +3072,7 @@ div#buscador-wrapper .link-list-compare {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033524}}
 #block-views-proyectos-block-1 ul.slides li {
-  border-bottom: 3px solid #ccc;
+  border: 1px solid #f1f1f1;
   height: 349px;
   margin: 0 48px 15px;
   width: 270px !important;
@@ -3081,11 +3081,11 @@ div#buscador-wrapper .link-list-compare {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033531}}
 #block-views-proyectos-block-1 ul.slides li .views-field-field-image {
-  border: 1px solid #ccc;
+  border-bottom: 1px solid #f1f1f1;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033534}}
 #block-views-proyectos-block-1 ul.slides li .views-field-field-fotos {
-  border: 1px solid #ccc;
+  border: 1px solid #f1f1f1;
   border-bottom: none;
 }
 
@@ -3266,5 +3266,10 @@ div#buscador-wrapper .link-list-compare {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033703}}
 .webform-client-form-1 a {
+  color: #e5001a;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033709}}
+.simplenews-subscribe a {
   color: #e5001a;
 }
