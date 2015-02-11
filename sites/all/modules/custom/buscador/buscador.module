@@ -71,15 +71,10 @@ function buscador_formulario_form($node, &$form_state)
         $ciudad = "Bogotá";
     }
 
-    var_dump($filterValue);
-
     if ( $ciudad !== $filterValue['ciudad'] ) { 
         $filterValue           = $filterValueDefault;
         $filterValue['ciudad'] = $ciudad;
     }
-
-    var_dump($ciudad);
-    var_dump($filterValue);
 
     $ciudad_id = false;
     $voc = taxonomy_vocabulary_machine_name_load('zonas');
