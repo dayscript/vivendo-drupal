@@ -86,7 +86,7 @@ function buscador_formulario_form($node, &$form_state)
         if ($zona->name == $ciudad) $ciudad_id = $zona->tid;
         if (!$ciudad_id) continue;
         if (!isset($zona->parents) || !is_array($zona->parents) || !in_array($ciudad_id, $zona->parents)) continue;
-        if ($default == 0) $default = $zona->tid;
+        //if ($default == 0) $default = $zona->tid;
         $key   = $zona->tid;
         $value = $zona->name;
         $zonas_select[$key] = $value;
