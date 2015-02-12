@@ -264,7 +264,7 @@ function buscador_formulario_form($node, &$form_state)
         if ( $filterValue['zona'] > 0 ) {
             $query->condition('field_zona', $filterValue['zona'], '=');    
         } else {
-            $query->condition('field_zona', $zonas_select, 'IN');    
+            $query->condition('field_zona', array_keys($zonas_select), 'IN');    
         }
         
     } 
