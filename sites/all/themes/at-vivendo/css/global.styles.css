@@ -2738,7 +2738,7 @@ body.cali #menu-718-1 {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033206}}
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row .views-field-title {
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 600;
   line-height: 1.2em;
 }
@@ -2755,7 +2755,7 @@ body.cali #menu-718-1 {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033221}}
 #block-views-proyectos-destacados-block .block-inner .block-content .views-row .views-field-field-fotos {
   float: left;
-  margin-right: 5px;
+  margin-right: 12px;
   clear: left;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033225}}
