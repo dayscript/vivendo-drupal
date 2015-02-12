@@ -75,18 +75,19 @@ function buscador_formulario_form($node, &$form_state)
         $filterValue           = $filterValueDefault;
         $filterValue['ciudad'] = $ciudad;
     }
+
+    $default = ($filterValue['zona'] > 0 && !isset($form_state['values']['zona'])) ? $filterValue['zona'] : 0;
     $ciudad_id = false;
     $voc = taxonomy_vocabulary_machine_name_load('zonas');
     $zonas = taxonomy_get_tree($voc->vid);
     $zonas_select = array();
-    //$zonas_select = array( 0 => t('Todas') );
-    $default = ($filterValue['zona'] > 0 && !isset($form_state['values']['zona'])) ? $filterValue['zona'] : 0;
+    $zonas_select = array( 0 => t('Todas') );
     foreach ($zonas as $zona) {
         if ($zona->name == $ciudad) $ciudad_id = $zona->tid;
         if (!$ciudad_id) continue;
         if (!isset($zona->parents) || !is_array($zona->parents) || !in_array($ciudad_id, $zona->parents)) continue;
         if ($default == 0) $default = $zona->tid;
-        $key = $zona->tid;
+        $key   = $zona->tid;
         $value = $zona->name;
         $zonas_select[$key] = $value;
     }
@@ -119,7 +120,7 @@ function buscador_formulario_form($node, &$form_state)
             $query->condition('field_zona', $form_state['values']['zona'], '=');
         } elseif (!isset($form_state['values']['zona']) && $filterValue['zona']>0 ) {
             $query->condition('field_zona', $filterValue['zona'], '=');
-        }
+        } 
         if ( (isset($form_state['values']['constructora']) && $form_state['values']['constructora']>0))  {
             $filterValue['constructora'] = $form_state['values']['constructora'];
             $query->condition('field_constructora', $form_state['values']['constructora'], '=');
