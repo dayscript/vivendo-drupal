@@ -260,9 +260,14 @@ function buscador_formulario_form($node, &$form_state)
     if ( (isset($form_state['values']['zona'])  && $form_state['values']['zona']>0)) {
             $filterValue['zona'] = isset($form_state['values']['zona']) ? $form_state['values']['zona'] : $filterValue['zona'];
             $query->condition('field_zona', $form_state['values']['zona'], '=');
-    } elseif (!isset($form_state['values']['zona'])  &&  $filterValue['zona']>0 ) {
-        $query->condition('field_zona', $filterValue['zona'], '=');
-    }
+    } elseif ( !isset($form_state['values']['zona']) ) {
+        if ( $filterValue['zona'] > 0 ) {
+            $query->condition('field_zona', $filterValue['zona'], '=');    
+        } else {
+            $query->condition('field_zona', $zonas_select, 'IN');    
+        }
+        
+    } 
     if ((isset($form_state['values']['rango']) && $form_state['values']['rango']>0)) {
         $filterValue['rango'] = isset($form_state['values']['rango']) ? $form_state['values']['rango'] : $filterValue['rango'];
         $rango = taxonomy_term_load($form_state['values']['rango']);
