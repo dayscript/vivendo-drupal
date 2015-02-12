@@ -3677,16 +3677,12 @@ div#buscador-wrapper .link-list-compare {
     .form-text {
       width: 400px;
     }
-    label {
-      font-weight: normal !important;
-    }
+
   } 
   .simplenews-subscribe > div {
     overflow: hidden;
     width: 570px;
   } 
-
-  
 }
 
 .simplenews-unsubscribe {
@@ -3695,6 +3691,12 @@ div#buscador-wrapper .link-list-compare {
     padding: 3px 12px;
     width: 100%;
     margin: 0 0 8px;
+  }
+}
+
+.simplenews-subscribe {
+  label {
+    font-weight: normal !important;
   }
 }
 
