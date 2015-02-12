@@ -115,10 +115,10 @@ function buscador_formulario_form($node, &$form_state)
         $query = db_select('search_api_db_proyectos', 'p');
         $query->fields('p', array('nid'))
             ->condition('field_tipo', $tipo->tid, '=');
-        if ( (isset($form_state['values']['zona'])  && $form_state['values']['zona']>0)) {
+        if ( (isset($form_state['values']['zona'])  && $form_state['values']['zona']>=0)) {
             $filterValue['zona'] = $form_state['values']['zona'];
             $query->condition('field_zona', $form_state['values']['zona'], '=');
-        } elseif (!isset($form_state['values']['zona']) && $filterValue['zona']>0 ) {
+        } elseif (!isset($form_state['values']['zona']) && $filterValue['zona']>=0 ) {
             $query->condition('field_zona', $filterValue['zona'], '=');
         } 
         if ( (isset($form_state['values']['constructora']) && $form_state['values']['constructora']>0))  {
@@ -166,10 +166,10 @@ function buscador_formulario_form($node, &$form_state)
         $query = db_select('search_api_db_proyectos', 'p');
         $query->fields('p', array('nid'))
             ->condition('field_constructora', $constructora->nid, '=');
-        if ( (isset($form_state['values']['zona'])  && $form_state['values']['zona']>0)) {
+        if ( (isset($form_state['values']['zona'])  && $form_state['values']['zona']>=0)) {
             $filterValue['zona'] = $form_state['values']['zona'];
             $query->condition('field_zona', $form_state['values']['zona'], '=');
-        } elseif (!isset($form_state['values']['zona'])  && $filterValue['zona']>0) {
+        } elseif (!isset($form_state['values']['zona'])  && $filterValue['zona']>=0) {
             $query->condition('field_zona', $filterValue['zona'], '=');
         }
         if ((isset($form_state['values']['tipo']) && $form_state['values']['tipo']>0)) {
@@ -220,10 +220,10 @@ function buscador_formulario_form($node, &$form_state)
         $query->fields('p', array('nid'))
             ->condition('field_precio', intval($data[0]), '>=')
             ->condition('field_precio', intval($data[1]), '<');
-        if ( (isset($form_state['values']['zona'])  && $form_state['values']['zona']>0)) {
+        if ( (isset($form_state['values']['zona'])  && $form_state['values']['zona']>=0)) {
             $filterValue['zona'] = $form_state['values']['zona'];
             $query->condition('field_zona', $form_state['values']['zona'], '=');
-        } elseif (!isset($form_state['values']['zona'])  &&  $filterValue['zona'] > 0) {
+        } elseif (!isset($form_state['values']['zona'])  &&  $filterValue['zona'] >= 0) {
             $query->condition('field_zona', $filterValue['zona'], '=');
         }
         if ( (isset($form_state['values']['constructora']) && $form_state['values']['constructora']>0))  {
@@ -257,10 +257,10 @@ function buscador_formulario_form($node, &$form_state)
     );
     $query = db_select('search_api_db_proyectos', 'p');
     $query->fields('p', array('nid'));
-    if ( (isset($form_state['values']['zona'])  && $form_state['values']['zona']>0)) {
+    if ( (isset($form_state['values']['zona'])  && $form_state['values']['zona']>=0)) {
             $filterValue['zona'] = isset($form_state['values']['zona']) ? $form_state['values']['zona'] : $filterValue['zona'];
             $query->condition('field_zona', $form_state['values']['zona'], '=');
-    } elseif (!isset($form_state['values']['zona'])  &&  $filterValue['zona']>0 ) {
+    } elseif (!isset($form_state['values']['zona'])  &&  $filterValue['zona']>=0 ) {
         $query->condition('field_zona', $filterValue['zona'], '=');
     }
     if ((isset($form_state['values']['rango']) && $form_state['values']['rango']>0)) {
