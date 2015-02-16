@@ -3306,7 +3306,7 @@ div#buscador-wrapper .link-list-compare {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033737}}
 .modal-forms-modal-content {
-  width: 422px;
+  width: 422px !important;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033741}}
