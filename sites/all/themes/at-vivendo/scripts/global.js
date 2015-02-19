@@ -54,10 +54,10 @@
       }
     });
     
-    $('#pre-content-wrapper').mouseenter(function(){
-        $(this).height('360px');
+    $('#mainBanner').mouseenter(function(){
+        $('#pre-content-wrapper').height('360px');
     }).mouseleave(function(){
-        $(this).height('92px');
+        $('#pre-content-wrapper').height('92px');
     });
     
   });
