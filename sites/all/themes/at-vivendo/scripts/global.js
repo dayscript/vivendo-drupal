@@ -55,8 +55,10 @@
     });
     
     $('#mainBanner').mouseenter(function(){
+        console.log('entro');
         $('#pre-content-wrapper').height('360px');
     }).mouseleave(function(){
+        console.log('salir');
         $('#pre-content-wrapper').height('92px');
     });
     
