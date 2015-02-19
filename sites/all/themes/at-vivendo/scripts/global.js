@@ -54,6 +54,12 @@
       }
     });
     
+    $('#pre-content-wrapper').mouseenter(function(){
+        $(this).height('92px');
+    }).mouseleave(function(){
+        $(this).height('360px');
+    });
+    
   });
   
 })(jQuery);
