@@ -90,7 +90,7 @@ function CalculadoraCredito_block_content(){
                       <div class="select_calcular periodos"  > <span>Periodos<span><br>
                         <select name="periodos" id="periodos" >
                           <option value="120">120 Meses</option>
-                          <option value="180">180 Meses</option>
+                          <option value="180"selected="selected">180 Meses</option>
                           <option value="240">240 Meses</option>
                         </select><br>
                         </div>
@@ -178,7 +178,7 @@ function modal_CalculadoraCredito_block_content(){
                       <div class="select_calcular periodos"  > <span>Periodos<span><br>
                         <select name="periodos" id="periodos" >
                           <option value="120">120 Meses</option>
-                          <option value="180">180 Meses</option>
+                          <option value="180"selected="selected">180 Meses</option>
                           <option value="240">240 Meses</option>
                         </select><br>
                         </div>
