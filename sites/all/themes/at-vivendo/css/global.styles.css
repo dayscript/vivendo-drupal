@@ -3321,9 +3321,13 @@ div#buscador-wrapper .link-list-compare {
   width: 1140px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033753}}
-#cboxWrapper,
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033751}}
+#cboxWrapper {
+  width: 1024px !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033756}}
 #cboxContent,
 #cboxLoadedContent {
-  width: 1024px !important;
+  width: 100% !important;
 }

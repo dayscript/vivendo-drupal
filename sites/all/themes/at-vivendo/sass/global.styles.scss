@@ -3748,8 +3748,11 @@ div#buscador-wrapper .link-list-compare {
   width: 1140px;
 }
 
-#cboxWrapper,
-#cboxContent,
-#cboxLoadedContent{
+#cboxWrapper{
     width: 1024px !important;
+}
+
+#cboxContent,
+#cboxLoadedContent {
+    width: 100% !important;
 }
