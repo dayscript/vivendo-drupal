@@ -3336,3 +3336,8 @@ div#buscador-wrapper .link-list-compare {
 #block-block-13 a {
   text-decoration: none;
 }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033766}}
+.front .pane-publicidad {
+  margin-top: 20px;
+}
