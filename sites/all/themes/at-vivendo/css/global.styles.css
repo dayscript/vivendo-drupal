@@ -3329,3 +3329,8 @@ div#buscador-wrapper .link-list-compare {
 #cboxClose {
   top: 0;
 }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033759}}
+#block-block-13 a {
+  text-decoration: none;
+}
