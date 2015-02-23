@@ -3321,12 +3321,7 @@ div#buscador-wrapper .link-list-compare {
   width: 1140px;
 }
 
-/*#cboxWrapper,
-#colorbox{
-    width: 1024px !important;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033751}}
+#cboxClose {
+  top: 0;
 }
-
-#cboxContent,
-#cboxLoadedContent {
-    width: 100% !important;
-}*/
