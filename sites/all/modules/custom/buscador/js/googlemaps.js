@@ -12,7 +12,7 @@ function initialize() {
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         scrollwheel:false,
         rotateControl: false,
-        zoomControl:false,
+        zoomControl:true,
         panControl:false
     };
     
@@ -87,8 +87,6 @@ function update( ) {
         var infowindow = new google.maps.InfoWindow({
             content: ''
         });
-        
-        console.log('entro update');
         
         if ( jQuery('#highlighted-wrapper').height() === 115 ) {
           console.log('entro if height');
