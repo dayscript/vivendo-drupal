@@ -360,3 +360,12 @@ function reload_buscador($form, $form_state){
     $form['wrapper']['data']['#markup'] .= "<script>update();</script>";
     return $form['wrapper'];
 }
+
+
+function buscador_field_display_alter( &$display, $context ) {
+
+    if( !isset($_SESSION) ) { session_start(); }
+    
+    $_SESSION['display'] = $display;
+    
+}
