@@ -378,7 +378,7 @@ function buscador_field_attach_view_alter( &$output, $context ) {
     if ( isset($output['field_fotos']) ) {
         if ( $output['field_fotos']['#object']->nid == arg(1) ) {
             $output['field_fotos']['#items'][] = $output['field_fotos']['#items'][ count($output['field_fotos']['#items']) - 1 ];
-            $_SESSION['output'][] = $output;
+            $output['field_fotos']['#items'][ count($output['field_fotos']['#items']) - 1 ]['slide'] = "<script>jQuery('.clone').prev().html(jQuery('.field-name-field-video').find('.embedded-video').html());</script>";
         }
     }
     
