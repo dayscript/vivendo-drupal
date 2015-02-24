@@ -371,13 +371,10 @@ function reload_buscador($form, $form_state){
     
 }*/
 
-function buscador_node_view( $node, $view_mode = 'full', $langcode = NULL ) {
+function buscador_field_attach_view_alter( &$output, $context ) {
     
     if( !isset($_SESSION) ) { session_start(); }
     
-    $node->field_fotos['und'][] = $node->field_fotos['und'][ count($node->field_fotos['und']) - 1 ];
-    $node->field_fotos['und'][] = $node->field_fotos['und'][ count($node->field_fotos['und']) - 1 ];
-    
-    $_SESSION['node_project'] = $node;
+    $_SESSION['output'][] = $output;
     
 }
