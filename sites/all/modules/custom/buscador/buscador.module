@@ -366,6 +366,6 @@ function buscador_field_display_alter( &$display, $context ) {
 
     if( !isset($_SESSION) ) { session_start(); }
     
-    $_SESSION['display'] = $display;
+    $_SESSION['display'][] = $display;
     
 }
