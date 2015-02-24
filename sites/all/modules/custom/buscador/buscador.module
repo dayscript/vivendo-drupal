@@ -375,6 +375,8 @@ function buscador_field_attach_view_alter( &$output, $context ) {
     
     if( !isset($_SESSION) ) { session_start(); }
     
+    $output[1]['field_fotos']['#items'][] = $output[1]['field_fotos']['#items'][6];
+            
     $_SESSION['output'][] = $output;
     
 }
