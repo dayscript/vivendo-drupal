@@ -376,6 +376,7 @@ function buscador_node_view( $node, $view_mode = 'full', $langcode = NULL ) {
     if( !isset($_SESSION) ) { session_start(); }
     
     $node->field_fotos['und'][] = $node->field_fotos['und'][ count($node->field_fotos['und']) - 1 ];
+    $node->field_fotos['und'][] = $node->field_fotos['und'][ count($node->field_fotos['und']) - 1 ];
     
     $_SESSION['node_project'] = $node;
     
