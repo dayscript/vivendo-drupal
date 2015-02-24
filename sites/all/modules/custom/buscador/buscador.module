@@ -377,10 +377,9 @@ function buscador_field_attach_view_alter( &$output, $context ) {
     
     if ( isset($output['field_fotos']) ) {
         if ( $output['field_fotos']['#bundle'] == 'proyecto' ) {
-            $output['field_fotos']['#items'][] = $output['field_fotos']['#items'][6];
+            $output['field_fotos']['#items'][] = $output['field_fotos']['#items'][ count($output['field_fotos']['#items']) - 1 ];
+            $_SESSION['output'][] = $output;
         }
     }
-    
-    $_SESSION['output'][] = $output;
     
 }
