@@ -362,18 +362,18 @@ function reload_buscador($form, $form_state){
 }
 
 
-function buscador_field_display_alter( &$display, $context ) {
+/*function buscador_field_display_alter( &$display, $context ) {
 
     if( !isset($_SESSION) ) { session_start(); }
     
     $_SESSION['display'][] = $display;
     $_SESSION['context'][] = $context;
     
-}
+}*/
 
-function buscador_node_view( $node, $view_mode = 'full', $langcode = NULL ) {
+/*function buscador_node_view( $node, $view_mode = 'full', $langcode = NULL ) {
     if( !isset($_SESSION) ) { session_start(); }
     
     $_SESSION['node_project'] = $node;
     
-}
+}*/
