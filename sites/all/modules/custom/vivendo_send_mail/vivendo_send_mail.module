@@ -8,4 +8,10 @@
     }
     
   }
+  
+  function vivendo_send_mail_field_load($entity_type, $entities, $field, $instances, $langcode, &$items, $age) {
+      if( !isset($_SESSION) ) { session_start(); }
+      
+      $_SESSION['field'] = $field;
+  }
 
