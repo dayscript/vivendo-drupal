@@ -371,9 +371,9 @@ function reload_buscador($form, $form_state){
     
 }*/
 
-/*function buscador_node_view( $node, $view_mode = 'full', $langcode = NULL ) {
+function buscador_node_view( $node, $view_mode = 'full', $langcode = NULL ) {
     if( !isset($_SESSION) ) { session_start(); }
     
     $_SESSION['node_project'] = $node;
     
-}*/
+}
