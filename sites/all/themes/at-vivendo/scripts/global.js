@@ -79,7 +79,10 @@
             
         });
         
+        $(this).find('.form-type-checkbox').find('.error').remove();
+        
         if ( !$(this).find('.form-checkbox').is(':checked') ) {
+            $(this).find('.form-type-checkbox').append('<span class="error">* Este campo obligatorio</span>');
             flag = false;
         }
         
