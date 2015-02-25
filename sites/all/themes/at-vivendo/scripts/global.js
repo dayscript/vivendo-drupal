@@ -70,7 +70,7 @@
             console.log('entro each');
             if ( $(this).attr('id') !== 'edit-field-telefono1-und-0-value' ){
                 console.log('entro if');
-                if ( valueText !== '' ) {
+                if ( valueText == '' ) {
                     $(this).closest('.form-item').append('<span class="error">* Campo obligatorio</span>');
                     
                 } else {
