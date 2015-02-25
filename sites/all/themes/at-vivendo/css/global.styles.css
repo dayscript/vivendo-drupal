@@ -3341,3 +3341,14 @@ div#buscador-wrapper .link-list-compare {
 .pane-publicidad {
   margin-top: 20px;
 }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033770}}
+.slides iframe {
+  width: 778px !important;
+  height: 445px !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033776}}
+.field-name-field-video {
+  display: none;
+}

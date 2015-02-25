@@ -119,8 +119,11 @@ function update( ) {
 jQuery(document).ready( function(){
     initialize();
     
-    if ( jQuery('.node-type-proyecto').html() != "" ) {
-        jQuery(".clone").prev().html(jQuery('.field-name-field-video').find('.embedded-video').html());
+    if ( jQuery('.node-type-proyecto').html() != null ) {
+        if ( jQuery('.field-name-field-video').html() != null ) {
+            jQuery(".clone").prev().html(jQuery('.field-name-field-video').find('.embedded-video').html());
+        }
+        
     }
     
     
