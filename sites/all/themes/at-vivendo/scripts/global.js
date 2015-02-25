@@ -75,7 +75,7 @@
                     
                 } else {
                     $(this).closest('.form-item').remove('.error');
-                    flag = true;
+                    //flag = true;
                 }
                 
             }
