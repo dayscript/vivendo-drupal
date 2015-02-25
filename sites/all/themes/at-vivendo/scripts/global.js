@@ -67,11 +67,11 @@
             
             var valueText = $(this).val();
             
-            $(this).closest('.form-item').find('.error').remove();
+            $(this).removeClass('error-field').closest('.form-item').find('.error').remove();
             
             if ( $(this).attr('id') !== 'edit-field-telefono1-und-0-value' ){
                 if ( valueText == '' ) {
-                    $(this).closest('.form-item').append('<span class="error">* Este campo obligatorio</span>');
+                    $(this).addClass('error-field').closest('.form-item').append('<span class="error">* Este campo obligatorio</span>');
                 } 
             }
             
