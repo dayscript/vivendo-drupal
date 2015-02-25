@@ -3352,3 +3352,18 @@ div#buscador-wrapper .link-list-compare {
 .field-name-field-video {
   display: none;
 }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033780}}
+span.note {
+  display: block;
+  float: right;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033787}}
+.text-result {
+  display: block;
+  float: left;
+  margin-top: 5px;
+}
