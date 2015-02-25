@@ -3367,3 +3367,16 @@ span.note {
   float: left;
   margin-top: 5px;
 }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033793}}
+.error {
+  color: #dd0024 !important;
+  display: block;
+  font-size: 11px;
+  font-style: italic;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033800}}
+.error-field {
+  border: 1px solid #e5001a !important;
+}

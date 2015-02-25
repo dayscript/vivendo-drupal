@@ -3789,3 +3789,14 @@ span.note {
     float: left;
     margin-top: 5px;
 }
+
+.error {
+    color: #dd0024 !important;
+    display: block;
+    font-size: 11px;
+    font-style: italic;
+}
+
+.error-field {
+    border: 1px solid #e5001a !important;
+}
