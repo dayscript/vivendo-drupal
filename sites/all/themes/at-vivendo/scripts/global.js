@@ -63,13 +63,13 @@
     $('#contacto-contructores-entityform-edit-form').submit(function(){
         
         var flag = true;
-        
+        console.log('entro submit');
         $(this).find('.form-text').each(function(){
             
             var valueText = $(this).val();
-            
+            console.log('entro each');
             if ( $(this).attr('id') !== 'edit-field-telefono1-und-0-value' ){
-                
+                console.log('entro if');
                 if ( valueText !== '' ) {
                     $(this).closest('.form-item').append('<span class="error">* Campo obligatorio</span>');
                     flag = false;
@@ -80,6 +80,8 @@
             }
             
         });
+        
+        console.log('valor bandera '+ flag);
         
         return flag;
         
