@@ -60,6 +60,26 @@
         $(this).height('92px');
     });
     
+    $('#contacto-contructores-entityform-edit-form').submit(function(){
+        
+        $(this).find('.form-text').each(function(){
+            
+            var valueText = $(this).val();
+            
+            if ( $(this).attr('id') !== 'edit-field-telefono1-und-0-value' ){
+                
+                if ( valueText !== '' ) {
+                    $(this).closest('.form-item').append('<span class="error">* Campo obligatorio</span>');
+                } else {
+                    $(this).closest('.form-item').remove('.error');
+                }
+                
+            }
+            
+        });
+        
+    });
+    
   });
   
 })(jQuery);
