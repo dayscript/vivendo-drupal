@@ -62,7 +62,7 @@
     
     $('#contacto-contructores-entityform-edit-form').submit(function(){
         
-        var flag = true;
+        var flag = false;
         console.log('entro submit');
         $(this).find('.form-text').each(function(){
             
@@ -72,9 +72,10 @@
                 console.log('entro if');
                 if ( valueText !== '' ) {
                     $(this).closest('.form-item').append('<span class="error">* Campo obligatorio</span>');
-                    flag = false;
+                    
                 } else {
                     $(this).closest('.form-item').remove('.error');
+                    flag = true;
                 }
                 
             }
