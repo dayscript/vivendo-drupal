@@ -62,7 +62,8 @@
     
     $('#contacto-contructores-entityform-edit-form').submit(function(){
         
-        var flag = false;
+        var flag = true;
+        
         $(this).find('.form-text').each(function(){
             
             var valueText = $(this).val();
@@ -70,13 +71,17 @@
             $(this).removeClass('error-field').closest('.form-item').find('.error').remove();
             
             if ( $(this).attr('id') !== 'edit-field-telefono1-und-0-value' ){
-                if ( valueText == '' ) {
+                if ( valueText === '' ) {
                     $(this).addClass('error-field').closest('.form-item').append('<span class="error">* Este campo obligatorio</span>');
+                    flag = false;
                 } 
             }
             
         });
         
+        if ( !$(this).find('.form-checkbox').is(':checked') ) {
+            flag = false;
+        }
         
         return flag;
         
