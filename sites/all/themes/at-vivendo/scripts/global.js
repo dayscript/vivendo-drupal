@@ -72,7 +72,7 @@
             
             if ( $(this).attr('id') !== 'edit-field-telefono1-und-0-value' ){
                 if ( valueText === '' ) {
-                    $(this).addClass('error-field').closest('.form-item').append('<span class="error">* Este campo obligatorio</span>');
+                    $(this).addClass('error-field').closest('.form-item').append('<span class="error">* Este campo es obligatorio</span>');
                     flag = false;
                 } 
             }
@@ -82,7 +82,7 @@
         $(this).find('.form-type-checkbox').find('.error').remove();
         
         if ( !$(this).find('.form-checkbox').is(':checked') ) {
-            $(this).find('.form-type-checkbox').append('<span class="error">* Este campo obligatorio</span>');
+            $(this).find('.form-type-checkbox').append('<span class="error">* Este campo es obligatorio</span>');
             flag = false;
         }
         
