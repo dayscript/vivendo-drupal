@@ -2405,7 +2405,8 @@ div.modal-forms-modal-content {
   .block-content{
     border: 1px solid $line;
   }
-  .views-field-field-image{
+  .views-field-field-image,
+  .views-field-field-image-1{
     margin: 10px 0;
     text-align: center;
   }
@@ -2414,7 +2415,8 @@ div.modal-forms-modal-content {
     color: $medium_dark;
     font-size: 0.8em;
   }
-  .views-global-link{
+  .views-global-link,
+  .views-global-link-1{
     text-align: center;
     margin: 10px 0 17px;
     a.button{
