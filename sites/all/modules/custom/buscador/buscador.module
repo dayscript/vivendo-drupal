@@ -120,12 +120,16 @@ function buscador_formulario_form($node, &$form_state)
             $query->condition('field_zona', $form_state['values']['zona'], '=');
         } elseif (!isset($form_state['values']['zona']) && $filterValue['zona']>0 ) {
             $query->condition('field_zona', $filterValue['zona'], '=');
-        } 
+        } else {
+            $filterValue['zona'] = 0;
+        }
         if ( (isset($form_state['values']['constructora']) && $form_state['values']['constructora']>0))  {
             $filterValue['constructora'] = $form_state['values']['constructora'];
             $query->condition('field_constructora', $form_state['values']['constructora'], '=');
         } elseif(!isset($form_state['values']['constructora']) && $filterValue['constructora']>0 ) {
             $query->condition('field_constructora', $filterValue['constructora'], '=');
+        } else {
+            $filterValue['constructora'] = 0;
         }
         if ((isset($form_state['values']['rango']) && $form_state['values']['rango']>0)) {
             $filterValue['rango'] = $form_state['values']['rango'];
@@ -138,6 +142,8 @@ function buscador_formulario_form($node, &$form_state)
             $data = explode("|",$rango->description);
             $query->condition('field_precio', intval($data[0]) , '>=');
             $query->condition('field_precio', intval($data[1]) , '<');
+        } else {
+            $filterValue['rango'] = 0;
         }
         $num_rows = $query->countQuery()->execute()->fetchField();
         if($num_rows>0)
@@ -171,12 +177,16 @@ function buscador_formulario_form($node, &$form_state)
             $query->condition('field_zona', $form_state['values']['zona'], '=');
         } elseif (!isset($form_state['values']['zona'])  && $filterValue['zona']>=0) {
             $query->condition('field_zona', $filterValue['zona'], '=');
-        }
+        } else {
+            $filterValue['zona'] = 0;
+        }        
         if ((isset($form_state['values']['tipo']) && $form_state['values']['tipo']>0)) {
             $filterValue['tipo'] = $form_state['values']['tipo'];
             $query->condition('field_tipo', $form_state['values']['tipo'], '=');
         } elseif (!isset($form_state['values']['tipo']) && $filterValue['tipo']>0) {
             $query->condition('field_tipo', $filterValue['tipo'], '=');
+        } else {
+            $filterValue['tipo'] = 0;
         }
         if ((isset($form_state['values']['rango']) && $form_state['values']['rango']>0)) {
             $filterValue['rango'] = $form_state['values']['rango'];
@@ -189,6 +199,8 @@ function buscador_formulario_form($node, &$form_state)
             $data = explode("|",$rango->description);
             $query->condition('field_precio', intval($data[0]) , '>=');
             $query->condition('field_precio', intval($data[1]) , '<');
+        } else {
+            $filterValue['rango'] = 0;
         }
         $num_rows = $query->countQuery()->execute()->fetchField();
         if($num_rows>0)
@@ -225,18 +237,24 @@ function buscador_formulario_form($node, &$form_state)
             $query->condition('field_zona', $form_state['values']['zona'], '=');
         } elseif (!isset($form_state['values']['zona'])  &&  $filterValue['zona'] >= 0) {
             $query->condition('field_zona', $filterValue['zona'], '=');
+        } else {
+            $filterValue['zona'] = 0;
         }
         if ( (isset($form_state['values']['constructora']) && $form_state['values']['constructora']>0))  {
             $filterValue['constructora'] = $form_state['values']['constructora'];
             $query->condition('field_constructora', $form_state['values']['constructora'], '=');
         } elseif (isset($form_state['values']['constructora'])  &&  $filterValue['constructora']>0 ) {
             $query->condition('field_constructora', $filterValue['constructora'], '=');
+        } else {
+            $filterValue['constructora'] = 0;
         }
         if ((isset($form_state['values']['tipo']) && $form_state['values']['tipo']>0)) {
             $filterValue['tipo'] = $form_state['values']['tipo'];
             $query->condition('field_tipo', $form_state['values']['tipo'], '=');
         } elseif(!isset($form_state['values']['tipo']) && $filterValue['tipo']) {
             $query->condition('field_tipo', $filterValue['tipo'], '=');
+        } else {
+            $filterValue['tipo'] = 0;
         }
         $num_rows = $query->countQuery()->execute()->fetchField();
         if($num_rows>0)
@@ -278,19 +296,26 @@ function buscador_formulario_form($node, &$form_state)
         $data = explode("|",$rango->description);
         $query->condition('field_precio', intval($data[0]) , '>=');
         $query->condition('field_precio', intval($data[1]) , '<');
-    }
+    } else {
+            $filterValue['rango'] = 0;
+        }
     if ( (isset($form_state['values']['constructora']) && $form_state['values']['constructora']>0))  {
             $filterValue['constructora'] = isset($form_state['values']['constructora']) 
                 ? $form_state['values']['constructora'] : $filterValue['constructora'];
             $query->condition('field_constructora', $form_state['values']['constructora'], '=');
     } elseif(!isset($form_state['values']['constructora']) &&  $filterValue['constructora']>0 ){
         $query->condition('field_constructora', $filterValue['constructora'], '=');
+    } else {
+        $filterValue['constructora'] = 0;
     }
+    
     if ((isset($form_state['values']['tipo']) && $form_state['values']['tipo']>0)) {
         $filterValue['tipo'] = isset($form_state['values']['tipo']) ? $form_state['values']['tipo'] : $filterValue['tipo'];
         $query->condition('field_tipo', $form_state['values']['tipo'], '=');
     } elseif (!isset($form_state['values']['tipo']) &&  $filterValue['tipo']> 0 ) {
         $query->condition('field_tipo', $filterValue['tipo'], '=');
+    } else {
+        $filterValue['tipo'] = 0;
     }
 
     $_SESSION['filterValue'] = $filterValue;
@@ -304,7 +329,6 @@ function buscador_formulario_form($node, &$form_state)
     	} 
       }
     }
-    
     
     $form['wrapper']['cambiar_ciudad'] = array(
 	'#markup' => '<a class="link-list-compare" href="'.$base_url.'?clear-global-filters=field_ciudad">Cambiar Ciudad</a>'
