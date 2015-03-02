@@ -126,5 +126,9 @@ jQuery(document).ready( function(){
         
     }
     
+    $('.gm-style-iw').each(function(){
+        $(this).next().find('img').attr('src', '../images/icons/close-red.png');
+    });
+    
     
 });
