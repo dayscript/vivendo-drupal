@@ -105,7 +105,8 @@ function update( ) {
               return function() {
                 infowindow.setContent( render_window(point) );
                 infowindow.open( map, marker );
-                jQuery('.gm-style-iw').siblings().hide();
+                jQuery('.gm-style-iw').prev().hide();
+                jQuery('.gm-style-iw').next().find('img').attr('src', '../images/icons/close-red.png');
               }
             })(marker , points[i]));
             gmarkers.push(marker);
