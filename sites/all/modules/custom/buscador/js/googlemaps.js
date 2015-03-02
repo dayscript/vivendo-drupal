@@ -38,7 +38,8 @@ function initialize() {
               return function() {
                 infowindow.setContent( render_window(point) );
                 infowindow.open( map, marker );
-                jQuery('.gm-style-iw').siblings().hide();
+                /*jQuery('.gm-style-iw').prev().hide();
+                jQuery('.gm-style-iw').next().find('img').attr('src', '../images/icons/close-red.png');*/
               }
             })(marker , points[i]));
             
@@ -89,7 +90,6 @@ function update( ) {
         });
         
         if ( jQuery('#highlighted-wrapper').height() === 115 ) {
-          console.log('entro if height');
           jQuery('.up-down a').click();
           
         }
@@ -105,8 +105,8 @@ function update( ) {
               return function() {
                 infowindow.setContent( render_window(point) );
                 infowindow.open( map, marker );
-                jQuery('.gm-style-iw').prev().hide();
-                jQuery('.gm-style-iw').next().find('img').attr('src', '../images/icons/close-red.png');
+                /*jQuery('.gm-style-iw').prev().hide();
+                jQuery('.gm-style-iw').next().find('img').attr('src', '../images/icons/close-red.png');*/
               }
             })(marker , points[i]));
             gmarkers.push(marker);
