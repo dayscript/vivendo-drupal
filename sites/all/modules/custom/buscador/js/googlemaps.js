@@ -39,7 +39,7 @@ function initialize() {
                 infowindow.setContent( render_window(point) );
                 infowindow.open( map, marker );
                 jQuery('.gm-style-iw').prev().hide();
-                jQuery('.gm-style-iw').next().html('<img src="http://newvivendo.dayscript.com/sites/all/themes/at-vivendo/images/icons/close-red.png" />');
+                jQuery('.gm-style-iw').next().html('<img src="http://newvivendo.dayscript.com/sites/all/themes/at-vivendo/images/icons/close-red.png" />').css({'top': '50px', 'right': '31px'});
               }
             })(marker , points[i]));
             
@@ -106,7 +106,7 @@ function update( ) {
                 infowindow.setContent( render_window(point) );
                 infowindow.open( map, marker );
                 jQuery('.gm-style-iw').prev().hide();
-                jQuery('.gm-style-iw').next().html('<img src="http://newvivendo.dayscript.com/sites/all/themes/at-vivendo/images/icons/close-red.png" />');
+                jQuery('.gm-style-iw').next().html('<img src="http://newvivendo.dayscript.com/sites/all/themes/at-vivendo/images/icons/close-red.png" />').css({'top': '50px', 'right': '31px'});
               }
             })(marker , points[i]));
             gmarkers.push(marker);
