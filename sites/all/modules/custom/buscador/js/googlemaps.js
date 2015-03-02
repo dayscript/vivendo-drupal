@@ -31,7 +31,7 @@ function initialize() {
                 position: points[i].latlng,
                 map: map,
                 title: points[i].name,
-                icon: '/sites/all/themes/at-vivendo/images/icons/marker-2.png'
+                icon: '/sites/all/themes/at-vivendo/images/icons/marker-vivendo.png'
             });
             
             google.maps.event.addListener(marker, 'mouseover', (function(marker, point){
