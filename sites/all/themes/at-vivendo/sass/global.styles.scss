@@ -3805,3 +3805,31 @@ span.note {
 .error-field {
     border: 1px solid #e5001a !important;
 }
+
+.z_more,
+.z_less {
+    position: absolute;
+    z-index: 9999;
+    left: 0;
+    display: block;
+    text-indent: -9999px;
+    width: 39px;
+    height: 41px;
+}
+
+
+.z_more {
+    background: url('../images/in-on.png') no-repeat scroll 0 0 transparent;
+}
+
+.z_more:hover {
+    background: url('../images/in-off.png') no-repeat scroll 0 0 transparent;
+}
+
+.z_less {
+    background: url('../images/out-on.png') no-repeat scroll 0 0 transparent;
+}
+
+.z_less:hover {
+    background: url('../images/out-off.png') no-repeat scroll 0 0 transparent;
+}
