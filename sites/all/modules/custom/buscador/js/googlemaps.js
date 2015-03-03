@@ -50,6 +50,16 @@ function initialize() {
         
       map.fitBounds(latlngbounds);
       map.panBy(200,0);
+      
+      jQuery('#mapa').append('<a href="#" class="z_more">more</a>');
+      
+      jQuery('#mapa').click(function(event){
+          event.preventDefault();
+          
+          map.SetZoom( map.getZoom() + 1 );
+          
+      });
+      
     }
     
     jQuery('#mapa').append('<a href="#" class="z_more">more</a>');
