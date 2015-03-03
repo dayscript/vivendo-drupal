@@ -13,7 +13,6 @@ function initialize() {
         scrollwheel:false,
         rotateControl: false,
         zoomControl:false,
-        //zoomControlOptions: { style: google.maps.ZoomControlStyle.SMALL },
         panControl:false
     };
     
@@ -52,12 +51,16 @@ function initialize() {
       map.panBy(200,0);
       
       jQuery('#mapa').append('<a href="#" class="z_more">more</a>');
+      jQuery('#mapa').append('<a href="#" class="z_less">less</a>');
       
       jQuery('.z_more').click(function(event){
           event.preventDefault();
-          
           map.setZoom( map.getZoom() + 1 );
-          
+      });
+      
+      jQuery('.z_less').click(function(event){
+          event.preventDefault();
+          map.setZoom( map.getZoom() - 1 );
       });
       
     }
