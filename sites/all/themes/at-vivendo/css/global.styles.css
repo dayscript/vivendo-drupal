@@ -3419,20 +3419,20 @@ span.note {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033821}}
 .z_more {
-  background: url("../images/in-on.png") no-repeat scroll 0 0 transparent;
+  background: url("../images/icons/in-on.png") no-repeat scroll 0 0 transparent;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033825}}
 .z_more:hover {
-  background: url("../images/in-off.png") no-repeat scroll 0 0 transparent;
+  background: url("../images/icons/in-off.png") no-repeat scroll 0 0 transparent;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033829}}
 .z_less {
-  background: url("../images/out-on.png") no-repeat scroll 0 0 transparent;
+  background: url("../images/icons/out-on.png") no-repeat scroll 0 0 transparent;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033833}}
 .z_less:hover {
-  background: url("../images/out-off.png") no-repeat scroll 0 0 transparent;
+  background: url("../images/icons/out-off.png") no-repeat scroll 0 0 transparent;
 }
