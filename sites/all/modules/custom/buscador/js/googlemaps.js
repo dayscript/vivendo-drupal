@@ -53,7 +53,7 @@ function initialize() {
       
       jQuery('#mapa').append('<a href="#" class="z_more">more</a>');
       
-      jQuery('#mapa').click(function(event){
+      jQuery('.z_more').click(function(event){
           event.preventDefault();
           
           map.SetZoom( map.getZoom() + 1 );
@@ -62,7 +62,6 @@ function initialize() {
       
     }
     
-    jQuery('#mapa').append('<a href="#" class="z_more">more</a>');
 }
 
 function render_window ( point ) {
