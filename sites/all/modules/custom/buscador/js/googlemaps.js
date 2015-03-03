@@ -52,7 +52,7 @@ function initialize() {
       map.panBy(200,0);
     }
     
-    jquery('#mapa').append('<a href="#" class="z_more">more</a>');
+    jQuery('#mapa').append('<a href="#" class="z_more">more</a>');
 }
 
 function render_window ( point ) {
