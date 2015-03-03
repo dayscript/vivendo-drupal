@@ -12,8 +12,8 @@ function initialize() {
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         scrollwheel:false,
         rotateControl: false,
-        zoomControl:true,
-        zoomControlOptions: { style: google.maps.ZoomControlStyle.SMALL },
+        zoomControl:false,
+        //zoomControlOptions: { style: google.maps.ZoomControlStyle.SMALL },
         panControl:false
     };
     
@@ -41,6 +41,7 @@ function initialize() {
                 infowindow.open( map, marker );
                 jQuery('.gm-style-iw').prev().hide();
                 jQuery('.gm-style-iw').next().html('<img src="http://newvivendo.dayscript.com/sites/all/themes/at-vivendo/images/icons/close-red.png" />').css({'top': '50px', 'right': '31px'});
+                jquery('#mapa').apped('<a href="#" class="z_more">more</a>');
               }
             })(marker , points[i]));
             
