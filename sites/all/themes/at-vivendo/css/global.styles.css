@@ -3414,7 +3414,7 @@ span.note {
   display: block;
   text-indent: -9999px;
   width: 39px;
-  height: 41px;
+  height: 168px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033821}}
@@ -3430,9 +3430,10 @@ span.note {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033829}}
 .z_less {
   background: url("../images/icons/out-on.png") no-repeat scroll 0 0 transparent;
+  top: 211px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033833}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033834}}
 .z_less:hover {
   background: url("../images/icons/out-off.png") no-repeat scroll 0 0 transparent;
 }
