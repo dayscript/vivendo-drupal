@@ -41,7 +41,6 @@ function initialize() {
                 infowindow.open( map, marker );
                 jQuery('.gm-style-iw').prev().hide();
                 jQuery('.gm-style-iw').next().html('<img src="http://newvivendo.dayscript.com/sites/all/themes/at-vivendo/images/icons/close-red.png" />').css({'top': '50px', 'right': '31px'});
-                jquery('#mapa').append('<a href="#" class="z_more">more</a>');
               }
             })(marker , points[i]));
             
@@ -52,6 +51,8 @@ function initialize() {
       map.fitBounds(latlngbounds);
       map.panBy(200,0);
     }
+    
+    jquery('#mapa').append('<a href="#" class="z_more">more</a>');
 }
 
 function render_window ( point ) {
