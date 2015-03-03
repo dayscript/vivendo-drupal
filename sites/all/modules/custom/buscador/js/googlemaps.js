@@ -13,6 +13,7 @@ function initialize() {
         scrollwheel:false,
         rotateControl: false,
         zoomControl:true,
+        zoomControlOptions: { style: google.maps.ZoomControlStyle.SMALL },
         panControl:false
     };
     
@@ -46,6 +47,7 @@ function initialize() {
             gmarkers.push(marker);
             latlngbounds.extend(points[i].latlng);
         }
+        
       map.fitBounds(latlngbounds);
       map.panBy(200,0);
     }
@@ -63,13 +65,12 @@ function render_window ( point ) {
   output +=   '</div>';
   output +=   '<div class="col-right">';
   output +=     '<span class="title"><a href="/' + point.url + '"><strong>' + point.name + '</strong></a></span>';
-  output +=     '<span class="price">Desde <strong>$' + point.price + '</strong></span>';
+  output +=     '<span class="price">Desde <strong>' + point.price + '</strong></span>';
   output +=     '<span class="address">' + point.address + '</span>';
   output +=   '</div>';
   output += '</div>';
   
   return output;
-    //return 'OK';
   
 }
 
