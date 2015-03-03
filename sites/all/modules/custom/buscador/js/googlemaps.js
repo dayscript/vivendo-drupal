@@ -41,7 +41,7 @@ function initialize() {
                 infowindow.open( map, marker );
                 jQuery('.gm-style-iw').prev().hide();
                 jQuery('.gm-style-iw').next().html('<img src="http://newvivendo.dayscript.com/sites/all/themes/at-vivendo/images/icons/close-red.png" />').css({'top': '50px', 'right': '31px'});
-                jquery('#mapa').apped('<a href="#" class="z_more">more</a>');
+                jquery('#mapa').append('<a href="#" class="z_more">more</a>');
               }
             })(marker , points[i]));
             
