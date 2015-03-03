@@ -56,7 +56,7 @@ function initialize() {
       jQuery('.z_more').click(function(event){
           event.preventDefault();
           
-          map.SetZoom( map.getZoom() + 1 );
+          map.setZoom( map.getZoom() + 1 );
           
       });
       
