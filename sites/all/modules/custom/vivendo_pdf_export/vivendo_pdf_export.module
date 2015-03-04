@@ -44,10 +44,10 @@
     $varImageProject = array(
         'style_name' => 'escalar_a_846x489',
         'path'       => $projectWrapper->field_fotos->value()[0]['uri'],
-        'width'      => $projectWrapper->field_fotos->value()['width'],
-        'height'     => $projectWrapper->field_fotos->value()['height'],
-        'alt'        => $projectWrapper->field_fotos->value()['alt'],
-        'title'      => $projectWrapper->field_fotos->value()['title'],
+        'width'      => $projectWrapper->field_fotos->value()[0]['width'],
+        'height'     => $projectWrapper->field_fotos->value()[0]['height'],
+        'alt'        => $projectWrapper->field_fotos->value()[0]['alt'],
+        'title'      => $projectWrapper->field_fotos->value()[0]['title'],
     );
     
     $featuresIn  = $projectWrapper->field_interiores->value();
