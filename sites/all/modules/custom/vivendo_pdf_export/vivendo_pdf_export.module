@@ -67,7 +67,6 @@
     $output .=         '<span class="type">' . $projectWrapper->field_tipo->value()->name . '</span>';
     $output .=         '<span class="zone">' . $projectWrapper->field_zona->value()->name . '</span>';
     $output .=       '</div>';
-    $output .=       '<div class="address">' . $projectWrapper->field_direccion->value() . '</div>';
     $output .=     '</div>';
     
     $output .=     '<div clas="columns">';
@@ -75,7 +74,7 @@
     $output .=         theme_image_style( $varLogoConstruct );
     $output .=       '</div>';
     $output .=     '</div>';
-    
+    $output .=     '<div class="address">' . $projectWrapper->field_direccion->value() . '</div>';
     $output .=   '</div>';
     
     $output .=   '<div class="main-image">';
