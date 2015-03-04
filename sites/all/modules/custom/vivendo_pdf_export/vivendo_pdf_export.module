@@ -109,7 +109,7 @@
     $output .=       '<div class="columns">';
     $output .=         '<div class="description">';
     $output .=           '<h1>Descripción</h1>';
-    $output .=           '<div class="content">' . $projectWrapper->body->value() . '</div>';
+    $output .=           '<div class="content">' . $projectWrapper->body->value()['value'] . '</div>';
     $output .=         '</div>';
     $output .=       '</div>';
     $output .=     '</div>';
