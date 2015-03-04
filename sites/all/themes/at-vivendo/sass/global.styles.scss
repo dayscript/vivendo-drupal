@@ -3309,7 +3309,11 @@ body.bogota{
     .content-link-redirect,
     .content-compare {
         display: table-cell;
-        padding: 9px 15px 0 0;
+        padding: 9px 0 0 4px;
+    }
+    .content-export{
+        display: table-cell;
+        padding-right: 2px;
     }
 }
 

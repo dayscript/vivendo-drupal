@@ -114,7 +114,7 @@
     }
     
     $output .= '<div class="content-export">';
-    $output .=	l(t('Exportar PDF'), 'exportar-proyecto/' . $nId, array('attributes' => array('class' => array('link-list-compare'))));
+    $output .=	l(t('Exportar PDF'), 'exportar-proyecto/' . $nId, array('attributes' => array('class' => array('link-list-compare'), 'target' => '_blank')));
     $output .= '</div>';
     
     $output .= '<div class="content-compare">';
