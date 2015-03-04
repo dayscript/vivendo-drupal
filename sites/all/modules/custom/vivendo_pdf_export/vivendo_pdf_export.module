@@ -34,11 +34,11 @@
     
     $varLogoConstruct = array(
         'style_name' => 'escalar_289x66-copy',
-        'path'       => $projectWrapper->field_image->value()['uri'],
-        'width'      => $projectWrapper->field_image->value()['width'],
-        'height'     => $projectWrapper->field_image->value()['height'],
-        'alt'        => $projectWrapper->field_image->value()['alt'],
-        'title'      => $projectWrapper->field_image->value()['title'],
+        'path'       => $projectWrapper->field_constructora->value()->field_image['und'][0]['uri'],
+        'width'      => $projectWrapper->field_constructora->value()->field_image['und'][0]['width'],
+        'height'     => $projectWrapper->field_constructora->value()->field_image['und'][0]['height'],
+        'alt'        => $projectWrapper->field_constructora->value()->field_image['und'][0]['alt'],
+        'title'      => $projectWrapper->field_constructora->value()->field_image['und'][0]['title'],
     );
     
     $varImageProject = array(
