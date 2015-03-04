@@ -1,0 +1,122 @@
+<?php
+
+
+  function vivendo_pdf_export_menu() {
+    
+    $items = array();
+
+    $items['exportar-proyecto/%'] = array(
+        'access arguments' => array( 'access content' ),
+        'page arguments'   => array( 1 ),
+        'page callback'    => 'vivendo_pdf_export_callback',
+        'title'            => t('Exportar proyecto'),
+        'type'             => MENU_CALLBACK,
+    );
+
+    return $items;
+    
+  }
+  
+  
+  
+  function vivendo_pdf_export_callback( $nId ) {
+    
+    $projectWrapper = entity_metadata_wrapper( 'node', $nId );
+    
+    $varLogoProject = array(
+        'style_name' => 'escalar_289x66-copy',
+        'path'       => $projectWrapper->field_image->value()['uri']
+    );
+    
+    $varLogoConstruct = array(
+        'style_name' => 'escalar_289x66-copy',
+        'path'       => $projectWrapper->field_image->value()['uri']
+    );
+    
+    $varImageProject = array(
+        'style_name' => 'escalar_a_846x489',
+        'path'       => $projectWrapper->field_fotos->value()[0]['uri']
+    );
+    
+    $featuresIn  = $projectWrapper->field_interiores->value();
+    $featuresOff = $projectWrapper->field_exteriores->value();
+    
+    $output = '';
+    
+    $output .= '<div class="group-info">';
+    $output .=   '<div id="main-info-project">';
+    
+    $output .=     '<div class="columns">';
+    $output .=       '<div class="content-logo-project">';
+    $output .=         theme_image_style( $varLogoProject );
+    $output .=       '</div>';
+    $output .=       '<div class="info">';
+    $output .=         '<h2>' . $projectWrapper->title->value() . '</h2>';
+    $output .=         '<span class="type">' . $projectWrapper->field_tipo->value()->name . '</span>';
+    $output .=         '<span class="zone">' . $projectWrapper->field_zona->value()->name . '</span>';
+    $output .=       '</div>';
+    $output .=       '<div class="address">' . $projectWrapper->field_direccion->value()->name . '</div>';
+    $output .=     '</div>';
+    
+    $output .=     '<div clas="columns">';
+    $output .=       '<div class="content-logo-contruct">';
+    $output .=         theme_image_style( $varLogoConstruct );
+    $output .=       '</div>';
+    $output .=     '</div>';
+    
+    $output .=   '</div>';
+    
+    $output .=   '<div class="main-image">';
+    $output .=     '<div class="content-image">';
+    $output .=       theme_image_style( $varImageProject );
+    $output .=     '</div>';
+    $output .=     '<div class="content-price">';
+    $output .=       '<span> Desde: ' . is_numeric($projectWrapper->field_precio->value()) ? '$' . number_format($projectWrapper->field_precio->value(), 0, ',', '.') : 'No Disponible' . ' </span>';
+    $output .=     '</div>';
+    $output .=   '</div>';
+    
+    $output .=   '<div class="general-info">';
+    $output .=     '<div class="features">';
+    $output .=       '<h1>Especificaciones</h1>';
+    $output .=       '<div class="features-in">';
+    
+    if ( !empty($featuresIn) ):
+    $output .=         '<h2>Características Interiores</h2>';
+    $output .=         '<ul class="items">';
+    for ( $i=0; $i<count($featuresIn); $i++ ):
+    $output .=           '<li class="items">' . $featuresIn[$i]->name . '</li>';
+    endfor;
+    $output .=         '</ul>';
+    endif;
+    
+    $output .=       '</div>';
+    $output .=       '<div class="features-off">';
+    
+    if ( !empty($featuresOff) ):
+    $output .=         '<h2>Características Interiores</h2>';
+    $output .=         '<ul class="items">';
+    for ( $i=0; $i<count($featuresOff); $i++ ):
+    $output .=           '<li class="items">' . $featuresOff[$i]->name . '</li>';
+    endfor;
+    $output .=         '</ul>';
+    endif;
+    
+    $output .=       '</div>';
+    $output .=     '</div>';
+    $output .=     '<div class="content-general">';
+    $output .=       '<div class="columns">';
+    $output .=       '</div>';
+    $output .=       '<div class="columns">';
+    $output .=         '<div class="description">';
+    $output .=           '<h1>Descripción</h1>';
+    $output .=           '<div class="content">' . $projectWrapper->body->value() . '</div>';
+    $output .=         '</div>';
+    $output .=       '</div>';
+    $output .=     '</div>';
+    $output .=   '</div>';
+    $output .= '</div>';
+    
+    return $output;
+    
+  }
+

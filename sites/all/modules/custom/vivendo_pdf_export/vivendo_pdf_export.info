@@ -1,0 +1,6 @@
+name = Vivendo - PDF Export
+description = Module to export project content in pdf format
+core = 7.x
+
+package = Vivendo
+version = 7.x - 1.0
