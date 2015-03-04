@@ -25,17 +25,29 @@
     
     $varLogoProject = array(
         'style_name' => 'escalar_289x66-copy',
-        'path'       => $projectWrapper->field_image->value()['uri']
+        'path'       => $projectWrapper->field_image->value()['uri'],
+        'width'      => $projectWrapper->field_image->value()['width'],
+        'height'     => $projectWrapper->field_image->value()['height'],
+        'alt'        => $projectWrapper->field_image->value()['alt'],
+        'title'      => $projectWrapper->field_image->value()['title']
     );
     
     $varLogoConstruct = array(
         'style_name' => 'escalar_289x66-copy',
-        'path'       => $projectWrapper->field_image->value()['uri']
+        'path'       => $projectWrapper->field_image->value()['uri'],
+        'width'      => $projectWrapper->field_image->value()['width'],
+        'height'     => $projectWrapper->field_image->value()['height'],
+        'alt'        => $projectWrapper->field_image->value()['alt'],
+        'title'      => $projectWrapper->field_image->value()['title'],
     );
     
     $varImageProject = array(
         'style_name' => 'escalar_a_846x489',
-        'path'       => $projectWrapper->field_fotos->value()[0]['uri']
+        'path'       => $projectWrapper->field_fotos->value()[0]['uri'],
+        'width'      => $projectWrapper->field_fotos->value()['width'],
+        'height'     => $projectWrapper->field_fotos->value()['height'],
+        'alt'        => $projectWrapper->field_fotos->value()['alt'],
+        'title'      => $projectWrapper->field_fotos->value()['title'],
     );
     
     $featuresIn  = $projectWrapper->field_interiores->value();
