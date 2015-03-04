@@ -21,6 +21,12 @@
   
   function vivendo_pdf_export_callback( $nId ) {
     
+    $mpdf = new mPDF();
+    
+    $stylesheet = file_get_contents( 'viviendo_pdf_export.css' );
+	
+    $mpdf->WriteHTML( $stylesheet, 1 );
+    
     $projectWrapper = entity_metadata_wrapper( 'node', $nId );
     
     $varLogoProject = array(
@@ -158,7 +164,11 @@
     $output .=   '</div>';
     $output .= '</div>';
     
-    return $output;
+    $mpdf->WriteHTML( $output, 2 );
+    $mpdf->Output();
+    
+    exit;
+    //return $output;
     
   }
 
