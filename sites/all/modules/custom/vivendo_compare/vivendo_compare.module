@@ -113,6 +113,10 @@
       $linkCompare = l(t('+ comparar'), 'vivendo-compare/add/'. $nId . '', array('attributes' => array('class' => array('link-compare', 'active', 'use-ajax'))));
     }
     
+    $output .= '<div class="content-export">';
+    $output .=	l(t('Exportar PDF'), 'exportar-proyecto/' . $nId, array('attributes' => array('class' => array('link-list-compare'))));
+    $output .= '</div>';
+    
     $output .= '<div class="content-compare">';
     $output .=	$linkCompare;
     $output .= '</div>';
@@ -166,7 +170,7 @@
     ajax_deliver( array('#type' => 'ajax', '#commands' => $commands) );
     
   }
-  
+    
   function vivendo_compare_project_remove( $nId ) {
     
     if ( !isset($_SESSION) ) { session_start(); }
