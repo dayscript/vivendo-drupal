@@ -163,7 +163,7 @@ h2 {
 }
 
 .columns-data {
-  width: 180px;
+  width: 150px;
   float: left;
 }
 
