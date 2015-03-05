@@ -21,11 +21,14 @@
   
   function vivendo_pdf_export_callback( $nId ) {
     
-    $mpdf = new mPDF();
+    include('../../../libraries/MPDF56/mpdf.php');
     
-    $stylesheet = file_get_contents( 'viviendo_pdf_export.css' );
+    $mpdf = new mPDF('utf-8', 'Letter');
+    
+    $stylesheet = file_get_contents( 'css/viviendo_pdf_export.css' );
 	
-    $mpdf->WriteHTML( $stylesheet, 1 );
+    $mpdf->SetDisplayMode('fullpage');
+    $mpdf->WriteHTML( $stylesheet );
     
     $projectWrapper = entity_metadata_wrapper( 'node', $nId );
     
@@ -164,7 +167,7 @@
     $output .=   '</div>';
     $output .= '</div>';
     
-    $mpdf->WriteHTML( $output, 2 );
+    $mpdf->WriteHTML( $output );
     $mpdf->Output();
     
     exit;
