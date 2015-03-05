@@ -60,13 +60,13 @@
       #main-info-project {
     overflow: hidden;
     margin-bottom: 8px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
 }
 
 .columns {
     float: left;
     overflow: hidden;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
 }
 
 #main-info-project .columns {
@@ -75,14 +75,14 @@
     margin-right: 15px;
     float: left;
     width: 300px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
 }
 
 #main-info-project .columns .content-logo-project {
     float: left;
     width: 120px;
     height: 72px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
 }
 
 .address {
@@ -90,40 +90,40 @@
   padding-left: 10px;
   padding-top: 5px;
   width: 300px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
 }
 
 .content-logo-project {
     float: left;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif
 }
 
 .info {
     float: left;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
 }
 
 .info span {
     display: block;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
 }
 
 .address {
     clear: both;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
 }
 
 .main-image {
     position: relative;
     display: table;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
 }
 
 .content-image {
     position: absolute;
     top: 0;
     left: 0;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
 }
 
 .content-price {
@@ -137,7 +137,7 @@
     width: 190px;
     margin-left: 420px;
     margin-top: 15px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
 }
 
 .main-image {
@@ -145,7 +145,7 @@
   background-repeat: no-repeat;
     width: 846px;
     height: 489px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
 }
 
 h2 {
