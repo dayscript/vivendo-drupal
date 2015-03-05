@@ -152,7 +152,7 @@ h2 {
 }
 
 .description {
-    width: 170px;
+    width: 435px;
     padding-left: 30px;
 }
 
