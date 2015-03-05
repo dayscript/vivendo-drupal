@@ -241,11 +241,11 @@ h2 {
     $output .=   '</div>';
     $output .= '</div>';
     
-    $mpdf->WriteHTML( $output );
-    $mpdf->Output();
+    /*$mpdf->WriteHTML( $output );
+    $mpdf->Output();*/
     
-    exit;
-    //return $output;
+    //exit;
+    return $output;
     
   }
 
