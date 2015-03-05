@@ -151,11 +151,6 @@ h2 {
     display: none;
 }
 
-.description {
-    width: 435px;
-    padding-left: 30px;
-}
-
 .features-off {
     display: block;
     margin-bottom: 50px;
@@ -173,13 +168,18 @@ h2 {
 }
 
 .columns-data {
-  width: 270px;
+  width: 170px;
   float: left;
 }
 
 .columns-descrip {
-  width: 450px;
+  width: 550px;
   float: left;
+}
+
+.description {
+    width: 435px;
+    padding-left: 30px;
 }
 
 </style>';
