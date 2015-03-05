@@ -123,8 +123,8 @@
     padding: 12px 38px;
     color: #fff;
     font-size: 30px;
-    width: 250px;
-    margin-left: 350px;
+    width: 190px;
+    margin-left: 370px;
     margin-top: 15px;
 }
 
