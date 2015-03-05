@@ -75,7 +75,6 @@
     margin-right: 15px;
     float: left;
     width: 300px;
-    background-color: red;
 }
 
 #main-info-project .columns .content-logo-project {
@@ -88,7 +87,7 @@
   font-size: 13px;
   padding-left: 8px;
   padding-top: 5px;
-  width: 250px;
+  width: 300px;
 }
 
 .content-logo-project {
@@ -162,8 +161,8 @@ h2 {
     $output .=       '</div>';
     $output .=       '<div class="info">';
     $output .=         '<h2>' . $projectWrapper->title->value() . '</h2>';
-    $output .=         '<span class="type">' . $projectWrapper->field_tipo->value()->name . '</span>';
-    $output .=         '<span class="zone">' . $projectWrapper->field_zona->value()->name . '</span>';
+    $output .=         '<div class="type">' . $projectWrapper->field_tipo->value()->name . '</div>';
+    $output .=         '<div class="zone">' . $projectWrapper->field_zona->value()->name . '</div>';
     $output .=       '</div>';
     $output .=       '<div class="address">' . $projectWrapper->field_direccion->value() . '</div>';
     $output .=     '</div>';
