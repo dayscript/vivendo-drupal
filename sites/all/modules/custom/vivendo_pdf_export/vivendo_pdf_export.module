@@ -164,7 +164,7 @@ h2 {
 .item {
     display: block;
     float: left;
-    width: 100px; 
+    width: 175px; 
 }
 </style>';
     
