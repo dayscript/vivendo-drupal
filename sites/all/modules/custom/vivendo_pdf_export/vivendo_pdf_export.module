@@ -21,7 +21,7 @@
   
   function vivendo_pdf_export_callback( $nId ) {
     
-    include('../../../libraries/MPDF56/mpdf.php');
+    include('libraries/MPDF56/mpdf.php');
     
     $mpdf = new mPDF('utf-8', 'Letter');
     
