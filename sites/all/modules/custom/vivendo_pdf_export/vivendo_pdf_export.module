@@ -170,7 +170,7 @@ h2 {
 
 .columns-data {
 background: blue;
-  width: 170px;
+  width: 90px;
   float: left;
 }
 
