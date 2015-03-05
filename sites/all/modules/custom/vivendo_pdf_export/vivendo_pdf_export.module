@@ -60,11 +60,13 @@
       #main-info-project {
     overflow: hidden;
     margin-bottom: 8px;
+    font-family: "Open Sans";
 }
 
 .columns {
     float: left;
     overflow: hidden;
+    font-family: "Open Sans";
 }
 
 #main-info-project .columns {
@@ -73,12 +75,14 @@
     margin-right: 15px;
     float: left;
     width: 300px;
+    font-family: "Open Sans";
 }
 
 #main-info-project .columns .content-logo-project {
     float: left;
     width: 120px;
     height: 72px;
+    font-family: "Open Sans";
 }
 
 .address {
@@ -86,33 +90,40 @@
   padding-left: 10px;
   padding-top: 5px;
   width: 300px;
+  font-family: "Open Sans";
 }
 
 .content-logo-project {
     float: left;
+    font-family: "Open Sans";
 }
 
 .info {
     float: left;
+    font-family: "Open Sans";
 }
 
 .info span {
     display: block;
+    font-family: "Open Sans";
 }
 
 .address {
     clear: both;
+    font-family: "Open Sans";
 }
 
 .main-image {
     position: relative;
     display: table;
+    font-family: "Open Sans";
 }
 
 .content-image {
     position: absolute;
     top: 0;
     left: 0;
+    font-family: "Open Sans";
 }
 
 .content-price {
@@ -126,6 +137,7 @@
     width: 190px;
     margin-left: 420px;
     margin-top: 15px;
+    font-family: "Open Sans";
 }
 
 .main-image {
@@ -133,7 +145,7 @@
   background-repeat: no-repeat;
     width: 846px;
     height: 489px;
-    
+    font-family: "Open Sans";
 }
 
 h2 {
@@ -141,40 +153,48 @@ h2 {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 18px;
+    font-family: "Open Sans";
 }
 
 .page-exportar-proyecto #content-wrapper {
     width: 865px;
+    font-family: "Open Sans";
 }
 
 .page-exportar-proyecto #page-title {
     display: none;
+    font-family: "Open Sans";
 }
 
 .features-off {
     display: block;
     margin-bottom: 50px;
+    font-family: "Open Sans";
 }
 
 .item {
     display: block;
     float: left;
     width: 175px; 
+    font-family: "Open Sans";
 }
 
 .columns-data {
   width: 150px;
   float: left;
+  font-family: "Open Sans";
 }
 
 .columns-descrip {
   width: 550px;
   float: left;
+  font-family: "Open Sans";
 }
 
 .description {
     width: 435px;
     padding-left: 30px;
+    font-family: "Open Sans";
 }
 
 </style>';
