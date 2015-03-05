@@ -162,10 +162,9 @@ h2 {
 }
 
 .item {
-background-color: red;
     display: block;
     float: left;
-    width: 250px; 
+    width: 100px; 
 }
 </style>';
     
