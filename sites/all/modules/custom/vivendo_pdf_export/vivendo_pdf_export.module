@@ -70,6 +70,8 @@
     padding-right: 15px;
     border-right: 2px solid #cccccc;
     margin-right: 15px;
+    float: left;
+    width: 250px;
 }
 
 .content-logo-project {
@@ -235,7 +237,7 @@ h2 {
     $output .=       '</div>';
     $output .=     '</div>';
     $output .=   '</div>';
-    $output .= '</div>';
+    $output .= '</div>';*/
     
     include('libraries/MPDF56/mpdf.php');
     
