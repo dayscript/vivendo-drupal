@@ -119,6 +119,7 @@
     padding: 12px 38px;
     color: #fff;
     font-size: 30px;
+    width: 350px
 }
 
 h2 {
