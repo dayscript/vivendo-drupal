@@ -112,7 +112,7 @@
 }
 
 .content-price {
-    background-color: #c80016;
+    background: #c80016;
     padding: 12px 38px;
     color: #fff;
     font-size: 30px;
