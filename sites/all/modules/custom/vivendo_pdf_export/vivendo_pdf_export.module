@@ -76,6 +76,8 @@
 
 #main-info-project .columns .content-logo-project {
     float: left;
+    width: 120px;
+    height: 72px;
 }
 
 .type,
