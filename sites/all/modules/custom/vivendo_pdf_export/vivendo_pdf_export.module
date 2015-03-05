@@ -128,6 +128,11 @@
     width: 280px;
 }
 
+.main-image {
+  background: url("'. theme_image_style( $varImageProject ); .'"); no-repeat scroll 0 0 transparent;
+    
+}
+
 h2 {
     color: #666666;
     text-transform: uppercase;
@@ -183,9 +188,9 @@ h2 {
     $output .=   '</div>';
     
     $output .=   '<div class="main-image">';
-    $output .=     '<div class="content-image">';
+    /*$output .=     '<div class="content-image">';
     $output .=       theme_image_style( $varImageProject );
-    $output .=     '</div>';
+    $output .=     '</div>';*/
     $output .=     '<div class="content-price">';
     $output .=       '<span> Desde: ' . is_numeric($projectWrapper->field_precio->value()) ? '$' . number_format($projectWrapper->field_precio->value(), 0, ',', '.') : 'No Disponible' . ' </span>';
     $output .=     '</div>';
