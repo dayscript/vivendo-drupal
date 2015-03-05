@@ -208,11 +208,11 @@ background-color: red;
     
     if ( !empty($featuresIn) ):
     $output .=         '<h2>Características Interiores</h2>';
-    $output .=         '<ul class="items">';
+    $output .=         '<div class="items">';
     for ( $i=0; $i<count($featuresIn); $i++ ):
-    $output .=           '<li class="item">' . $featuresIn[$i]->name . '</li>';
+    $output .=           '<div class="item">' . $featuresIn[$i]->name . '</div>';
     endfor;
-    $output .=         '</ul>';
+    $output .=         '</div>';
     endif;
     
     $output .=       '</div>';
@@ -220,11 +220,11 @@ background-color: red;
     
     if ( !empty($featuresOff) ):
     $output .=         '<h2>Características Interiores</h2>';
-    $output .=         '<ul class="items">';
+    $output .=         '<div class="items">';
     for ( $i=0; $i<count($featuresOff); $i++ ):
-    $output .=           '<li class="item">' . $featuresOff[$i]->name . '</li>';
+    $output .=           '<div class="item">' . $featuresOff[$i]->name . '</div>';
     endfor;
-    $output .=         '</ul>';
+    $output .=         '</div>';
     endif;
     
     $output .=       '</div>';
