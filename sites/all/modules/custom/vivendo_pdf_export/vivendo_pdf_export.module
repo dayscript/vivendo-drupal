@@ -85,7 +85,7 @@
 
 .address {
   font-size: 13px;
-  padding-left: 8px;
+  padding-left: 10px;
   padding-top: 5px;
   width: 300px;
 }
@@ -141,12 +141,12 @@ h2 {
     padding-left: 30px;
 }
 
-.features ul {
+.features ul.items {
     display: block;
-    overflow: hidden;
+    width: 700px;
 }
 
-.features ul li {
+.features ul.items li.item {
     display: block;
     float: left;
     width: 250px; 
