@@ -21,8 +21,6 @@
   
   function vivendo_pdf_export_callback( $nId ) {
     
-    
-    
     $projectWrapper = entity_metadata_wrapper( 'node', $nId );
     
     $varLogoProject = array(
@@ -129,7 +127,7 @@
 }
 
 .main-image {
-  background-image: url("'. theme_image_style( $varImageProject ) .'");
+  background-image: url("http://newvivendo.dayscript.com/sites/default/files/fotos/showimage.phpidfile498contentnameprincipal.jpg");
   background-repeat: no-repeat;
     width: 400px;
     height: 400px;
