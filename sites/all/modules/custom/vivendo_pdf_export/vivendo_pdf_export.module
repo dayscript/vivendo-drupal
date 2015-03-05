@@ -129,8 +129,8 @@
 .main-image {
   background-image: url("http://newvivendo.dayscript.com/sites/default/files/fotos/showimage.phpidfile498contentnameprincipal.jpg");
   background-repeat: no-repeat;
-    width: 400px;
-    height: 400px;
+    width: 846px;
+    height: 489px;
     
 }
 
