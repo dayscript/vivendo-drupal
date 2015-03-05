@@ -162,15 +162,9 @@ h2 {
     width: 175px; 
 }
 
-.content-general .columns{
-
-  width: 350px;
-  float: left;
-}
-
 .columns-data {
 background: blue;
-  width: 90px;
+  width: 120px;
   float: left;
 }
 
