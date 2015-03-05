@@ -125,6 +125,17 @@ h2 {
 .description {
     width: 533px;
     padding-left: 30px;
+}
+
+.features ul {
+    display: block;
+    overflow: hidden;
+}
+
+.features ul li {
+    display: block;
+    float: left;
+    width: 250px; 
 }</style>';
     
     $output .= '<div class="group-info">';
@@ -168,7 +179,7 @@ h2 {
     $output .=         '<h2>Características Interiores</h2>';
     $output .=         '<ul class="items">';
     for ( $i=0; $i<count($featuresIn); $i++ ):
-    $output .=           '<li class="items">' . $featuresIn[$i]->name . '</li>';
+    $output .=           '<li class="item">' . $featuresIn[$i]->name . '</li>';
     endfor;
     $output .=         '</ul>';
     endif;
@@ -180,7 +191,7 @@ h2 {
     $output .=         '<h2>Características Interiores</h2>';
     $output .=         '<ul class="items">';
     for ( $i=0; $i<count($featuresOff); $i++ ):
-    $output .=           '<li class="items">' . $featuresOff[$i]->name . '</li>';
+    $output .=           '<li class="item">' . $featuresOff[$i]->name . '</li>';
     endfor;
     $output .=         '</ul>';
     endif;
