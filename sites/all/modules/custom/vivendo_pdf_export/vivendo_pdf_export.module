@@ -172,6 +172,16 @@ h2 {
   float: left;
 }
 
+.columns-data {
+  width: 270px;
+  float: left;
+}
+
+.columns-descrip {
+  width: 450px;
+  float: left;
+}
+
 </style>';
     
     $output .= '<div class="group-info">';
@@ -235,7 +245,7 @@ h2 {
     $output .=       '</div>';
     $output .=     '</div>';
     $output .=     '<div class="content-general">';
-    $output .=       '<div class="columns">';
+    $output .=       '<div class="columns columns-data">';
     $output .=         '<table>';
     $output .=           '<tr>';
     $output .=             '<td>Ciudad:</td>';
@@ -267,7 +277,7 @@ h2 {
     $output .=           '</tr>';
     $output .=         '</table>';
     $output .=       '</div>';
-    $output .=       '<div class="columns">';
+    $output .=       '<div class="columns columns-descrip">';
     $output .=         '<div class="description">';
     $output .=           '<h1>Descripción</h1>';
     $output .=           '<div class="content">' . $projectWrapper->body->value()['value'] . '</div>';
