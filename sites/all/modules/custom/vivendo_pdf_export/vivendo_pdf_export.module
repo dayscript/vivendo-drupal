@@ -166,6 +166,12 @@ h2 {
     float: left;
     width: 175px; 
 }
+
+.content-general .columns{
+  width: 350px;
+  float: left;
+}
+
 </style>';
     
     $output .= '<div class="group-info">';
