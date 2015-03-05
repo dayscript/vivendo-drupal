@@ -237,7 +237,7 @@ h2 {
     $output .=       '</div>';
     $output .=     '</div>';
     $output .=   '</div>';
-    $output .= '</div>';*/
+    $output .= '</div>';
     
     include('libraries/MPDF56/mpdf.php');
     
