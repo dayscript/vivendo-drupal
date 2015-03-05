@@ -112,14 +112,12 @@
 }
 
 .content-price {
-    position: absolute;
-    top: 33px;
-    right: 0;
-    background: #c80016;
+    background-color: #c80016;
     padding: 12px 38px;
     color: #fff;
     font-size: 30px;
-    width: 350px
+    width: 280px;
+    margin-top: -150px;
 }
 
 h2 {
