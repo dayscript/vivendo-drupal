@@ -161,11 +161,13 @@ h2 {
     width: 700px;
 }
 
-.features ul.items li.item {
+.item {
+background-color: red;
     display: block;
     float: left;
     width: 250px; 
-}</style>';
+}
+</style>';
     
     $output .= '<div class="group-info">';
     $output .=   '<div id="main-info-project">';
