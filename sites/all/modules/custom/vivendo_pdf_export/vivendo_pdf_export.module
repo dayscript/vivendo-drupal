@@ -61,6 +61,7 @@
     overflow: hidden;
     margin-bottom: 8px;
     font-family: "Open Sans", sans-serif;
+    
 }
 
 .columns {
@@ -95,7 +96,7 @@
 
 .content-logo-project {
     float: left;
-    font-family: "Open Sans", sans-serif
+    font-family: "Open Sans", sans-serif;
 }
 
 .info {
@@ -153,48 +154,48 @@ h2 {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 18px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
 }
 
 .page-exportar-proyecto #content-wrapper {
     width: 865px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
 }
 
 .page-exportar-proyecto #page-title {
     display: none;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
 }
 
 .features-off {
     display: block;
     margin-bottom: 50px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
 }
 
 .item {
     display: block;
     float: left;
     width: 175px; 
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
 }
 
 .columns-data {
   width: 150px;
   float: left;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
 }
 
 .columns-descrip {
   width: 550px;
   float: left;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
 }
 
 .description {
     width: 435px;
     padding-left: 30px;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
 }
 
 </style>';
