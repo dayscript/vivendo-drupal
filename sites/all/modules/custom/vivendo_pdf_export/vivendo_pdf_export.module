@@ -57,8 +57,11 @@
     
     $output = '';
     
-    $output .= '<style>#main-info-project {
+    $output .= '
+      <style>
+      #main-info-project {
     overflow: hidden;
+    margin-bottom: 8px;
 }
 
 .columns {
@@ -72,6 +75,7 @@
     margin-right: 15px;
     float: left;
     width: 300px;
+    background-color: red;
 }
 
 #main-info-project .columns .content-logo-project {
@@ -83,6 +87,7 @@
 .address {
   font-size: 13px;
   padding-left: 8px;
+  padding-top: 5px;
   width: 250px;
 }
 
