@@ -71,7 +71,17 @@
     border-right: 2px solid #cccccc;
     margin-right: 15px;
     float: left;
-    width: 250px;
+    width: 300px;
+}
+
+#main-info-project .columns .content-logo-project,
+#main-info-project .columns .info {
+    float: left;
+}
+
+.type,
+.zone {
+  font-size: 13px;
 }
 
 .content-logo-project {
