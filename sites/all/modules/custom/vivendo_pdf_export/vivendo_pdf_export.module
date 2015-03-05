@@ -152,16 +152,16 @@ h2 {
 }
 
 .description {
-    width: 500px;
+    width: 170px;
     padding-left: 30px;
 }
 
-.items {
+.features-off {
     display: block;
     margin-bottom: 50px;
 }
 
-.features-off {
+.item {
     display: block;
     float: left;
     width: 175px; 
@@ -192,6 +192,9 @@ h2 {
     $output .=   '</div>';
     
     $output .=   '<div class="main-image">';
+    /*$output .=     '<div class="content-image">';
+    $output .=       theme_image_style( $varImageProject );
+    $output .=     '</div>';*/
     $output .=     '<div class="content-price">';
     $output .=       '<span> Desde: ' . is_numeric($projectWrapper->field_precio->value()) ? '$' . number_format($projectWrapper->field_precio->value(), 0, ',', '.') : 'No Disponible' . ' </span>';
     $output .=     '</div>';
