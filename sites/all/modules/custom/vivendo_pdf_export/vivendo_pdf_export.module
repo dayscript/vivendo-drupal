@@ -129,7 +129,8 @@
 }
 
 .main-image {
-  background: url("'. theme_image_style( $varImageProject ) .'"); no-repeat scroll 0 0 transparent;
+  background-image: url("'. theme_image_style( $varImageProject ) .'");
+  background-repeat: no-repeat;
     width: 400px;
     height: 400px;
     
