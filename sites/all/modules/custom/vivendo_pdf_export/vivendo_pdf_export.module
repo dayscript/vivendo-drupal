@@ -156,9 +156,9 @@ h2 {
     padding-left: 30px;
 }
 
-.features ul.items {
+.items {
     display: block;
-    width: 700px;
+    margin-bottom: 50px;
 }
 
 .item {
