@@ -25,10 +25,7 @@
     
     $mpdf = new mPDF('utf-8', 'Letter');
     
-    $stylesheet = file_get_contents( drupal_get_path('module', 'vivendo_pdf_export') . 'css/viviendo_pdf_export.css' );
-	
-    $mpdf->SetDisplayMode('fullpage');
-    $mpdf->WriteHTML( $stylesheet );
+    //$mpdf->SetDisplayMode('fullpage');
     
     $projectWrapper = entity_metadata_wrapper( 'node', $nId );
     
