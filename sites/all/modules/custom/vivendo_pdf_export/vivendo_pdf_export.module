@@ -123,11 +123,13 @@
     padding: 12px 38px;
     color: #fff;
     font-size: 30px;
-    width: 280px;
+    width: 250px;
+    margin-left: 350px;
+    margin-top: 15px;
 }
 
 .main-image {
-  background-image: url("http://newvivendo.dayscript.com/sites/default/files/styles/escalar_a_846x489/public/fotos/showimage.phpidfile498contentnameprincipal.jpg?itok=9m8u8bJ9");
+  background-image: url("'.image_style_url('escalar_a_846x489', $projectWrapper->field_fotos->value()[0]['uri']).'");
   background-repeat: no-repeat;
     width: 846px;
     height: 489px;
