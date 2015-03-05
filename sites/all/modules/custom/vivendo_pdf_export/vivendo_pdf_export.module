@@ -80,9 +80,10 @@
     height: 72px;
 }
 
-.type,
-.zone {
+.address {
   font-size: 13px;
+  padding-left: 8px;
+  width: 250px;
 }
 
 .content-logo-project {
