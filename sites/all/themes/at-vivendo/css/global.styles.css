@@ -2629,7 +2629,7 @@ body.cali #menu-718-1 {
   vertical-align: top;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033101}}
-#block-buscador-busca-formulario .rango-wrapper {
+#block-buscador-busca-formulario #rango-wrapper {
   border-right: 1px solid #666;
   margin: 5px 3px 0 0;
   padding: 0 9px 3px 0;
