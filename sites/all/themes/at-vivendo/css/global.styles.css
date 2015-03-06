@@ -2636,7 +2636,7 @@ body.cali #menu-718-1 {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033106}}
 #block-buscador-busca-formulario #text-wrapper {
-  background: url("../images/icons/search.png") no-repeat scroll center right transparent;
+  background: url("../images/icons/search.png") no-repeat scroll right 21px transparent;
   margin-left: 6px !important;
   width: 253px !important;
   margin-right: 0 !important;
