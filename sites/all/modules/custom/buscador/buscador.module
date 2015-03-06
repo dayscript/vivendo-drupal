@@ -336,6 +336,13 @@ function buscador_formulario_form($node, &$form_state)
     }
     
     
+    $form['wrapper']['text'] = array(
+        '#prefix' => '<div id="text-wrapper" class="wrapper">',
+        '#suffix' => '</div>',
+        '#type' => 'text',
+        '#title' => 'Buscar por palabra',
+    );
+    
         
     $proyectos_ids = $query->execute()->fetchAllAssoc("nid");
     $proyectos = entity_load("node",array_keys($proyectos_ids));
