@@ -339,7 +339,7 @@ function buscador_formulario_form($node, &$form_state)
     $form['wrapper']['text'] = array(
         '#prefix' => '<div id="text-wrapper" class="wrapper">',
         '#suffix' => '</div>',
-        '#type' => 'text',
+        '#type' => 'textfield',
         '#title' => 'Buscar por palabra',
     );
     
