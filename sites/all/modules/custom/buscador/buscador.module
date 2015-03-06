@@ -341,7 +341,7 @@ function buscador_formulario_form($node, &$form_state)
         '#suffix' => '</div>',
         '#type' => 'textfield',
         '#title' => 'Buscar por palabra',
-        '#size' => 25
+        '#size' => 24
     );
     
         
