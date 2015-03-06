@@ -3103,6 +3103,12 @@ body.bogota{
     margin: 5px 3px 0 0; 
     padding: 0 9px 3px 0;  
   }
+  #text-wrapper {
+      background: url('../images/icons/search.png') no-repeat scroll center right transparent;
+      margin-left: 6px !important;
+      width: 253px !important;
+      margin-right: 0 !important;
+  }
   .form-item{
     display: inline-block;
     margin: 0;
@@ -3111,6 +3117,9 @@ body.bogota{
     }
     select{
       width: 172px;
+    }
+    .form-text{
+      height: 17px; 
     }
   }
   #buscador-wrapper{
