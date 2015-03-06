@@ -2625,7 +2625,7 @@ body.cali #menu-718-1 {
   display: inline-block;
   margin: 0 10px 0 0;
   padding: 5px 0px 7px 0px;
-  width: 200px;
+  width: 175px;
   vertical-align: top;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033101}}
@@ -2639,7 +2639,7 @@ body.cali #menu-718-1 {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033107}}
 #block-buscador-busca-formulario .form-item select {
-  width: 200px;
+  width: 172px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033111}}
 #block-buscador-busca-formulario #buscador-wrapper {
@@ -2908,10 +2908,11 @@ a.link-list-compare {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033340}}
 div#buscador-wrapper .link-list-compare {
-  margin-top: 14px;
+  padding: 12px 5px;
   display: inline-block;
-  float: right;
-  margin-right: 12px;
+  float: left;
+  margin: 6px 14px 0 5px;
+  text-transform: uppercase;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033349}}

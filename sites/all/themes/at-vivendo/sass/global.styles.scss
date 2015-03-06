@@ -3095,7 +3095,7 @@ body.bogota{
     display: inline-block;
     margin: 0 10px 0 0;
     padding: 5px 0px 7px 0px;
-    width: 200px;
+    width: 175px;
     vertical-align: top;
   }
   .form-item{
@@ -3105,7 +3105,7 @@ body.bogota{
       font-weight: 600;
     }
     select{
-      width: 200px;
+      width: 172px;
     }
   }
   #buscador-wrapper{
@@ -3338,11 +3338,11 @@ a.link-list-compare {
 }
 
 div#buscador-wrapper .link-list-compare {
-  margin-top: 14px;
-  display: inline-block;
-  float: right;
-  margin-right: 12px;
-
+    padding: 12px 5px;
+    display: inline-block;
+    float: left;
+    margin: 6px 14px 0 5px;
+    text-transform: uppercase;
 }
 
 .page-comparar {
