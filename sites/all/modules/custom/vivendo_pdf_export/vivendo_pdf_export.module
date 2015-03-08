@@ -23,31 +23,35 @@
     
     $projectWrapper = entity_metadata_wrapper( 'node', $nId );
     
+    $logoProject   = $projectWrapper->field_image->value();
+    $logoConstruct = $projectWrapper->field_constructora->value()->field_image['und'][0];
+    $imageProject  = $projectWrapper->field_fotos->value();
+    
     $varLogoProject = array(
         'style_name' => 'escalar_289x66-copy',
-        'path'       => $projectWrapper->field_image->value()['uri'],
-        'width'      => $projectWrapper->field_image->value()['width'],
-        'height'     => $projectWrapper->field_image->value()['height'],
-        'alt'        => $projectWrapper->field_image->value()['alt'],
-        'title'      => $projectWrapper->field_image->value()['title']
+        'path'       => $logoProject['uri'],
+        'width'      => $logoProject['width'],
+        'height'     => $logoProject['height'],
+        'alt'        => $logoProject['alt'],
+        'title'      => $logoProject['title']
     );
     
     $varLogoConstruct = array(
         'style_name' => 'escalar_289x66-copy',
-        'path'       => $projectWrapper->field_constructora->value()->field_image['und'][0]['uri'],
-        'width'      => $projectWrapper->field_constructora->value()->field_image['und'][0]['width'],
-        'height'     => $projectWrapper->field_constructora->value()->field_image['und'][0]['height'],
-        'alt'        => $projectWrapper->field_constructora->value()->field_image['und'][0]['alt'],
-        'title'      => $projectWrapper->field_constructora->value()->field_image['und'][0]['title'],
+        'path'       => $logoConstruct['uri'],
+        'width'      => $logoConstruct['width'],
+        'height'     => $logoConstruct['height'],
+        'alt'        => $logoConstruct['alt'],
+        'title'      => $logoConstruct['title'],
     );
     
     $varImageProject = array(
         'style_name' => 'escalar_a_846x489',
-        'path'       => $projectWrapper->field_fotos->value()[0]['uri'],
-        'width'      => $projectWrapper->field_fotos->value()[0]['width'],
-        'height'     => $projectWrapper->field_fotos->value()[0]['height'],
-        'alt'        => $projectWrapper->field_fotos->value()[0]['alt'],
-        'title'      => $projectWrapper->field_fotos->value()[0]['title'],
+        'path'       => $imageProject[0]['uri'],
+        'width'      => $imageProject[0]['width'],
+        'height'     => $imageProject[0]['height'],
+        'alt'        => $imageProject[0]['alt'],
+        'title'      => $imageProject[0]['title'],
     );
     
     $featuresIn  = $projectWrapper->field_interiores->value();
@@ -142,7 +146,7 @@
 }
 
 .main-image {
-  background-image: url("'.image_style_url('escalar_a_846x489', $projectWrapper->field_fotos->value()[0]['uri']).'");
+  background-image: url("'.image_style_url('escalar_a_846x489', $imageProject[0]['uri']).'");
   background-repeat: no-repeat;
     width: 846px;
     height: 489px;
@@ -296,7 +300,8 @@ h2 {
     $output .=       '<div class="columns columns-descrip">';
     $output .=         '<div class="description">';
     $output .=           '<h1>Descripción</h1>';
-    $output .=           '<div class="content">' . $projectWrapper->body->value()['value'] . '</div>';
+    $body = $projectWrapper->body->value();
+    $output .=           '<div class="content">' . $body['value'] . '</div>';
     $output .=         '</div>';
     $output .=       '</div>';
     $output .=     '</div>';

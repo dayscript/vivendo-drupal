@@ -6,24 +6,25 @@
       
       $('#text-wrapper .form-text:not(.processed)').addClass('processed').keyup(function(event) {
 	
-	var element_settings = {},
-	    base = $(this).attr('id'),
-            ajax,
-            deltaBlock,
-            url;
+        var element_settings = {},
+            base = $(this).attr('id'),
+            data = $(this).val(),
+            ajax = null;
 	    
-	if(typeof Drupal.ajax[base] !== 'undefined'){
-	  delete Drupal.ajax[base];
-	  $(this).unbind('KeySearch');
-	} 
+        if(typeof Drupal.ajax[base] !== 'undefined'){
+          delete Drupal.ajax[base];
+          $(this).unbind('KeySearch');
+        } 
 	    
-	element_settings.progress = { 'type' : 'none' };
-        element_settings.submit   = { js: true, base: base, deltaBlock: deltaBlock };
-        element_settings.url      = $(this).attr('href');
+        element_settings.progress = { 'type' : 'none' };
+        element_settings.submit   = { js: true, base: base, data: data };
+        element_settings.url      = Drupal.settings.basePath . 'vivendo/search';
         element_settings.event    = 'KeySearch';
 	
-	ajax                   = new Drupal.ajax(base, this, element_settings);
-        Drupal.ajax[base]      = ajax;
+        ajax              = new Drupal.ajax(base, this, element_settings);
+        Drupal.ajax[base] = ajax;
+        
+        $(this).trigger( 'KeySearch' );
 	
       });
       
@@ -31,9 +32,9 @@
     
   };
   
-  Drupal.ajax.prototype.commands.search_result = function( ajax, response, status ) {
+  Drupal.ajax.prototype.commands.vivendo_search_result = function( ajax, response, status ) {
     
-  }
+  };
     
 })(jQuery);
 
