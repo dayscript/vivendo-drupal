@@ -3,7 +3,7 @@
 function buscador_init() {
   
   drupal_add_library('system', 'drupal.ajax');
-  drupal_add_js(drupal_get_path('module', 'buscadora').'/js/search.js', array('type' => 'file'));
+  drupal_add_js(drupal_get_path('module', 'buscador').'/js/search.js', array('type' => 'file'));
   
 }
 
