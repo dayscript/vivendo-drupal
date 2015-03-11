@@ -478,7 +478,7 @@ function buscardor_ajax() {
   endfor;
   
   $output .=       '</a>';
-  $output .=     '<li>';
+  $output .=     '</li>';
   $output .=   '</ul>';
   $output .= '<div>';
   
