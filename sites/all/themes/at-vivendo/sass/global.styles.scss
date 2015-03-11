@@ -3108,6 +3108,7 @@ body.bogota{
       margin-left: 6px !important;
       width: 253px !important;
       margin-right: 0 !important;
+      position: relative;
   }
   .form-item{
     display: inline-block;
@@ -3873,7 +3874,7 @@ span.note {
         display: block;
         padding: 10px 0 0;
         margin: 0;
-        i.item {
+        .item {
             display: block;
             padding: 0 0 5px;
             margin: 0 5px 5px;
