@@ -162,6 +162,7 @@ var {
   background: #000000;
   position: relative;
   height: 475px;
+  overflow: hidden;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\00003274}}
 #highlighted-wrapper .block-inner {
