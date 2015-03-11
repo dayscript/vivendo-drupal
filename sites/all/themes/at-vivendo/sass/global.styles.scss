@@ -265,17 +265,12 @@ var {
  * add any width/margin/padding/borders etc to .container
  */
 
-body.not-front{
-  #highlighted-wrapper{
-//    overflow: hidden;
-    height: 115px;
-  }
-}
+
 #highlighted-wrapper{
   background: #000000;
   position: relative;
   height: 475px;
-  overflow: hidden;
+  //overflow: hidden;
   .block-inner{
     margin: 0;
     p{
@@ -284,6 +279,13 @@ body.not-front{
         height: auto !important;
       }
     }
+  }
+}
+
+body.not-front{
+  #highlighted-wrapper{
+//    overflow: hidden;
+    height: 115px;
   }
 }
 /*
