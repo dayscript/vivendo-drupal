@@ -4,7 +4,7 @@
     
     attach: function (context, settings) {
       
-      $('#text-wrapper .form-text:not(.processed)').addClass('processed').keyup(function(event) {
+      $('#text-wrapper .form-text:not(.vivendo-processed)').addClass('vivendo-processed').keyup(function(event) {
 	
         var element_settings = {},
             base = $(this).attr('id'),
@@ -18,7 +18,7 @@
 	    
         element_settings.progress = { 'type' : 'none' };
         element_settings.submit   = { js: true, base: base, data: data };
-        element_settings.url      = Drupal.settings.basePath . 'vivendo/search';
+        element_settings.url      = $(this).closest('#text-wrapper').data('url');
         element_settings.event    = 'KeySearch';
 	
         ajax              = new Drupal.ajax(base, this, element_settings);
