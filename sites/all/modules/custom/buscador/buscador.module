@@ -12,7 +12,7 @@ function buscador_menu() {
   
   $items = array();
   
-  $items['vivendo/search/'] = array(
+  $items['vivendo-search'] = array(
       'access arguments'  => array( 'access content' ),
       'delivery callback' => 'ajax_deliver',
       'page arguments'    => array(0),
@@ -362,7 +362,7 @@ function buscador_formulario_form($node, &$form_state)
     
     
     $form['wrapper']['text'] = array(
-        '#prefix' => '<div id="text-wrapper" class="wrapper" data-url="vivendo/search">',
+        '#prefix' => '<div id="text-wrapper" class="wrapper" data-url="vivendo-search">',
         '#suffix' => '</div>',
         '#type' => 'textfield',
         '#title' => 'Buscar por palabra',

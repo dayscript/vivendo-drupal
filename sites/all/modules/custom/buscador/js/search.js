@@ -9,7 +9,7 @@
         var element_settings = {},
             base = $(this).attr('id'),
             data = $(this).val(),
-            ajax = null;
+            ajax;
 	    
         if(typeof Drupal.ajax[base] !== 'undefined'){
           delete Drupal.ajax[base];
