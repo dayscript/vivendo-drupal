@@ -463,10 +463,9 @@ function buscardor_ajax() {
   
   $output .= '<div class="result-search">';
   $output .=   '<ul class="items-result">';
-  $output .=     '<li class="item">';
   
   for ( $i=0; $i<count($resultSearch); $i++ ):
-    
+  $output .=     '<li class="item">';  
   $output .=       '<a class="link" href="">';  
   $output .=         theme_image_style( array(
       'style_name' => 'escalar_289x66-copy',
@@ -475,10 +474,9 @@ function buscardor_ajax() {
   ));
   $output .=         '<span class="content">' . $resultSearch[ $keys[$i] ]->title . '</span>';
   $output .=       '</a>';
-  
+  $output .=     '</li>';
   endfor;
   
-  $output .=     '</li>';
   $output .=   '</ul>';
   $output .= '<div>';
   
