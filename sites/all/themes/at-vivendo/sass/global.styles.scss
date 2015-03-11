@@ -3858,3 +3858,44 @@ span.note {
 .pane-block-17 {
   padding-top: 17px;
 }
+
+.result-search {
+    position: absolute;
+    top: 49px;
+    left: 0;
+    z-index: 9999999;
+    background: repeat scroll 0 0 #fff;
+    border: 1px solid #999;
+    border-top: none;
+    height: 460px;
+    overflow: hidden;
+    .items-result {
+        display: block;
+        padding: 10px 0 0;
+        margin: 0;
+        i.item {
+            display: block;
+            padding: 0 0 5px;
+            margin: 0 5px 5px;
+            border-bottom: 1px solid #e5e5e5;
+            height: 54px;
+            .link {
+                display: block;
+                overflow: hidden;
+                img {
+                    float: left;
+                    width: 86px;
+                }
+                span.content {
+                    font-size: 13px;
+                    color: #000;
+                }
+                span.type {
+                    font-style: italic;
+                    color: #999;
+                    font-size: 12;
+                }
+            }
+        }
+    }
+}

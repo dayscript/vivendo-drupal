@@ -473,6 +473,7 @@ function buscardor_ajax() {
           $resultSearch[ $keys[$i] ]->field_fotos['und'][0]['uri'] : $resultSearch[ $keys[$i] ]->field_image['und'][0]['uri']
   ));
   $output .=         '<span class="content">' . $resultSearch[ $keys[$i] ]->title . '</span>';
+  $output .=         '<span class="type">' . $resultSearch[ $keys[$i] ]->type . '</span>';
   $output .=       '</a>';
   $output .=     '</li>';
   endfor;

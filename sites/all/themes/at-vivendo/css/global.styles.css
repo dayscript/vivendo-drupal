@@ -3468,3 +3468,51 @@ span.note {
 .pane-block-17 {
   padding-top: 17px;
 }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033862}}
+.result-search {
+  position: absolute;
+  top: 49px;
+  left: 0;
+  z-index: 9999999;
+  background: repeat scroll 0 0 #fff;
+  border: 1px solid #999;
+  border-top: none;
+  height: 460px;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033872}}
+.result-search .items-result {
+  display: block;
+  padding: 10px 0 0;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033876}}
+.result-search .items-result i.item {
+  display: block;
+  padding: 0 0 5px;
+  margin: 0 5px 5px;
+  border-bottom: 1px solid #e5e5e5;
+  height: 54px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033882}}
+.result-search .items-result i.item .link {
+  display: block;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033885}}
+.result-search .items-result i.item .link img {
+  float: left;
+  width: 86px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033889}}
+.result-search .items-result i.item .link span.content {
+  font-size: 13px;
+  color: #000;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033893}}
+.result-search .items-result i.item .link span.type {
+  font-style: italic;
+  color: #999;
+  font-size: 12;
+}
