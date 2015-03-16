@@ -481,6 +481,7 @@ function buscardor_ajax() {
   $output .=   '</ul>';
   $output .= '<div>';
   
+  $commands[] = ajax_command_remove( '.result-search' );
   $commands[] = ajax_command_append( '#text-wrapper', $output );
   $commands[] = array('command' => 'vivendo_search_result');
   
