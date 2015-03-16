@@ -436,12 +436,19 @@ function buscador_field_attach_view_alter( &$output, $context ) {
 
 function _get_result_search( $data ) {
   
-  $resultSearch = db_select( 'node', 'noPC' )
+  $city = global_filter_get_session_value('field_ciudad');
+  
+  $search = db_select( 'node', 'noPC' )
       ->fields( 'noPC', array('nid') )
       ->condition( 'type', array('proyecto', 'constructora'), 'IN' )
       ->condition( 'title', $data . '%', 'LIKE' )
-      ->execute()
-      ->fetchAll();
+      ->condition( 'status', '1', '=' )
+      ->range(0, 15);
+  
+  $search->leftJoin( 'field_data_field_ciudad', 'city', 'city.entity_id = noPC.nid' );
+  $search->condition( 'city.field_ciudad_tid', $city, '=' );
+  
+  $resultSearch = $search->execute()->fetchAll(
   
   for ( $i=0; $i<count($resultSearch); $i++ ) {
     $dataIds[] = $resultSearch[$i]->nid;
@@ -466,7 +473,7 @@ function buscardor_ajax() {
   
   for ( $i=0; $i<count($resultSearch); $i++ ):
   $output .=     '<li class="item">';  
-  $output .=       '<a class="link" href="">';  
+  $output .=       '<a class="link" href="'.url('node/'.$resultSearch[ $keys[$i] ]->nid).'">';  
   $output .=         theme_image_style( array(
       'style_name' => 'escalar_289x66-copy',
       'path'       => $resultSearch[ $keys[$i] ]->type == 'proyeto' ? 
