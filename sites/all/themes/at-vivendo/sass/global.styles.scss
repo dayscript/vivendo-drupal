@@ -376,6 +376,9 @@ body.not-front{
 #content-wrapper {
   padding-top: 15px;
   border-top: 1px solid #dd0024;
+  position: relative;
+  z-index: 45;
+  background: none repeat scroll 0 0 #FFFFFF;
   .container {}
 }
 body.front{
