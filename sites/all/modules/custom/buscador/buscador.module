@@ -426,7 +426,9 @@ function buscador_field_attach_view_alter( &$output, $context ) {
     
     if ( isset($output['field_fotos']) ) {
         
-        if ( $output['field_fotos']['#object']->nid == arg(1) ) {
+      $node = node_load( arg(1) );
+      
+        if ( $output['field_fotos']['#object']->nid == arg(1) && !empty($node->field_video) ) {
             $output['field_fotos']['#items'][] = $output['field_fotos']['#items'][ count($output['field_fotos']['#items']) - 1 ];
         }
         
