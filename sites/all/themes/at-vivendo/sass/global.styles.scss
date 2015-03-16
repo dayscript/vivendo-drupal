@@ -3875,6 +3875,8 @@ span.note {
     border-top: none;
     height: 460px;
     overflow: hidden;
+    overflow-y: auto;
+    width: 252px;
     .items-result {
         display: block;
         padding: 10px 0 0;
