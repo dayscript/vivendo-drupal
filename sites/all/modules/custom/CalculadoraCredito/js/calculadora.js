@@ -9,6 +9,8 @@ jQuery(document).ready(function(){
 		                
 		            }
 			    
+			    console.log( ValorCompra );
+			    
 			    console.log( (ValorCompra / 0.70) * 0.30 );
 			    
 			    //jQuery( '#valor_inicial' ).val( (ValorCompra / 0.70) * 0.30 );
