@@ -8,6 +8,7 @@ jQuery(document).ready(function(){
 		                jQuery("#mensaje1").fadeIn("slow");
 		                
 		            }
+			    jQuery( '#valor_inicial' ).val( (ValorCompra / 0.70) * 0.30 );
 		});
 
 		jQuery( "#valor_inicial" ).keyup(function() {
