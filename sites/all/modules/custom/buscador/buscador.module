@@ -448,7 +448,7 @@ function _get_result_search( $data ) {
   $search->leftJoin( 'field_data_field_ciudad', 'city', 'city.entity_id = noPC.nid' );
   $search->condition( 'city.field_ciudad_tid', $city, '=' );
   
-  $resultSearch = $search->execute()->fetchAll(
+  $resultSearch = $search->execute()->fetchAll();
   
   for ( $i=0; $i<count($resultSearch); $i++ ) {
     $dataIds[] = $resultSearch[$i]->nid;
