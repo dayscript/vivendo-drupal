@@ -440,6 +440,7 @@ function _get_result_search( $data ) {
       ->fields( 'noPC', array('nid') )
       ->condition( 'type', array('proyecto', 'constructora'), 'IN' )
       ->condition( 'title', $data . '%', 'LIKE' )
+      ->limit( 15 )
       ->execute()
       ->fetchAll();
   
@@ -472,8 +473,8 @@ function buscardor_ajax() {
       'path'       => $resultSearch[ $keys[$i] ]->type == 'proyeto' ? 
           $resultSearch[ $keys[$i] ]->field_fotos['und'][0]['uri'] : $resultSearch[ $keys[$i] ]->field_image['und'][0]['uri']
   ));
-  $output .=         '<div class="content">' . $resultSearch[ $keys[$i] ]->title . '</div>';
-  $output .=         '<div class="type">' . $resultSearch[ $keys[$i] ]->type . '</div>';
+  $output .=         '<span class="content">' . $resultSearch[ $keys[$i] ]->title . '</span><br/>';
+  $output .=         '<span class="type">' . $resultSearch[ $keys[$i] ]->type . '</span>';
   $output .=       '</a>';
   $output .=     '</li>';
   endfor;
