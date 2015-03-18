@@ -47,8 +47,7 @@ function initialize() {
             google.maps.event.addListener(marker, 'mouseout', function(event) {
              
                   setTimeout( "jQuery('.gm-style-iw').hide();",2000 );
-                  jQuery('.gm-style-iw').next().html('<img src="http://newvivendo.dayscript.com/sites/all/themes/at-vivendo/images/icons/close-red.png" />').css({'top': '50px', 'right': '31px'});
-                          
+                              jQuery('.gm-style-iw').show();
              });
             
             var pathname = window.location.pathname;
