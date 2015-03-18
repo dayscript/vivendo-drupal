@@ -44,9 +44,11 @@ function initialize() {
               }
             })(marker , points[i]));
 
-            google.maps.event.addListener(marker, 'mouseout', setTimeout(function(event) {
-             infowindow.close( map, marker );
-             }),2000);
+            google.maps.event.addListener(marker, 'mouseout', function(event) {
+             
+             setTimeout(infowindow.close( map, marker ),2000);
+             
+             });
             
             var pathname = window.location.pathname;
             pathname = pathname.split("/");
