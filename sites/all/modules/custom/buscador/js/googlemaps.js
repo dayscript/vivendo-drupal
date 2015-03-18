@@ -46,7 +46,9 @@ function initialize() {
 
             google.maps.event.addListener(marker, 'mouseout', function(event) {
              
-             setTimeout(infowindow.close( map, marker ),2000);
+             jQuery(document).ready(function () {
+              setTimeout( "jQuery('.gm-style-iw').hide();",2000 );
+              });
              
              });
             
