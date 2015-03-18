@@ -44,9 +44,9 @@ function initialize() {
               }
             })(marker , points[i]));
 
-            /*google.maps.event.addListener(marker, 'mouseout', function(event) {
+            google.maps.event.addListener(marker, 'mouseout', function(event) {
              infowindow.close( map, marker );
-             });*/
+             });
             
             var pathname = window.location.pathname;
             pathname = pathname.split("/");
