@@ -161,9 +161,11 @@ jQuery(document).ready( function(){
         
     }
 
-    jQuery( ".gm-style-iw" ).on('mouseover', function(){
+jQuery( ".gm-style-iw" ).mouseenter( function(){
 
-      jQuery(this).closest( "div" ).addClass('temporal');
+      jQuery(".gm-style-iw").parent( "div" ).addClass('temporal').mouseleave(function(){
+        jQuery(this).hide();
+      });
 
     });
            
