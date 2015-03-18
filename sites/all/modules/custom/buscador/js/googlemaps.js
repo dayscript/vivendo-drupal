@@ -8,17 +8,17 @@ function initialize() {
   
     var mapOptions = {
         center: new google.maps.LatLng(4.565961, -74.078279),
-        zoom: 2,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         scrollwheel:false,
         rotateControl: false,
         zoomControl:false,
         panControl:false
     };
+     
     
     map = new google.maps.Map(document.getElementById("mapa"), mapOptions);
-    
-  if(points && points.length){
+
+    if(points && points.length){
         var latlngbounds = new google.maps.LatLngBounds();
         
         var infowindow = new google.maps.InfoWindow({
@@ -32,16 +32,29 @@ function initialize() {
                 map: map,
                 title: points[i].name,
                 icon: '/sites/all/themes/at-vivendo/images/icons/marker-vivendo.png'
+
             });
             
             google.maps.event.addListener(marker, 'mouseover', (function(marker, point){
-              return function() {
+                return function() {
                 infowindow.setContent( render_window(point) );
                 infowindow.open( map, marker );
                 jQuery('.gm-style-iw').prev().hide();
                 jQuery('.gm-style-iw').next().html('<img src="http://newvivendo.dayscript.com/sites/all/themes/at-vivendo/images/icons/close-red.png" />').css({'top': '50px', 'right': '31px'});
               }
             })(marker , points[i]));
+
+            /*google.maps.event.addListener(marker, 'mouseout', function(event) {
+             infowindow.close( map, marker );
+             });*/
+            
+            var pathname = window.location.pathname;
+            pathname = pathname.split("/");
+            google.maps.event.addDomListener(window, 'load', function(event) {
+            if (pathname[1] == "proyectos" && map.getZoom()){
+                map.setZoom(17);
+            }
+            });
             
             gmarkers.push(marker);
             latlngbounds.extend(points[i].latlng);
@@ -49,6 +62,7 @@ function initialize() {
         
       map.fitBounds(latlngbounds);
       map.panBy(200,0);
+
       
       jQuery('#mapa').append('<a href="#" class="z_more">more</a>');
       jQuery('#mapa').append('<a href="#" class="z_less">less</a>');
@@ -62,8 +76,10 @@ function initialize() {
           event.preventDefault();
           map.setZoom( map.getZoom() - 1 );
       });
-      
+     
+     
     }
+
     
 }
 
@@ -130,11 +146,12 @@ function update( ) {
         map.fitBounds(latlngbounds);
         map.panBy(200,0);
     }
+ 
 
 }
 jQuery(document).ready( function(){
     initialize();
-    
+
     if ( jQuery('.node-type-proyecto').html() != null ) {
         if ( jQuery('.field-name-field-video').html() != null ) {
             jQuery(".clone").prev().html(jQuery('.field-name-field-video').find('.embedded-video').html());
