@@ -44,11 +44,11 @@ function initialize() {
               }
             })(marker , points[i]));
 
-            google.maps.event.addListener(marker, 'mouseout', function(event) {
+            /*google.maps.event.addListener(marker, 'mouseout', function(event) {
              
                   setTimeout( "jQuery('.gm-style-iw').hide();",2000 );
                               jQuery('.gm-style-iw').show();
-             });
+             });*/
             
             var pathname = window.location.pathname;
             pathname = pathname.split("/");
@@ -160,5 +160,12 @@ jQuery(document).ready( function(){
         }
         
     }
+
+    jQuery( ".gm-style-iw" ).on('mouseover', function(){
+
+      jQuery(this).closest( "div" ).addClass('temporal');
+
+    });
+           
     
 });
