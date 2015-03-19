@@ -159,7 +159,7 @@ var {
  */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\00003269}}
 #highlighted-wrapper {
-  background: #000000;
+  background: #000;
   position: relative;
   height: 475px;
   /*overflow: hidden;*/
@@ -2697,8 +2697,8 @@ body.cali #menu-718-1 {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033163}}
 .gm-style-iw {
   background: url("../images/shadow-window-marker.png") no-repeat scroll 32px 87px transparent;
-  height: 135px;
-  margin: 36px 0 0 0;
+  margin: 65px 0 0 23px;
+  height: 156px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/developer\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033169}}
@@ -3522,10 +3522,3 @@ span.note {
   color: #999;
   font-size: 12;
 }
-/********************************/
-.gm-style-iw{
-  margin: 52px 0 0 0!important;
-}
-
-
-/*********************************/

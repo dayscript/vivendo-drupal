@@ -40,7 +40,7 @@ function initialize() {
                 infowindow.setContent( render_window(point) );
                 infowindow.open( map, marker );
                 jQuery('.gm-style-iw').prev().hide();
-                jQuery('.gm-style-iw').next().html('<img src="http://newvivendo.dayscript.com/sites/all/themes/at-vivendo/images/icons/close-red.png" />').css({'top': '50px', 'right': '31px'});
+                jQuery('.gm-style-iw').next().html('<img src="http://newvivendo.dayscript.com/sites/all/themes/at-vivendo/images/icons/close-red.png" />').css({'top': '79px', 'right': '7px'});
 
                 jQuery( ".gm-style-iw" ).mouseenter( function(){
                     jQuery(".gm-style-iw").parent( "div" ).addClass('temporal').mouseleave(function(){
