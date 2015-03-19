@@ -145,7 +145,7 @@ function update( ) {
                 infowindow.setContent( render_window(point) );
                 infowindow.open( map, marker );
                 jQuery('.gm-style-iw').prev().hide();
-                jQuery('.gm-style-iw').next().html('<img src="http://newvivendo.dayscript.com/sites/all/themes/at-vivendo/images/icons/close-red.png" />').css({'top': '50px', 'right': '31px'});
+                jQuery('.gm-style-iw').next().html('<img src="http://newvivendo.dayscript.com/sites/all/themes/at-vivendo/images/icons/close-red.png" />').css({'top': '79px', 'right': '7px'});
                 jQuery( ".gm-style-iw" ).mouseenter( function(){
                 jQuery(".gm-style-iw").parent( "div" ).addClass('temporal').mouseleave(function(){
                   jQuery(this).hide();
@@ -167,7 +167,14 @@ jQuery(document).ready( function(){
 
     if ( jQuery('.node-type-proyecto').html() != null ) {
         if ( jQuery('.field-name-field-video').html() != null ) {
-            jQuery(".clone").prev().html(jQuery('.field-name-field-video').find('.embedded-video').html());
+	  
+	    var embeddedVideo = jQuery('.field-name-field-video').find('.embedded-video'),	    
+	      urlVideo = embeddedVideo.find( 'iframe' ).attr('src').split('?'),	    
+	      videoId = urlVideo[0].split('/');
+	    
+            jQuery(".clone").prev().html( embeddedVideo.html() );
+	    jQuery(".flex-control-nav").find('li').last().find('img').attr( 'src', 'http://img.youtube.com/vi/'+videoId[videoId.length-1]+'/maxresdefault.jpg' );
+	    
         }
         
     }
