@@ -31,7 +31,7 @@ function initialize() {
                 position: points[i].latlng,
                 map: map,
                 title: points[i].name,
-                icon: '/sites/all/themes/at-vivendo/images/icons/marker-vivendo.png'
+                icon: '/sites/all/themes/at-vivendo/images/icons/marker.png'
 
             });
             
@@ -40,7 +40,7 @@ function initialize() {
                 infowindow.setContent( render_window(point) );
                 infowindow.open( map, marker );
                 jQuery('.gm-style-iw').prev().hide();
-                jQuery('.gm-style-iw').next().html('<img src="http://newvivendo.dayscript.com/sites/all/themes/at-vivendo/images/icons/close-red.png" />').css({'top': '79px', 'right': '7px'});
+                jQuery('.gm-style-iw').next().html('<img src="http://vivendo.co/sites/all/themes/at-vivendo/images/icons/close-red.png" />').css({'top': '79px', 'right': '7px'});
 
                 jQuery( ".gm-style-iw" ).mouseenter( function(){
                     jQuery(".gm-style-iw").parent( "div" ).addClass('temporal').mouseleave(function(){
@@ -138,14 +138,14 @@ function update( ) {
                 position: points[i].latlng,
                 map: map,
                 title: points[i].name,
-                icon: '/sites/all/themes/at-vivendo/images/icons/marker-vivendo.png'
+                icon: '/sites/all/themes/at-vivendo/images/icons/marker.png'
             });
             google.maps.event.addListener(marker, 'mouseover', (function(marker, point){
               return function() {
                 infowindow.setContent( render_window(point) );
                 infowindow.open( map, marker );
                 jQuery('.gm-style-iw').prev().hide();
-                jQuery('.gm-style-iw').next().html('<img src="http://newvivendo.dayscript.com/sites/all/themes/at-vivendo/images/icons/close-red.png" />').css({'top': '79px', 'right': '7px'});
+                jQuery('.gm-style-iw').next().html('<img src="http://vivendo.com/sites/all/themes/at-vivendo/images/icons/close-red.png" />').css({'top': '79px', 'right': '7px'});
                 jQuery( ".gm-style-iw" ).mouseenter( function(){
                 jQuery(".gm-style-iw").parent( "div" ).addClass('temporal').mouseleave(function(){
                   jQuery(this).hide();
