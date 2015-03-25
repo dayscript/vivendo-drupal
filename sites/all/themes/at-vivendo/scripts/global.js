@@ -66,7 +66,8 @@
         
         $(this).find('.form-text').each(function(){
             
-            var valueText = $(this).val();
+            var valueText = $(this).val(),
+                emailReg  = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
             
             $(this).removeClass('error-field').closest('.form-item').find('.error').remove();
             
@@ -76,6 +77,18 @@
                     flag = false;
                 } 
             }
+            
+            if ( $(this).attr('id') === 'edit-field-email-und-0-email' ) {
+                
+                if (valueText !== '') {
+                    if ( !emailReg.test(valueText) ) {
+                        $(this).addClass('error-field').closest('.form-item').append('<span class="error">* No es un correo valido</span>');
+                        flag = false;
+                    }
+                }
+                
+            }
+            
             
         });
         
