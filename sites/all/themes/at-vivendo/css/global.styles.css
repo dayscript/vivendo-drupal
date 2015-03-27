@@ -3527,3 +3527,7 @@ span.note {
   color: #999;
   font-size: 12px;
 }
+
+.view-tutoriales .view-content.ui-accordion .ui-accordion-content{
+  height: auto !important;
+}
