@@ -3162,7 +3162,7 @@ body.bogota{
 
 .gm-style-iw {
     background: url("../images/shadow-window-marker.png") no-repeat scroll 32px 87px transparent;
-    margin: 57px 0 0 0px;
+    margin: 65px 0 0 23px;
     height: 156px;
 }
 
@@ -3913,3 +3913,12 @@ span.note {
         }
     }
 }
+
+.front {
+  .up-down{
+    .b-up{
+      display: none;
+    }
+  }
+}
+
