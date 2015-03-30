@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="208d4c13-7c43-42d1-8584-271580cbc699" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/custom/buscador/buscador.module" afterPath="$PROJECT_DIR$/sites/all/modules/custom/buscador/buscador.module" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    </list>
+    <list id="be6013a2-2a73-466a-97ae-c053646baff6" name="New changelist" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vivendo-drupal.iws" />
@@ -47,24 +49,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="buscador.module" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/buscador/buscador.module">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5631068" vertical-offset="3085" max-vertical-offset="3600">
-              <caret line="225" column="84" selection-start-line="225" selection-start-column="84" selection-end-line="225" selection-end-column="84" />
+            <state vertical-scroll-proportion="0.22304833" vertical-offset="0" max-vertical-offset="538">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="googlemaps.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/buscador/js/googlemaps.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.2" vertical-offset="0" max-vertical-offset="270">
-              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-              <folding>
-                <element signature="n#!!doc;n#initialize#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -85,7 +75,13 @@
     <option name="myUpdateMethod" value="REBASE" />
   </component>
   <component name="Git.Settings">
-    <option name="UPDATE_TYPE" value="REBASE" />
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Juan Carlos Orrego &lt;jcorrego@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -102,10 +98,11 @@
         <option value="$PROJECT_DIR$/sites/all/modules/custom/buscador/buscador.info" />
         <option value="$PROJECT_DIR$/sites/all/themes/at-vivendo/templates/page--full-width-wrappers.tpl.php" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/maps/maps.module" />
+        <option value="$PROJECT_DIR$/revistas/cali/2014-10/revista.php" />
+        <option value="$PROJECT_DIR$/sites/all/modules/custom/buscador/buscador.module" />
         <option value="$PROJECT_DIR$/sites/all/themes/at-vivendo/sass/global.styles.scss" />
         <option value="$PROJECT_DIR$/sites/all/modules/custom/buscador/js/googlemaps.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/sites/all/modules/custom/buscador/buscador.module" />
       </list>
     </option>
   </component>
@@ -116,7 +113,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1680" />
-    <option name="height" value="972" />
+    <option name="height" value="963" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -169,7 +166,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sites" />
+              <option name="myItemId" value="revistas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cali" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2015-02" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -183,33 +188,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sites" />
+              <option name="myItemId" value="revistas" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vivendo-drupal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vivendo-drupal" />
+              <option name="myItemId" value="cali" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="all" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
+              <option name="myItemId" value="2014-10" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -223,243 +210,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sites" />
+              <option name="myItemId" value="revistas" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="all" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="at-vivendo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vivendo-drupal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vivendo-drupal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="all" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="at-vivendo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vivendo-drupal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vivendo-drupal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="all" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="at-vivendo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vivendo-drupal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vivendo-drupal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="all" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vivendo-drupal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vivendo-drupal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="all" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="custom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="global_filter_selector" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vivendo-drupal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vivendo-drupal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="all" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="custom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CalculadoraCredito" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vivendo-drupal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vivendo-drupal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="all" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="custom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="buscador" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vivendo-drupal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vivendo-drupal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="all" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="custom" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="buscador" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vivendo-drupal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vivendo-drupal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sites" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="all" />
+              <option name="myItemId" value="bogota" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -504,7 +259,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="options.lastSelected" value="reference.settings.deploy.options" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="js.eslint.nodeInterpreter" value="/usr/local/bin/node" />
@@ -535,28 +290,29 @@
     <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
     <configuration default="true" type="com.intellij.database.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
       <option name="VM_PARAMETERS" value="" />
       <option name="USER_CFG_CLASS" />
       <option name="CONTEXT_PROVIDER" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
     <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
       <BehatRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="1d50ad70-2f24-4eea-9a34-10221e48a17e" server_name="clientes.dayscript.com">
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
+      <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="1d50ad70-2f24-4eea-9a34-10221e48a17e" server_name="clientes.dayscript.com">
       <method />
     </configuration>
     <list size="0" />
@@ -568,131 +324,306 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="208d4c13-7c43-42d1-8584-271580cbc699" name="Default" comment="" />
+      <changelist id="be6013a2-2a73-466a-97ae-c053646baff6" name="New changelist" comment="" />
       <created>1419911494655</created>
       <option name="number" value="Default" />
       <updated>1419911494655</updated>
     </task>
-    <task id="LOCAL-00001" summary="Readme modificado">
-      <created>1419911955452</created>
-      <option name="number" value="00001" />
+    <task id="LOCAL-00038" summary="Mostrar puntos en el mapa">
+      <created>1421715692129</created>
+      <option name="number" value="00038" />
       <option name="project" value="LOCAL" />
-      <updated>1419911955452</updated>
+      <updated>1421715692129</updated>
     </task>
-    <task id="LOCAL-00002" summary="git ignore de Drupal">
-      <created>1419913437903</created>
-      <option name="number" value="00002" />
+    <task id="LOCAL-00039" summary="Mostrar puntos en el mapa">
+      <created>1421715819669</created>
+      <option name="number" value="00039" />
       <option name="project" value="LOCAL" />
-      <updated>1419913437903</updated>
+      <updated>1421715819669</updated>
     </task>
-    <task id="LOCAL-00003" summary="Archivos de la raiz de drupal">
-      <created>1419913502161</created>
-      <option name="number" value="00003" />
+    <task id="LOCAL-00040" summary="Mostrar puntos en el mapa">
+      <created>1421715968062</created>
+      <option name="number" value="00040" />
       <option name="project" value="LOCAL" />
-      <updated>1419913502161</updated>
+      <updated>1421715968062</updated>
     </task>
-    <task id="LOCAL-00004" summary="Archivos dentro de sites">
-      <created>1419913603456</created>
-      <option name="number" value="00004" />
+    <task id="LOCAL-00041" summary="Mostrar puntos en el mapa">
+      <created>1421716035621</created>
+      <option name="number" value="00041" />
       <option name="project" value="LOCAL" />
-      <updated>1419913603456</updated>
+      <updated>1421716035621</updated>
     </task>
-    <task id="LOCAL-00005" summary="Carpetas de drupal">
-      <created>1419913740805</created>
-      <option name="number" value="00005" />
+    <task id="LOCAL-00042" summary="Mostrar puntos en el mapa">
+      <created>1421716499020</created>
+      <option name="number" value="00042" />
       <option name="project" value="LOCAL" />
-      <updated>1419913740805</updated>
+      <updated>1421716499020</updated>
     </task>
-    <task id="LOCAL-00006" summary="Modulos y temas">
-      <created>1419914632028</created>
-      <option name="number" value="00006" />
+    <task id="LOCAL-00043" summary="Mostrar puntos en el mapa">
+      <created>1421717373403</created>
+      <option name="number" value="00043" />
       <option name="project" value="LOCAL" />
-      <updated>1419914632028</updated>
+      <updated>1421717373403</updated>
     </task>
-    <task id="LOCAL-00007" summary="Modulos y temas">
-      <created>1419914884222</created>
-      <option name="number" value="00007" />
+    <task id="LOCAL-00044" summary="Cambio en tamaño de icono">
+      <created>1421717443076</created>
+      <option name="number" value="00044" />
       <option name="project" value="LOCAL" />
-      <updated>1419914884222</updated>
+      <updated>1421717443076</updated>
     </task>
-    <task id="LOCAL-00008" summary="Modulos y temas">
-      <created>1419916607452</created>
-      <option name="number" value="00008" />
+    <task id="LOCAL-00045" summary="Mejoras en el mapa">
+      <created>1421717612503</created>
+      <option name="number" value="00045" />
       <option name="project" value="LOCAL" />
-      <updated>1419916607452</updated>
+      <updated>1421717612503</updated>
     </task>
-    <task id="LOCAL-00009" summary="Modulos y temas">
-      <created>1419942383585</created>
-      <option name="number" value="00009" />
+    <task id="LOCAL-00046" summary="Cambios en estilos para mostrar el mapa en todas las secciones">
+      <created>1421978211254</created>
+      <option name="number" value="00046" />
       <option name="project" value="LOCAL" />
-      <updated>1419942383585</updated>
+      <updated>1421978211254</updated>
     </task>
-    <task id="LOCAL-00010" summary="Actualizacion de admin_menu">
-      <created>1419960215581</created>
-      <option name="number" value="00010" />
+    <task id="LOCAL-00047" summary="Estilos del bloque de proyectos destacados">
+      <created>1421979787724</created>
+      <option name="number" value="00047" />
       <option name="project" value="LOCAL" />
-      <updated>1419960215581</updated>
+      <updated>1421979787724</updated>
     </task>
-    <task id="LOCAL-00011" summary="Creacion de directorio private">
-      <created>1419960259281</created>
-      <option name="number" value="00011" />
+    <task id="LOCAL-00048" summary="Estilos del bloque de proyectos destacados">
+      <created>1421980532505</created>
+      <option name="number" value="00048" />
       <option name="project" value="LOCAL" />
-      <updated>1419960259281</updated>
+      <updated>1421980532505</updated>
     </task>
-    <task id="LOCAL-00012" summary="Instalacion de modulo backup_migrate">
-      <created>1419960296702</created>
-      <option name="number" value="00012" />
+    <task id="LOCAL-00049" summary="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;sites/all/themes/at-vivendo/.sass-cache/0f8a7827f915f3a320ba868fdd8dc48e454ebb29/global.styles.scssc&#10;&#9;sites/all/themes/at-vivendo/css/global.styles.css&#10;&#9;sites/all/themes/at-vivendo/sass/global.styles.scss&#10;">
+      <created>1421980708136</created>
+      <option name="number" value="00049" />
       <option name="project" value="LOCAL" />
-      <updated>1419960296702</updated>
+      <updated>1421980708136</updated>
     </task>
-    <task id="LOCAL-00013" summary="Correccion modulo de calculadora.&#10;Creacion de reglas para ingorar Backups programados en el control de versiones">
-      <created>1419967082947</created>
-      <option name="number" value="00013" />
+    <task id="LOCAL-00050" summary="Merge remote-tracking branch 'origin/master'&#10;">
+      <created>1421980919882</created>
+      <option name="number" value="00050" />
       <option name="project" value="LOCAL" />
-      <updated>1419967082947</updated>
+      <updated>1421980919885</updated>
     </task>
-    <task id="LOCAL-00014" summary="Modulo de buscador">
-      <created>1421666363107</created>
-      <option name="number" value="00014" />
+    <task id="LOCAL-00051" summary="Estilos del bloque de proyectos destacados">
+      <created>1421981013380</created>
+      <option name="number" value="00051" />
       <option name="project" value="LOCAL" />
-      <updated>1421666363108</updated>
+      <updated>1421981013380</updated>
     </task>
-    <task id="LOCAL-00015" summary="Estilos">
-      <created>1421667593299</created>
-      <option name="number" value="00015" />
+    <task id="LOCAL-00052" summary="Estilos del bloque de proyectos destacados">
+      <created>1421981076668</created>
+      <option name="number" value="00052" />
       <option name="project" value="LOCAL" />
-      <updated>1421667593299</updated>
+      <updated>1421981076668</updated>
     </task>
-    <task id="LOCAL-00016" summary="Estilos">
-      <created>1421667691594</created>
-      <option name="number" value="00016" />
+    <task id="LOCAL-00053" summary="Estilos del bloque de proyectos destacados">
+      <created>1421981436550</created>
+      <option name="number" value="00053" />
       <option name="project" value="LOCAL" />
-      <updated>1421667691594</updated>
+      <updated>1421981436550</updated>
     </task>
-    <task id="LOCAL-00017" summary="Mapas de google">
-      <created>1421690291165</created>
-      <option name="number" value="00017" />
+    <task id="LOCAL-00054" summary="Estilos del bloque de proyectos destacados">
+      <created>1421981548653</created>
+      <option name="number" value="00054" />
       <option name="project" value="LOCAL" />
-      <updated>1421690291165</updated>
+      <updated>1421981548653</updated>
     </task>
-    <task id="LOCAL-00018" summary="Mapas de google">
-      <created>1421690332738</created>
-      <option name="number" value="00018" />
+    <task id="LOCAL-00055" summary="Estilos del bloque de proyectos destacados">
+      <created>1421981762981</created>
+      <option name="number" value="00055" />
       <option name="project" value="LOCAL" />
-      <updated>1421690332738</updated>
+      <updated>1421981762981</updated>
     </task>
-    <task id="LOCAL-00019" summary="Mapas de google">
-      <created>1421690509197</created>
-      <option name="number" value="00019" />
+    <task id="LOCAL-00056" summary="Estilos del bloque de proyectos destacados">
+      <created>1421981809101</created>
+      <option name="number" value="00056" />
       <option name="project" value="LOCAL" />
-      <updated>1421690509197</updated>
+      <updated>1421981809101</updated>
     </task>
-    <task id="LOCAL-00020" summary="Mapas de google">
-      <created>1421697076698</created>
-      <option name="number" value="00020" />
+    <task id="LOCAL-00057" summary="Estilos del bloque de proyectos destacados">
+      <created>1421982310466</created>
+      <option name="number" value="00057" />
       <option name="project" value="LOCAL" />
-      <updated>1421697076698</updated>
+      <updated>1421982310467</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00058" summary="Estilos del bloque de proyectos destacados">
+      <created>1421983376159</created>
+      <option name="number" value="00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1421983376159</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Validacion de campos vacíos en el buscador">
+      <created>1421983413539</created>
+      <option name="number" value="00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1421983413539</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Arreglo de zoom en el mapa">
+      <created>1421983605355</created>
+      <option name="number" value="00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1421983605355</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Arreglo de zoom en el mapa">
+      <created>1421983706104</created>
+      <option name="number" value="00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1421983706104</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Arreglo de zoom en el mapa">
+      <created>1421983872180</created>
+      <option name="number" value="00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1421983872180</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Arreglo de zoom en el mapa">
+      <created>1421983970553</created>
+      <option name="number" value="00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1421983970553</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Arreglo de zoom en el mapa">
+      <created>1421984091113</created>
+      <option name="number" value="00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1421984091113</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Arreglo de zoom en el mapa">
+      <created>1421984180869</created>
+      <option name="number" value="00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1421984180869</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Arreglo de zoom en el mapa">
+      <created>1421984280146</created>
+      <option name="number" value="00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1421984280146</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Arreglo de zoom en el mapa">
+      <created>1421984338567</created>
+      <option name="number" value="00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1421984338567</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Arreglo de zoom en el mapa">
+      <created>1421984436672</created>
+      <option name="number" value="00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1421984436672</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Arreglo de zoom en el mapa">
+      <created>1421984739380</created>
+      <option name="number" value="00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1421984739380</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Estilos del cargando del buscador">
+      <created>1421985211210</created>
+      <option name="number" value="00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1421985211210</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Estilos del cargando del buscador">
+      <created>1421985261568</created>
+      <option name="number" value="00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1421985261568</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Estilos del cargando del buscador">
+      <created>1421985321998</created>
+      <option name="number" value="00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1421985321999</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Controles del mapa">
+      <created>1421985622063</created>
+      <option name="number" value="00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1421985622063</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Controles del mapa">
+      <created>1421985749091</created>
+      <option name="number" value="00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1421985749091</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Revista de Cali">
+      <created>1421986733308</created>
+      <option name="number" value="00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1421986733308</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Revista de Cali">
+      <created>1421987748900</created>
+      <option name="number" value="00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1421987748900</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Revista de Cali">
+      <created>1421987837093</created>
+      <option name="number" value="00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1421987837093</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Revista de Cali">
+      <created>1421988014811</created>
+      <option name="number" value="00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1421988014811</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Ventana de proyecto en el mapa">
+      <created>1421989075578</created>
+      <option name="number" value="00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1421989075578</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Ventana de proyecto en el mapa">
+      <created>1421989158532</created>
+      <option name="number" value="00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1421989158532</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Ventana de proyecto en el mapa">
+      <created>1421989525769</created>
+      <option name="number" value="00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1421989525769</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Ventana de proyecto en el mapa">
+      <created>1421989612286</created>
+      <option name="number" value="00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1421989612286</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Ventana de proyecto en el mapa">
+      <created>1421989709377</created>
+      <option name="number" value="00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1421989709377</updated>
+    </task>
+    <task id="LOCAL-00084" summary="Maps over">
+      <created>1422993704781</created>
+      <option name="number" value="00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1422993704782</updated>
+    </task>
+    <task id="LOCAL-00085" summary="Maps over">
+      <created>1422993772438</created>
+      <option name="number" value="00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1422993772438</updated>
+    </task>
+    <task id="LOCAL-00086" summary="Archivos de revista">
+      <created>1427740616435</created>
+      <option name="number" value="00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1427740616435</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -716,32 +647,32 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="972" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="963" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3272727" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2375" sideWeight="0.6825397" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32302406" sideWeight="0.6111111" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23482245" sideWeight="0.6825397" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24969475" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17460318" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1910867" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2039072" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22283272" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39318183" sideWeight="0.31746033" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.67704517" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32426304" sideWeight="0.3888889" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879817" sideWeight="0.67704517" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276644" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3272727" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879817" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -763,9 +694,6 @@
       <TodoPanelSettings />
     </option>
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="false" />
-    <MESSAGE value="Readme modificado" />
-    <MESSAGE value="git ignore de Drupal" />
-    <MESSAGE value="Archivos de la raiz de drupal" />
     <MESSAGE value="Archivos dentro de sites" />
     <MESSAGE value="Carpetas de drupal" />
     <MESSAGE value="Modulos y temas" />
@@ -776,18 +704,154 @@
     <MESSAGE value="Modulo de buscador" />
     <MESSAGE value="Estilos" />
     <MESSAGE value="Mapas de google" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mapas de google" />
+    <MESSAGE value="Mostrar puntos en el mapa" />
+    <MESSAGE value="Cambio en tamaño de icono" />
+    <MESSAGE value="Mejoras en el mapa" />
+    <MESSAGE value="Cambios en estilos para mostrar el mapa en todas las secciones" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;Conflicts:&#10;&#9;sites/all/themes/at-vivendo/.sass-cache/0f8a7827f915f3a320ba868fdd8dc48e454ebb29/global.styles.scssc&#10;&#9;sites/all/themes/at-vivendo/css/global.styles.css&#10;&#9;sites/all/themes/at-vivendo/sass/global.styles.scss&#10;" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;" />
+    <MESSAGE value="Estilos del bloque de proyectos destacados" />
+    <MESSAGE value="Validacion de campos vacíos en el buscador" />
+    <MESSAGE value="Arreglo de zoom en el mapa" />
+    <MESSAGE value="Estilos del cargando del buscador" />
+    <MESSAGE value="Controles del mapa" />
+    <MESSAGE value="Revista de Cali" />
+    <MESSAGE value="Ventana de proyecto en el mapa" />
+    <MESSAGE value="Maps over" />
+    <MESSAGE value="Archivos de revista" />
+    <option name="LAST_COMMIT_MESSAGE" value="Archivos de revista" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/revistas/cali/2014-10/revista.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="855">
+          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/revistas/cali/2014-10/revista.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="2790">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/revistas/bogota/2015-2/revista.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="855">
+          <caret line="30" column="51" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/revistas/cali/2015-02/revista.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2760">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/revistas/cali/2015-02/revista.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/revistas/bogota/2015-2/revista.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2760">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/buscador/js/googlemaps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1560">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/buscador/buscador.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3975">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/buscador/buscador.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3414" max-vertical-offset="3975">
+          <caret line="244" column="36" selection-start-line="244" selection-start-column="36" selection-end-line="244" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/buscador/js/googlemaps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="1530">
+          <caret line="56" column="24" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/at-vivendo/sass/global.styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="47850">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/buscador/buscador.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3135" max-vertical-offset="3735">
+          <caret line="240" column="51" selection-start-line="240" selection-start-column="51" selection-end-line="240" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/buscador/js/googlemaps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/buscador/buscador.module">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3600">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/buscador/js/googlemaps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="270">
+          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/buscador/buscador.module">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3585">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -795,9 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="270">
           <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding>
-            <element signature="n#!!doc;n#initialize#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -809,23 +870,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07100592" vertical-offset="0" max-vertical-offset="845">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
     <entry file="dbDummy://db-console:/f53a52f5/e276e79c-91df-447f-9433-cacb684eaab2/">
@@ -863,13 +924,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39964476" vertical-offset="0" max-vertical-offset="2235">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/CalculadoraCredito/js/calculadora1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5871886" vertical-offset="0" max-vertical-offset="1530">
@@ -895,13 +949,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="507">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/buscador/buscador.info">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.2" vertical-offset="0" max-vertical-offset="195">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -947,43 +994,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/themes/at-vivendo/sass/global.styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79571986" vertical-offset="45821" max-vertical-offset="46335">
-          <caret line="3082" column="3" selection-start-line="3082" selection-start-column="3" selection-end-line="3082" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/CalculadoraCredito/CalculadoraCredito.module">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9046693" vertical-offset="0" max-vertical-offset="1890">
           <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/sites/all/themes/at-vivendo/sass/global.styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21352313" vertical-offset="0" max-vertical-offset="562">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.7292818" vertical-offset="46284" max-vertical-offset="47850">
+          <caret line="3112" column="25" selection-start-line="3112" selection-start-column="25" selection-end-line="3112" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/buscador/js/googlemaps.js">
+    <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2" vertical-offset="0" max-vertical-offset="270">
-          <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
-          <folding>
-            <element signature="n#!!doc;n#initialize#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.39823008" vertical-offset="0" max-vertical-offset="2235">
+          <caret line="15" column="36" selection-start-line="0" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/buscador/buscador.module">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5631068" vertical-offset="3085" max-vertical-offset="3600">
-          <caret line="225" column="84" selection-start-line="225" selection-start-column="84" selection-end-line="225" selection-end-column="84" />
+        <state vertical-scroll-proportion="0.5417515" vertical-offset="3484" max-vertical-offset="3975">
+          <caret line="250" column="19" selection-start-line="250" selection-start-column="19" selection-end-line="250" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/buscador/js/googlemaps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63770795" vertical-offset="0" max-vertical-offset="1920">
+          <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/custom/buscador/buscador.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16574585" vertical-offset="0" max-vertical-offset="543">
+          <caret line="6" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/revistas/cali/2015-02/revista.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15783133" vertical-offset="4" max-vertical-offset="855">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/revistas/cali/2015-02/revista.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2760">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/revistas/bogota/2015-2/revista.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5120482" vertical-offset="25" max-vertical-offset="855">
+          <caret line="30" column="51" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/revistas/cali/2014-10/revista.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="2790">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/revistas/cali/2014-10/revista.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6273292" vertical-offset="50" max-vertical-offset="855">
+          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/revistas/bogota/2015-2/revista.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2760">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22304833" vertical-offset="0" max-vertical-offset="538">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
