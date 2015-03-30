@@ -47,7 +47,8 @@ function initialize() {
                       jQuery(this).hide();
                     });
                 });
-              })(marker , points[i]));
+              }
+            })(marker , points[i]));
 
 
           /* google.maps.event.addListener(marker, 'mouseover', (function(marker, point){
