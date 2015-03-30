@@ -441,10 +441,10 @@ function _get_result_search( $data ) {
   $city = global_filter_get_session_value('field_ciudad');
 
   $search = db_select( 'node', 'noPC' )
-        ->fields( 'noPC', array('nid') )
-        ->condition('noPC.status', '1', '=')
-        ->condition( 'type', array('proyecto'), 'IN' )
-        ->range(0, 15);
+      ->fields( 'noPC', array('nid') )
+      ->condition('noPC.status', '1', '=')
+      ->condition( 'noPC.type', array('proyecto'), 'IN' )
+      ->range(0, 15);
 
   $search->leftJoin( 'field_data_field_ciudad', 'city', 'city.entity_id = noPC.nid' );
   $search->condition( 'city.field_ciudad_tid', $city, '=' );
