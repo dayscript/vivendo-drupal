@@ -51,9 +51,7 @@ function initialize() {
               }
             })(marker , points[i]));
 
-            google.maps.event.addListener(marker, 'mouseover', (function(){
-            jQuery(this).addClass('icono');
-            }));
+
 
 
           /* google.maps.event.addListener(marker, 'mouseover', (function(marker, point){
