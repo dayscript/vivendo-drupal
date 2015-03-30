@@ -5,7 +5,7 @@ var map;
 var gmarkers = [];
 
 function initialize() {
-  
+
     var mapOptions = {
         center: new google.maps.LatLng(4.565961, -74.078279),
         mapTypeId: google.maps.MapTypeId.ROADMAP,
@@ -14,17 +14,17 @@ function initialize() {
         zoomControl:false,
         panControl:false
     };
-     
-    
+
+
     map = new google.maps.Map(document.getElementById("mapa"), mapOptions);
 
     if(points && points.length){
         var latlngbounds = new google.maps.LatLngBounds();
-        
+
         var infowindow = new google.maps.InfoWindow({
             content: ''
         });
-        
+
         for (var i = 0; i < points.length; i++) {
 
             var marker = new google.maps.Marker({
@@ -34,8 +34,23 @@ function initialize() {
                 icon: '/sites/all/themes/at-vivendo/images/icons/marker-small.png'
 
             });
-            
-            google.maps.event.addListener(marker, 'mouseover', (function(marker, point){
+
+             google.maps.event.addListener(marker, 'mouseover', (function(marker, point){
+                return function() {
+                infowindow.setContent( render_window(point) );
+                infowindow.open( map, marker );
+                jQuery('.gm-style-iw').prev().hide();
+                jQuery('.gm-style-iw').next().html('<img src="http://vivendo.co/sites/all/themes/at-vivendo/images/icons/close-red.png" />').css({'top': '79px', 'right': '7px'});
+
+                jQuery( this ).mouseenter( function(){
+                    jQuery(".gm-style-iw").parent( "div" ).addClass('temporal').mouseleave(function(){
+                      jQuery(this).hide();
+                    });
+                });
+              })(marker , points[i]));
+
+
+          /* google.maps.event.addListener(marker, 'mouseover', (function(marker, point){
                 return function() {
                 infowindow.setContent( render_window(point) );
                 infowindow.open( map, marker );
@@ -49,13 +64,9 @@ function initialize() {
                 });
               }
             })(marker , points[i]));
+          */
 
-            /*google.maps.event.addListener(marker, 'mouseout', function(event) {
-             
-                  setTimeout( "jQuery('.gm-style-iw').hide();",2000 );
-                              jQuery('.gm-style-iw').show();
-             });*/
-            
+
             var pathname = window.location.pathname;
             pathname = pathname.split("/");
             google.maps.event.addDomListener(window, 'load', function(event) {
@@ -63,38 +74,38 @@ function initialize() {
                 map.setZoom(17);
             }
             });
-            
+
             gmarkers.push(marker);
             latlngbounds.extend(points[i].latlng);
         }
-        
+
       map.fitBounds(latlngbounds);
       map.panBy(200,0);
 
-      
+
       jQuery('#mapa').append('<a href="#" class="z_more">more</a>');
       jQuery('#mapa').append('<a href="#" class="z_less">less</a>');
-      
+
       jQuery('.z_more').click(function(event){
           event.preventDefault();
           map.setZoom( map.getZoom() + 1 );
       });
-      
+
       jQuery('.z_less').click(function(event){
           event.preventDefault();
           map.setZoom( map.getZoom() - 1 );
       });
-     
-     
+
+
     }
 
-    
+
 }
 
 function render_window ( point ) {
-  
+
   var output = '';
-  
+
   output += '<div class="window-project">';
   output +=   '<div class="col-left">';
   output +=     '<a href="/' + point.url + '">';
@@ -107,9 +118,9 @@ function render_window ( point ) {
   output +=     '<span class="address">' + point.address + '</span>';
   output +=   '</div>';
   output += '</div>';
-  
+
   return output;
-  
+
 }
 
 function removeMarkers(){
@@ -120,19 +131,19 @@ function removeMarkers(){
 
 function update( ) {
     if(points && points.length){
-      
+
         var latlngbounds = new google.maps.LatLngBounds();
         removeMarkers();
-        
+
         var infowindow = new google.maps.InfoWindow({
             content: ''
         });
-        
+
         if ( jQuery('#highlighted-wrapper').height() === 115 ) {
           jQuery('.up-down a').click();
-          
+
         }
-        
+
         for (var i = 0; i < points.length; i++) {
             var marker = new google.maps.Marker({
                 position: points[i].latlng,
@@ -159,7 +170,7 @@ function update( ) {
         map.fitBounds(latlngbounds);
         map.panBy(200,0);
     }
- 
+
 
 }
 jQuery(document).ready( function(){
@@ -167,19 +178,19 @@ jQuery(document).ready( function(){
 
     if ( jQuery('.node-type-proyecto').html() != null ) {
         if ( jQuery('.field-name-field-video').html() != null ) {
-	  
-	    var embeddedVideo = jQuery('.field-name-field-video').find('.embedded-video'),	    
-	      urlVideo = embeddedVideo.find( 'iframe' ).attr('src').split('?'),	    
+
+	    var embeddedVideo = jQuery('.field-name-field-video').find('.embedded-video'),
+	      urlVideo = embeddedVideo.find( 'iframe' ).attr('src').split('?'),
 	      videoId = urlVideo[0].split('/');
-	    
+
             jQuery(".clone").prev().html( embeddedVideo.html() );
 	    jQuery(".flex-control-nav").find('li').last().find('img').attr( 'src', 'http://img.youtube.com/vi/'+videoId[videoId.length-1]+'/maxresdefault.jpg' );
-	    
+
         }
-        
+
     }
 
 
-           
-    
+
+
 });
