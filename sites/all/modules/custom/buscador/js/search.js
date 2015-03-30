@@ -11,10 +11,10 @@
             data = $(this).val(),
             ajax;
 	    
-        /*if(typeof Drupal.ajax[base] !== 'undefined'){
+        if(typeof Drupal.ajax[base] !== 'undefined'){
           delete Drupal.ajax[base];
           $(this).unbind('KeySearch');
-        }*/ 
+        } 
 	    
         element_settings.progress = { 'type' : 'none' };
         element_settings.submit   = { js: true, base: base, data: data };
@@ -26,6 +26,8 @@
         
         $(this).trigger( 'KeySearch' );
 	
+        $(this).removeAttr('disabled');
+    
       });
       
     }
