@@ -1,4 +1,4 @@
-
+/*comentario de prueba apra ver si cambia*/
 // _base.scss imports _custom.scss (variables and mixins) and other partials.
 @import "base";
 
@@ -253,7 +253,7 @@ var {
 
 /*
  * Panels may need additional margin wrangling when in the $content region
- */ 
+ */
 #content .panel-display {}
 
 
@@ -400,7 +400,7 @@ body.front{
  */
 #footer-wrapper {
   /* Debug styles, is this working? */
-  background: $footer_bg; 
+  background: $footer_bg;
 
   .container {}
 }
@@ -1753,7 +1753,7 @@ ul.action-links {
       display: inline-block;
       width: 65%;
       float: right;
-      margin-top: 0; 
+      margin-top: 0;
       ul{
         padding: 0;
         li{
@@ -1765,7 +1765,7 @@ ul.action-links {
 }
 .node-proyecto{
   &.view-mode-full{
-    .group-header{ 
+    .group-header{
       vertical-align: top;
       margin-bottom: 10px;
       .group-header1{
@@ -1896,7 +1896,7 @@ ul.action-links {
         display: inline-block;
         font-weight: 600;
         color: $medium_dark;
-        
+
       }
       .field-items{
         width: 50%;
@@ -1922,7 +1922,7 @@ ul.action-links {
         li{
           list-style: none;
         }
-      }     
+      }
     }
     .group-descripcion{
       width: 60%;
@@ -2520,17 +2520,17 @@ h2.pane-title.block-title{
   .flexslider{
     border: none;
     box-shadow: none;
-    width: 88%; 
+    width: 88%;
     margin: 0 auto;
     .flex-direction-nav a,
     .flex-direction-nav a {
       display: block !important; /* I added this line */
     }
-    
+
     .flex-direction-nav .flex-next { right: 0 !important; margin-right: -40px; opacity: 0.2 !important; }
     .flex-direction-nav .flex-prev { left: 0 !important; opacity: 0.2 !important; margin-left: -40px; }
   }
-  
+
 }
 #block-block-12{
   margin-bottom: 0px;
@@ -2584,7 +2584,7 @@ h2.pane-title.block-title{
     .views-field-field-image{
       float: left;
       margin-right: 10px;
-    } 
+    }
     .views-field-title{
       a{
         color: $dark;
@@ -2608,11 +2608,11 @@ h2.pane-title.block-title{
         img{
           width: 100%;
         }
-        
+
       }
     }
   }
-  
+
 }
 #city_selector{
   width: 825px;
@@ -2818,7 +2818,7 @@ h2.pane-title.block-title{
       }
     }
   }
-} 
+}
 
 
 #menu-668-1,
@@ -2828,12 +2828,12 @@ h2.pane-title.block-title{
 body.cali{
   #menu-718-1{
     display: inline-block;
-  }  
+  }
 }
 body.bogota{
   #menu-668-1{
 //    display: inline-block;
-  }  
+  }
 }
 .view-tutoriales{
   .view-header{
@@ -2913,9 +2913,9 @@ body.bogota{
         }
       }
     }
-    
+
     tr{
-        
+
         background: none;
       .views-field-field-fotos{
         width: 30%;
@@ -2939,7 +2939,7 @@ body.bogota{
       .views-field-title{
         float: left;
       }
-    }    
+    }
   }
   .views-field-field-codigo{
     font-size: 0.8em;
@@ -2960,10 +2960,10 @@ body.bogota{
       border-bottom: 1px solid #f1f1f1;
       height: 160px;
       width: 270px;
-      
+
     }
     .views-field-field-image{
-      /*height: 65px;*/ 
+      /*height: 65px;*/
       width: 270px;
       border-bottom: 1px solid #f1f1f1;
     }
@@ -2973,7 +2973,7 @@ body.bogota{
         display: inline-block;
       }
       .views-label{
-        font-size: 0.95;  
+        font-size: 0.95;
       }
       .field-content{
         font-weight: 600;
@@ -2995,7 +2995,7 @@ body.bogota{
     background: $red_button;
     color: #fff;
     padding: 6px 24px;
-    text-transform: uppercase;   
+    text-transform: uppercase;
   }
 }
 #block-views-plantas-block{
@@ -3068,7 +3068,7 @@ body.bogota{
 
 .administrador.node-type-proyecto{
   .region-sidebar-second{
-    margin-top: 91px;    
+    margin-top: 91px;
   }
   #block-views-plantas-block{
 //    margin-top: 145px;
@@ -3105,8 +3105,8 @@ body.bogota{
   }
   #rango-wrapper {
     border-right: 1px solid #666;
-    margin: 5px 3px 0 0; 
-    padding: 0 9px 3px 0;  
+    margin: 5px 3px 0 0;
+    padding: 0 9px 3px 0;
   }
   #text-wrapper {
       /*background: url('../images/icons/search.png') no-repeat scroll right 21px transparent;*/
@@ -3125,7 +3125,7 @@ body.bogota{
       width: 172px;
     }
     .form-text{
-      height: 17px; 
+      height: 17px;
     }
   }
   #buscador-wrapper{
@@ -3312,8 +3312,8 @@ body.bogota{
 }
 
 .front {
-    .up-donw {
-        display: none;
+    .up-down {
+        display: none !important;
     }
 }
 
@@ -3452,9 +3452,9 @@ div#buscador-wrapper .link-list-compare {
     padding-left: 28px;
 }
 
-.views-field-field-exteriores { 
+.views-field-field-exteriores {
     .views-label {
-       margin-top: 8px; 
+       margin-top: 8px;
     }
     li {
         background: url("../images/icons/check.png") no-repeat scroll 0 0 transparent;
@@ -3491,11 +3491,11 @@ div#buscador-wrapper .link-list-compare {
   .views-row {
     border-bottom: none;
     margin: 0 13px 0 0;
-  }  
+  }
   .views-row-last {
     margin: 0;
   }
-} 
+}
 
 #block-menu-menu-volver {
     margin: 35px 0 20px;
@@ -3524,7 +3524,7 @@ div#buscador-wrapper .link-list-compare {
 
         }
     }
-    
+
 }
 
 .views-field-field-telefono1 {
@@ -3532,21 +3532,21 @@ div#buscador-wrapper .link-list-compare {
     .field-content{
         display: block;
         float: left;
-    }  
+    }
     .views-label {
         text-align: center;
     }
     .field-content {
         width: 180px;
     }
-} 
+}
 
 #flexslider-2{
   .flex-direction-nav {
     a {
-      color: rgba(255, 255, 255, 0.8);  
+      color: rgba(255, 255, 255, 0.8);
     }
-  }    
+  }
 }
 
 #flexslider-1{
@@ -3554,7 +3554,7 @@ div#buscador-wrapper .link-list-compare {
     a {
       color: rgba(0, 0, 0, 0.3);
     }
-  }    
+  }
 }
 
 .content-default {
@@ -3564,17 +3564,17 @@ div#buscador-wrapper .link-list-compare {
 .content-default {
   span {
     display: block;
-  }  
-} 
+  }
+}
 
 #block-views-proyectos-block-1 {
   ul.slides{
-    padding: 0; 
+    padding: 0;
     li {
-      border: 1px solid #f1f1f1;  
+      border: 1px solid #f1f1f1;
       height: 349px;
       margin: 0 48px 15px;
-      width: 270px !important; 
+      width: 270px !important;
       text-align: left !important;
       color: #333;
       .views-field-field-image {
@@ -3589,10 +3589,10 @@ div#buscador-wrapper .link-list-compare {
       .views-field-field-direccion {
         padding-left: 20px;
       }
-    }  
+    }
   }
-    
-} 
+
+}
 
 .view .fa-th {
     background: url('../images/switch-list-grid_09.png') no-repeat scroll 0 0 transparent;
@@ -3654,7 +3654,7 @@ div#buscador-wrapper .link-list-compare {
     }
     .group-locacion {
         overflow: hidden;
-        #edit-field-pais, 
+        #edit-field-pais,
         #edit-field-ciudad-contact{
             float: left;
         }
@@ -3680,7 +3680,7 @@ div#buscador-wrapper .link-list-compare {
   }
   .form-item {
     overflow: hidden;
-    margin: 3px 0 0 0;  
+    margin: 3px 0 0 0;
     .form-checkbox {
       float: left;
       margin: 3px 0 0 0;
@@ -3690,7 +3690,7 @@ div#buscador-wrapper .link-list-compare {
       float: left;
       width: 248px;
       margin: 0 0 0 5px;
-      font-style: italic; 
+      font-style: italic;
       a {
         color: #dd0024;
       }
@@ -3711,20 +3711,20 @@ div#buscador-wrapper .link-list-compare {
     .content-field-simplenews {
       float: left;
       height: 112px;
-    } 
+    }
     #edit-submit {
       float: right;
       margin-top: 31px;
-    } 
+    }
     .form-text {
       width: 400px;
     }
 
-  } 
+  }
   .simplenews-subscribe > div {
     overflow: hidden;
     width: 570px;
-  } 
+  }
 }
 
 .simplenews-unsubscribe {
@@ -3759,16 +3759,16 @@ div#buscador-wrapper .link-list-compare {
       display: none;
   }
   .webform-component-checkboxes > label{
-    display: none;  
+    display: none;
   }
-  a{ 
+  a{
     color: #e5001a;
   }
 }
 
 .simplenews-subscribe {
   a {
-    color: #e5001a; 
+    color: #e5001a;
   }
   .form-submit {
     width: 100%;
@@ -3780,7 +3780,7 @@ div#buscador-wrapper .link-list-compare {
 }
 
 #modal-content {
-  width: 409px !important; 
+  width: 409px !important;
 }
 
 #pre-content-wrapper {
@@ -3804,7 +3804,7 @@ div#buscador-wrapper .link-list-compare {
 .slides {
     iframe {
         width: 778px !important;
-        height: 445px !important; 
+        height: 445px !important;
     }
 }
 
