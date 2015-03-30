@@ -2872,7 +2872,7 @@ body.cali #menu-718-1 {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033315}}
 .front .up-down {
-  display: none !important;
+  display: none;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033321}}
@@ -3531,4 +3531,9 @@ span.note {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033919}}
 .front .up-down .b-up {
   display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000033927}}
+.view-tutoriales .views-row .ui-accordion-content {
+  height: auto !important;
 }
