@@ -35,6 +35,7 @@ function initialize() {
 
             });
 
+
              google.maps.event.addListener(marker, 'mouseover', (function(marker, point){
                 return function() {
                 infowindow.setContent( render_window(point) );
@@ -42,13 +43,17 @@ function initialize() {
                 jQuery('.gm-style-iw').prev().hide();
                 jQuery('.gm-style-iw').next().html('<img src="http://vivendo.co/sites/all/themes/at-vivendo/images/icons/close-red.png" />').css({'top': '79px', 'right': '7px'});
 
-                jQuery( this ).mouseenter( function(){
+                jQuery( ".gm-style-iw" ).mouseenter( function(){
                     jQuery(".gm-style-iw").parent( "div" ).addClass('temporal').mouseleave(function(){
                       jQuery(this).hide();
                     });
                 });
               }
             })(marker , points[i]));
+
+            google.maps.event.addListener(marker, 'mouseover', (function(){
+            jQuery(this).addClass('icono');
+            }));
 
 
           /* google.maps.event.addListener(marker, 'mouseover', (function(marker, point){
