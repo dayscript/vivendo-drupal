@@ -6,3 +6,5 @@ sites/*/files
 sites/*/private
 private/backup_migrate/scheduled
 .idea
+.idea/workspace.xml
+
