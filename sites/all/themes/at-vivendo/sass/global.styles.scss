@@ -1,5 +1,5 @@
 
-/*comentario de prueba apra ver si cambia*/
+/*comentario de prueba para ver si cambia*/
 // _base.scss imports _custom.scss (variables and mixins) and other partials.
 @import "base";
 
@@ -3914,3 +3914,12 @@ span.note {
         }
     }
 }
+
+.front {
+  .up-down{
+    .b-up{
+      display: none;
+    }
+  }
+}
+
