@@ -442,6 +442,7 @@ function _get_result_search( $data ) {
 
   $search = db_select( 'node', 'noPC' )
         ->fields( 'noPC', array('nid') )
+        ->condition('noPC.status', '1', '=')
         ->condition( 'type', array('proyecto'), 'IN' )
         ->range(0, 15);
 
