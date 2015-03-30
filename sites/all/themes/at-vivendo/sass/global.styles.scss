@@ -3922,3 +3922,10 @@ span.note {
   }
 }
 
+.view-tutoriales{
+  .views-row{
+    .ui-accordion-content {
+      height: auto !important;
+    }
+  } 
+} 
