@@ -75,7 +75,7 @@ function CalculadoraCredito_block_content(){
                           </div>
                         </div>
                       <div id="items_calculadora">
-                      <span>Valor del crédito (70% del valor del inmueble)</span><br>
+                      <span>Diligencie el valor del prestamo a solicitar (70% del valor del inmueble)</span><br>
                       <input type="text" name="valor_compra" id="valor_compra" value="'.$price.'" '.$readonly.'/><br>
                       <div id="mensaje1" class="errores"> Ingresa solo números</div>
                       <span>Valor de cuota inicial (30% del valor del inmueble)</span><br>
@@ -163,7 +163,7 @@ function modal_CalculadoraCredito_block_content(){
                           </div>
                         </div>
                       <div id="items_calculadora">
-                      <span>Valor del crédito (70% del valor del inmueble)</span><br>
+                      <span>Diligencie el valor del prestamo a solicitar (70% del valor del inmueble)</span><br>
                       <input type="text" name="valor_compra" id="valor_compra" value="'.$price.'" '.$readonly.'/><br>
                       <div id="mensaje1" class="errores"> Ingresa solo números</div>
                       <span>Valor de cuota inicial (30% del valor del inmueble)</span><br>
