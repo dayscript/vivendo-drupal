@@ -362,6 +362,7 @@ function buscador_formulario_form($node, &$form_state)
     
     
     $form['wrapper']['text'] = array(
+        '#attributes' => array( 'autocomplete' => 'off' );
         '#prefix' => '<div id="text-wrapper" class="wrapper" data-url="vivendo-search">',
         '#suffix' => '</div>',
         '#type' => 'textfield',
