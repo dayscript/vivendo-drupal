@@ -2,8 +2,11 @@
 
 function buscador_init() {
   
+  drupal_add_js(array('currentPath' => current_path()), 'setting');
+  
   drupal_add_library('system', 'drupal.ajax');
   drupal_add_js(drupal_get_path('module', 'buscador').'/js/search.js', array('type' => 'file'));
+  
   
 }
 
@@ -67,7 +70,7 @@ function buscador_formulario_form($node, &$form_state)
 {
     drupal_add_js("http://maps.googleapis.com/maps/api/js?key=AIzaSyCOwmUDwEzTInS9LVAO7ylCXddRZwfwmRU&sensor=false",'external');
     drupal_add_js(drupal_get_path('module', 'buscador').'/js/googlemaps.js');
-
+    
     if( !isset($_SESSION) ) { session_start(); }
 
     global $base_url;

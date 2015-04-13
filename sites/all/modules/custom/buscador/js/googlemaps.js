@@ -134,6 +134,9 @@ function removeMarkers(){
 }
 
 function update( ) {
+  
+    var url = window.location.href;
+  
     if(points && points.length){
 
         var latlngbounds = new google.maps.LatLngBounds();
@@ -143,9 +146,12 @@ function update( ) {
             content: ''
         });
 
-        if ( jQuery('#highlighted-wrapper').height() === 115 ) {
-          jQuery('.up-down a').click();
-
+        if ( url.indexOf('proyectos/list') >= 0 || url.indexOf('proyectos/gird') >= 0 ) {
+          location.reload();
+        } else {
+          if ( jQuery('#highlighted-wrapper').height() === 115 ) {
+            jQuery('.up-down a').click();
+          }
         }
 
         for (var i = 0; i < points.length; i++) {
@@ -175,6 +181,10 @@ function update( ) {
         map.panBy(200,0);
     }
 
+
+    if ( url.indexOf('proyectos/list') >= 0 || url.indexOf('proyectos/gird') >= 0 ) {
+      location.reload();
+    }
 
 }
 jQuery(document).ready( function(){
