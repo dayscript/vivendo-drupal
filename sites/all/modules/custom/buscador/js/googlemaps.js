@@ -76,28 +76,28 @@ function removeMarkers(){
     
     var listener = google.maps.event.addListener(map, "idle", function () {
       if ( points.length < 4 ) {
-          map.setZoom(17);
-        } 
+        map.setZoom(17);
+      } 
         
-        var scale = Math.pow(2, map.getZoom());
-        var nw = new google.maps.LatLng(
-            map.getBounds().getNorthEast().lat(),
-            map.getBounds().getSouthWest().lng()
-        );
+      var scale = Math.pow(2, map.getZoom());
+      var nw = new google.maps.LatLng(
+          map.getBounds().getNorthEast().lat(),
+          map.getBounds().getSouthWest().lng()
+      );
 
-        var worldCoordinateCenter = map.getProjection().fromLatLngToPoint(map.getCenter());
-        var pixelOffset = new google.maps.Point((-200/scale) || 0,(0/scale) ||0)
+      var worldCoordinateCenter = map.getProjection().fromLatLngToPoint(map.getCenter());
+      var pixelOffset = new google.maps.Point((-200/scale) || 0,(0/scale) ||0)
 
-        var worldCoordinateNewCenter = new google.maps.Point(
-            worldCoordinateCenter.x - pixelOffset.x,
-            worldCoordinateCenter.y + pixelOffset.y
-        );
+      var worldCoordinateNewCenter = new google.maps.Point(
+          worldCoordinateCenter.x - pixelOffset.x,
+          worldCoordinateCenter.y + pixelOffset.y
+      );
 
-        var newCenter = map.getProjection().fromPointToLatLng(worldCoordinateNewCenter);
+      var newCenter = map.getProjection().fromPointToLatLng(worldCoordinateNewCenter);
 
-        map.setCenter(newCenter);
-        
-        google.maps.event.removeListener(listener);
+      map.setCenter(newCenter);
+
+      google.maps.event.removeListener(listener);
     });
     
     jQuery('#mapa').append('<a href="#" class="z_more">more</a>');
@@ -114,14 +114,15 @@ function removeMarkers(){
         map.setZoom( map.getZoom() - 1 );
     });
     
-    
-   
+    console.log(Drupal.settings.projects);
     
   }
 
   function update(){
       
     loadMap();
+    
+    
     
   }
   
