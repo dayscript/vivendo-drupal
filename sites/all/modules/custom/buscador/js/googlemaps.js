@@ -45,7 +45,7 @@ function removeMarkers(){
     var map = new google.maps.Map(document.getElementById('mapa'), mapOptions);
     
     for (var i = 0; i < points.length; i++) {
-
+      
       var marker = new google.maps.Marker({
           position: points[i].latlng,
           map: map,
@@ -75,9 +75,28 @@ function removeMarkers(){
     map.fitBounds(bounds);
     
     var listener = google.maps.event.addListener(map, "idle", function () {
-        if ( points.length < 4 ) {
+      if ( points.length < 4 ) {
           map.setZoom(17);
-        }
+        } 
+        
+        var scale = Math.pow(2, map.getZoom());
+        var nw = new google.maps.LatLng(
+            map.getBounds().getNorthEast().lat(),
+            map.getBounds().getSouthWest().lng()
+        );
+
+        var worldCoordinateCenter = map.getProjection().fromLatLngToPoint(map.getCenter());
+        var pixelOffset = new google.maps.Point((-200/scale) || 0,(0/scale) ||0)
+
+        var worldCoordinateNewCenter = new google.maps.Point(
+            worldCoordinateCenter.x - pixelOffset.x,
+            worldCoordinateCenter.y + pixelOffset.y
+        );
+
+        var newCenter = map.getProjection().fromPointToLatLng(worldCoordinateNewCenter);
+
+        map.setCenter(newCenter);
+        
         google.maps.event.removeListener(listener);
     });
     
@@ -94,6 +113,9 @@ function removeMarkers(){
         event.preventDefault();
         map.setZoom( map.getZoom() - 1 );
     });
+    
+    
+   
     
   }
 
