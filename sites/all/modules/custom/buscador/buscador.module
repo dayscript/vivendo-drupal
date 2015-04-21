@@ -274,10 +274,10 @@ function buscador_formulario_form($node, &$form_state)
         $query->fields('p', array('nid'))
             ->condition('field_precio', intval($data[0]), '>=')
             ->condition('field_precio', intval($data[1]), '<');
-        if ( (isset($form_state['values']['zona'])  && $form_state['values']['zona']>=0)) {
+        if ( (isset($form_state['values']['zona'])  && $form_state['values']['zona']>0)) {
             $filterValue['zona'] = $form_state['values']['zona'];
             $query->condition('field_zona', $form_state['values']['zona'], '=');
-        } elseif (!isset($form_state['values']['zona'])  &&  $filterValue['zona'] >= 0) {
+        } elseif (!isset($form_state['values']['zona'])  &&  $filterValue['zona'] > 0) {
             $query->condition('field_zona', $filterValue['zona'], '=');
         } else {
             $filterValue['zona'] = 0;
@@ -300,7 +300,7 @@ function buscador_formulario_form($node, &$form_state)
         }
         $num_rows = $query->countQuery()->execute()->fetchField();
         if($num_rows>0)
-            $rangos_select[$key] = $value . " (" . $num_rows . ")";;
+            $rangos_select[$key] = $value . " (" . $num_rows . ")";
     }
     $form['wrapper']['rango'] = array(
         '#prefix' => '<div id="rango-wrapper" class="wrapper">',
