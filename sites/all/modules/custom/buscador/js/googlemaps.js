@@ -75,9 +75,11 @@ function removeMarkers(){
     map.fitBounds(bounds);
     
     var listener = google.maps.event.addListener(map, "idle", function () {
-      if ( points.length < 4 ) {
+      if ( points.length == 1 ) {
         map.setZoom(17);
-      } 
+      } else {
+        map.setZoom(12);
+      }
         
       var scale = Math.pow(2, map.getZoom());
       var nw = new google.maps.LatLng(
@@ -86,7 +88,7 @@ function removeMarkers(){
       );
 
       var worldCoordinateCenter = map.getProjection().fromLatLngToPoint(map.getCenter());
-      var pixelOffset = new google.maps.Point((-200/scale) || 0,(0/scale) ||0)
+      var pixelOffset = new google.maps.Point((-8/scale) || 0,(0/scale) ||0)
 
       var worldCoordinateNewCenter = new google.maps.Point(
           worldCoordinateCenter.x - pixelOffset.x,
@@ -114,15 +116,11 @@ function removeMarkers(){
         map.setZoom( map.getZoom() - 1 );
     });
     
-    console.log(Drupal.settings.projects);
-    
   }
 
   function update(){
       
     loadMap();
-    
-    
     
   }
   
