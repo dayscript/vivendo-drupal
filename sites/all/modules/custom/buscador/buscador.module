@@ -459,7 +459,7 @@ function _get_result_search( $data ) {
   $search = db_select( 'node', 'noPC' )
       ->fields( 'noPC', array('nid') )
       ->condition('noPC.status', '1', '=')
-      ->condition( 'noPC.type', array('proyecto'), 'IN' )
+      ->condition( 'noPC.type', array('proyecto', 'constructora'), 'IN' )
       ->range(0, 15);
 
   $search->leftJoin( 'field_data_field_ciudad', 'city', 'city.entity_id = noPC.nid' );
