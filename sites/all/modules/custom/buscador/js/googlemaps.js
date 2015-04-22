@@ -122,7 +122,7 @@ function removeMarkers(){
       
     loadMap();
     
-    if ( Drupal.settings.currentPath == 'proyectos/list' || Drupal.settings.currentPath == 'proyectos/grid' ){
+    if ( window.location.pathname == '/proyectos/list' || window.location.pathname == '/proyectos/grid' ){
       location.reaload();
     }
     
