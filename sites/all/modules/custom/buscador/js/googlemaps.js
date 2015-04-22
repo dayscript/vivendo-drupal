@@ -122,6 +122,10 @@ function removeMarkers(){
       
     loadMap();
     
+    if ( Drupal.settings.currentPath == 'proyectos/list' || Drupal.settings.currentPath == 'proyectos/grid' ){
+      location.reaload();
+    }
+    
   }
   
   function initialize(){
