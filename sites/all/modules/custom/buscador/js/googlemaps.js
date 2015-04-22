@@ -122,8 +122,10 @@ function removeMarkers(){
       
     loadMap();
     
+    console.log(window.location.pathname);
+    
     if ( window.location.pathname == '/proyectos/list' || window.location.pathname == '/proyectos/grid' ){
-      location.reaload();
+      location.reload();
     }
     
   }
