@@ -3498,7 +3498,7 @@ span.note {
   background: repeat scroll 0 0 #fff;
   border: 1px solid #999;
   border-top: none;
-  height: 460px;
+  max-height: 460px;
   overflow: hidden;
   overflow-y: auto;
   width: 252px;
