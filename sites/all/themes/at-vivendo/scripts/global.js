@@ -103,6 +103,16 @@
         
     });
     
+    if ( $('body').hasClass('front') ){
+      
+      var url = window.location.href.split('#');
+      
+      if ( url.length > 1 && url[1] == 'contacto' ){
+        $('.btn-contact').click();
+      }
+      
+    }
+    
   });
   
 })(jQuery);
