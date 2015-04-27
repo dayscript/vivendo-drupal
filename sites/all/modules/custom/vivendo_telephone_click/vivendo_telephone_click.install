@@ -1,33 +1,33 @@
 <?php
 
-  function vivendo_telephone_shema(){
+  function vivendo_telephone_click_schema(){
     
     $schema['vivendo_telephone'] = array(
         'description' => '',
-        'fields' => array(
-            'vt_id' => array(
-                'type' => 'serial',
-                'not null' => TRUE,
+        'fields'      => array(
+            'vt_id'     => array(
+                'type'        => 'serial',
+                'not null'    => TRUE,
                 'description' => 'Primary Key: Unique person ID.',
             ),
             'entity_id' => array(
-                'type' => 'int',
-                'not null' => TRUE,
-                'default' => 0,
+                'type'        => 'int',
+                'not null'    => TRUE,
+                'default'     => 0,
                 'description' => '',
             ),
-            'bundle' => array(
-                'type' => 'varchar',
-                'length' => 255,
-                'not null' => TRUE,
-                'default' => '',
+            'bundle'    => array(
+                'type'        => 'varchar',
+                'length'      => 255,
+                'not null'    => TRUE,
+                'default'     => '',
                 'description' => '',
             ),
-            'created' => array(
-                'type' => 'varchar',
-                'length' => 255,
-                'not null' => TRUE,
-                'default' => '',
+            'created'   => array(
+                'type'        => 'varchar',
+                'length'      => 255,
+                'not null'    => TRUE,
+                'default'     => '',
                 'description' => '',
             )
         ),

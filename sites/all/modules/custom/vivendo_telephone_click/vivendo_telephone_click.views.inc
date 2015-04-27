@@ -17,11 +17,13 @@
     
     function render( $row ){
       
-      return db_select( 'vivendo_telephone', 'vt' )
+      $clicks = db_select( 'vivendo_telephone', 'vt' )
           ->fields('vt')
           ->condition( 'entity_id', $row->nid, '=' )
           ->execute()
           ->rowCount();
+      
+      return $clicks;
       
     }
     

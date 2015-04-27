@@ -4,7 +4,7 @@
     
     $items = array();
     
-    $items['vivendo-telephone/%entity_id'] = array(
+    $items['vivendo-telephone/%'] = array(
         'access arguments' => array( 'access content' ),
         'page arguments'   => array( 1 ),
         'page callback'    => 'vivendo_telephone_click_callback',
@@ -28,7 +28,7 @@
         ))
         ->execute();
     
-    ajax_deliver( array('#type' => 'ajax', '#commands' => $commands) );
+    ajax_deliver( array('#type' => 'ajax', '#commands' => array()) );
     
   }
   
@@ -38,7 +38,7 @@
     
     return array(
         'api'  => 3,
-        'path' => drupal_get_path( 'module',  'vivendo_telephone' )
+        'path' => drupal_get_path( 'module',  'vivendo_telephone_click' )
     );
     
   }
