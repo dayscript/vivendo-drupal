@@ -1,0 +1,6 @@
+name = Vivendo - telephone click
+description = Carries a counter of clicks in telephone button for each constructor
+core = 7.x
+
+package = Vivendo
+version = 7.x - 1.0

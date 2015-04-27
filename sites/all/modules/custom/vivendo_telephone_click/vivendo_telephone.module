@@ -1,0 +1,19 @@
+<?php
+
+    
+
+  function vivendo_telephone_menu() {
+    
+    $items = array();
+    
+    $items['vivendo-compare/add/%'] = array(
+	'access arguments' => array( 'access content' ),
+	'page arguments'   => array( 2 ),
+	'page callback'    => 'vivendo_compare_project_add',
+	'title'            => t('Adicionar Proyecto'),
+	'type'             => MENU_CALLBACK,
+    );
+    
+    return $items;
+    
+  }

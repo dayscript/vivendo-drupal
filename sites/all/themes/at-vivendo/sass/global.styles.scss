@@ -384,7 +384,7 @@ body.not-front{
 }
 body.front{
   #content-wrapper {
-    background: white url("../images/bg/main.png") top repeat-x;
+    background: white url("../images/bg/main.png") 0 -1px repeat-x;
   }
 }
 
@@ -3295,10 +3295,9 @@ body.bogota{
 
 
 .up-down {
-    z-index: 1000;
+    z-index: 99;
     position: absolute;
     bottom: 0;
-    left: 610px;
     a {
         display: block;
         width: 21px;

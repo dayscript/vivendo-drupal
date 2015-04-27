@@ -113,6 +113,14 @@
       
     }
     
+    $('#mapa').each(function(){
+      
+      var width = $(this).width();
+      
+      $('.up-down').css( 'left', (width/2 - 21/2) + 'px' );
+      
+    });
+    
   });
   
 })(jQuery);
