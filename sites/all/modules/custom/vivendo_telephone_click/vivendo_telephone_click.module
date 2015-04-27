@@ -1,0 +1,44 @@
+<?php
+
+  function vivendo_telephone_click_menu() {
+    
+    $items = array();
+    
+    $items['vivendo-telephone/%entity_id'] = array(
+        'access arguments' => array( 'access content' ),
+        'page arguments'   => array( 1 ),
+        'page callback'    => 'vivendo_telephone_click_callback',
+        'title'            => t('Telephone click'),
+        'type'             => MENU_CALLBACK,
+    );
+    
+    return $items;
+    
+  }
+  
+  
+  
+  function vivendo_telephone_click_callback( $eid ){
+    
+    $result = db_insert( 'vivendo_telephone' )
+        ->fields(array(
+            'created'   => REQUEST_TIME,
+            'bundle'    => 'contructora',
+            'entity_id' => $eid
+        ))
+        ->execute();
+    
+    ajax_deliver( array('#type' => 'ajax', '#commands' => $commands) );
+    
+  }
+  
+  
+  
+  function vivendo_telephone_click_views_api() {
+    
+    return array(
+        'api'  => 3,
+        'path' => drupal_get_path( 'module',  'vivendo_telephone' )
+    );
+    
+  }

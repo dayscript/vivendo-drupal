@@ -67,16 +67,14 @@ function webform_default_fields_reset_components_form($form, $form_state, $node)
       array(
         'data' => array( 
           '#type' => 'item',
-          '#description' => 
-            t('(Field Key: ') . $val['form_key'] . '; ' .
-            t('Type: ') . $val['type'] . ')',
+          '#description' => t('(Field Key: %KEY%; Type: %TYPE%)', array('%KEY%' => $val['form_key'], '%TYPE%' => $val['type'])),
           '#title' => $val['name'] 
         )
       ),
       array(
        'data' => array( 
           '#type' => 'item',
-          '#title' => $val['#modify'], 
+          '#title' => check_plain($val['#modify']), 
         )
       ),
     );
@@ -88,11 +86,11 @@ function webform_default_fields_reset_components_form($form, $form_state, $node)
       )
     );
     $form['reset_components']['table']['#rows'][$val['form_key']] = array(
-    	'data' => $row,
-    	'class' => array(
-    		$modify_styles[$val['#modify']]
-    		)
-    	);
+      'data' => $row,
+      'class' => array(
+        $modify_styles[$val['#modify']]
+        )
+      );
   }
   $form['reset_components'][] = array(
     '#type' => 'submit',
@@ -169,7 +167,7 @@ function webform_default_fields_reset_global_submit($form, &$form_state) {
     $sub_webform = $default_node->webform;
     $settings_webform = FALSE;
   }
-  unset ($resets['settings']);
+  unset($resets['settings']);
   foreach ($resets as $res_key => &$reset) {
     $reset = (isset($reset)) ? TRUE : FALSE;
     if ($reset != $settings_webform) {

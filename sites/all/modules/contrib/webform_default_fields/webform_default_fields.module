@@ -87,16 +87,38 @@ function webform_default_fields_node_type_update($info) {
  */
 function webform_default_fields_form_node_type_form_alter(&$form, &$form_state) {
   if (isset($form['type'])) {
-  form_load_include($form_state, 'inc', 'webform_default_fields', 'includes/webform_default_fields.form');
-  $form['#submit'][] = 'webform_default_fields_form_webform_admin_settings_submit';
+    form_load_include($form_state, 'inc', 'webform_default_fields', 'includes/webform_default_fields.form');
+    $form['#submit'][] = 'webform_default_fields_form_webform_admin_settings_submit';
+    $form['webform']['webform_default_fields'] = array(
+      '#type' => 'checkbox',
+      '#title' => t('Webform default fields'),
+      '#description' => t('Allows Webform default fields create default fields for this content type.'),
+      '#default_value' => variable_get('webform_default_fields_allow_node_' . $form['#node_type']->type, TRUE),
+      '#attributes' => array(
+        'data-enabled-description' => t('Enabled'),
+        'data-disabled-description' => t('Disabled'),
+      ),
+      '#states' => array(
+        'invisible' => array(
+          ':input[name="webform_node"]' => array('checked' => FALSE),
+        ),
+      ),
+    );
   }
 }
 
 /**
  * Implements hook_insert().
+ *
+ * If you use hook_webform_node_defaults_alter() and don't want Webform
+ * Default Fields to overwrite the your defaults in $node->webform, you should
+ * add $defaults['webform_default_fields_ignore'] = TRUE in your implementing.
  */
 function webform_default_fields_node_insert($node) {
-  if (($nid = variable_get('webform_default_fields_nid_' . $node->type, 0))) {
+  $ignore = isset($node->webform['webform_default_fields_ignore']);
+  $nid = variable_get('webform_default_fields_nid_' . $node->type, 0);
+  $content_type_allow = variable_get('webform_default_fields_allow_node_' . $node->type, TRUE);
+  if ($nid && $content_type_allow && !$ignore) {
     if (empty($node->webform['components'])) {
       module_load_include('inc', 'webform', 'includes/webform.components');
       webform_ensure_record($node);
