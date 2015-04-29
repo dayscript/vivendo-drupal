@@ -52,12 +52,16 @@
       
       if(is_object($node)){
         
+        dpm( $node );
+        
+        
         $form['field_project_name']['#attributes']['style']    = 'display: none;';
         $form['field_contructor_name']['#attributes']['style'] = 'display: none;';
 
         $form['field_project_name']['und'][0]['value']['#default_value']    = $node->title;
         $form['field_contructor_name']['und'][0]['value']['#default_value'] = $node->field_constructora['und'][0]['entity']->title;
-
+        $form['field_email_send']['und'][0]['value']['#default_value']      = 'ftorres@dayscript.com';//$node->field_constructora['und'][0]['entity']->field_email['und'][0]['email'];
+        
         $form['field_ley_1581']['und']['#default_value'] = NULL;
         
       }
