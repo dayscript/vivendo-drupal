@@ -74,11 +74,14 @@ function removeMarkers(){
     
     map.fitBounds(bounds);
     
+    var posi = 0
+    
     var listener = google.maps.event.addListener(map, "idle", function () {
       if ( points.length == 1 ) {
         map.setZoom(17);
       } else {
-        map.setZoom(12);
+        map.setZoom(10);
+        posi = -200;
       }
         
       var scale = Math.pow(2, map.getZoom());
@@ -88,7 +91,7 @@ function removeMarkers(){
       );
 
       var worldCoordinateCenter = map.getProjection().fromLatLngToPoint(map.getCenter());
-      var pixelOffset = new google.maps.Point((-8/scale) || 0,(0/scale) ||0)
+      var pixelOffset = new google.maps.Point((posi/scale) || 0,(0/scale) ||0)
 
       var worldCoordinateNewCenter = new google.maps.Point(
           worldCoordinateCenter.x - pixelOffset.x,
@@ -100,6 +103,7 @@ function removeMarkers(){
       map.setCenter(newCenter);
 
       google.maps.event.removeListener(listener);
+      
     });
     
     jQuery('#mapa').append('<a href="#" class="z_more">more</a>');

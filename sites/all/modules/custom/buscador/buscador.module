@@ -2,6 +2,8 @@
 
 function buscador_init() {
   
+  error_reporting(E_ALL);
+  
   drupal_add_js(array('currentPath' => current_path()), 'setting');
   
   drupal_add_library('system', 'drupal.ajax');
