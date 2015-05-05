@@ -172,13 +172,13 @@ function buscador_formulario_form($node, &$form_state)
             $filterValue['rango'] = $form_state['values']['rango'];
             $rango = taxonomy_term_load($form_state['values']['rango']);
             $data = explode("|",$rango->description);
-            $query->condition('field_price', intval($data[0]) , '>=');
-            $query->condition('field_price', intval($data[1]) , '<');
+            $query->condition('field_precio', intval($data[0]) , '>=');
+            $query->condition('field_precio', intval($data[1]) , '<');
         } elseif (!isset($form_state['values']['rango']) &&  $filterValue['rango']>0 ) {
             $rango = taxonomy_term_load($filterValue['rango']);
             $data = explode("|",$rango->description);
-            $query->condition('field_price', intval($data[0]) , '>=');
-            $query->condition('field_price', intval($data[1]) , '<');
+            $query->condition('field_precio', intval($data[0]) , '>=');
+            $query->condition('field_precio', intval($data[1]) , '<');
         } else {
             $filterValue['rango'] = 0;
         }
@@ -229,13 +229,13 @@ function buscador_formulario_form($node, &$form_state)
             $filterValue['rango'] = $form_state['values']['rango'];
             $rango = taxonomy_term_load($form_state['values']['rango']);
             $data = explode("|",$rango->description);
-            $query->condition('field_price', intval($data[0]) , '>=');
-            $query->condition('field_price', intval($data[1]) , '<');
+            $query->condition('field_precio', intval($data[0]) , '>=');
+            $query->condition('field_precio', intval($data[1]) , '<');
         } elseif (!isset($form_state['values']['rango']) && $filterValue['rango']>0) {
             $rango = taxonomy_term_load($filterValue['rango']);
             $data = explode("|",$rango->description);
-            $query->condition('field_price', intval($data[0]) , '>=');
-            $query->condition('field_price', intval($data[1]) , '<');
+            $query->condition('field_precio', intval($data[0]) , '>=');
+            $query->condition('field_precio', intval($data[1]) , '<');
         } else {
             $filterValue['rango'] = 0;
         }
@@ -274,8 +274,8 @@ function buscador_formulario_form($node, &$form_state)
         $data = explode("|",$rango->description);
         $query = db_select('search_api_db_proyectos', 'p');
         $query->fields('p', array('nid'))
-            ->condition('field_price', intval($data[0]), '>=')
-            ->condition('field_price', intval($data[1]), '<');
+            ->condition('field_precio', intval($data[0]), '>=')
+            ->condition('field_precio', intval($data[1]), '<');
         if ( (isset($form_state['values']['zona'])  && $form_state['values']['zona']>0)) {
             $filterValue['zona'] = $form_state['values']['zona'];
             $query->condition('field_zona', $form_state['values']['zona'], '=');
@@ -333,13 +333,13 @@ function buscador_formulario_form($node, &$form_state)
         $filterValue['rango'] = isset($form_state['values']['rango']) ? $form_state['values']['rango'] : $filterValue['rango'];
         $rango = taxonomy_term_load($form_state['values']['rango']);
         $data = explode("|",$rango->description);
-        $query->condition('field_price', intval($data[0]) , '>=');
-        $query->condition('field_price', intval($data[1]) , '<');
+        $query->condition('field_precio', intval($data[0]) , '>=');
+        $query->condition('field_precio', intval($data[1]) , '<');
     } elseif (!isset($form_state['values']['rango']) &&  $filterValue['rango']>0 ) {
         $rango = taxonomy_term_load($filterValue['rango']);
         $data = explode("|",$rango->description);
-        $query->condition('field_price', intval($data[0]) , '>=');
-        $query->condition('field_price', intval($data[1]) , '<');
+        $query->condition('field_precio', intval($data[0]) , '>=');
+        $query->condition('field_precio', intval($data[1]) , '<');
     } else {
             $filterValue['rango'] = 0;
         }
@@ -408,8 +408,8 @@ function buscador_formulario_form($node, &$form_state)
     $arrayJs = '';
     foreach($proyectos as $proyecto){
         if(isset($proyecto->field_coordenadas['und'][0]['value']) && $proyecto->field_coordenadas['und'][0]['value'] != "" && strstr($proyecto->field_coordenadas['und'][0]['value'],",")){
-          if(isset($proyecto->field_price['und'][0]['value']) && $proyecto->field_price['und'][0]['value'] != ""){
-              $precio = number_format($proyecto->field_price['und'][0]['value'], 0, ',', '.');
+          if(isset($proyecto->field_precio['und'][0]['value']) && $proyecto->field_precio['und'][0]['value'] != ""){
+              $precio = number_format($proyecto->field_precio['und'][0]['value'], 0, ',', '.');
           } else {
               $precio = 'No disponible';
           }
