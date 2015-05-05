@@ -1321,7 +1321,7 @@ ul.action-links {
   position: relative;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000031837}}
-.node-proyecto.view-mode-full .group-imagenes .field-name-field-precio {
+.node-proyecto.view-mode-full .group-imagenes .field-name-field-price {
   position: absolute;
   top: 30px;
   right: 0px;
@@ -1331,12 +1331,12 @@ ul.action-links {
   font-size: 1.8em;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000031845}}
-.node-proyecto.view-mode-full .group-imagenes .field-name-field-precio .field-label {
+.node-proyecto.view-mode-full .group-imagenes .field-name-field-price .field-label {
   font-weight: 400;
   font-size: 0.8em;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000031849}}
-.node-proyecto.view-mode-full .group-imagenes .field-name-field-precio .field-item {
+.node-proyecto.view-mode-full .group-imagenes .field-name-field-price .field-item {
   font-weight: 700;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000031854}}
