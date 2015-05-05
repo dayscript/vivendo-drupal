@@ -232,7 +232,7 @@ h2 {
     $output .=       theme_image_style( $varImageProject );
     $output .=     '</div>';*/
     $output .=     '<div class="content-price">';
-    $output .=       '<span> Desde: ' . is_numeric($projectWrapper->field_price->value()) ? '$' . number_format($projectWrapper->field_price->value(), 0, ',', '.') : 'No Disponible' . ' </span>';
+    $output .=       '<span> Desde: ' . is_numeric($projectWrapper->field_precio->value()) ? '$' . number_format($projectWrapper->field_precio->value(), 0, ',', '.') : 'No Disponible' . ' </span>';
     $output .=     '</div>';
     $output .=   '</div>';
     
