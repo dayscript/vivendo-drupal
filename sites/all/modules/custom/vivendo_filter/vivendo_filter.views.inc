@@ -48,7 +48,7 @@
 
 				if ( $projectWrapper->type->value() == 'proyecto' ) {
 
-					$price = $projectWrapper->field_precio->value();
+					$price = $projectWrapper->field_price->value();
 
 					if ( $price > 0 && $price !== '' ) {
 						$rang = $price * 0.25;
