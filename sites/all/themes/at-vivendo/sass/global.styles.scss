@@ -335,6 +335,11 @@ body.not-front{
   .container {}
 }
 
+.front{
+  #nav-wrapper{
+    margin-bottom: 0;
+  }
+}
 
 /*
  * Wraps breadcrumb
@@ -3786,7 +3791,7 @@ div#buscador-wrapper .link-list-compare {
 
 #pre-content-wrapper {
   height: 92px;
-  margin: 0 auto 12px;
+  margin: 0 auto;
   width: 1140px;
 }
 
