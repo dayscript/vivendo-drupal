@@ -80,12 +80,12 @@ function global_filter_selector_block_view($delta = '') {
         $block['content'] = "<div class='item-list'><ul>";
         $block['content'] .= "<li><a href='/?field_ciudad=1' class='bogota'>Bogot&aacute;<br />Cundinamarca</a></li>";
         $block['content'] .= "<li><a href='/?field_ciudad=2' class='cali'>Cali<br />Valle</a></li>";
+        $block['content'] .= "<li><a href='/?field_ciudad=766' class='costa'>Costa<br />Atl&aacute;ntica</a></li>";
         $block['content'] .= "</ul></div>";
         $block['content'] .= "<div class='item-list disabled'><div class='soon'>Pr&oacute;ximamente</div><ul>";
         $block['content'] .= "<li><a class='medellin'>Medell&iacute;n<br />Antioquia</a></li>";
         $block['content'] .= "<li><a class='ejecafetero'>Eje<br />Cafetero</a></li>";
-        $block['content'] .= "<li><a class='costa'>Costa<br />Atl&aacute;ntica</a></li>";
-	      $block['content'] .= "<li><a class='santanderes'>Santanderes<br />&nbsp;</a></li>";
+        $block['content'] .= "<li><a class='santanderes'>Santanderes<br />&nbsp;</a></li>";
         $block['content'] .= "<li><a class='florida'>La Florida EEUU<br />&nbsp;</a></li>";
         $block['content'] .= "</ul></div>";
         $block['content'] = "<div class='logo'><img alt='Vivendo.co' src='/sites/all/themes/at-vivendo/images/logos/logo-vivendo.png'

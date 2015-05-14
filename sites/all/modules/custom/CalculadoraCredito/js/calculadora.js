@@ -17,16 +17,16 @@ jQuery(document).ready(function(){
 		});
 
 		jQuery( "#valor_inicial" ).keyup(function() {
-					var ValorCompra = jQuery("#valor_compra").val();
-			    	var ValorInicial = jQuery("#valor_inicial").val();
-			    	ValorCompraPorsentaje= ValorCompra*0.30;
+          var ValorCompra = jQuery("#valor_compra").val();
+          var ValorInicial = jQuery("#valor_inicial").val();
+          ValorCompraPorsentaje= ValorCompra*0.30;
 
-					if(ValorInicial <= ValorCompraPorsentaje)  {
-		                jQuery("#mensaje2").fadeIn("slow");
-		            }   
+          if(ValorInicial <= ValorCompraPorsentaje)  {
+              jQuery("#mensaje2").fadeIn("slow");
+          }   
 	    });
-            jQuery('#valor_inicial').number(true);
-            jQuery('#valor_compra').number(true);
+        jQuery('#valor_inicial').number(true);
+        jQuery('#valor_compra').number(true);
  });
 
 function ocultar(){
