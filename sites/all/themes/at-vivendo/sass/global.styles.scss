@@ -2640,9 +2640,10 @@ h2.pane-title.block-title{
   }
   .item-list{
     //clear: both;
-    width: 300px;
+    width: 370px;
     float: left;
     text-align: center;
+    margin-right: 37px;
     ul{
       li{
         list-style: none;
@@ -2690,7 +2691,7 @@ h2.pane-title.block-title{
         color: $light_text;
         padding-bottom: 10px;
       }
-      width: 500px;
+      width: 350px;
       text-align: center;
       ul{
         li{
