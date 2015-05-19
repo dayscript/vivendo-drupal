@@ -19,18 +19,22 @@
 
   function vivendo_send_mail_callback(){
 
-    $dataSend                = $_REQUEST;
-    $contactConstruct        = entity_create( 'entityform', array('type' =>'contacto_contructores') );
-    $contactConstructWrapper = entity_metadata_wrapper( 'entityform', $contactConstruct );
+    if(isset($_REQUEST['name'])){
+    
+      $dataSend                = $_REQUEST;
+      $contactConstruct        = entity_create( 'entityform', array('type' =>'contacto_contructores') );
+      $contactConstructWrapper = entity_metadata_wrapper( 'entityform', $contactConstruct );
 
-    $contactConstructWrapper->field_nombre         = $dataSend['name'];
-    $contactConstructWrapper->field_apellidos      = $dataSend['lastname'];
-    $contactConstructWrapper->field_email          = $dataSend['email'];
-    $contactConstructWrapper->field_telefono1      = $dataSend['telephone'];
-    $contactConstructWrapper->field_pais           = $dataSend['country'];
-    $contactConstructWrapper->field_ciudad_contact = $dataSend['city'];
+      $contactConstructWrapper->field_nombre         = $dataSend['name'];
+      $contactConstructWrapper->field_apellidos      = $dataSend['lastname'];
+      $contactConstructWrapper->field_email          = $dataSend['email'];
+      $contactConstructWrapper->field_telefono1      = $dataSend['telephone'];
+      $contactConstructWrapper->field_pais           = $dataSend['country'];
+      $contactConstructWrapper->field_ciudad_contact = $dataSend['city'];
 
-    $contactConstructWrapper->save();
+      $contactConstructWrapper->save();
+    
+    }
 
     return '<div>1</div>';
 
