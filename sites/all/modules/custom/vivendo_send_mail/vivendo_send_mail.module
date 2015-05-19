@@ -6,8 +6,7 @@
 
     $items['send-mail-contruct'] = array(
         'access arguments'  => array( 'access content' ),
-        'delivery callback' => 'ajax_deliver',
-        'page arguments'    => array(0),
+        'page arguments'    => array(),
         'page callback'     => 'vivendo_send_mail_callback',
         'title'             => t('Send Link'),
         'type'              => MENU_CALLBACK
