@@ -19,7 +19,7 @@
 
   function vivendo_send_mail_callback(){
 
-    /*$dataSend                = $_REQUEST;
+    $dataSend                = $_REQUEST;
     $contactConstruct        = entity_create( 'entityform', array('type' =>'contacto_contructores') );
     $contactConstructWrapper = entity_metadata_wrapper( 'entityform', $contactConstruct );
 
@@ -28,9 +28,9 @@
     $contactConstructWrapper->field_email          = $dataSend['email'];
     $contactConstructWrapper->field_telefono1      = $dataSend['telephone'];
     $contactConstructWrapper->field_pais           = $dataSend['country'];
-    $contactConstructWrapper->field_ciudad_contact = $dataSend['city'];*/
+    $contactConstructWrapper->field_ciudad_contact = $dataSend['city'];
 
-    //$contactConstructWrapper->save();
+    $contactConstructWrapper->save();
 
     return '<div>1</div>';
 
