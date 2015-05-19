@@ -26,7 +26,7 @@
       $contactConstructWrapper = entity_metadata_wrapper( 'entityform', $contactConstruct );
 
       $contactConstructWrapper->field_nombre         = $dataSend['name'];
-      $contactConstructWrapper->field_apellidos      = $dataSend['lastname'];
+      $contactConstructWrapper->field_apellidos      = $dataSend['lastName'];
       $contactConstructWrapper->field_email          = $dataSend['email'];
       $contactConstructWrapper->field_telefono1      = $dataSend['telephone'];
       $contactConstructWrapper->field_pais           = $dataSend['country'];
