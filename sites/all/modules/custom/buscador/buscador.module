@@ -115,7 +115,7 @@ function buscador_formulario_form($node, &$form_state)
       case 2: 
         $ciudad = 'Cali';
         break;
-      case 3:
+      case 766:
         $ciudad = 'Barranquilla';
         break;
     }
