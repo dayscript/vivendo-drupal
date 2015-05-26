@@ -108,7 +108,7 @@ function removeMarkers(){
     
     console.log('hola'+jQuery('body').hasClass('front'));
     if ( jQuery('body').hasClass('front') ){
-      jQuery('#mapa').append('<a href="/proyectos/gird" class="link-proyects-more">Vea el listado de inmuebles</a>');
+      jQuery('#mapa').append('<a href="/proyectos/list" class="link-proyects-more">Vea el listado de inmuebles</a>');
     }
     
     jQuery('#mapa').append('<a href="#" class="z_more">more</a>');
