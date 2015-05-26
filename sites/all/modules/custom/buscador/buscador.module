@@ -138,7 +138,12 @@ function buscador_formulario_form($node, &$form_state)
         //if ($default == 0) $default = $zona->tid;
         $key   = $zona->tid;
         $value = $zona->name;
-        $zonas_select[$key] = $value;
+        
+        if ( buscador_confirm_zone_has_project($key) ){
+          $zonas_select[$key] = $value;
+        }
+        
+        
     }
     $form['wrapper']['zona'] = array(
         '#prefix' => '<div id="zona-wrapper" class="wrapper">',
@@ -533,5 +538,25 @@ function buscardor_ajax() {
   $commands[] = array('command' => 'vivendo_search_result');
   
   return array('#type' => 'ajax', '#commands' => $commands);
+  
+}
+
+function buscador_confirm_zone_has_project( $key ){
+  
+  $query = db_select('node', 'pro')
+    ->fields( 'pro', array('nid') )
+    ->condition( 'pro.type', 'proyecto', '=' )
+    ->condition( 'pro.status', '1', '=' );
+
+  $query->leftJoin( 'field_data_field_zona', 'fz', 'fz.entity_id = pro.nid' );
+  $query->condition( 'fz.field_zona_tid', $key, '=' );
+
+  $count = $query->execute()->rowCount();
+  
+  if ( $count > 0 ) {
+    return 1;
+  } else {
+    return 0;
+  }
   
 }
