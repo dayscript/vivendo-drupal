@@ -106,8 +106,14 @@ function removeMarkers(){
       
     });
     
+    console.log('hola'+jQuery('body').hasClass('front'));
+    if ( jQuery('body').hasClass('front') ){
+      jQuery('#mapa').append('<a href="/proyectos/gird" class="link-proyects-more">Vea el listado de inmuebles</a>');
+    }
+    
     jQuery('#mapa').append('<a href="#" class="z_more">more</a>');
     jQuery('#mapa').append('<a href="#" class="z_less">less</a>');
+    
 
     jQuery('.z_more').click(function(event){
         event.preventDefault();
@@ -125,8 +131,6 @@ function removeMarkers(){
   function update(){
       
     loadMap();
-    
-    console.log(window.location.pathname);
     
     if ( window.location.pathname == '/proyectos/list' || window.location.pathname == '/proyectos/grid' ){
       location.reload();

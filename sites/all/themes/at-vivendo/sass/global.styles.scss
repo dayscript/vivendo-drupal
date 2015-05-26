@@ -3231,7 +3231,7 @@ body.bogota{
     color: white;
     width: 430px;
     right: 10px;
-    bottom: -7px;
+    bottom: 35px;
     .block-title{
       background: none;
       text-transform: none;
@@ -3848,6 +3848,19 @@ span.note {
 
 .error-field {
     border: 1px solid #e5001a !important;
+}
+
+a.link-proyects-more {
+  display: block;
+  position: absolute;
+  top: 11px;
+  z-index: 9999;
+  background: none repeat scroll 0 0 #DF181C;
+  left: 44px;
+  color: #fff !important;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  font-weight: normal;
 }
 
 .z_more,
