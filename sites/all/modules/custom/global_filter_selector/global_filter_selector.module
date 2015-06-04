@@ -68,7 +68,7 @@ function global_filter_selector_block_view($delta = '') {
                 jQuery.colorbox({inline:true, href:"#city_selector",overlayClose:false,escKey:false, closeButton:false, iframe:false});
               });','inline');
 
-          $items[] = array('data' => l("Bogotá Cundinamarca", null,array('attributes'=>array('class'=>array('bogota')),'query'=>array("field_ciudad"=>"1"))));
+          $items[] = array('data' => l("Bogotá región centro", null,array('attributes'=>array('class'=>array('bogota')),'query'=>array("field_ciudad"=>"1"))));
           $items[] = array('data' => l("Cali Valle", null,array('attributes'=>array('class'=>array('cali')),'query'=>array("field_ciudad"=>"2"))));
           $items[] = array('data' => l("Medellín Antioquia", null,array('attributes'=>array('class'=>array('medellin', 'disabled')))));
           $items[] = array('data' => l("Eje Cafetero", null,array('attributes'=>array('class'=>array('ejecafetero', 'disabled')))));

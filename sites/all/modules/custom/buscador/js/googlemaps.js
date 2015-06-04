@@ -138,10 +138,6 @@ function removeMarkers(){
       jQuery('.b-down').click();
     }
     
-    /*if ( window.location.pathname == '/proyectos/list' ){
-      console.log('hola mundo');
-    }*/
-    
   }
   
   function initialize(){
