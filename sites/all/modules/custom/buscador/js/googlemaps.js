@@ -134,8 +134,13 @@ function removeMarkers(){
     loadMap();
     
     if ( window.location.pathname == '/proyectos/list' || window.location.pathname == '/proyectos/grid' ){
-      location.reload();
+      jQuery('.view-proyectos').triggerHandler('RefreshView');
+      jQuery('.b-down').click();
     }
+    
+    /*if ( window.location.pathname == '/proyectos/list' ){
+      console.log('hola mundo');
+    }*/
     
   }
   
