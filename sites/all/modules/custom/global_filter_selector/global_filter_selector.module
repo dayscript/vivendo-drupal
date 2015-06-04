@@ -78,7 +78,7 @@ function global_filter_selector_block_view($delta = '') {
         }
 //        $block['content'] = theme('item_list', array('items' => $items));
         $block['content'] = "<div class='item-list'><ul>";
-        $block['content'] .= "<li><a href='/?field_ciudad=1' class='bogota'>Bogot&aacute;<br />Cundinamarca</a></li>";
+        $block['content'] .= "<li><a href='/?field_ciudad=1' class='bogota'>Bogot&aacute;<br />Región centro</a></li>";
         $block['content'] .= "<li><a href='/?field_ciudad=2' class='cali'>Cali<br />Valle</a></li>";
         $block['content'] .= "<li><a href='/?field_ciudad=766' class='costa'>Costa<br />Atl&aacute;ntica</a></li>";
         $block['content'] .= "</ul></div>";
