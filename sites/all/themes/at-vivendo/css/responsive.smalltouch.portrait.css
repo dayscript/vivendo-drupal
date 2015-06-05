@@ -146,5 +146,10 @@ body.front .views-field.views-field-field-image {
   width: 100%; }
   body.front .views-field.views-field-field-image a img {
     width: 100%; }
+body.front .views-field.views-field-title span a {
+  font-size: 14px;
+  font-size: 500; }
+body.front .views-field.views-field-body p {
+  font-size: 12px; }
 
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */

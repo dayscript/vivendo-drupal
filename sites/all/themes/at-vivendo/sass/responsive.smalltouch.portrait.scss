@@ -170,14 +170,21 @@ body.front {
  h2.pane-title.block-title{
     padding: 0;
   }
- .views-field.views-field-field-image {
+.views-field.views-field-field-image {
   width: 100%;
-
-  a img{
-    width: 100%;
+  a img{width: 100%;}
+}
+.views-field.views-field-title{
+ span{
+  a{
+    font-size:14px;
+    font-size: 500;
   }
-
  }
+}
+.views-field.views-field-body{
+  p {font-size: 12px;}
+}
 
 }
 
