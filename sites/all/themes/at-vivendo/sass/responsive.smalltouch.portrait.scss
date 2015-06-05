@@ -140,5 +140,13 @@ section#block-views-proyectos-destacados-block {
 
 #buscador-wrapper{
   label{display: none}
+  select {
+  background-color: rgba(255, 255, 255, 0);
+  color: #fff;
+  border: 0;
+  }
+  .wrapper{
+    width: 100%;
+  }
 
 }
