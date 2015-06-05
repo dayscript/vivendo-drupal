@@ -130,3 +130,20 @@ section#block-views-proyectos-destacados-block {
 #header-wrapper {
   display: none;
 }
+
+
+.mobile-zone{
+  label{
+    display: none;
+  }
+}
+
+
+jQuery(window).resize(function{
+  jQuery('#buscador-wrapper').find('.wrapper').each(function(){
+    var label = jQuery(body).innerWidth() <= '800' ? jQuery(this).find('label').text() : 'Todos';
+    jQuery(this).find('option').first().each(function(){
+       jQuery(this).text( label );
+    });
+  });
+}
