@@ -140,7 +140,7 @@ body.front #main-content {
   margin: 0; }
 body.front #block-panels-mini-noticias-tutoriales-banners {
   padding: 10px; }
-body.front .pane-title .block-title {
+body.front h2.pane-title.block-title {
   padding: 0; }
 
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
