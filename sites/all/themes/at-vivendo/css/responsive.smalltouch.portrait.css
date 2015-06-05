@@ -43,16 +43,17 @@ body {
 div#leaderboard-wrapper {
   display: none; }
 
-span.toggler {
-  background: #DD0024; }
-  span.toggler div.text {
-    float: left;
-    padding: 13px; }
-  span.toggler div.icon {
-    text-align: right;
-    padding: 13px; }
+span.toggler div.text {
+  float: left;
+  padding: 13px; }
+span.toggler div.icon {
+  text-align: right;
+  padding: 13px; }
 
-a.sf-depth-1 {
+.responsive-menus.responsified span.toggler {
+  background-color: #DD0024; }
+
+.nav ul li a {
   background: #DD0024; }
 
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
