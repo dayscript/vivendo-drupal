@@ -45,14 +45,18 @@ div#leaderboard-wrapper {
   display: none;
 }
 span.toggler{
+      background: #DD0024;
 
       div.text{
         float: left;
-        padding: 2px;
+        padding: 13px;
       }
       div.icon{
           text-align: right;
-          padding: 2px;
+          padding: 13px;
+      }
+      a{
+        background: #DD0024;
       }
 
 }
