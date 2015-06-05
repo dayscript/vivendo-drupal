@@ -142,5 +142,9 @@ body.front #block-panels-mini-noticias-tutoriales-banners {
   padding: 10px; }
 body.front h2.pane-title.block-title {
   padding: 0; }
+body.front .views-field.views-field-field-image {
+  width: 100%; }
+  body.front .views-field.views-field-field-image a img {
+    width: 100%; }
 
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
