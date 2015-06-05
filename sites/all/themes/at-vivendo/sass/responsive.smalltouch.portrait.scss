@@ -145,6 +145,7 @@ section#block-views-proyectos-destacados-block {
   color: #fff;
   border: 0;
   width: 100%!important;
+  padding: 0 13px;
   }
   .wrapper{
     width: 100%;
@@ -152,4 +153,16 @@ section#block-views-proyectos-destacados-block {
   .form-item.form-type-select {
     width: 100%;
   }
+}
+
+body.front {
+  #content-wrapper {
+    background: none;
+    border-top:0;
+  }
+  #main-content{
+    margin:0;
+  }
+
+
 }
