@@ -123,22 +123,24 @@
 
     resize();
 
+    jQuery('#block-panels-mini-herramientas-4-columnas').toggle(
+      function(e){
+       jQuery('#block-panels-mini-herramientas-4-columnas .block-content.content').slideDown();
+       e.preventDefault();
+      },
+      function(e){
+       jQuery('#block-panels-mini-herramientas-4-columnas .block-content.content').slideUp();
+       e.preventDefault();
+      }
+    );
+
   });
 
 jQuery(window).resize(function(){
   resize();
 });
 
-jQuery('#block-panels-mini-herramientas-4-columnas').toggle(
-    function(e){
-     jQuery('#block-panels-mini-herramientas-4-columnas .block-content.content').slideDown();
-     e.preventDefault();
-    },
-    function(e){
-     jQuery('#block-panels-mini-herramientas-4-columnas .block-content.content').slideUp();
-     e.preventDefault();
-    }
-);
+
 
 function resize(){
   var check = jQuery('body').innerWidth();
