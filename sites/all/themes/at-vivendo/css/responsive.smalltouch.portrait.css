@@ -129,5 +129,7 @@ section#block-views-proyectos-destacados-block {
   width: 100% !important; }
 #buscador-wrapper .wrapper {
   width: 100%; }
+#buscador-wrapper .form-item.form-type-select {
+  width: 100%; }
 
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
