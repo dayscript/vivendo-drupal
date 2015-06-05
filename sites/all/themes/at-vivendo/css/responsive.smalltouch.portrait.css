@@ -117,4 +117,10 @@ section#block-views-proyectos-destacados-block {
 #header-wrapper {
   display: none; }
 
+.mobile-zone label {
+  display: none; }
+
+#buscador-wrapper label {
+  display: none; }
+
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
