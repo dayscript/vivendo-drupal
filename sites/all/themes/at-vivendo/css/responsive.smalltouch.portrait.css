@@ -125,7 +125,8 @@ section#block-views-proyectos-destacados-block {
 #buscador-wrapper select {
   background-color: rgba(255, 255, 255, 0);
   color: #fff;
-  border: 0; }
+  border: 0;
+  width: 100%; }
 #buscador-wrapper .wrapper {
   width: 100%; }
 
