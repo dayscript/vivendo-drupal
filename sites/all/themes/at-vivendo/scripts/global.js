@@ -121,20 +121,37 @@
 
     });
 
+    resize();
+
   });
 
-  $(window).resize(function(){
-    var label = $('body').innerWidth();
-    $('#buscador-wrapper').find('.wrapper').each(function(){
-      if(label <= 800){
-        label = $(this).find('label').text();
-      }else{
-        label = "Todos"
-      }
-      $(this).find('option').first().each(function(){
-        $(this).text( label );
-      });
+jQuery(window).resize(function(){
+  var label = jQuery('body').innerWidth();
+  jQuery('#buscador-wrapper').find('.wrapper').each(function(){
+    if(label <= 800){
+      label = jQuery(this).find('label').text();
+    }else{
+      label = "Todos"
+    }
+    jQuery(this).find('option').first().each(function(){
+       jQuery(this).text( label );
     });
   });
+});
+
+function resize(){
+  var label = jQuery('body').innerWidth();
+  jQuery('#buscador-wrapper').find('.wrapper').each(function(){
+    if(label <= 800){
+      label = jQuery(this).find('label').text();
+    }else{
+      label = "Todos"
+    }
+    jQuery(this).find('option').first().each(function(){
+       jQuery(this).text( label );
+    });
+  });
+
+}
 
 })(jQuery);
