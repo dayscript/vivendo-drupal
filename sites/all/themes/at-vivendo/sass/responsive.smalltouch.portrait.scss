@@ -27,7 +27,7 @@ body {
   /* The toggle link */
   h2 {
     margin-bottom: 5px;
-    
+
     a {
       background: #eee;
       border: 2px solid #ccc;
@@ -40,4 +40,7 @@ body {
     background: #eee;
     border-bottom: 1px solid #fff;
   }
+}
+div#leaderboard-wrapper {
+  display: none;
 }

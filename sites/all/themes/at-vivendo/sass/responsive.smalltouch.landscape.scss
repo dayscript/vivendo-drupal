@@ -1,6 +1,6 @@
 
 // _base.scss imports _custom.scss and other partials.
-@import "base";
+@import "_base";
 
 /*
  *   Important Information about this CSS File
@@ -27,7 +27,7 @@ body {
   /* The toggle link */
   h2 {
     margin-bottom: 5px;
-    
+
     a {
       background: #eee;
       border: 2px solid #ccc;
@@ -38,6 +38,9 @@ body {
   /* Menu items */
   ul.menu li a {
     background: #eee;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #fefefe;
   }
 }
+
+
+
