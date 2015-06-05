@@ -152,4 +152,13 @@ body.front .views-field.views-field-title .field-content a {
 body.front .views-field.views-field-body p {
   font-weight: 12px; }
 
+.region.region-three-50-25-25-third {
+  display: none; }
+
+#block-panels-mini-herramientas-4-columnas {
+  display: none; }
+
+#block-panels-mini-herramientas-4-columnas:active .block-content.content {
+  display: block; }
+
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
