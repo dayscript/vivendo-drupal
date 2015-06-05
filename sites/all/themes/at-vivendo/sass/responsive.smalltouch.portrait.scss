@@ -83,6 +83,7 @@ a.link-list-compare {
   width: 100%;
   margin: 0 !important;
   border-top: 1px solid;
+  padding: 13px;
 }
 
 #block-buscador-busca-formulario{
@@ -124,5 +125,8 @@ a.link-list-compare {
   }
 }
 section#block-views-proyectos-destacados-block {
+  display: none;
+}
+#header-wrapper {
   display: none;
 }
