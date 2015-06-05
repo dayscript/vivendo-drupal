@@ -146,7 +146,7 @@ body.front .views-field.views-field-field-image {
   width: 100%; }
   body.front .views-field.views-field-field-image a img {
     width: 100%; }
-body.front .views-field.views-field-title span a {
+body.front .views-field.views-field-title .field-content a {
   font-size: 14px;
   font-size: 500; }
 body.front .views-field.views-field-body p {
