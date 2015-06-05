@@ -51,7 +51,8 @@ span.toggler {
   span.toggler div.icon {
     text-align: right;
     padding: 13px; }
-  span.toggler a {
-    background: #DD0024; }
+
+a.sf-depth-1 {
+  background: #DD0024; }
 
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
