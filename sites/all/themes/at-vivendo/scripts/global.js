@@ -140,9 +140,9 @@ jQuery(window).resize(function(){
 });
 
 function resize(){
-  var label = jQuery('body').innerWidth();
+  var check = jQuery('body').innerWidth();
   jQuery('#buscador-wrapper').find('.wrapper').each(function(){
-    if(label <= 800){
+    if(check <= 800){
       label = jQuery(this).find('label').text();
     }else{
       label = "Todos"
