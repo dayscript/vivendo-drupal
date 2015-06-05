@@ -148,8 +148,8 @@ body.front .views-field.views-field-field-image {
     width: 100%; }
 body.front .views-field.views-field-title .field-content a {
   font-size: 14px;
-  font-size: 500; }
+  font-weight: 500; }
 body.front .views-field.views-field-body p {
-  font-size: 12px; }
+  font-weight: 12px; }
 
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
