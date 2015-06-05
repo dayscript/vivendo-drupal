@@ -77,7 +77,7 @@ a.link-list-compare {
   width: 100%;
   margin: 0 !important;
   border-top: 1px solid;
-  padding: 13px; }
+  padding: 13px !important; }
 
 #block-buscador-busca-formulario #zona-wrapper {
   width: 100%;
@@ -89,13 +89,13 @@ a.link-list-compare {
   vertical-align: top;
   background: #DD0024;
   border-top: 1px solid;
-  display: none; }
+  /*display: none;*/ }
 #block-buscador-busca-formulario #constructora-wrapper {
   width: 100%;
   vertical-align: top;
   background: #DD0024;
   border-top: 1px solid;
-  display: none; }
+  /*display: none;*/ }
 #block-buscador-busca-formulario #rango-wrapper {
   width: 100%;
   vertical-align: top;
