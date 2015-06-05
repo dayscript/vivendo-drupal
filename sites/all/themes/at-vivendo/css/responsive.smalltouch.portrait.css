@@ -88,5 +88,20 @@ a.link-list-compare {
   vertical-align: top;
   background: #DD0024;
   border-top: 1px solid; }
+#block-buscador-busca-formulario #constructora-wrapper {
+  width: 100%;
+  vertical-align: top;
+  background: #DD0024;
+  border-top: 1px solid; }
+#block-buscador-busca-formulario #rango-wrapper {
+  width: 100%;
+  vertical-align: top;
+  background: #DD0024;
+  border-top: 1px solid; }
+#block-buscador-busca-formulario #text-wrapper {
+  width: 100%;
+  vertical-align: top;
+  background: #DD0024;
+  border-top: 1px solid; }
 
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
