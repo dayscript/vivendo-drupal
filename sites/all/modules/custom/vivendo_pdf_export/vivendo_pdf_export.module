@@ -212,7 +212,7 @@ h2 {
     $output .=         theme_image_style( $varLogoProject );
     $output .=       '</div>';
     $output .=       '<div class="info">';
-    $output .=         '<h2>' . $projectWrapper->title->value() . '</h2>';
+    $output .=         '<h2>'. $projectWrapper->title->value() . '</h2>';
     $output .=         '<div class="type">' . $projectWrapper->field_tipo->value()->name . '</div>';
     $output .=         '<div class="zone">' . $projectWrapper->field_zona->value()->name . '</div>';
     $output .=       '</div>';
@@ -228,11 +228,11 @@ h2 {
     $output .=   '</div>';
     
     $output .=   '<div class="main-image">';
-    /*$output .=     '<div class="content-image">';
+    $output .=     '<div class="content-image">';
     $output .=       theme_image_style( $varImageProject );
-    $output .=     '</div>';*/
+    $output .=     '</div>';
     $output .=     '<div class="content-price">';
-    $output .=       '<span> Desde: ' . is_numeric($projectWrapper->field_precio->value()) ? '$' . number_format($projectWrapper->field_precio->value(), 0, ',', '.') : 'No Disponible' . ' </span>';
+    $output .=       '<span> Desde: ' . is_numeric($projectWrapper->field_price->value()) ? '$' . number_format($projectWrapper->field_price->value(), 0, ',', '.') : 'No Disponible' . ' </span>';
     $output .=     '</div>';
     $output .=   '</div>';
     

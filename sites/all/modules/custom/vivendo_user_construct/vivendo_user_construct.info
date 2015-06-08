@@ -1,0 +1,6 @@
+name = Vivendo - user construct
+description = ---
+core = 7.x
+
+package = Vivendo
+version = 7.x - 1.0

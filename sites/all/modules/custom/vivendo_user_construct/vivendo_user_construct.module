@@ -1,0 +1,97 @@
+<?php
+
+  function vivendo_user_construct_form_alter(&$form, &$form_state, $form_id){
+    
+    if ( $form_id == 'user_register_form' || $form_id == 'user_profile_form' ){
+      
+      $form['#submit'][] = 'vivendo_user_construct_user_after_register';
+      
+    } 
+    
+  }
+
+  
+  function vivendo_user_construct_user_after_register($form, &$form_state){
+    
+    $values = $form_state['values'];
+    
+    if ( isset($values['field_constructora']['und'][0]) ){
+      
+      $acount = user_load( $values['uid'] );
+      
+      if ( in_array('Editor de proyectos', $acount->roles) ){
+        
+        $projects = vivendo_user_construct_projects_load( $values['field_constructora']['und'][0] );
+        
+        viendo_user_contruct_project_owner( $projects, $values['uid'] );
+        
+      }
+      
+    }
+    
+  }
+  
+  
+  function vivendo_user_construct_projects_load( $constructId ){
+    
+    $query = db_select( 'node', 'pro' )
+        ->fields( 'pro', array('nid') )
+        ->condition('type', 'proyecto', '=');
+        
+    $query->leftJoin( 'field_data_field_constructora', 'fdfcons', 'fdfcons.entity_id = pro.nid' );
+    $query->condition('fdfcons.field_constructora_target_id', $constructId, '=');
+    $query->condition('fdfcons.bundle', 'proyecto', '=');
+    
+    return $query->execute()->fetchAll();
+    
+  }
+  
+  
+  function viendo_user_contruct_project_owner( $projects, $uId ){
+    
+    if ( !empty($projects) ){
+    
+      for ( $i=0; $i<count($projects); $i++ ){
+      
+        $projectWrapper = entity_metadata_wrapper( 'node', $projects[$i]->nid );
+        $projectWrapper->author->set( user_load($uId) );
+        $projectWrapper->save();
+
+      }
+      
+    }
+    
+  }
+  
+  
+  function vivendo_user_construct_node_insert( $node ){
+    
+    if ( $node->type == 'proyecto' ) {
+      
+      $projectWrapper = entity_metadata_wrapper( 'node', $node->nid );
+      $user           = vivendo_user_construct_userload( $node->field_constructora['und'][0]['target_id'] );
+      
+      if ( !empty($user) ){
+        $projectWrapper->author->set( user_load($user[0]->uid) );
+        $projectWrapper->save();  
+      }
+      
+    }
+    
+  }
+  
+  
+  function vivendo_user_construct_userload( $constructId ){
+    
+    $query = db_select( 'users', 'u' )->fields( 'u', array('uid') );
+
+    $query->leftJoin('field_data_field_constructora', 'fdfcons', 'fdfcons.entity_id = u.uid');
+    $query->condition( 'fdfcons.field_constructora_target_id', $constructId, '=' ); 
+    $query->condition( 'fdfcons.bundle', 'user', '=' ); 
+    
+    $result = $query->execute();
+    $result = $result->fetchAll();
+    
+    return $result;
+    
+  }

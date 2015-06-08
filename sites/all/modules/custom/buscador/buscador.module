@@ -2,13 +2,9 @@
 
 function buscador_init() {
   
-  error_reporting(E_ALL);
-  
   drupal_add_js(array('currentPath' => current_path()), 'setting');
-  
   drupal_add_library('system', 'drupal.ajax');
   drupal_add_js(drupal_get_path('module', 'buscador').'/js/search.js', array('type' => 'file'));
-  
   
 }
 

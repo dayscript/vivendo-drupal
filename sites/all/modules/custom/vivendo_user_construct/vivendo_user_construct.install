@@ -1,0 +1,63 @@
+<?php
+
+  function vivendo_user_construct_install(){
+    
+    vivendo_user_construct_roles_load();
+    vivendo_user_construct_field_instance();
+    
+  }
+  
+  function vivendo_user_construct_roles_load(){
+    
+    $role = db_select('role', 'r')
+        ->fields('r')
+        ->condition('name', 'Editor de proyectos')
+        ->execute()
+        ->fetchObject();
+    
+    if ( !is_object($role) ){
+    
+      $newRole       = new stdClass();
+      $newRole->name = 'Editor de proyectos';
+
+      user_role_save($newRole);
+      
+    }
+    
+  }
+  
+  function vivendo_user_construct_field_instance(){
+    
+    $instance = array();
+    
+    if ( !empty(field_info_instance('user', 'field_contructora', 'user')) ){
+    
+      $instance = array(
+          'field_name'  => 'field_constructora',
+          'entity_type' => 'user',
+          'label'       => 'Constructora',
+          'bundle'      => 'user',
+          'description' => '',
+          'widget'      => array(
+              'type'   => 'entityreference_autocomplete',
+              'module' => 'entityreference',  
+              'weight' => -4,
+          ),
+          'display'     => array(
+              'default' => array(
+                  'type'   => 'entityreference_entity_view',
+                  'weight' => 10,
+              ),
+              'teaser'  => array(
+                  'type'   => 'hidden',
+                  'weight' => 10,
+              ),
+          ),
+      );
+
+
+      field_create_instance( $instance );
+    
+    }
+    
+  }
