@@ -46,15 +46,11 @@
   
   function vivendo_telephone_click_form_alter(&$form, &$form_state, $form_id){
     
-    if ( !isset($_SESSION) ) { session_start(); }
-    
     if ( $form_id == 'contacto_contructores_entityform_edit_form' ){
       
       $node = node_load( arg(1) );
       
       if(is_object($node)){
-        
-        $_SESSION['form'] = $form;
         
         $form['field_project_name']['#attributes']['style']    = 'display: none;';
         $form['field_contructor_name']['#attributes']['style'] = 'display: none;';

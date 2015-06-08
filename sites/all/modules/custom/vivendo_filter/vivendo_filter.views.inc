@@ -2,10 +2,6 @@
 
     function vivendo_filter_views_query_alter(&$view, &$query) {
   
-    	if ( !isset($_SESSION) ) { session_start(); }
-
-    	$filterValue = isset($_SESSION['filterValue']) ? $_SESSION['filterValue'] : array();
-
 		if ( isset($filterValue['zona']) ) {
 
 			if ( $view->name == 'proyectos' && ($view->display_handler->display->id === 'page_1' || $view->display_handler->display->id === 'page') ) {
@@ -40,25 +36,29 @@
 
 		if ( $view->name == 'proyectos' && $view->display_handler->display->id === 'block_1' ) {
 
-			$nId = arg(1);
+          $nId = arg(1);
 
-			if ( is_numeric($nId) ) {
-				
-				$projectWrapper = entity_metadata_wrapper( 'node', $nId );
+          if ( is_numeric($nId) ) {
 
-				if ( $projectWrapper->type->value() == 'proyecto' ) {
+            $projectWrapper = entity_metadata_wrapper( 'node', $nId );
 
-					$price = $projectWrapper->field_price->value();
+            if ( $projectWrapper->type->value() == 'proyecto' ) {
 
-					if ( $price > 0 && $price !== '' ) {
-						$rang = $price * 0.25;
-						$query->where[1]['conditions'][6]['operator'] = 'BETWEEN';
-						$query->where[1]['conditions'][6]['value']    = array( ($price - $rang), ($price + $rang) );
-					}
+              $price = $projectWrapper->field_price->value();
+              $nId   = $projectWrapper->nid->value();
 
-				}
+              if ( $price > 0 && $price !== '' ) {
+                $rang = $price * 0.25;
+                $query->where[1]['conditions'][3]['operator'] = 'BETWEEN';
+                $query->where[1]['conditions'][3]['value']    = array( ($price - $rang), ($price + $rang) );
+              }
+              
+              $query->where[1]['conditions'][4]['operator'] = '!=';
+              $query->where[1]['conditions'][4]['value']    = $nId;
 
-			}
+            }
+
+          }
 
 		}
 
