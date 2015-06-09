@@ -161,12 +161,17 @@ body.front .views-field.views-field-body p {
 #block-panels-mini-herramientas-4-columnas .block-content img {
   width: 50px !important;
   height: 50px !important;
-  float: left; }
+  float: left;
+  margin-left: 23px; }
 
 #block-panels-mini-herramientas-4-columnas .block-content p {
   display: none; }
 
 #block-panels-mini-herramientas-4-columnas .block-content a {
-  display: inherit; }
+  display: inherit;
+  font-size: 13px; }
+
+.region .region-four-fourth .block-content h3 {
+  font-size: 13px; }
 
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
