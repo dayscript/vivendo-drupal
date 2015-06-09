@@ -5,7 +5,7 @@
     if ( $form_id == 'user_register_form' || $form_id == 'user_profile_form' ){
       
       $form['#submit'][] = 'vivendo_user_construct_user_after_register';
-      
+      var_dump($form['#submit']);
     } 
     
   }
