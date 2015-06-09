@@ -191,4 +191,7 @@ body.front .views-field.views-field-body p {
   width: 100%;
   text-align: -webkit-left; }
 
+div#block-panels-mini-constructoras-y-testimonio {
+  display: none; }
+
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
