@@ -162,16 +162,23 @@ body.front .views-field.views-field-body p {
   width: 50px !important;
   height: 50px !important;
   float: left;
-  margin-left: 23px; }
+  margin-left: 23px;
+  margin-right: 18px; }
 
 #block-panels-mini-herramientas-4-columnas .block-content p {
   display: none; }
 
 #block-panels-mini-herramientas-4-columnas .block-content a {
   display: inherit;
-  font-size: 13px; }
+  font-size: 13px;
+  float: left;
+  width: 100%;
+  text-align: -webkit-left; }
 
 .region .region-four-fourth .block-content h3 {
-  font-size: 13px; }
+  font-size: 13px;
+  float: left;
+  width: 100%;
+  text-align: -webkit-left; }
 
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
