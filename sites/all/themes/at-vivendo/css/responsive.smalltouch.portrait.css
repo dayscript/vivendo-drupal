@@ -181,4 +181,7 @@ body.front .views-field.views-field-body p {
   width: 100%;
   text-align: -webkit-left; }
 
+#block-panels-mini-herramientas-4-columnas h2:before {
+  content: ">"; }
+
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
