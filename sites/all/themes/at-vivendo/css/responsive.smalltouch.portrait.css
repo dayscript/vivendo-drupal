@@ -17,12 +17,16 @@
  *
  * - Read the _README file in this directory, it contains useful help and other information.
  */
-@font-face {
-  font-family: 'fontello';
-  src: url("./font/fontello.eot?39246689");
-  src: url("./font/fontello.eot?39246689#iefix") format("embedded-opentype"), url("./font/fontello.woff?39246689") format("woff"), url("./font/fontello.ttf?39246689") format("truetype"), url("./font/fontello.svg?39246689#fontello") format("svg");
-  font-weight: normal;
-  font-style: normal; }
+/*@font-face {
+      font-family: 'fontello';
+      src: url('./font/fontello.eot?39246689');
+      src: url('./font/fontello.eot?39246689#iefix') format('embedded-opentype'),
+           url('./font/fontello.woff?39246689') format('woff'),
+           url('./font/fontello.ttf?39246689') format('truetype'),
+           url('./font/fontello.svg?39246689#fontello') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }*/
 /* Increase the default font size on small touch devices */
 body {
   font-size: 100%; }
@@ -186,10 +190,5 @@ body.front .views-field.views-field-body p {
   float: left;
   width: 100%;
   text-align: -webkit-left; }
-
-#block-panels-mini-herramientas-4-columnas h2:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal; }
 
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
