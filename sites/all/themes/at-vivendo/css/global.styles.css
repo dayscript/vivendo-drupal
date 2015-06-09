@@ -3578,3 +3578,7 @@ a.link-proyects-more {
 .section-gracias .view-mode-full .field-name-field-image {
   display: none;
 }
+
+div#block-panels-mini-constructoraresponsive {
+  display: none;
+}
