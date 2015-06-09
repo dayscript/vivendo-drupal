@@ -198,4 +198,10 @@ div#block-panels-mini-constructoraresponsive {
   display: block;
   height: 221px; }
 
+a.flex-prev {
+  left: 20% !important; }
+
+a.flex-next {
+  left: 87% !important; }
+
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
