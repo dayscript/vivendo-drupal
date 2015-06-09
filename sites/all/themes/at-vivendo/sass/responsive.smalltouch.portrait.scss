@@ -187,12 +187,25 @@ body.front {
   }
 
 }
-.region.region-three-50-25-25-third {
+  .region.region-three-50-25-25-third {
   display: none;
-}
+  }
 
-#block-panels-mini-herramientas-4-columnas .block-content.content  {
-  display: none;
-}
+  #block-panels-mini-herramientas-4-columnas .block-content.content  {
+    display: none;
+  }
 
-}
+
+ #block-panels-mini-herramientas-4-columnas .block-content img {
+    width: 50px!important;
+    height: 50px!important;
+    float: left;
+  }
+
+  #block-panels-mini-herramientas-4-columnas .block-content p {
+    display: none;
+  }
+
+  #block-panels-mini-herramientas-4-columnas .block-content a {
+    display: inherit;
+    }

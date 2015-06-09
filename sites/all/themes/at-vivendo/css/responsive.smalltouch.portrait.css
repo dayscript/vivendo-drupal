@@ -158,7 +158,15 @@ body.front .views-field.views-field-body p {
 #block-panels-mini-herramientas-4-columnas .block-content.content {
   display: none; }
 
-#block-panels-mini-herramientas-4-columnas:focus .block-content.content {
-  display: block; }
+#block-panels-mini-herramientas-4-columnas .block-content img {
+  width: 50px !important;
+  height: 50px !important;
+  float: left; }
+
+#block-panels-mini-herramientas-4-columnas .block-content p {
+  display: none; }
+
+#block-panels-mini-herramientas-4-columnas .block-content a {
+  display: inherit; }
 
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
