@@ -246,7 +246,7 @@ a.flex-next {
   text-align: center; }
 
 .pane-block-5 .block-inner .block-content {
-  margin: 0; }
+  margin: 0 !important; }
 
 /**/
 
