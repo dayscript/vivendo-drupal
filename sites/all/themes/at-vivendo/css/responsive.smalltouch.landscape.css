@@ -40,4 +40,16 @@ body {
     background: #eee;
     border-bottom: 1px solid #fefefe; }
 
+#header-wrapper {
+  display: none; }
+
+#nav-wrapper {
+  display: none; }
+
+#pre-content-wrapper {
+  display: none; }
+
+#content-wrapper {
+  display: none; }
+
 /*# sourceMappingURL=responsive.smalltouch.landscape.css.map */
