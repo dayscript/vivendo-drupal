@@ -272,11 +272,19 @@ a.flex-next {
    .block-content {
       padding: 19px;
       font-size: 10px;
-      a{
-          padding: 6px 83px;
-      }
-      h4{}
+
+      a{padding: 6px 83px;}
+      h4{text-align: center;border: none;}
+      p{text-align: center}
     }
+  }
+  .pane-block-4{
+    .block-content{
+      h4{
+
+      }
+    }
+
   }
   .region-two-33-66-second {
     .drop-down-footer,.drop-down-footer-secciones,.drop-down-footer-tools{

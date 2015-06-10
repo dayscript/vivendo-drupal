@@ -219,6 +219,11 @@ a.flex-next {
   font-size: 10px; }
   #block-panels-mini-footer-40-60 .pane-block-1 .block-content a {
     padding: 6px 83px; }
+  #block-panels-mini-footer-40-60 .pane-block-1 .block-content h4 {
+    text-align: center;
+    border: none; }
+  #block-panels-mini-footer-40-60 .pane-block-1 .block-content p {
+    text-align: center; }
 #block-panels-mini-footer-40-60 .region-two-33-66-second .drop-down-footer, #block-panels-mini-footer-40-60 .region-two-33-66-second .drop-down-footer-secciones, #block-panels-mini-footer-40-60 .region-two-33-66-second .drop-down-footer-tools {
   background-color: #DD0024;
   text-align: center; }
