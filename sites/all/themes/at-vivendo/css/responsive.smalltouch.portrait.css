@@ -235,6 +235,9 @@ a.flex-next {
 .pane-block-2 .block-inner .block-content p {
   font-size: 10px; }
 
+.pane-block-3 .block-inner .block-content p {
+  text-align: center; }
+
 /**/
 
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
