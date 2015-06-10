@@ -260,6 +260,13 @@ a.flex-next {
     .region-inner .clearfix{
       margin: 0;
     }
+    .block-content{
+      h4{
+        margin: 0;
+      }
+
+    }
+
   }
 
   .pane-block-1{
@@ -269,6 +276,7 @@ a.flex-next {
       a{
           padding: 6px 83px;
       }
+      h4{}
     }
   }
   .region-two-33-66-second {
