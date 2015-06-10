@@ -146,8 +146,27 @@
       }
     );
 
+    $('.region-two-33-66-second .drop-down-footer-secciones').toggle(
+      function(e){
+       $('.ul-content-secciones').slideDown();
+       e.preventDefault();
+      },
+      function(e){
+       $('.ul-content-secciones').slideUp();
+       e.preventDefault();
+      }
+    );
 
-
+    $('.region-two-33-66-second .drop-down-footer-tools').toggle(
+      function(e){
+       $('.ul-content-tools').slideDown();
+       e.preventDefault();
+      },
+      function(e){
+       $('.ul-content-tools').slideUp();
+       e.preventDefault();
+      }
+    );
   });
 
 $(window).resize(function(){
