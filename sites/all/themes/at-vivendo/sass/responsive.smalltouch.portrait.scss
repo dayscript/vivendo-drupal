@@ -22,14 +22,14 @@
            url('./font/fontello.svg?39246689#fontello') format('svg');
       font-weight: normal;
       font-style: normal;
-    }*/
+      }*/
 
 
 
-/* Increase the default font size on small touch devices */
-body {
-  font-size: 100%;
-}
+      /* Increase the default font size on small touch devices */
+      body {
+        font-size: 100%;
+      }
 
 /* =============================================================================
  *   Mobile Menu Toggle
@@ -37,7 +37,7 @@ body {
  *   These are example styles for the menu toggle menu, you can use these in the
  *   relevant responsive stylesheets as required. Modify to suit your design.
  * ========================================================================== */
-.at-mt .at-menu-toggle {
+ .at-mt .at-menu-toggle {
   /* The toggle link */
   h2 {
     margin-bottom: 5px;
@@ -59,14 +59,14 @@ div#leaderboard-wrapper {
   display: none;
 }
 span.toggler{
-      div.text{
-        float: left;
-        padding: 13px;
-      }
-      div.icon{
-          text-align: right;
-          padding: 13px;
-      }
+  div.text{
+    float: left;
+    padding: 13px;
+  }
+  div.icon{
+    text-align: right;
+    padding: 13px;
+  }
 
 }
 
@@ -102,40 +102,40 @@ a.link-list-compare {
 
 #block-buscador-busca-formulario{
   #zona-wrapper{
-            width: 100%;
-            vertical-align: top;
-            background: #DD0024;
-            border-top: 1px solid;
+    width: 100%;
+    vertical-align: top;
+    background: #DD0024;
+    border-top: 1px solid;
   }
   #tipo-wrapper{
-            width: 100%;
-            vertical-align: top;
-            background: #DD0024;
-            border-top: 1px solid;
-            /*display: none;*/
+    width: 100%;
+    vertical-align: top;
+    background: #DD0024;
+    border-top: 1px solid;
+    /*display: none;*/
   }
   #constructora-wrapper{
-            width: 100%;
-            vertical-align: top;
-            background: #DD0024;
-            border-top: 1px solid;
-            /*display: none;*/
+    width: 100%;
+    vertical-align: top;
+    background: #DD0024;
+    border-top: 1px solid;
+    /*display: none;*/
   }
   #rango-wrapper{
-            width: 100%;
-            vertical-align: top;
-            background: #DD0024;
-            border-top: 1px solid;
-            margin: 0;
-            display: none;
+    width: 100%;
+    vertical-align: top;
+    background: #DD0024;
+    border-top: 1px solid;
+    margin: 0;
+    display: none;
   }
   #text-wrapper{
-            width: 100%!important;
-            vertical-align: top;
-            background: #DD0024;
-            border-top: 1px solid;
-            margin: 0!important;
-            display: none;
+    width: 100%!important;
+    vertical-align: top;
+    background: #DD0024;
+    border-top: 1px solid;
+    margin: 0!important;
+    display: none;
   }
 }
 section#block-views-proyectos-destacados-block {
@@ -155,11 +155,11 @@ section#block-views-proyectos-destacados-block {
 #buscador-wrapper{
   label{display: none}
   select {
-  background-color: rgba(255, 255, 255, 0);
-  color: #fff;
-  border: 0;
-  width: 100%!important;
-  padding: 0 13px;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+    border: 0;
+    width: 100%!important;
+    padding: 0 13px;
   }
   .wrapper{
     width: 100%;
@@ -180,71 +180,71 @@ body.front {
 
   #block-panels-mini-noticias-tutoriales-banners {
    padding: 10px;
+ }
+ h2.pane-title.block-title{
+  padding: 0;
+}
+.views-field.views-field-field-image {
+  width: 100%;
+  a img{width: 100%;}
+}
+.views-field.views-field-title{
+ .field-content{
+  a{
+    font-size:14px;
+    font-weight: 500;
   }
-  h2.pane-title.block-title{
-    padding: 0;
-  }
-  .views-field.views-field-field-image {
-    width: 100%;
-    a img{width: 100%;}
-  }
-  .views-field.views-field-title{
-   .field-content{
-    a{
-      font-size:14px;
-      font-weight: 500;
-    }
-   }
-  }
-  .views-field.views-field-body{
-    p {font-weight: 12px;}
-  }
+}
+}
+.views-field.views-field-body{
+  p {font-weight: 12px;}
+}
 
 }
-  .region.region-three-50-25-25-third {
+.region.region-three-50-25-25-third {
   display: none;
-  }
+}
 
-  #block-panels-mini-herramientas-4-columnas .block-content.content  {
-    display: none;
-  }
+#block-panels-mini-herramientas-4-columnas .block-content.content  {
+  display: none;
+}
 
 
- #block-panels-mini-herramientas-4-columnas .block-content img {
-    width: 50px!important;
-    height: 50px!important;
-    float: left;
-    margin-left: 23px;
-    margin-right: 18px;
-  }
+#block-panels-mini-herramientas-4-columnas .block-content img {
+  width: 50px!important;
+  height: 50px!important;
+  float: left;
+  margin-left: 23px;
+  margin-right: 18px;
+}
 
-  #block-panels-mini-herramientas-4-columnas .block-content p {
-    display: none;
-  }
+#block-panels-mini-herramientas-4-columnas .block-content p {
+  display: none;
+}
 
-  #block-panels-mini-herramientas-4-columnas .block-content a {
-    display: inherit;
-    font-size: 13px;
-    float: left;
-    width: 100%;
-    text-align: -webkit-left;
-  }
- .region .region-four-fourth .block-content h3 {
+#block-panels-mini-herramientas-4-columnas .block-content a {
+  display: inherit;
   font-size: 13px;
   float: left;
-    width: 100%;
-    text-align: -webkit-left;
-  }
+  width: 100%;
+  text-align: -webkit-left;
+}
+.region .region-four-fourth .block-content h3 {
+  font-size: 13px;
+  float: left;
+  width: 100%;
+  text-align: -webkit-left;
+}
 
-  div#block-panels-mini-constructoras-y-testimonio {
-    display: none;
-  }
-  div#block-panels-mini-constructoraresponsive {
-    display: block;
-    height: 221px;
+div#block-panels-mini-constructoras-y-testimonio {
+  display: none;
+}
+div#block-panels-mini-constructoraresponsive {
+  display: block;
+  height: 221px;
 }
 a.flex-prev{
-    left: 20%!important;
+  left: 20%!important;
 }
 a.flex-next {
   left: 87%!important;
@@ -262,11 +262,12 @@ a.flex-next {
     }
     .pane-block-4{
       .block-content{
-          h4{text-align: center;border: none;}
-          p{text-align: center}
-        }
+        h4{text-align: center;border: none;}
+        p{text-align: center}
+      }
     }
     .block-content{
+      margin-top: 20px;
       h4{
         margin: 0;
         border-bottom: 1px solid #fff;
@@ -276,26 +277,32 @@ a.flex-next {
 
   .pane-block-1{
    .block-content {
-      padding: 19px;
-      font-size: 10px;
-      a{padding: 6px 83px;}
+    padding: 19px;
+    font-size: 10px;
+    a{padding: 6px 83px;}
 
 
-    }
   }
+}
 
 
 
 }
-  .region-two-33-66-second {
-    .drop-down-footer,.drop-down-footer-secciones,.drop-down-footer-tools{
-      background-color: #DD0024;
-      text-align: center;
-     }
+.region-two-33-66-second {
+  .drop-down-footer,.drop-down-footer-secciones,.drop-down-footer-tools{
+    background-color: #DD0024;
+    text-align: center;
   }
-  .ul-content-search,.ul-content-secciones,.ul-content-tools{
-    display: none;
+}
+.ul-content-search,.ul-content-secciones,.ul-content-tools{
+  display: none;
+  li{
+    background: #fff;
   }
+  a{
+    color:#000;
+  }
+}
 
 .pane-block-2{
   .block-inner .block-content{
@@ -303,7 +310,7 @@ a.flex-next {
       padding: 23px;
     }
   }
- }
+}
 
 .pane-block-3{
   .block-inner .block-content{

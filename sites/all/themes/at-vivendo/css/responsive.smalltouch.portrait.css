@@ -26,7 +26,7 @@
            url('./font/fontello.svg?39246689#fontello') format('svg');
       font-weight: normal;
       font-style: normal;
-    }*/
+      }*/
 /* Increase the default font size on small touch devices */
 body {
   font-size: 100%; }
@@ -216,9 +216,11 @@ a.flex-next {
     border: none; }
   #block-panels-mini-footer-40-60 .region-two-33-66-second .pane-block-4 .block-content p {
     text-align: center; }
-  #block-panels-mini-footer-40-60 .region-two-33-66-second .block-content h4 {
-    margin: 0;
-    border-bottom: 1px solid #fff; }
+  #block-panels-mini-footer-40-60 .region-two-33-66-second .block-content {
+    margin-top: 20px; }
+    #block-panels-mini-footer-40-60 .region-two-33-66-second .block-content h4 {
+      margin: 0;
+      border-bottom: 1px solid #fff; }
 #block-panels-mini-footer-40-60 .pane-block-1 .block-content {
   padding: 19px;
   font-size: 10px; }
@@ -231,6 +233,10 @@ a.flex-next {
 
 .ul-content-search, .ul-content-secciones, .ul-content-tools {
   display: none; }
+  .ul-content-search li, .ul-content-secciones li, .ul-content-tools li {
+    background: #fff; }
+  .ul-content-search a, .ul-content-secciones a, .ul-content-tools a {
+    color: #000; }
 
 .pane-block-2 .block-inner .block-content p {
   font-size: 10px;
