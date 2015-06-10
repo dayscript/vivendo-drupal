@@ -224,8 +224,6 @@ a.flex-next {
   font-size: 10px; }
   #block-panels-mini-footer-40-60 .pane-block-1 .block-content a {
     padding: 6px 83px; }
-#block-panels-mini-footer-40-60 .pane-block-2 .block-content p {
-  font-size: 10px; }
 
 .region-two-33-66-second .drop-down-footer, .region-two-33-66-second .drop-down-footer-secciones, .region-two-33-66-second .drop-down-footer-tools {
   background-color: #DD0024;
@@ -233,6 +231,9 @@ a.flex-next {
 
 .ul-content-search, .ul-content-secciones, .ul-content-tools {
   display: none; }
+
+.pane-block-2 .block-inner .block-content p {
+  font-size: 10px; }
 
 /**/
 

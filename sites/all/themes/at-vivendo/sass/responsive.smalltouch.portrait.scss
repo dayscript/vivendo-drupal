@@ -284,11 +284,7 @@ a.flex-next {
     }
   }
 
-  .pane-block-2{
-    .block-content{
-      p{font-size: 10px}
-    }
-  }
+
 
 }
   .region-two-33-66-second {
@@ -301,6 +297,11 @@ a.flex-next {
     display: none;
   }
 
+.pane-block-2{
+  .block-inner .block-content{
+    p{font-size: 10px}
+  }
+ }
 
 
 
