@@ -233,7 +233,8 @@ a.flex-next {
   display: none; }
 
 .pane-block-2 .block-inner .block-content p {
-  font-size: 10px; }
+  font-size: 10px;
+  padding: 23px; }
 
 .pane-block-3 .block-inner .block-content p {
   text-align: center; }
