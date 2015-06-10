@@ -84,15 +84,12 @@ div#pre-content-wrapper {
 a.link-proyects-more {
   display: none;
 }
-a{
-  .z_more {
-    display: none;
-  }
-  .z_less {
+a.z_more {
   display: none;
-  }
 }
-
+a.z_less {
+  display: none;
+}
 div#block-buscador-busca-formulario {
   width: 100%;
 }
