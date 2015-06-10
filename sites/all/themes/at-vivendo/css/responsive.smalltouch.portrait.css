@@ -245,14 +245,11 @@ a.flex-next {
 .pane-block-3 .block-inner .block-content p {
   text-align: center; }
 
-.pane-block-5 .block-inner .block-content {
+.pane-block-5 .block-inner .block-content, .pane-block-6 .block-inner .block-content, .pane-block-7 .block-inner .block-content {
   margin: 0 !important; }
 
-.pane-block-6 .block-inner .block-content {
-  margin: 0 !important; }
-
-.pane-block-7 .block-inner .block-content {
-  margin: 0 !important; }
+.pane-block-7 .block-inner .block-content h4 {
+  border: none !important; }
 
 /**/
 

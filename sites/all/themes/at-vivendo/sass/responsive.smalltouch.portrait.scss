@@ -317,15 +317,7 @@ a.flex-next {
   }
 }
 
-.pane-block-5{
-  .block-inner{
-    .block-content{
-      margin: 0!important;
-    }
-  }
-}
-
-.pane-block-6{
+.pane-block-5,.pane-block-6,.pane-block-7{
   .block-inner{
     .block-content{
       margin: 0!important;
@@ -335,7 +327,9 @@ a.flex-next {
 .pane-block-7{
   .block-inner{
     .block-content{
-      margin: 0!important;
+      h4{
+        border: none!important;
+      }
     }
   }
 }
