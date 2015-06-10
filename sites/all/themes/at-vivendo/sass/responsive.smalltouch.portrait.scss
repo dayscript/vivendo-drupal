@@ -257,6 +257,9 @@ a.flex-next {
   }
   .region-two-33-66-second{
     margin:0;
+    .region-inner .clearfix{
+      margin: 0;
+    }
   }
 
   .pane-block-1{
