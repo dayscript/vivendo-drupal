@@ -53,10 +53,10 @@ body {
 div#leaderboard-wrapper {
   display: none; }
 
-span.toggler div .text {
+span.toggler div.text {
   float: left;
   padding: 13px; }
-span.toggler div .icon {
+span.toggler div.icon {
   text-align: right;
   padding: 13px; }
 
@@ -71,18 +71,23 @@ span.toggler div .icon {
 div#pre-content-wrapper {
   display: none; }
 
-a .z_more, a .z_less {
+a.link-proyects-more {
   display: none; }
-a .link-proyects-more {
+
+a.z_more {
   display: none; }
-a .link-list-compare {
+
+a.z_less {
+  display: none; }
+
+div#block-buscador-busca-formulario {
+  width: 100%; }
+
+a.link-list-compare {
   width: 100%;
   margin: 0 !important;
   border-top: 1px solid;
   padding: 13px !important; }
-
-div#block-buscador-busca-formulario {
-  width: 100%; }
 
 #block-buscador-busca-formulario #zona-wrapper {
   width: 100%;
