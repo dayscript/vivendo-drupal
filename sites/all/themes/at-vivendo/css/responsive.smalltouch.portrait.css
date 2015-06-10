@@ -235,8 +235,8 @@ a.flex-next {
   display: none; }
   .ul-content-search li, .ul-content-secciones li, .ul-content-tools li {
     background: #fff; }
-  .ul-content-search a, .ul-content-secciones a, .ul-content-tools a {
-    color: #000; }
+    .ul-content-search li a, .ul-content-secciones li a, .ul-content-tools li a {
+      color: #000; }
 
 .pane-block-2 .block-inner .block-content p {
   font-size: 10px;
