@@ -71,4 +71,10 @@ body {
   #block-buscador-busca-formulario form#buscador-formulario-form {
     font-size: 10px; }
 
+#buscador-wrapper #zona-wrapper .form-type-select {
+  width: auto; }
+
+select #edit-zona {
+  width: 60px; }
+
 /*# sourceMappingURL=responsive.smalltouch.landscape.css.map */
