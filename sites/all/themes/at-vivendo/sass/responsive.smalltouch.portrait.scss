@@ -355,27 +355,34 @@ a.flex-next {
         }
       }
       #content-wrapper{
-          top: 72px;
-          #main-content{
-            #main-content-header{
-              font-size: 12px;
-            }
-            #content{
-              #block-system-main{
-                .view-proyectos{
-                  .view-header{
+        top: 72px;
+        #main-content{
+          #main-content-header{
+            font-size: 12px;
+          }
+          #content{
+            #block-system-main{
+              .view-proyectos{
+                .view-header{
+                  display: none;
+                  .switcher{
                     display: none;
-                    .switcher{
+                  }
+                }
+                .view-content{
+                  table.sticky-header{
+                    .views-field-field-area-construida,.views-field-field-alcobas,
+                    .views-field-field-estado,.views-field-field-constructora{
                       display: none;
                     }
 
-                  }
 
+                  }
                 }
               }
-
             }
           }
+        }
       }
     }
   }
