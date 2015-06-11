@@ -79,6 +79,6 @@ body {
       width: 60px !important; }
 
 #text-wrapper {
-  display: none; }
+  display: none !important; }
 
 /*# sourceMappingURL=responsive.smalltouch.landscape.css.map */
