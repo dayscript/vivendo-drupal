@@ -81,7 +81,7 @@ body {
   #buscador-wrapper #zona-wrapper .form-type-select, #buscador-wrapper #tipo-wrapper .form-type-select, #buscador-wrapper #constructora-wrapper .form-type-select, #buscador-wrapper #rango-wrapper .form-type-select {
     width: auto; }
     #buscador-wrapper #zona-wrapper .form-type-select select, #buscador-wrapper #tipo-wrapper .form-type-select select, #buscador-wrapper #constructora-wrapper .form-type-select select, #buscador-wrapper #rango-wrapper .form-type-select select {
-      width: 80px !important; }
+      width: 100px !important; }
 
 #text-wrapper {
   display: none !important; }
