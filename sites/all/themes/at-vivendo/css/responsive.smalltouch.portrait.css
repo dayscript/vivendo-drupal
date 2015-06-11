@@ -254,6 +254,9 @@ a.flex-next {
 .pane-block-7 .block-inner .block-content h4 {
   border: none !important; }
 
+#page-wrapper #page .nav-wrapper {
+  margin: 0px; }
+
 /**/
 
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
