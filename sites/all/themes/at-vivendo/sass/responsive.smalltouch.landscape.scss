@@ -82,11 +82,11 @@ body {
   }
   #zona-wrapper,#tipo-wrapper,#constructora-wrapper,#rango-wrapper{
     width: auto;
+    background-color: #DD0024;
     .form-type-select{
       width: auto;
       select{
             width: 60px!Important;
-            background-color: #DD0024;
         }
       }
     }
