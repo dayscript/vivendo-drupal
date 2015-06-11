@@ -42,7 +42,7 @@ body {
     border-bottom: 1px solid #fefefe; }
 
 .z_more {
-  top: 100; }
+  top: 100 !important; }
 
 #header-wrapper {
   display: none; }
