@@ -342,6 +342,17 @@ a.flex-next {
     #nav-wrapper{
       margin: 0px;
     }
+    #highlighted-wrapper{
+      #block-buscador-busca-formulario{
+        .block-content{
+          #buscador-formulario-form{
+            .up-down{
+              display: none;
+            }
+          }
+        }
+      }
+    }
   }
 }
 /**/
