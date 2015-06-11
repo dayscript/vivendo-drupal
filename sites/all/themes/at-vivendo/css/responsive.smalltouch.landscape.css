@@ -68,6 +68,9 @@ body {
 #leaderboard-wrapper {
   display: none; }
 
+.link-proyects-more {
+  display: none; }
+
 #block-buscador-busca-formulario {
   max-width: 100%; }
   #block-buscador-busca-formulario label {
