@@ -260,8 +260,10 @@ a.flex-next {
   position: relative; }
 .page-proyectos #page-wrapper #page #content-wrapper {
   top: 72px; }
-  .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-header .switcher {
+  .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-header {
     display: none; }
+    .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-header .switcher {
+      display: none; }
 
 /**/
 
