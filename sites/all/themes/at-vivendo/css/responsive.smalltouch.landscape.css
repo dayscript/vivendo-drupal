@@ -66,5 +66,9 @@ body {
 
 #block-buscador-busca-formulario {
   max-width: 100%; }
+  #block-buscador-busca-formulario label {
+    display: none; }
+  #block-buscador-busca-formulario .block-content .content {
+    font-size: 10px; }
 
 /*# sourceMappingURL=responsive.smalltouch.landscape.css.map */
