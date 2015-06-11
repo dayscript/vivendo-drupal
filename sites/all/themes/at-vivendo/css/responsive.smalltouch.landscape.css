@@ -97,4 +97,7 @@ body {
 #text-wrapper {
   display: none !important; }
 
+.front #mapa {
+  height: 320px !important; }
+
 /*# sourceMappingURL=responsive.smalltouch.landscape.css.map */
