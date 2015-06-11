@@ -43,35 +43,19 @@ body {
   }
 }
 
-#header-wrapper{
-  display: none;
-}
-#nav-wrapper{
-  display: none;
-}
-#pre-content-wrapper{
-  display: none;
-}
-#content-wrapper{
-  display: none;
-}
-#footer-wrapper{
-  display: none;
-}
+.z_more{top:100}
+//.z_less{}
 
-#tertiary-content-wrapper{
-  display: none;
-}
-#secondary-content-wrapper{
-  display: none;
-}
 
-#block-views-proyectos-destacados-block{
- display: none;
-}
-#leaderboard-wrapper{
-display: none
-}
+#header-wrapper{display: none;}
+#nav-wrapper{  display: none;}
+#pre-content-wrapper{ display: none;}
+#content-wrapper{  display: none;}
+#footer-wrapper{  display: none;}
+#tertiary-content-wrapper{  display: none;}
+#secondary-content-wrapper{  display: none;}
+#block-views-proyectos-destacados-block{ display: none;}
+#leaderboard-wrapper{display: none}
 .link-proyects-more{display: none}
 #block-buscador-busca-formulario{
   max-width:100%;

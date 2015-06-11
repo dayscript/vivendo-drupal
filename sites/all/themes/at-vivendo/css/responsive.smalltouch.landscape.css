@@ -41,6 +41,9 @@ body {
     background: #eee;
     border-bottom: 1px solid #fefefe; }
 
+.z_more {
+  top: 100; }
+
 #header-wrapper {
   display: none; }
 
