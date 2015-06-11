@@ -356,6 +356,22 @@ a.flex-next {
       }
       #content-wrapper{
           top: 72px;
+          #main-content{
+            #content{
+              #block-system-main{
+                .view-proyectos{
+                  .view-header{
+                    .switcher{
+                      display: none;
+                    }
+
+                  }
+
+                }
+              }
+
+            }
+          }
       }
     }
   }
