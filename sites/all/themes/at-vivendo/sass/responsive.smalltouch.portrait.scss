@@ -371,10 +371,10 @@ a.flex-next {
                 }
                 .view-content{
                   table.sticky-header{
+                    thead{display: none!important;}
                     .views-field-field-area-construida,.views-field-field-alcobas,
                     .views-field-field-estado,.views-field-field-constructora{
                       display: none;
-                      thead{display: none;}
                     }
 
                   }

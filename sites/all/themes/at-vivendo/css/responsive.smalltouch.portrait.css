@@ -266,12 +266,11 @@ a.flex-next {
     display: none; }
     .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-header .switcher {
       display: none; }
+  .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header thead {
+    display: none !important; }
   .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header .views-field-field-area-construida, .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header .views-field-field-alcobas,
   .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header .views-field-field-estado, .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header .views-field-field-constructora {
     display: none; }
-    .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header .views-field-field-area-construida thead, .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header .views-field-field-alcobas thead,
-    .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header .views-field-field-estado thead, .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header .views-field-field-constructora thead {
-      display: none; }
   .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled thead {
     display: none; }
   .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .odd .views-field-field-area-construida, .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .odd .views-field-field-alcobas,
