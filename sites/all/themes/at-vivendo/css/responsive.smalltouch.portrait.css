@@ -254,11 +254,11 @@ a.flex-next {
 .pane-block-7 .block-inner .block-content h4 {
   border: none !important; }
 
-#page-wrapper #page #nav-wrapper {
+.page-proyectos #page-wrapper #page #nav-wrapper {
   margin: 0px; }
-#page-wrapper #page #highlighted-wrapper #block-buscador-busca-formulario .block-content #buscador-formulario-form .up-down {
+.page-proyectos #page-wrapper #page #highlighted-wrapper #block-buscador-busca-formulario .block-content #buscador-formulario-form .up-down {
   position: relative; }
-#page-wrapper #page #content-wrapper {
+.page-proyectos #page-wrapper #page #content-wrapper {
   top: 72px; }
 
 /**/
