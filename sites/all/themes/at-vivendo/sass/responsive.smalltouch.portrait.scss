@@ -29,6 +29,7 @@
       /* Increase the default font size on small touch devices */
       body {
         font-size: 100%;
+        overflow-x:hidden;
       }
 
 /* =============================================================================
@@ -371,6 +372,7 @@ a.flex-next {
                 }
                 .view-content{
                   table.sticky-header{
+                    display: none;
                     thead{display: none!important;}
                     .views-field-field-area-construida,.views-field-field-alcobas,
                     .views-field-field-estado,.views-field-field-constructora{
