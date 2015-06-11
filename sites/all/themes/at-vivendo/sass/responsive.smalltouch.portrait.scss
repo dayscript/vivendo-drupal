@@ -378,6 +378,21 @@ a.flex-next {
                   }
                    table.sticky-enabled{
                     thead{display: none;}
+                    tbody{
+                      .odd{
+                        .views-field-field-area-construida,.views-field-field-alcobas,
+                        .views-field-field-estado,.views-field-field-constructora{
+                          display: none;
+                        }
+                      }
+                      .event{
+                        .views-field-field-area-construida,.views-field-field-alcobas,
+                        .views-field-field-estado,.views-field-field-constructora{
+                          display: none;
+                        }
+                      }
+                    }
+
                    }
                 }
               }
