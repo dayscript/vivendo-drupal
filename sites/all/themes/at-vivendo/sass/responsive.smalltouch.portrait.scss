@@ -375,9 +375,10 @@ a.flex-next {
                     .views-field-field-estado,.views-field-field-constructora{
                       display: none;
                     }
-
-
                   }
+                   table.sticky-enabled{
+                    thead{display: none;}
+                   }
                 }
               }
             }
