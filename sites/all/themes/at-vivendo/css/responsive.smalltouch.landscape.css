@@ -19,7 +19,8 @@
  */
 /* Increase the body font size on small touch devices */
 body {
-  font-size: 100%; }
+  font-size: 100%;
+  overflow-y: hidden; }
 
 /* =============================================================================
  *   Mobile Menu Toggle
