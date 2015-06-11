@@ -1,12 +1,56 @@
 <?php
 
+  function vivendo_user_construct_menu(){
+    
+    $items = array();
+    
+    $items['construct/autocomplete'] = array(
+      'title'            => 'Autocomplete for contructs',
+      'page callback'    => '_auto_complete_construct',
+      'access arguments' => array('use autocomplete'),
+      'type'             => MENU_CALLBACK
+    );
+    
+    return $items;
+    
+  }
+  
+  function _auto_complete_construct($text){
+    
+    $search = db_select( 'node', 'cons' )
+      ->fields( 'cons', array('nid', 'title') )
+      ->condition( 'cons.title', $text . '%', 'LIKE' )
+      ->condition('cons.status', '1', '=')
+      ->condition( 'cons.type', 'constructora', '=' )
+      ->range(0, 5)
+      ->execute()
+      ->fetchAll();
+    
+    foreach( $search as $data ){
+      $entityWrapper          = entity_metadata_wrapper( 'node', $data->nid );
+      $constructs[$data->title . ' ('.$data->nid.')'] = check_plain( $data->title . ' - ' . $entityWrapper->field_ciudad->value()->name );
+    }
+    
+    drupal_json_output( $constructs );
+    
+  }
+
+
   function vivendo_user_construct_form_alter(&$form, &$form_state, $form_id){
     
     if ( $form_id == 'user_register_form' || $form_id == 'user_profile_form' ){
       
       $form['#submit'][] = 'vivendo_user_construct_user_after_register';
-      var_dump($form['#submit']);
+      
     } 
+    
+    if ( $form_id == 'proyecto_node_form' ) {
+      
+      $form['field_constructora']['und'][0]['target_id']['#autocomplete_path'] = 'construct/autocomplete';
+      
+    }
+    
+    
     
   }
 
@@ -14,8 +58,6 @@
   function vivendo_user_construct_user_after_register($form, &$form_state){
     
     $values = $form_state['values'];
-    
-    if( !isset($_SESSION) ) { session_start(); }
     
     if ( isset($values['field_constructora']['und'][0]) ){
       
@@ -26,10 +68,12 @@
         $projects = vivendo_user_construct_projects_load( $values['field_constructora']['und'][0] );
         
         viendo_user_contruct_project_owner( $projects, $values['uid'] );
-        $_SESSION['projects'] = $projects;
+        
       }
       
     }
+    
+    
     
   }
   
@@ -97,3 +141,5 @@
     return $result;
     
   }
+  
+  
