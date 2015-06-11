@@ -41,6 +41,7 @@
     if ( $form_id == 'user_register_form' || $form_id == 'user_profile_form' ){
       
       $form['#submit'][] = 'vivendo_user_construct_user_after_register';
+      $form['field_constructora']['und'][0]['target_id']['#autocomplete_path'] = 'construct/autocomplete';
       
     } 
     
