@@ -234,7 +234,7 @@ a.flex-next {
 .ul-content-search, .ul-content-secciones, .ul-content-tools {
   display: none; }
   .ul-content-search li, .ul-content-secciones li, .ul-content-tools li {
-    padding: 5px;
+    padding: 5px 5px 5px 10px;
     background: #C7C7C7; }
     .ul-content-search li a, .ul-content-secciones li a, .ul-content-tools li a {
       color: #000 !important; }
