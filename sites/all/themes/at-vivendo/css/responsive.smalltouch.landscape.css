@@ -75,6 +75,7 @@ body {
     font-size: 10px; }
 
 #buscador-wrapper {
+  background-color: #DD0024;
   height: 31px; }
   #buscador-wrapper a {
     margin: 0 !important;
@@ -89,7 +90,8 @@ body {
       #buscador-wrapper #zona-wrapper .form-type-select select, #buscador-wrapper #tipo-wrapper .form-type-select select, #buscador-wrapper #constructora-wrapper .form-type-select select, #buscador-wrapper #rango-wrapper .form-type-select select {
         width: 100px !important;
         background-color: #DF181C;
-        color: #fff; }
+        color: #fff;
+        border: none; }
 
 #text-wrapper {
   display: none !important; }
