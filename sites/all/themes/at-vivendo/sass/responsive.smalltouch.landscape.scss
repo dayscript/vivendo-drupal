@@ -78,6 +78,7 @@ body {
 
 #buscador-wrapper{
   #zona-wrapper,#tipo-wrapper,#constructora-wrapper,#rango-wrapper,#text-wrapper{
+    width: auto;
     .form-type-select{
       width: auto;
       select{
