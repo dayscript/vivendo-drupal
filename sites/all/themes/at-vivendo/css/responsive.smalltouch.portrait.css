@@ -256,6 +256,11 @@ a.flex-next {
 
 #page-wrapper #page #nav-wrapper {
   margin: 0px; }
+#page-wrapper #page #highlighted-wrapper #block-buscador-busca-formulario .block-content #buscador-formulario-form .up-down {
+  top: 72px;
+  position: relative; }
+#page-wrapper #page #content-wrapper {
+  top: 72px; }
 
 /**/
 

@@ -347,11 +347,15 @@ a.flex-next {
         .block-content{
           #buscador-formulario-form{
             .up-down{
-              //display: none;
+              top: 72px;
+              position: relative;
             }
           }
         }
       }
+    }
+    #content-wrapper{
+        top: 72px;
     }
   }
 }
