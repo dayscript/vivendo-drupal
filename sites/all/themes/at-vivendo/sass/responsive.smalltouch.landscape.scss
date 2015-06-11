@@ -71,7 +71,7 @@ body {
 #block-buscador-busca-formulario{
   max-width:100%;
   label{display: none}
- .block-content .content{
+  form#buscador-formulario-form {
     font-size: 10px;
   }
 }

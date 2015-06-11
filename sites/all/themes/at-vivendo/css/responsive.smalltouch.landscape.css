@@ -68,7 +68,7 @@ body {
   max-width: 100%; }
   #block-buscador-busca-formulario label {
     display: none; }
-  #block-buscador-busca-formulario .block-content .content {
+  #block-buscador-busca-formulario form#buscador-formulario-form {
     font-size: 10px; }
 
 /*# sourceMappingURL=responsive.smalltouch.landscape.css.map */
