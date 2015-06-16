@@ -80,7 +80,7 @@ function removeMarkers(){
       if ( points.length == 1 ) {
         map.setZoom(17);
       } else {
-        map.setZoom(13);
+        //map.setZoom(13);
         posi = -200;
       }
         
