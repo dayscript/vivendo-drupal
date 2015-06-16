@@ -3832,9 +3832,13 @@ div#buscador-wrapper .link-list-compare {
     top: 0;
 }
 
-#block-block-13 a {
+#block-block-13{
+  float: left;
+  margin-bottom: 0;
+  a {
     text-decoration: none;
-}
+  }
+} 
 
 .pane-publicidad {
     margin-top: 20px;
