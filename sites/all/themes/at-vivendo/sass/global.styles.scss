@@ -2548,11 +2548,9 @@ h2.pane-title.block-title{
 }
 #city_selector .logo,
 #block-block-13{
-  float: left;
   font-size: 3.8em;
   font-weight: 700;
   letter-spacing: -2px;
-  margin: 20px 0 0 0;
   p{
     margin: 0;
   }
@@ -2625,40 +2623,53 @@ h2.pane-title.block-title{
 
 }
 #city_selector{
-  width: 825px;
-  height: 200px;
-  padding: 40px 10px;
+  width: 750px;
+  padding: 15px 0 0;
+  /*margin: 0 auto;*/
   .logo{
-    margin-top: 0;
+    margin: 0 auto 10px;
+    width: 342px;
   }
   .intro{
-    float: right;
-    width: 39%;
-    color: $dark;
+    width: 100%;
+    color: #fff;
     font-size: 1.2em;
-    margin-bottom: 20px;
+    margin: 0 auto;
+    text-align: center;
+    background: none repeat scroll 0 0 #e5001a;
+    .text-intro{
+      display: block;
+      width: 60%;
+      text-align: center;
+      margin: 0 auto;
+      padding: 13px 0;
+    }
   }
   .item-list{
     //clear: both;
-    width: 370px;
-    float: left;
     text-align: center;
-    margin-right: 37px;
+    margin-top: 25px;
     ul{
+      overflow: hidden;
+      display: block;
+      width: 100%;
+      margin: 0 auto;
       li{
         list-style: none;
-        display: inline-block;
+        float: left;
         text-align: center;
         font-weight: 600;
-        margin: 0 0 0 10px;
+        margin: 0 33px;
         a{
           vertical-align: bottom;
-          width: 103px;
-          padding-top: 105px;
+          width: 120px;
+          padding-top: 123px;
           display: inline-block;
           color: $red_text;
           background: url("../images/icons/general.png") no-repeat;
           background-size: 100% auto;
+          height: 45px;
+          margin: 0 auto 15px;
           &.bogota{
             background-image: url("../images/icons/bogota.png");
           }
@@ -2680,6 +2691,21 @@ h2.pane-title.block-title{
           &.florida{
             background-image: url("../images/icons/florida.png");
             height: 39px;
+          }
+        }
+        &.disabled-city{
+          background: none repeat scroll 0 0 #e3e3e3;
+          border-radius: 55px 55px 55px 56px;
+          a{
+            padding-top: 118px !important;
+            height: 0;
+            margin: 0;
+          }
+          .text-disabled{
+            float: right;
+            text-align: left;
+            width: 160px;
+            padding: 37px 0 0 19px;
           }
         }
       }

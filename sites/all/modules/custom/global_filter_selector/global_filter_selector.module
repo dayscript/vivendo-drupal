@@ -77,23 +77,54 @@ function global_filter_selector_block_view($delta = '') {
           $items[] = array('data' => l("La Florida", null,array('attributes'=>array('class'=>array('florida', 'disabled')))));
         }
 //        $block['content'] = theme('item_list', array('items' => $items));
-        $block['content'] = "<div class='item-list'><ul>";
-        $block['content'] .= "<li><a href='/?field_ciudad=1' class='bogota'>Bogot&aacute;<br />Región centro</a></li>";
-        $block['content'] .= "<li><a href='/?field_ciudad=2' class='cali'>Cali<br />Valle</a></li>";
-        $block['content'] .= "<li><a href='/?field_ciudad=766' class='costa'>Costa<br />Atl&aacute;ntica</a></li>";
-        $block['content'] .= "</ul></div>";
-        $block['content'] .= "<div class='item-list disabled'><div class='soon'>Pr&oacute;ximamente</div><ul>";
-        $block['content'] .= "<li><a class='medellin'>Medell&iacute;n<br />Antioquia</a></li>";
-        $block['content'] .= "<li><a class='ejecafetero'>Eje<br />Cafetero</a></li>";
-        $block['content'] .= "<li><a class='santanderes'>Santanderes<br />&nbsp;</a></li>";
-        $block['content'] .= "<li><a class='florida'>La Florida EEUU<br />&nbsp;</a></li>";
-        $block['content'] .= "</ul></div>";
-        $block['content'] = "<div class='logo'><img alt='Vivendo.co' src='/sites/all/themes/at-vivendo/images/logos/logo-vivendo.png'
-                              style='border-style:solid; border-width:0px; height:62px; width:71px'><span style='color:#89878c'>vivendo.</span>
-                              <span style='color:#cd002d'>co</span></div>". $block['content'];
-        $block['content'] = "<div class='intro'>Encuentre aquí la más completa oferta de vivienda, casas y apartamentos en Colombia y la Florida EEUU.</div>" . $block['content'];
-        $block['content'] = "<div id='city_selector'>" . $block['content'] . "</div>";
+//        $block['content'] = "<div class='item-list'><ul>";
+//        $block['content'] .= "<li><a href='/?field_ciudad=1' class='bogota'>Bogot&aacute;<br />Región centro</a></li>";
+//        $block['content'] .= "<li><a href='/?field_ciudad=2' class='cali'>Cali<br />Valle</a></li>";
+//        $block['content'] .= "<li><a href='/?field_ciudad=766' class='costa'>Costa<br />Atl&aacute;ntica</a></li>";
+//        $block['content'] .= "</ul></div>";
+//        $block['content'] .= "<div class='item-list disabled'><div class='soon'>Pr&oacute;ximamente</div><ul>";
+//        $block['content'] .= "<li><a class='medellin'>Medell&iacute;n<br />Antioquia</a></li>";
+//        $block['content'] .= "<li><a class='ejecafetero'>Eje<br />Cafetero</a></li>";
+//        $block['content'] .= "<li><a class='santanderes'>Santanderes<br />&nbsp;</a></li>";
+//        $block['content'] .= "<li><a class='florida'>La Florida EEUU<br />&nbsp;</a></li>";
+//        $block['content'] .= "</ul></div>";
+//        $block['content'] = "<div class='logo'><img alt='Vivendo.co' src='/sites/all/themes/at-vivendo/images/logos/logo-vivendo.png'
+//                              style='border-style:solid; border-width:0px; height:62px; width:71px'><span style='color:#89878c'>vivendo.</span>
+//                              <span style='color:#cd002d'>co</span></div>". $block['content'];
+//        $block['content'] = "<div class='intro'>Encuentre aquí la más completa oferta de vivienda, casas y apartamentos en Colombia y la Florida EEUU.</div>" . $block['content'];
+//        $block['content'] = "<div id='city_selector'>" . $block['content'] . "</div>";
+        
+          $block['content'] = global_filter_selector_callback_block();
       }
       return $block;
    } 
+}
+
+
+function global_filter_selector_callback_block(){
+  
+  $output = '';
+  
+  $output .= '<div id="city_selector">';
+  $output .=   '<div class="logo">';
+  $output .=     '<img alt="Vivendo.co" src="/sites/all/themes/at-vivendo/images/logos/logo-vivendo.png"/>';
+  $output .=     '<span style="color:#89878c">vivendo.</span>';
+  $output .=     '<span style="color:#cd002d">co</span>';
+  $output .=   '</div>';
+  $output .=   '<div class="intro">';
+  $output .=     '<span class="text-intro">' . t('Encuentre aquí la más completa oferta de vivienda, casas y apartamentos en Colombia y la Florida EEUU.') . '</span>';
+  $output .=   '</div>';
+  $output .=   '<div class="item-list"><ul>';
+  $output .=     '<li><a href="/?field_ciudad=1" class="bogota">Bogot&aacute;<br />Región centro</a></li>';
+  $output .=     '<li><a href="/?field_ciudad=2" class="cali">Cali, Valle</a></li>';
+  $output .=     '<li><a href="/?field_ciudad=766" class="costa">Costa Atl&aacute;ntica</a></li>';
+  $output .=     '<li><a href="/?field_ciudad=769" class="medellin">Medell&iacute;n<br />Antioquia</a></li>';
+  $output .=     '<li><a href="/?field_ciudad=1141" class="ejecafetero">Eje Cafetero</a></li>';
+  $output .=     '<li><a href="/?field_ciudad=1137" class="santanderes">Santanderes</a></li>';
+  $output .=     '<li class="disabled-city"><a class="florida"></a><span class="text-disabled"><strong>Próximamente</strong><br>Florida, EEUU</span></li>';
+  $output .=   '</ul></div>';
+  $output .= '</div>';
+  
+  return $output;
+  
 }
