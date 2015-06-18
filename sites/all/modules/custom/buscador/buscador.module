@@ -114,6 +114,15 @@ function buscador_formulario_form($node, &$form_state)
       case 766:
         $ciudad = 'Barranquilla';
         break;
+      case 769:
+        $ciudad = 'Medellín';
+        break;
+      case 1137:
+        $ciudad = 'Armenia';
+        break;
+      case 1141:
+        $ciudad = 'Bucaramanga';
+        break;
     }
 
     if ( $ciudad !== $filterValue['ciudad'] ) { 

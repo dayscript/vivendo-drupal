@@ -2,12 +2,7 @@
 @import 'compass/utilities/general/clearfix';  // Better than Drupal's clearfix.
 @import 'compass/utilities/sprites';           // See http://compass-style.org/help/tutorials/spriting/
 @import 'compass/css3';                        // Use one CSS3 mixin instead of multiple vendor prefixes.
-@import "compass/css3/appearance";
-
-//
-// Import custom partial - mixins and variables defined for your theme
-//
-@import '_custom';*/
+@import "compass/css3/appearance";*/
 /*
  *   Important Information about this CSS File
  *
@@ -28,9 +23,11 @@
       font-style: normal;
       }*/
 /* Increase the default font size on small touch devices */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\0000330}}
 body {
   font-size: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
 
 /* =============================================================================
  *   Mobile Menu Toggle
@@ -38,253 +35,416 @@ body {
  *   These are example styles for the menu toggle menu, you can use these in the
  *   relevant responsive stylesheets as required. Modify to suit your design.
  * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\0000341}}
 .at-mt .at-menu-toggle {
   /* The toggle link */
-  /* Menu items */ }
-  .at-mt .at-menu-toggle h2 {
-    margin-bottom: 5px; }
-    .at-mt .at-menu-toggle h2 a {
-      background: #eee;
-      border: 2px solid #ccc;
-      padding: 2px 10px; }
-  .at-mt .at-menu-toggle ul.menu li a {
-    background: #eee;
-    border-bottom: 1px solid #fff; }
+  /* Menu items */
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\0000343}}
+.at-mt .at-menu-toggle h2 {
+  margin-bottom: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\0000346}}
+.at-mt .at-menu-toggle h2 a {
+  background: #eee;
+  border: 2px solid #ccc;
+  padding: 2px 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\0000354}}
+.at-mt .at-menu-toggle ul.menu li a {
+  background: #eee;
+  border-bottom: 1px solid #fff;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\0000359}}
 div#leaderboard-wrapper {
-  display: none; }
+  display: none;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\0000363}}
 span.toggler div.text {
   float: left;
-  padding: 13px; }
+  padding: 13px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\0000367}}
 span.toggler div.icon {
   text-align: right;
-  padding: 13px; }
+  padding: 13px;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\0000374}}
 .responsive-menus.responsified span.toggler {
   background-color: #DD0024;
   box-shadow: none;
-  border-radius: 0; }
+  border-radius: 0;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\0000379}}
 .nav ul li a {
-  background: #DD0024; }
+  background: #DD0024;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\0000382}}
 div#pre-content-wrapper {
-  display: none; }
+  display: none;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\0000385}}
 a.link-proyects-more {
-  display: none; }
+  display: none;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\0000388}}
 a.z_more {
-  display: none; }
+  display: none;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\0000391}}
 a.z_less {
-  display: none; }
+  display: none;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\0000394}}
 div#block-buscador-busca-formulario {
-  width: 100%; }
+  width: 100%;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\0000397}}
 a.link-list-compare {
   width: 100%;
   margin: 0 !important;
   border-top: 1px solid;
-  padding: 13px !important; }
+  padding: 13px !important;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003105}}
 #block-buscador-busca-formulario #zona-wrapper {
   width: 100%;
   vertical-align: top;
   background: #DD0024;
-  border-top: 1px solid; }
+  border-top: 1px solid;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003111}}
 #block-buscador-busca-formulario #tipo-wrapper {
   width: 100%;
   vertical-align: top;
   background: #DD0024;
   border-top: 1px solid;
-  /*display: none;*/ }
+  /*display: none;*/
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003118}}
 #block-buscador-busca-formulario #constructora-wrapper {
   width: 100%;
   vertical-align: top;
   background: #DD0024;
   border-top: 1px solid;
-  /*display: none;*/ }
+  /*display: none;*/
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003125}}
 #block-buscador-busca-formulario #rango-wrapper {
   width: 100%;
   vertical-align: top;
   background: #DD0024;
   border-top: 1px solid;
   margin: 0;
-  display: none; }
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003133}}
 #block-buscador-busca-formulario #text-wrapper {
   width: 100% !important;
   vertical-align: top;
   background: #DD0024;
   border-top: 1px solid;
   margin: 0 !important;
-  display: none; }
+  display: none;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003142}}
 section#block-views-proyectos-destacados-block {
-  display: none; }
+  display: none;
+}
 
+<<<<<<< HEAD
 #header-wrapper #header .region-header #block-block-13 .block-inner .block-content .rtecenter img {
   height: 68px !important; }
+=======
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003145}}
+#header-wrapper {
+  display: none;
+}
+>>>>>>> 63930e700eeec57c03a450fc2fc83092e5d31af3
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003151}}
 .mobile-zone label {
-  display: none; }
+  display: none;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003157}}
 #buscador-wrapper label {
-  display: none; }
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003158}}
 #buscador-wrapper select {
   background-color: rgba(255, 255, 255, 0);
   color: #fff;
   border: 0;
   width: 100% !important;
-  padding: 0 13px; }
+  padding: 0 13px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003165}}
 #buscador-wrapper .wrapper {
-  width: 100%; }
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003168}}
 #buscador-wrapper .form-item.form-type-select {
-  width: 100%; }
+  width: 100%;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003174}}
 body.front #content-wrapper {
   background: none;
-  border-top: 0; }
+  border-top: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003178}}
 body.front #main-content {
-  margin: 0; }
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003182}}
 body.front #block-panels-mini-noticias-tutoriales-banners {
-  padding: 10px; }
+  padding: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003185}}
 body.front h2.pane-title.block-title {
-  padding: 0; }
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003188}}
 body.front .views-field.views-field-field-image {
-  width: 100%; }
-  body.front .views-field.views-field-field-image a img {
-    width: 100%; }
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003190}}
+body.front .views-field.views-field-field-image a img {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003194}}
 body.front .views-field.views-field-title .field-content a {
   font-size: 14px;
-  font-weight: 500; }
+  font-weight: 500;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003201}}
 body.front .views-field.views-field-body p {
-  font-weight: 12px; }
+  font-weight: 12px;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003205}}
 .region.region-three-50-25-25-third {
-  display: none; }
+  display: none;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003209}}
 #block-panels-mini-herramientas-4-columnas .block-content.content {
-  display: none; }
+  display: none;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003214}}
 #block-panels-mini-herramientas-4-columnas .block-content img {
   width: 50px !important;
   height: 50px !important;
   float: left;
   margin-left: 23px;
-  margin-right: 18px; }
+  margin-right: 18px;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003222}}
 #block-panels-mini-herramientas-4-columnas .block-content p {
-  display: none; }
+  display: none;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003226}}
 #block-panels-mini-herramientas-4-columnas .block-content a {
   display: inherit;
   font-size: 13px;
   float: left;
   width: 100%;
-  text-align: -webkit-left; }
+  text-align: -webkit-left;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003233}}
 .region .region-four-fourth .block-content h3 {
   font-size: 13px;
   float: left;
   width: 100%;
-  text-align: -webkit-left; }
+  text-align: -webkit-left;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003240}}
 div#block-panels-mini-constructoras-y-testimonio {
-  display: none; }
+  display: none;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003243}}
 div#block-panels-mini-constructoraresponsive {
   display: block;
-  height: 221px; }
+  height: 221px;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003247}}
 a.flex-prev {
-  left: 20% !important; }
+  left: 20% !important;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003250}}
 a.flex-next {
-  left: 87% !important; }
+  left: 87% !important;
+}
 
 /*FOOTER*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003256}}
 #block-panels-mini-footer-40-60 .region-two-33-66-first h2 {
-  display: none; }
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003259}}
 #block-panels-mini-footer-40-60 .region-two-33-66-second {
-  margin: 0; }
-  #block-panels-mini-footer-40-60 .region-two-33-66-second .region-inner .clearfix {
-    margin: 0; }
-  #block-panels-mini-footer-40-60 .region-two-33-66-second .pane-block-4 .block-content h4 {
-    text-align: center;
-    border: none; }
-  #block-panels-mini-footer-40-60 .region-two-33-66-second .pane-block-4 .block-content p {
-    text-align: center; }
-  #block-panels-mini-footer-40-60 .region-two-33-66-second .pane-block-4 .block-content p a img {
-    margin: 10px; }
-  #block-panels-mini-footer-40-60 .region-two-33-66-second .block-content {
-    margin-top: 20px; }
-    #block-panels-mini-footer-40-60 .region-two-33-66-second .block-content h4 {
-      margin: 0;
-      border-bottom: 1px solid #fff; }
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003261}}
+#block-panels-mini-footer-40-60 .region-two-33-66-second .region-inner .clearfix {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003266}}
+#block-panels-mini-footer-40-60 .region-two-33-66-second .pane-block-4 .block-content h4 {
+  text-align: center;
+  border: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003267}}
+#block-panels-mini-footer-40-60 .region-two-33-66-second .pane-block-4 .block-content p {
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003268}}
+#block-panels-mini-footer-40-60 .region-two-33-66-second .pane-block-4 .block-content p a img {
+  margin: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003273}}
+#block-panels-mini-footer-40-60 .region-two-33-66-second .block-content {
+  margin-top: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003275}}
+#block-panels-mini-footer-40-60 .region-two-33-66-second .block-content h4 {
+  margin: 0;
+  border-bottom: 1px solid #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003283}}
 #block-panels-mini-footer-40-60 .pane-block-1 .block-content {
   padding: 19px;
-  font-size: 10px; }
-  #block-panels-mini-footer-40-60 .pane-block-1 .block-content a {
-    padding: 6px 83px; }
+  font-size: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003286}}
+#block-panels-mini-footer-40-60 .pane-block-1 .block-content a {
+  padding: 6px 83px;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003296}}
 .region-two-33-66-second .drop-down-footer, .region-two-33-66-second .drop-down-footer-secciones, .region-two-33-66-second .drop-down-footer-tools {
   background-color: #DD0024;
-  text-align: center; }
+  text-align: center;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003301}}
 .ul-content-search, .ul-content-secciones, .ul-content-tools {
-  display: none; }
-  .ul-content-search li, .ul-content-secciones li, .ul-content-tools li {
-    padding: 5px 5px 5px 10px;
-    background: #C7C7C7; }
-    .ul-content-search li a, .ul-content-secciones li a, .ul-content-tools li a {
-      color: #000 !important; }
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003303}}
+.ul-content-search li, .ul-content-secciones li, .ul-content-tools li {
+  padding: 5px 5px 5px 10px;
+  background: #C7C7C7;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003306}}
+.ul-content-search li a, .ul-content-secciones li a, .ul-content-tools li a {
+  color: #000 !important;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003312}}
 .pane-block-2 .block-inner .block-content p {
   font-size: 10px;
-  padding: 23px; }
+  padding: 23px;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003320}}
 .pane-block-3 .block-inner .block-content p {
-  text-align: center; }
+  text-align: center;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003326}}
 .pane-block-5 .block-inner .block-content, .pane-block-6 .block-inner .block-content, .pane-block-7 .block-inner .block-content {
-  margin: 0 !important; }
+  margin: 0 !important;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003334}}
 .pane-block-7 .block-inner .block-content h4 {
-  border: none !important; }
+  border: none !important;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003344}}
 .page-proyectos #page-wrapper #page #nav-wrapper {
-  margin: 0px; }
+  margin: 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003351}}
 .page-proyectos #page-wrapper #page #highlighted-wrapper #block-buscador-busca-formulario .block-content #buscador-formulario-form .up-down {
-  position: relative; }
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003358}}
 .page-proyectos #page-wrapper #page #content-wrapper {
-  top: 72px; }
-  .page-proyectos #page-wrapper #page #content-wrapper #main-content #main-content-header {
-    font-size: 12px; }
-  .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-header {
-    display: none; }
-    .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-header .switcher {
-      display: none; }
-  .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header {
-    display: none; }
-    .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header thead {
-      display: none !important; }
-    .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header .views-field-field-area-construida, .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header .views-field-field-alcobas,
-    .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header .views-field-field-estado, .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header .views-field-field-constructora {
-      display: none; }
-  .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled thead {
-    display: none; }
-  .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .odd .views-field-field-area-construida, .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .odd .views-field-field-alcobas,
-  .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .odd .views-field-field-estado, .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .odd .views-field-field-constructora {
-    display: none; }
-  .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .odd img.image-style-escalar-289x66-copy {
-    display: none; }
-  .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .even .views-field-field-area-construida, .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .even .views-field-field-alcobas,
-  .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .even .views-field-field-estado, .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .even .views-field-field-constructora {
-    display: none; }
-  .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .even img.image-style-escalar-289x66-copy {
-    display: none; }
+  top: 72px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003361}}
+.page-proyectos #page-wrapper #page #content-wrapper #main-content #main-content-header {
+  font-size: 12px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003367}}
+.page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-header {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003369}}
+.page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-header .switcher {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003374}}
+.page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003376}}
+.page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header thead {
+  display: none !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003377}}
+.page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header .views-field-field-area-construida, .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header .views-field-field-alcobas,
+.page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header .views-field-field-estado, .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header .views-field-field-constructora {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003384}}
+.page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled thead {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003387}}
+.page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .odd .views-field-field-area-construida, .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .odd .views-field-field-alcobas,
+.page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .odd .views-field-field-estado, .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .odd .views-field-field-constructora {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003391}}
+.page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .odd img.image-style-escalar-289x66-copy {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003396}}
+.page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .even .views-field-field-area-construida, .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .even .views-field-field-alcobas,
+.page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .even .views-field-field-estado, .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .even .views-field-field-constructora {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003400}}
+.page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .even img.image-style-escalar-289x66-copy {
+  display: none;
+}
 
+<<<<<<< HEAD
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
+=======
+/**/
+>>>>>>> 63930e700eeec57c03a450fc2fc83092e5d31af3
