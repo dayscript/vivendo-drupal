@@ -295,11 +295,14 @@ a.flex-next {
   border-bottom: 3px solid #c80016;
   margin-bottom: 12px; }
 .page-proyectos-list section#block-views-clon-de-proyectos-block-1 .view-clon-de-proyectos .view-content .views-row {
-  margin-bottom: 38px;
-  border-bottom: 1px solid; }
-  .page-proyectos-list section#block-views-clon-de-proyectos-block-1 .view-clon-de-proyectos .view-content .views-row .views-field-field-fotos .field-content {
+  margin-bottom: 38px; }
+  .page-proyectos-list section#block-views-clon-de-proyectos-block-1 .view-clon-de-proyectos .view-content .views-row .field-content {
     text-align: center; }
-    .page-proyectos-list section#block-views-clon-de-proyectos-block-1 .view-clon-de-proyectos .view-content .views-row .views-field-field-fotos .field-content a img {
+    .page-proyectos-list section#block-views-clon-de-proyectos-block-1 .view-clon-de-proyectos .view-content .views-row .field-content a img {
       width: 100%; }
+  .page-proyectos-list section#block-views-clon-de-proyectos-block-1 .view-clon-de-proyectos .view-content .views-row .views-label {
+    float: left;
+    font-weight: 700;
+    margin-right: 9px; }
 
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
