@@ -295,7 +295,8 @@ a.flex-next {
   border-bottom: 3px solid #c80016;
   margin-bottom: 12px; }
 .page-proyectos-list section#block-views-clon-de-proyectos-block-1 .view-clon-de-proyectos .view-content .views-row {
-  margin-bottom: 5px; }
+  margin-bottom: 38px;
+  border-bottom: 1px solid; }
   .page-proyectos-list section#block-views-clon-de-proyectos-block-1 .view-clon-de-proyectos .view-content .views-row .views-field-field-fotos .field-content {
     text-align: center; }
     .page-proyectos-list section#block-views-clon-de-proyectos-block-1 .view-clon-de-proyectos .view-content .views-row .views-field-field-fotos .field-content a img {
