@@ -289,5 +289,10 @@ a.flex-next {
   display: none; }
 .page-proyectos-list section#main-content #block-system-main {
   display: none; }
+.page-proyectos-list section#block-views-clon-de-proyectos-block-1 h2.block-title {
+  background-color: #fff;
+  color: #c80016;
+  border-bottom: 3px solid #c80016;
+  margin-bottom: 12px; }
 
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
