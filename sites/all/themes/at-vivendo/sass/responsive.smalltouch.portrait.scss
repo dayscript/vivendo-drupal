@@ -447,7 +447,22 @@ a.flex-next {
       border-bottom: 3px solid rgb(200, 0, 22);
       margin-bottom: 12px;
     }
+    .view-clon-de-proyectos{
+      .view-content{
+        .views-row{
+          .views-field-field-fotos{
+            .field-content{
+              a{
+                img{
+                  width: 80%;
+                }
+              }
+            }
 
+          }
+        }
+      }
+    }
   }
 
 
