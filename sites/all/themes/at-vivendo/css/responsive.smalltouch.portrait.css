@@ -125,9 +125,6 @@ a.link-list-compare {
 section#block-views-proyectos-destacados-block {
   display: none; }
 
-#header-wrapper {
-  display: none; }
-
 .mobile-zone label {
   display: none; }
 
@@ -286,7 +283,5 @@ a.flex-next {
     display: none; }
   .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .even img.image-style-escalar-289x66-copy {
     display: none; }
-
-/**/
 
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
