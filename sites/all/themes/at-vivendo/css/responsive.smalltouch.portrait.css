@@ -285,4 +285,9 @@ a.flex-next {
 #block-views-clon-de-proyectos-block-1 {
   display: block; }
 
+.page-proyectos-list section#main-content header {
+  display: none; }
+.page-proyectos-list section#main-content #block-system-main {
+  display: none; }
+
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
