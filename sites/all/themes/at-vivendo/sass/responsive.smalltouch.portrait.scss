@@ -143,7 +143,21 @@ section#block-views-proyectos-destacados-block {
   display: none;
 }
 #header-wrapper {
-  //display: none;
+  #header{
+    .region-header{
+      #block-block-13{
+        .block-inner{
+          .block-content{
+            .rtecenter{
+              img{
+                height: 68px!important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 

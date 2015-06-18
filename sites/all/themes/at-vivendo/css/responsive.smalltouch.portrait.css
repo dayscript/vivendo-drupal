@@ -125,6 +125,9 @@ a.link-list-compare {
 section#block-views-proyectos-destacados-block {
   display: none; }
 
+#header-wrapper #header .region-header #block-block-13 .block-inner .block-content .rtecenter img {
+  height: 68px !important; }
+
 .mobile-zone label {
   display: none; }
 
