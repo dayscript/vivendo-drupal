@@ -450,11 +450,13 @@ a.flex-next {
     .view-clon-de-proyectos{
       .view-content{
         .views-row{
+          margin-bottom: 5px;
           .views-field-field-fotos{
             .field-content{
+              text-align: center;
               a{
                 img{
-                  /*width: 80%;*/
+                  width: 100%;
                 }
               }
             }
