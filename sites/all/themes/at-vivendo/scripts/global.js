@@ -188,6 +188,6 @@ $(window).resize(function(){
       });
     });
   }
-}
+
 
 })(jQuery);
