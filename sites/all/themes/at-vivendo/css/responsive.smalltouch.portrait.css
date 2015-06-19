@@ -315,4 +315,11 @@ a.flex-next {
   padding: 13px;
   color: #fff; }
 
+#modalBackdrop {
+  width: 95%; }
+  #modalBackdrop #modalContent {
+    width: 95%; }
+    #modalBackdrop #modalContent .modal-forms-modal-content {
+      width: 95%; }
+
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
