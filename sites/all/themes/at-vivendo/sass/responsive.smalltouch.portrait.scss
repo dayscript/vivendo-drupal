@@ -487,10 +487,10 @@ a.flex-next {
   color: #fff;
 
 }
+
+/**Styles for modal windows home*/
 #modalBackdrop{
   width: 100%!important;
-  opacity: 0!imporant;
-  background: rgba(0, 0, 0, 0.67)!important;
 }
 
 #modalContent{
@@ -513,7 +513,7 @@ a.flex-next {
             form{div{.webform-component{font-size: 10px!important;}}}
             width: 95% !important;
             padding: 0 8px;
-            .webform-client-form-1{
+            .webform-client-form-1,.webform-client-form-225{
               width: 95%!important;
               .form-item{
                 font-size:9px!important;
@@ -528,3 +528,4 @@ a.flex-next {
     }
   }
 
+/**End styles for modal windows home*/
