@@ -317,9 +317,10 @@ a.flex-next {
 
 #modalBackdrop {
   width: 95% !important; }
-  #modalBackdrop #modalContent {
+
+#modalContent {
+  width: 95% !important; }
+  #modalContent .modal-forms-modal-content {
     width: 95% !important; }
-    #modalBackdrop #modalContent .modal-forms-modal-content {
-      width: 95% !important; }
 
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
