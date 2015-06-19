@@ -327,10 +327,14 @@ a.flex-next {
     width: 100% !important;
     height: 428px !important; }
     #modalContent .modal-forms-modal-content .popups-container .modal-header {
-      display: inline-block; }
+      display: inline-block;
+      width: 100%; }
+      #modalContent .modal-forms-modal-content .popups-container .modal-header .popups-close {
+        right: 14px;
+        position: relative; }
       #modalContent .modal-forms-modal-content .popups-container .modal-header #modal-title {
         height: 25px !important;
-        width: 100% !important; }
+        width: 90% !important; }
     #modalContent .modal-forms-modal-content .popups-container .modal-scroll #modal-content {
       width: 95% !important;
       padding: 0 8px; }

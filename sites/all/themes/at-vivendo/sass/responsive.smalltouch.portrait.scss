@@ -503,9 +503,14 @@ a.flex-next {
       .popups-container{
         .modal-header{
           display: inline-block;
+          width:100%;
+          .popups-close{
+            right: 14px;
+            position: relative;
+          }
           #modal-title{
             height: 25px!important;
-            width: 100%!important;
+            width: 90%!important;
           }
         }
         .modal-scroll{
