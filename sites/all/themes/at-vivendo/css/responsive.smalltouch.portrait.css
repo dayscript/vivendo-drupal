@@ -323,7 +323,8 @@ a.flex-next {
   margin: 4%;
   left: 0px !important; }
   #modalContent .modal-forms-modal-content {
-    width: 100% !important; }
+    width: 100% !important;
+    height: 428px !important; }
     #modalContent .modal-forms-modal-content .popups-container .modal-header {
       display: inline-block; }
       #modalContent .modal-forms-modal-content .popups-container .modal-header #modal-title {
@@ -331,8 +332,7 @@ a.flex-next {
         width: 100% !important; }
     #modalContent .modal-forms-modal-content .popups-container .modal-scroll #modal-content {
       width: 95% !important;
-      padding: 0 8px;
-      width: 95% !important; }
+      padding: 0 8px; }
       #modalContent .modal-forms-modal-content .popups-container .modal-scroll #modal-content form div .webform-component {
         font-size: 10px !important; }
       #modalContent .modal-forms-modal-content .popups-container .modal-scroll #modal-content .webform-client-form-1 {
