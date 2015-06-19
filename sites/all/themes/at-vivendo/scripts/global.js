@@ -181,7 +181,7 @@ function resize(){
     if(check <= 800){
       label = $(this).find('label').text();
     }else{
-      label = "Todos"
+      label = "Todos";
     }
     $(this).find('option').first().each(function{
        $(this).text( label );
