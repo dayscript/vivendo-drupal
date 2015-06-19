@@ -226,8 +226,14 @@ body.front {
   display: none;
 }
 
-#block-panels-mini-herramientas-4-columnas .block-content.content  {
+#block-panels-mini-herramientas-4-columnas {
+
+  .block-content.content  {
   display: none;
+  }
+  h2.block-title:before{
+    content:"<>";
+  }
 }
 
 
