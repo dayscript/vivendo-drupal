@@ -488,13 +488,14 @@ a.flex-next {
 
 }
 #modalBackdrop{
-  width: 95%!important;
+  width: 100%!important;
 }
 
 #modalContent{
-    width: 95%!important;
+    width: 90% !important;
+    margin: 3%;
     .modal-forms-modal-content{
-      width: 95%!important;
+      width: 100%!important;
       .popups-container{
         .modal-header{
           display: inline-block;

@@ -316,12 +316,13 @@ a.flex-next {
   color: #fff; }
 
 #modalBackdrop {
-  width: 95% !important; }
+  width: 100% !important; }
 
 #modalContent {
-  width: 95% !important; }
+  width: 90% !important;
+  margin: 3%; }
   #modalContent .modal-forms-modal-content {
-    width: 95% !important; }
+    width: 100% !important; }
     #modalContent .modal-forms-modal-content .popups-container .modal-header {
       display: inline-block; }
       #modalContent .modal-forms-modal-content .popups-container .modal-header #modal-title {
