@@ -496,6 +496,13 @@ a.flex-next {
     .modal-forms-modal-content{
       width: 95%!important;
       .popups-container{
+        .modal-header{
+          display: inline-block;
+          #modal-title{
+            height: 25px!important;
+            width: 100%!important;
+          }
+        }
         .modal-scroll{
           #modal-content{
             width: 95%!important;
