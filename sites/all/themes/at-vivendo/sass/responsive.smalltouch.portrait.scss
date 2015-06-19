@@ -487,33 +487,21 @@ a.flex-next {
   color: #fff;
 
 }
-.region{
-  .region-three-50-25-25-second{
-    .pane-tutoriales{
-      .block-inner{
-        .block-content{
-          .view-tutoriales{
-            .view-content{
-              .views-row{
-                .views-field-nothing{
-                  .field-content{
-                    a{
-                      font-size: 1em!important;
-                    }
-                  }
-                }
-              }
 
-            }
-
+.view-tutoriales{
+  .view-content{
+    .views-row{
+      .views-field-nothing{
+        .field-content{
+          a{
+            font-size: 1em!important;
           }
         }
-
       }
-
     }
   }
 }
+
 
 /**Styles for modal windows home*/
 #modalBackdrop{
