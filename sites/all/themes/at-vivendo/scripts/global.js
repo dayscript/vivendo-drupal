@@ -188,7 +188,7 @@ function resize(){
     });
   });
 
-}
+
 
 jQuery('#block-block-18').toggle(
 
