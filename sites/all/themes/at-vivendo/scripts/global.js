@@ -175,17 +175,19 @@ $(window).resize(function(){
 
 
 
-function resize(){
-  var check = $('body').innerWidth();
-  $('#buscador-wrapper').find('.wrapper').each(function(){
-    if(check <= 800){
-      label = $(this).find('label').text();
-    }else{
-      label = "Todos";
-    }
-    $(this).find('option').first().each(function{
-       $(this).text( label );
+  function resize(){
+    var check = $('body').innerWidth();
+    $('#buscador-wrapper').find('.wrapper').each(function(){
+      if(check <= 800){
+        label = $(this).find('label').text();
+      }else{
+        label = "Todos"
+      }
+      $(this).find('option').first().each(function(){
+         $(this).text( label );
+      });
     });
-  });
+  }
 }
+
 })(jQuery);
