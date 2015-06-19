@@ -489,6 +489,8 @@ a.flex-next {
 }
 #modalBackdrop{
   width: 100%!important;
+  opacity: 0!imporant;
+  background: rgba(0, 0, 0, 0.67)!important;
 }
 
 #modalContent{
