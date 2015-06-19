@@ -231,6 +231,9 @@ body.front {
   .block-content.content  {
   display: none;
   }
+  h2.block-title{
+      font-size: 28px!important;
+  }
   h2.block-title:before{
     content:"\25bc";
   }
