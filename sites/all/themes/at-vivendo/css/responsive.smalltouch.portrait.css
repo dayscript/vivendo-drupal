@@ -381,6 +381,8 @@ a.flex-next {
     font-size: 10px; }
   #block-calculadoracredito-calculadoracredito-view-modal .block-inner .block-content .contenedor .block_calculadora input {
     width: 98%; }
+  #block-calculadoracredito-calculadoracredito-view-modal .block-inner .block-content .contenedor .block_calculadora .content-sponsor span {
+    font-size: 26px; }
   #block-calculadoracredito-calculadoracredito-view-modal .block-inner .block-content .contenedor .block_calculadora #items_calculadora {
     width: 100%;
     padding: 0; }

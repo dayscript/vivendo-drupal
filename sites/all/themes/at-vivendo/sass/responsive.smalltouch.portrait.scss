@@ -591,9 +591,17 @@ a.flex-next {
     .block-content{
       .contenedor{
         .block_calculadora{
+
+
           width: 100%;
           span{ font-size: 10px;}
           input{ width: 98%;}
+          .content-sponsor{
+            span{
+              font-size: 26px;
+            }
+          }
+
           #items_calculadora{
               width: 100%;
               padding: 0;
