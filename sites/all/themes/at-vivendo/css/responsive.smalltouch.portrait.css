@@ -319,6 +319,9 @@ a.flex-next {
   margin: 0;
   padding: 13px;
   color: #fff; }
+  #block-block-18 .block-inner.block-content.filter-search:after {
+    content: "  \25bc";
+    white-space: pre-wrap; }
 
 .view-tutoriales .view-content .views-row .views-field-nothing .field-content a {
   font-size: 1em !important; }
