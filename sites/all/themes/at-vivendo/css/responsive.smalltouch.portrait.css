@@ -166,7 +166,7 @@ body.front .views-field.views-field-body p {
 #block-panels-mini-herramientas-4-columnas h2.block-title {
   font-size: 28px !important; }
 #block-panels-mini-herramientas-4-columnas h2.block-title:after {
-  content: "                  \25bc";
+  content: "     \25bc";
   white-space: pre-wrap; }
 
 #block-panels-mini-herramientas-4-columnas .block-content img {
