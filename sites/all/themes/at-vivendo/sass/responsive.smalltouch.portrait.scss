@@ -234,7 +234,7 @@ body.front {
   h2.block-title{
       font-size: 28px!important;
   }
-  h2.block-title:before{
+  h2.block-title:after{
     content:"\25bc";
   }
 }
