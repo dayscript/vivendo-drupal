@@ -319,8 +319,9 @@ a.flex-next {
   width: 100% !important; }
 
 #modalContent {
-  width: 90% !important;
-  margin: 3%; }
+  width: 92% !important;
+  margin: 4%;
+  left: 0px !important; }
   #modalContent .modal-forms-modal-content {
     width: 100% !important; }
     #modalContent .modal-forms-modal-content .popups-container .modal-header {
