@@ -241,6 +241,23 @@ body.front {
 }
 
 
+
+h4.drop-down-footer:after {
+  content: " \25bc";
+  white-space: pre-wrap;
+}
+
+h4.drop-down-footer-secciones:after {
+  content: " \25bc";
+  white-space: pre-wrap;
+}
+h4.drop-down-footer-tools:after {
+  content: " \25bc";
+  white-space: pre-wrap;
+}
+
+
+
 #block-panels-mini-herramientas-4-columnas .block-content img {
   width: 50px!important;
   height: 50px!important;
