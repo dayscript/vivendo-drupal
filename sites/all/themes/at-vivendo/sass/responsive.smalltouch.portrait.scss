@@ -236,6 +236,7 @@ body.front {
   }
   h2.block-title:after{
     content:"\25bc";
+    white-space: pre-wrap;
   }
 }
 
