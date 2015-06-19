@@ -591,8 +591,9 @@ a.flex-next {
     .block-content{
       .contenedor{
         .block_calculadora{
-             width: 100%;
-          .items_calculadora{
+          width: 100%;
+          span{ font-size: 10px;}
+          #items_calculadora{
               width: 100%;
               padding: 0;
           }
