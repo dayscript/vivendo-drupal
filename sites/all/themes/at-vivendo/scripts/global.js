@@ -187,10 +187,7 @@
        e.preventDefault();
       }
     );
-  jQuery('#tipo-wrapper').slideUp();
-  jQuery('#constructora-wrapper').slideUp();
-  jQuery('#rango-wrapper').slideUp();
-  jQuery('#zona-wrapper').slideUp();
+
 
   });
 
@@ -212,6 +209,10 @@ $(window).resize(function(){
       });
     });
     $('#text-wrapper #edit-text').attr('value','BUSQUEDA POR PALABRA');
+    jQuery('#tipo-wrapper').slideUp();
+    jQuery('#constructora-wrapper').slideUp();
+    jQuery('#rango-wrapper').slideUp();
+    jQuery('#zona-wrapper').slideUp();
   }
 
 })(jQuery);
