@@ -113,7 +113,8 @@ a.link-list-compare {
   border-top: 1px solid;
   margin: 0 !important; }
   #block-buscador-busca-formulario #text-wrapper .form-type-textfield {
-    margin: 0 11px !important; }
+    margin: 0 11px !important;
+    color: #B7B7B7; }
 
 section#block-views-proyectos-destacados-block {
   display: none; }
