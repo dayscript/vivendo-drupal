@@ -322,7 +322,7 @@ a.flex-next {
   width: 95% !important; }
   #modalContent .modal-forms-modal-content {
     width: 95% !important; }
-    #modalContent .modal-forms-modal-content #modal-content {
+    #modalContent .modal-forms-modal-content .popups-container .modal-scroll #modal-content {
       width: 95% !important; }
 
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */

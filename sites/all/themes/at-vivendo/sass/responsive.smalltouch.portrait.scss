@@ -495,8 +495,12 @@ a.flex-next {
     width: 95%!important;
     .modal-forms-modal-content{
       width: 95%!important;
-      #modal-content{
-        width: 95%!important;
+      .popups-container{
+        .modal-scroll{
+          #modal-content{
+            width: 95%!important;
+          }
+        }
       }
     }
   }
