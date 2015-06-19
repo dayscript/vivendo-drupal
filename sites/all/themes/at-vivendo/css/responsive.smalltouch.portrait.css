@@ -324,5 +324,7 @@ a.flex-next {
     width: 95% !important; }
     #modalContent .modal-forms-modal-content .popups-container .modal-scroll #modal-content {
       width: 95% !important; }
+      #modalContent .modal-forms-modal-content .popups-container .modal-scroll #modal-content .webform-client-form-1 {
+        width: 95% !important; }
 
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
