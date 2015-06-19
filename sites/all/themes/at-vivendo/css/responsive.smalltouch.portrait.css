@@ -311,6 +311,8 @@ a.flex-next {
   display: block;
   background-color: #DD0024;
   border-top: 1px solid #fff;
-  margin: 0; }
+  margin: 0;
+  padding: 13px;
+  color: #fff; }
 
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
