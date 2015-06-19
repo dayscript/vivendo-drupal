@@ -2832,4 +2832,10 @@ body.page-admin-structure-views-view #views-ui-edit-display-form #edit-options #
  .node-type-proyecto.administrador input#edit-field-exteriores-und{
   width: 97%;
   }
+  .page-node-add-proyecto.administrador input#edit-field-interiores-und{
+  width: 97%;
+  }
+  .page-node-add-proyecto.administrador input#edit-field-exteriores-und{
+  width: 97%;
+  }
 /*Cambios*/
