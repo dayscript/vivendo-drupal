@@ -183,8 +183,8 @@ function resize(){
     }else{
       label = "Todos"
     }
-    $(this).find('option').first().each(
-       $(this).text( label ));
+    $(this).find('option').first().each(function{
+       $(this).text( label );
     });
   });
 }
