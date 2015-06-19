@@ -164,7 +164,7 @@ body.front .views-field.views-field-body p {
 #block-panels-mini-herramientas-4-columnas .block-content.content {
   display: none; }
 #block-panels-mini-herramientas-4-columnas h2.block-title:before {
-  content: "<>"; }
+  content: "&#x25BC;"; }
 
 #block-panels-mini-herramientas-4-columnas .block-content img {
   width: 50px !important;
