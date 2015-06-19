@@ -187,14 +187,17 @@
        e.preventDefault();
       }
     );
+  jQuery('#tipo-wrapper').slideUp();
+  jQuery('#constructora-wrapper').slideUp();
+  jQuery('#rango-wrapper').slideUp();
+  jQuery('#zona-wrapper').slideUp();
+
   });
 
 $(window).resize(function(){
   resize();
 
 });
-
-
 
   function resize(){
     var check = $('body').innerWidth();
