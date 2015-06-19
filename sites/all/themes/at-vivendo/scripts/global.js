@@ -184,7 +184,8 @@ function resize(){
       label = "Todos"
     }
     $(this).find('option').first().each(
-       $(this).text( label );
+       $(this).text( label ));
     });
   });
+}
 })(jQuery);
