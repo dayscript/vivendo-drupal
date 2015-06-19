@@ -208,6 +208,7 @@ $(window).resize(function(){
          $(this).text( label );
       });
     });
+    $('#text-wrapper #edit-text').attr('value','BUSQUEDA POR PALABRA');
   }
 
 })(jQuery);
