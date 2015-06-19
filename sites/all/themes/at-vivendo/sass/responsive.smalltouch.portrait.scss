@@ -507,12 +507,14 @@ a.flex-next {
         }
         .modal-scroll{
           #modal-content{
+            form{div{.webform-component{font-size: 10px!important;}}}
             width: 95% !important;
             padding: 0 8px;
             width: 95%!important;
             .webform-client-form-1{
               width: 95%!important;
               .form-item{
+                font-size:9px!important;
                 #edit-submitted-nombre-completo,#edit-submitted-correo-electronico,#edit-submitted-telefono,#edit-submitted-comentarios{
                   width: 100%!important;
                 }

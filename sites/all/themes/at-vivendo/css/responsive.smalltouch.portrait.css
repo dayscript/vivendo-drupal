@@ -333,9 +333,13 @@ a.flex-next {
       width: 95% !important;
       padding: 0 8px;
       width: 95% !important; }
+      #modalContent .modal-forms-modal-content .popups-container .modal-scroll #modal-content form div .webform-component {
+        font-size: 10px !important; }
       #modalContent .modal-forms-modal-content .popups-container .modal-scroll #modal-content .webform-client-form-1 {
         width: 95% !important; }
-        #modalContent .modal-forms-modal-content .popups-container .modal-scroll #modal-content .webform-client-form-1 .form-item #edit-submitted-nombre-completo, #modalContent .modal-forms-modal-content .popups-container .modal-scroll #modal-content .webform-client-form-1 .form-item #edit-submitted-correo-electronico, #modalContent .modal-forms-modal-content .popups-container .modal-scroll #modal-content .webform-client-form-1 .form-item #edit-submitted-telefono, #modalContent .modal-forms-modal-content .popups-container .modal-scroll #modal-content .webform-client-form-1 .form-item #edit-submitted-comentarios {
-          width: 100% !important; }
+        #modalContent .modal-forms-modal-content .popups-container .modal-scroll #modal-content .webform-client-form-1 .form-item {
+          font-size: 9px !important; }
+          #modalContent .modal-forms-modal-content .popups-container .modal-scroll #modal-content .webform-client-form-1 .form-item #edit-submitted-nombre-completo, #modalContent .modal-forms-modal-content .popups-container .modal-scroll #modal-content .webform-client-form-1 .form-item #edit-submitted-correo-electronico, #modalContent .modal-forms-modal-content .popups-container .modal-scroll #modal-content .webform-client-form-1 .form-item #edit-submitted-telefono, #modalContent .modal-forms-modal-content .popups-container .modal-scroll #modal-content .webform-client-form-1 .form-item #edit-submitted-comentarios {
+            width: 100% !important; }
 
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
