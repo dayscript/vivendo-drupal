@@ -171,6 +171,25 @@
 
 $(window).resize(function(){
   resize();
+  jQuery('#block-block-18').toggle(
+
+      function(e){
+         jQuery('#').slideDown();
+         jQuery('#').slideDown();
+         jQuery('#').slideDown();
+         jQuery('#zona-wrapper').slideDown();
+         e.preventDefault();
+        },
+      function(e){
+         jQuery('#zona-wrapper').slideUp();
+         jQuery('#zona-wrapper').slideUp();
+         jQuery('#zona-wrapper').slideUp();
+         jQuery('#zona-wrapper').slideUp();
+         e.preventDefault();
+         e.preventDefault();
+        }
+    );
+
 });
 
 
