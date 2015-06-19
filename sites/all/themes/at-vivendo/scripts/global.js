@@ -209,10 +209,12 @@ $(window).resize(function(){
       });
     });
     $('#text-wrapper #edit-text').attr('value','BUSQUEDA POR PALABRA');
-    jQuery('#tipo-wrapper').slideUp();
-    jQuery('#constructora-wrapper').slideUp();
-    jQuery('#rango-wrapper').slideUp();
-    jQuery('#zona-wrapper').slideUp();
+    if(check <= 800){
+      jQuery('#tipo-wrapper').slideUp();
+      jQuery('#constructora-wrapper').slideUp();
+      jQuery('#rango-wrapper').slideUp();
+      jQuery('#zona-wrapper').slideUp();
+    }
   }
 
 })(jQuery);
