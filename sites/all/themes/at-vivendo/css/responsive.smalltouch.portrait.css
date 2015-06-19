@@ -308,6 +308,9 @@ a.flex-next {
     margin-right: 9px; }
 
 #block-block-18 {
-  display: block; }
+  display: block;
+  background-color: #DD0024;
+  border-top: 1px solid #fff;
+  margin: 0; }
 
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
