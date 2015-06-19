@@ -501,6 +501,11 @@ a.flex-next {
             width: 95%!important;
             .webform-client-form-1{
               width: 95%!important;
+              .form-item{
+                input{
+                  width: 100%!important;
+                }
+              }
             }
           }
         }
