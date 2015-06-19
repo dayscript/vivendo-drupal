@@ -256,33 +256,31 @@ a.flex-next {
   display: inline-block; }
   .page-proyectos #page-wrapper #page #highlighted-wrapper #block-buscador-busca-formulario .block-content #buscador-formulario-form .up-down {
     position: relative; }
-.page-proyectos #page-wrapper #page #content-wrapper {
-  top: 184px; }
-  .page-proyectos #page-wrapper #page #content-wrapper #main-content #main-content-header {
-    font-size: 12px; }
-  .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-header {
+.page-proyectos #page-wrapper #page #content-wrapper #main-content #main-content-header {
+  font-size: 12px; }
+.page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-header {
+  display: none; }
+  .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-header .switcher {
     display: none; }
-    .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-header .switcher {
-      display: none; }
-  .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header {
+.page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header {
+  display: none; }
+  .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header thead {
+    display: none !important; }
+  .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header .views-field-field-area-construida, .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header .views-field-field-alcobas,
+  .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header .views-field-field-estado, .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header .views-field-field-constructora {
     display: none; }
-    .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header thead {
-      display: none !important; }
-    .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header .views-field-field-area-construida, .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header .views-field-field-alcobas,
-    .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header .views-field-field-estado, .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-header .views-field-field-constructora {
-      display: none; }
-  .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled thead {
-    display: none; }
-  .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .odd .views-field-field-area-construida, .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .odd .views-field-field-alcobas,
-  .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .odd .views-field-field-estado, .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .odd .views-field-field-constructora {
-    display: none; }
-  .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .odd img.image-style-escalar-289x66-copy {
-    display: none; }
-  .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .even .views-field-field-area-construida, .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .even .views-field-field-alcobas,
-  .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .even .views-field-field-estado, .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .even .views-field-field-constructora {
-    display: none; }
-  .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .even img.image-style-escalar-289x66-copy {
-    display: none; }
+.page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled thead {
+  display: none; }
+.page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .odd .views-field-field-area-construida, .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .odd .views-field-field-alcobas,
+.page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .odd .views-field-field-estado, .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .odd .views-field-field-constructora {
+  display: none; }
+.page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .odd img.image-style-escalar-289x66-copy {
+  display: none; }
+.page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .even .views-field-field-area-construida, .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .even .views-field-field-alcobas,
+.page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .even .views-field-field-estado, .page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .even .views-field-field-constructora {
+  display: none; }
+.page-proyectos #page-wrapper #page #content-wrapper #main-content #content #block-system-main .view-proyectos .view-content table.sticky-enabled tbody .even img.image-style-escalar-289x66-copy {
+  display: none; }
 
 #block-views-clon-de-proyectos-block-1 {
   display: block; }
