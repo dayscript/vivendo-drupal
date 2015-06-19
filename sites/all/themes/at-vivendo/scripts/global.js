@@ -188,24 +188,5 @@ function resize(){
     });
   });
 
-
-
-jQuery('#block-block-18').toggle(
-
-    function(e){
-       jQuery('#tipo-wrapper').slideDown();
-       jQuery('#constructora-wrapper').slideDown();
-       jQuery('#rango-wrapper').slideDown();
-       jQuery('#zona-wrapper').slideDown();
-       e.preventDefault();
-      },
-    function(e){
-       jQuery('#tipo-wrapper').slideUp();
-       jQuery('#constructora-wrapper').slideUp();
-       jQuery('#rango-wrapper').slideUp();
-       jQuery('#zona-wrapper').slideUp();
-       e.preventDefault();
-      }
-  );
-
+}
 })(jQuery);
