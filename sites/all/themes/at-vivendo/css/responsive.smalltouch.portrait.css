@@ -334,7 +334,8 @@ a.flex-next {
         position: relative; }
       #modalContent .modal-forms-modal-content .popups-container .modal-header #modal-title {
         height: 25px !important;
-        width: 90% !important; }
+        width: 90% !important;
+        font-size: 22px; }
     #modalContent .modal-forms-modal-content .popups-container .modal-scroll #modal-content {
       width: 95% !important;
       padding: 0 8px; }
