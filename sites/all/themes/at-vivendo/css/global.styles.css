@@ -2600,4 +2600,7 @@ a.link-proyects-more {
 #block-panels-mini-constructoraresponsive {
   display: none; }
 
+.node-type-proyecto.administrador input#edit-field-interiores-und, .node-type-proyecto.administrador input#edit-field-exteriores-und {
+  width: 97%; }
+
 /*# sourceMappingURL=global.styles.css.map */
