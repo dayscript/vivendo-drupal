@@ -502,7 +502,7 @@ a.flex-next {
             .webform-client-form-1{
               width: 95%!important;
               .form-item{
-                #edit-submitted-nombre-completo{
+                #edit-submitted-nombre-completo,#edit-submitted-correo-electronico,#edit-submitted-telefono,#edit-submitted-comentarios{
                   width: 100%!important;
                 }
               }
