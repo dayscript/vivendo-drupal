@@ -316,10 +316,10 @@ a.flex-next {
   color: #fff; }
 
 #modalBackdrop {
-  width: 95%; }
+  width: 95% !important; }
   #modalBackdrop #modalContent {
-    width: 95%; }
+    width: 95% !important; }
     #modalBackdrop #modalContent .modal-forms-modal-content {
-      width: 95%; }
+      width: 95% !important; }
 
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
