@@ -374,5 +374,11 @@ a.flex-next {
             width: 100% !important; }
 
 /**End styles for modal windows home*/
+/*styles for modal window home*/
+#block-calculadoracredito-calculadoracredito-view-modal .block-inner .block-content .contenedor .block_calculadora {
+  width: 100%; }
+  #block-calculadoracredito-calculadoracredito-view-modal .block-inner .block-content .contenedor .block_calculadora .items_calculadora {
+    width: 100%;
+    padding: 0; }
 
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
