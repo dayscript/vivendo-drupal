@@ -206,9 +206,6 @@ $(window).resize(function(){
       });
     });
   }
-jQuery('#tipo-wrapper').slideUp();
-jQuery('#constructora-wrapper').slideUp();
-jQuery('#rango-wrapper').slideUp();
-jQuery('#zona-wrapper').slideUp();
+
 
 })(jQuery);
