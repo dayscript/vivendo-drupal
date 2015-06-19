@@ -330,6 +330,8 @@ a.flex-next {
         height: 25px !important;
         width: 100% !important; }
     #modalContent .modal-forms-modal-content .popups-container .modal-scroll #modal-content {
+      width: 95% !important;
+      padding: 0 8px;
       width: 95% !important; }
       #modalContent .modal-forms-modal-content .popups-container .modal-scroll #modal-content .webform-client-form-1 {
         width: 95% !important; }
