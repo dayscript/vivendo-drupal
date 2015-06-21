@@ -61,7 +61,25 @@
       }
 
     } elseif ( $view->name == 'services_by_project' && $view->display_handler->display->id === 'page_2' ){
-      dpm( $query );
+      $dataPrice = arg(5);
+      
+      if ( $dataPrice != 'all' ){
+        
+        $priceRange = taxonomy_term_load( $dataPrice )->name;
+        
+        if ( count(explode('$', $priceRange)) > 2 ){
+          
+          $prices = explode('-', preg_replace("/[^0-9,-]/", "", str_replace(' a ', '-', $priceRange)));
+          
+          $query->where[1]['conditions'][3]['operator'] = 'BETWEEN';
+          $query->where[1]['conditions'][3]['value']    = $prices;
+          
+        }
+        
+      }
+      
+      dpm($query);
+      
     }
     
     
