@@ -60,6 +60,10 @@
 
       }
 
+    } elseif ( $view->name == 'services_by_project' && $view->display_handler->display->id === 'page_2' ){
+      dpm( $query );
     }
+    
+    
 
   }
