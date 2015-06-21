@@ -25,7 +25,7 @@
       $contactConstruct        = entity_create( 'entityform', array('type' =>'contacto_contructores') );
       $contactConstructWrapper = entity_metadata_wrapper( 'entityform', $contactConstruct );
 
-      $contactConstructWrapper->created               = Date('m/d/Y - H:i');
+      //$contactConstructWrapper->created               = Date('m/d/Y - H:i');
       $contactConstructWrapper->field_nombre          = $dataSend['name'];
       $contactConstructWrapper->field_apellidos       = $dataSend['lastName'];
       $contactConstructWrapper->field_email           = $dataSend['email'];
