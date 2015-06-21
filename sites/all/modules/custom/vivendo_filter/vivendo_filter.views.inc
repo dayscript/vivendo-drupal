@@ -67,15 +67,16 @@
         
         $priceRange = taxonomy_term_load( $dataPrice )->name;
         
-        if ( count(explode('$', $priceRange)) > 2 ){
-          
-          $prices = explode('-', preg_replace("/[^0-9,-]/", "", str_replace(' a ', '-', $priceRange)));
-          
-          $query->where[1]['conditions'][3]['operator'] = 'BETWEEN';
-          $query->where[1]['conditions'][3]['value']    = $prices;
-          
+        $priceRange = str_replace( 'Menos', '0', $priceRange );
+        $prices     = explode('-', preg_replace("/[^0-9,-]/", "", str_replace(' a ', '-', $priceRange)));
+
+        if ( count($prices) == 1 ){
+          $prices[] = $prices[0] * 40;
         }
-        
+
+        $query->where[1]['conditions'][3]['operator'] = 'BETWEEN';
+        $query->where[1]['conditions'][3]['value']    = $prices;
+          
       }
       
       dpm($query);
