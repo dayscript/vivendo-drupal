@@ -641,10 +641,15 @@ div#cboxLoadedContent {
   .intro .text-intro{
     font-size: 10px;
   }
-  .item-list ul li a {
-  width: 62px;
-  height: 51px;
-  padding: 71px 0px 35px 0px;
+  .item-list ul li {
+    display: inline-block;
+    width: 83%;
+    float: none!important;
+    a {
+      width: 62px;
+      height: 51px;
+      padding: 71px 0px 35px 0px;
+    }
   }
 }
 

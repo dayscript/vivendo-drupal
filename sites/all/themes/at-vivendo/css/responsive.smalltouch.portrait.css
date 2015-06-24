@@ -415,10 +415,14 @@ div#cboxLoadedContent {
     width: 342px; }
   #city_selector .intro .text-intro {
     font-size: 10px; }
-  #city_selector .item-list ul li a {
-    width: 62px;
-    height: 51px;
-    padding: 71px 0px 35px 0px; }
+  #city_selector .item-list ul li {
+    display: inline-block;
+    width: 83%;
+    float: none !important; }
+    #city_selector .item-list ul li a {
+      width: 62px;
+      height: 51px;
+      padding: 71px 0px 35px 0px; }
 
 div#cboxTopCenter {
   display: none; }
