@@ -659,12 +659,14 @@ div#cboxLoadedContent {
       margin: 0px 0 0 26px;
       display: inline-block;
     }
-    .disabled-city {
-      height: 75px;
-      padding: 14px 0 0 0!important;
-    }
+
   }
 }
+ .disabled-city {
+      height: 75px!important;
+      padding: 14px 0 0 0!important;
+
+  }
 .text-disabled {
         padding: 0 !important;
         margin: 0;
