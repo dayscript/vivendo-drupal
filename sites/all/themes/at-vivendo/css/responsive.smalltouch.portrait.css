@@ -414,4 +414,12 @@ div#cboxLoadedContent {
     margin: 0 0;
     width: 342px; }
 
+div#cboxTopCenter {
+  display: none; }
+
+div.logo {
+  font-size: 2.8em; }
+  div.logo img {
+    float: left; }
+
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
