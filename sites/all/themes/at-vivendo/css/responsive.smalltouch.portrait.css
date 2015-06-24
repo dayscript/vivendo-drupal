@@ -397,13 +397,16 @@ div#colorbox {
   height: 702px !important; }
 
 div#cboxWrapper {
-  width: 100% !important; }
+  width: 100% !important;
+  height: 702px !important; }
 
 div#cboxContent {
-  width: 93% !important; }
+  width: 93% !important;
+  height: 702px !important; }
 
 div#cboxLoadedContent {
-  width: 100% !important; }
+  width: 100% !important;
+  height: 702px !important; }
 
 #city_selector {
   width: 100% !important; }
