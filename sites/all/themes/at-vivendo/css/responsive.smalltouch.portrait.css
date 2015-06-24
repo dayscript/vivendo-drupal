@@ -391,4 +391,13 @@ a.flex-next {
     width: 100%;
     padding: 0; }
 
+div#colorbox {
+  width: 35% !important; }
+
+div#cboxWrapper {
+  width: 100%; }
+
+div#cboxContent {
+  width: 178px !important; }
+
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
