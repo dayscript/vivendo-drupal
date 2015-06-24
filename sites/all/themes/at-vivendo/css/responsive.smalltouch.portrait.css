@@ -419,13 +419,11 @@ div#cboxLoadedContent {
     font-size: 10px; }
   #city_selector .item-list ul .disabled-city {
     height: 75px !important;
-    padding: 14px 0 0 0 !important; }
+    padding: 0 0 0 0 !important; }
   #city_selector .item-list ul .text-disabled {
     padding: 0 !important;
     margin: 0;
-    width: 20px !important;
-    margin: 14px 0 0px 0px !important;
-    float: left !important; }
+    margin: 10px 0 0px 0px !important; }
   #city_selector .item-list ul li {
     display: inline-block;
     width: 83%;
