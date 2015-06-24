@@ -115,10 +115,10 @@ function global_filter_selector_callback_block(){
   $output .=     '<span class="text-intro">' . t('Encuentre aquí la más completa oferta de vivienda, casas y apartamentos en Colombia y la Florida EEUU.') . '</span>';
   $output .=   '</div>';
   $output .=   '<div class="item-list"><ul>';
-  $output .=     '<li><a href="/?field_ciudad=1" class="bogota"><span>Bogot&aacute;<br />Región centro</span></a></li>';
+  $output .=     '<li><a href="/?field_ciudad=1" class="bogota"><span>Bogot&aacute;&nbsp;<br />Región centro</span></a></li>';
   $output .=     '<li><a href="/?field_ciudad=2" class="cali"><span>Cali, Valle</span></a></li>';
   $output .=     '<li><a href="/?field_ciudad=766" class="costa"><span>Costa Atl&aacute;ntica</span></a></li>';
-  $output .=     '<li><a href="/?field_ciudad=769" class="medellin"><span>Medell&iacute;n<br />Antioquia</span></a></li>';
+  $output .=     '<li><a href="/?field_ciudad=769" class="medellin"><span>Medell&iacute;n&nbsp;<br />Antioquia</span></a></li>';
   $output .=     '<li><a href="/?field_ciudad=1141" class="ejecafetero"><span>Eje Cafetero</span></a></li>';
   $output .=     '<li><a href="/?field_ciudad=1137" class="santanderes"><span>Santanderes</span></a></li>';
   $output .=     '<li class="disabled-city"><a class="florida"></a><span class="text-disabled"><strong>Próximamente</strong><br>Florida, EEUU</span></li>';
