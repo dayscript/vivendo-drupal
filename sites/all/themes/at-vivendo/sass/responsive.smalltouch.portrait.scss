@@ -665,10 +665,11 @@ div#cboxLoadedContent {
   }
 }
 .text-disabled {
-        padding: 0!important;
+        padding: 0 !important;
         margin: 0;
-        width: 69%!important;
-        margin-top: 14px;
+        width: 20px!important;
+        margin: 14px 0 0px 0px !important;
+        float: left!important;
       }
 
 div#cboxTopCenter {
