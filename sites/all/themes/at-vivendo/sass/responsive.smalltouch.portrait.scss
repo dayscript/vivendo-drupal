@@ -645,10 +645,12 @@ div#cboxLoadedContent {
     display: inline-block;
     width: 83%;
     float: none!important;
+    text-align: left;
     a {
-      width: 62px;
-      height: 51px;
-      padding: 71px 0px 35px 0px;
+        width: 84px;
+        height: 89px;
+      padding: 0 0px 0px 0px;
+      margin: 0;
     }
   }
 }

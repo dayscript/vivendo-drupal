@@ -418,11 +418,13 @@ div#cboxLoadedContent {
   #city_selector .item-list ul li {
     display: inline-block;
     width: 83%;
-    float: none !important; }
+    float: none !important;
+    text-align: left; }
     #city_selector .item-list ul li a {
-      width: 62px;
-      height: 51px;
-      padding: 71px 0px 35px 0px; }
+      width: 84px;
+      height: 89px;
+      padding: 0 0px 0px 0px;
+      margin: 0; }
 
 div#cboxTopCenter {
   display: none; }
