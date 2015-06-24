@@ -428,6 +428,9 @@ div#cboxLoadedContent {
       margin: 0 0 0 10px; }
       #city_selector .item-list ul li a br {
         display: none; }
+    #city_selector .item-list ul li span {
+      margin: 0px 0 0 56px;
+      display: inline-block; }
 
 div#cboxTopCenter {
   display: none; }
