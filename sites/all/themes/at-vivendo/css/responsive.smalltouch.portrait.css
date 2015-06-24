@@ -407,7 +407,8 @@ div#cboxContent {
 div#cboxLoadedContent {
   width: 100% !important;
   height: 702px !important;
-  overflow: scroll !important; }
+  overflow: scroll !important;
+  overflow-x: hidden !important; }
 
 #city_selector {
   width: 100% !important; }
