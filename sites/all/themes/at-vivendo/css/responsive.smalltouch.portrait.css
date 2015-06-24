@@ -432,6 +432,9 @@ div#cboxLoadedContent {
     #city_selector .item-list ul li span {
       margin: 0px 0 0 26px;
       display: inline-block; }
+    #city_selector .item-list ul li .disabled-city {
+      height: 75px;
+      padding: 14px 0 0 0 !important; }
 
 .text-disabled {
   padding: 0 !important;
