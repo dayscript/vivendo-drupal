@@ -392,12 +392,21 @@ a.flex-next {
     padding: 0; }
 
 div#colorbox {
-  width: 35% !important; }
+  width: 100% !important; }
 
 div#cboxWrapper {
-  width: 100%; }
+  width: 100% !important; }
 
 div#cboxContent {
-  width: 178px !important; }
+  width: 93% !important; }
+
+div#cboxLoadedContent {
+  width: 100% !important; }
+
+#city_selector {
+  width: 100% !important; }
+  #city_selector .logo {
+    margin: 0 0;
+    width: 342px; }
 
 /*# sourceMappingURL=responsive.smalltouch.portrait.css.map */
