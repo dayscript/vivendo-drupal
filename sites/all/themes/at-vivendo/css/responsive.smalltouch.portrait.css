@@ -413,7 +413,7 @@ div#cboxLoadedContent {
   #city_selector .logo {
     margin: 0 0;
     width: 342px; }
-  #city_selector .intro.text-intro {
+  #city_selector .intro .text-intro {
     font-size: 10px; }
 
 div#cboxTopCenter {
