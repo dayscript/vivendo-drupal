@@ -659,6 +659,14 @@ div#cboxLoadedContent {
       margin: 0px 0 0 26px;
       display: inline-block;
     }
+    .disabled-city {
+        .text-disabled {
+        padding: 0!important;
+        margin: 0;
+        width: 69%;
+        margin-top: 14px;
+      }
+    }
   }
 }
 
