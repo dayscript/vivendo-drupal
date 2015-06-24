@@ -392,7 +392,9 @@ a.flex-next {
     padding: 0; }
 
 div#colorbox {
-  width: 100% !important; }
+  width: 100% !important;
+  top: 119px !important;
+  height: 702px !important; }
 
 div#cboxWrapper {
   width: 100% !important; }
