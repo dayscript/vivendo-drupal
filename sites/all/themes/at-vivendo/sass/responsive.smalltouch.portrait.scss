@@ -643,37 +643,39 @@ div#cboxLoadedContent {
   .intro .text-intro{
     font-size: 10px;
   }
-  .item-list ul li {
-    display: inline-block;
-    width: 83%;
-    float: none!important;
-    text-align: left;
-    a {
-      width: 0px;
-      height: 86px;
-      padding: 0 0px 0px 75px;
-      margin: 0 0 0 10px;
-    br{display: none;}
-    }
-    span{
-      margin: 0px 0 0 26px;
-      display: inline-block;
-    }
+  .item-list ul {
 
-  }
-}
- .disabled-city {
+    .disabled-city {
       height: 75px!important;
       padding: 14px 0 0 0!important;
-
-  }
-.text-disabled {
-        padding: 0 !important;
-        margin: 0;
-        width: 20px!important;
-        margin: 14px 0 0px 0px !important;
-        float: left!important;
       }
+    .text-disabled {
+            padding: 0 !important;
+            margin: 0;
+            width: 20px!important;
+            margin: 14px 0 0px 0px !important;
+            float: left!important;
+    }
+
+    li {
+      display: inline-block;
+      width: 83%;
+      float: none!important;
+      text-align: left;
+      a {
+        width: 0px;
+        height: 86px;
+        padding: 0 0px 0px 75px;
+        margin: 0 0 0 10px;
+      br{display: none;}
+      }
+      span{
+        margin: 0px 0 0 26px;
+        display: inline-block;
+        }
+      }
+  }
+}
 
 div#cboxTopCenter {
   display: none;
