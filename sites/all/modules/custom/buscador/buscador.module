@@ -573,6 +573,7 @@ function buscador_form_alter(&$form, &$form_state, $form_id){
     if ( !isset($_SESSION) ) { session_start(); }
     
     $parentsZone = taxonomy_get_tree( '3' );
+    $regions['_none'] = t('- Ninguno -');
 
     foreach( $parentsZone as $parent ) {
 
@@ -581,6 +582,8 @@ function buscador_form_alter(&$form, &$form_state, $form_id){
       }
 
     }
+    
+    $form['field_zona']['und']['#options'] = $regions;
     
     $_SESSION['form_construct']= $form;
     $_SESSION['regions']= $regions;
