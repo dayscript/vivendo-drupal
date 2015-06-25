@@ -568,7 +568,7 @@ function buscador_confirm_zone_has_project( $key ){
 
 function buscador_form_alter(&$form, &$form_state, $form_id){
   
-  if ( $form_id == 'constructora_node_form' ){
+  if ( $form_id == 'constructora_node_form' || $form_id == 'proyecto_node_form'){
     
     if ( !isset($_SESSION) ) { session_start(); }
     
@@ -583,7 +583,7 @@ function buscador_form_alter(&$form, &$form_state, $form_id){
 
     }
     
-    $form['field_zona']['und']['#options'] = $regions;
+    $form['field_regiones']['und']['#options'] = $regions;
     
     $_SESSION['form_construct']= $form;
     $_SESSION['regions']= $regions;
