@@ -117,10 +117,10 @@ function buscador_formulario_form($node, &$form_state)
       case 769:
         $ciudad = 'Medellín';
         break;
-      case 1137:
+      case 1141:
         $ciudad = 'Eje Cafetero';
         break;
-      case 1141:
+      case 1137:
         $ciudad = 'Santanderes';
         break;
     }
