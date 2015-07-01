@@ -95,7 +95,7 @@ function buscador_formulario_form($node, &$form_state)
 	'#markup' => '<a class="link-list-compare" href="'.$base_url.'?clear-global-filters=field_ciudad">Cambiar Ciudad</a>'
     );
     
-    $value = global_filter_get_session_value('field_ciudad');
+    $value = global_filter_get_session_value('field_regiones');
     $filterCity = $value;
     
     /*if (is_array($value) && isset($value[0]) && $value[0] == 2) {
@@ -105,22 +105,22 @@ function buscador_formulario_form($node, &$form_state)
     }*/
     
     switch( $value[0] ){
-      case 1:
+      case 3:
         $ciudad = 'Bogotá';
         break;
-      case 2: 
+      case 337: 
         $ciudad = 'Cali';
         break;
-      case 766:
+      case 954:
         $ciudad = 'Costa Atlántica';
         break;
       case 769:
         $ciudad = 'Medellín';
         break;
-      case 1141:
+      case 1155:
         $ciudad = 'Eje Cafetero';
         break;
-      case 1137:
+      case 1176:
         $ciudad = 'Santanderes';
         break;
     }
@@ -478,7 +478,7 @@ function buscador_field_attach_view_alter( &$output, $context ) {
 
 function _get_result_search( $data ) {
   
-  $city = global_filter_get_session_value('field_ciudad');
+  $region = global_filter_get_session_value('field_regiones');
 
   $search = db_select( 'node', 'noPC' )
       ->fields( 'noPC', array('nid') )
@@ -486,8 +486,8 @@ function _get_result_search( $data ) {
       ->condition( 'noPC.type', array('proyecto', 'constructora'), 'IN' )
       ->range(0, 15);
 
-  $search->leftJoin( 'field_data_field_ciudad', 'city', 'city.entity_id = noPC.nid' );
-  $search->condition( 'city.field_ciudad_tid', $city, '=' );
+  $search->leftJoin( 'field_data_field_regiones', 'region', 'region.entity_id = noPC.nid' );
+  $search->condition( 'region.field_regiones_tid', $region, '=' );
 
   $search->leftJoin( 'field_data_field_codigo', 'code', 'code.entity_id = noPC.nid' );
   
