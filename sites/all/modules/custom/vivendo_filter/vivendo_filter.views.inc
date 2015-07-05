@@ -62,11 +62,11 @@
 
     } elseif ( $view->name == 'services_by_project' && $view->display_handler->display->id === 'page_2' ){
       $dataPrice = arg(5);
+      $dataName  = arg(6); 
       
       if ( $dataPrice != 'all' ){
         
         $priceRange = taxonomy_term_load( $dataPrice )->name;
-        
         $priceRange = str_replace( 'Menos', '0', $priceRange );
         $prices     = explode('-', preg_replace("/[^0-9,-]/", "", str_replace(' a ', '-', $priceRange)));
 
@@ -79,9 +79,17 @@
           
       }
       
-      dpm($query);
+      if ( $dataName != '' ) {
+        
+        $title = str_replace( '_', ' ', $dataName );
+        
+        $query->where[1]['conditions'][4]['operator'] = 'LIKE';
+        $query->where[1]['conditions'][4]['value']    = '%' . $title . '%';
+        
+      }
       
-    }
+      
+    } 
     
     
 
