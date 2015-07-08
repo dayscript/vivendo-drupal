@@ -208,7 +208,7 @@ $(window).resize(function(){
          $(this).text( label );
       });
     });
-    $('#text-wrapper #edit-text').attr('value','BUSQUEDA POR PALABRA');
+    //$('#text-wrapper #edit-text').attr('value','BUSQUEDA POR PALABRA');
     if(check <= 800){
       jQuery('#tipo-wrapper').slideUp();
       jQuery('#constructora-wrapper').slideUp();
