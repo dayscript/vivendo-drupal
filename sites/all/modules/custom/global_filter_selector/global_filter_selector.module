@@ -107,8 +107,6 @@ function global_filter_selector_callback_block(){
 
   //$zonas = taxonomy_get_tree(taxonomy_vocabulary_machine_name_load('zonas')->vid);
   
-  
-  
   $output .= '<div id="city_selector">';
   $output .=   '<div class="logo">';
   $output .=     '<img alt="Vivendo.co" src="/sites/all/themes/at-vivendo/images/logos/logo-vivendo.png"/>';
@@ -122,7 +120,7 @@ function global_filter_selector_callback_block(){
   $output .=     '<li><a href="/?field_regiones=3" class="bogota"><span>Bogot&aacute;&nbsp;<br />y región centro</span></a></li>';
   $output .=     '<li><a href="/?field_regiones=337" class="cali"><span>Cali y región sur occidente</span></a></li>';
   $output .=     '<li><a href="/?field_regiones=954" class="costa"><span>Costa Atl&aacute;ntica</span></a></li>';
-  $output .=     '<li><a href="/?field_regiones=769" class="medellin"><span>Medell&iacute;n&nbsp;<br />y Antioquia</span></a></li>';
+  $output .=     '<li><a href="/?field_regiones=1372" class="medellin"><span>Medell&iacute;n&nbsp;<br />y Antioquia</span></a></li>';
   $output .=     '<li><a href="/?field_regiones=1155" class="ejecafetero"><span>Eje Cafetero</span></a></li>';
   $output .=     '<li><a href="/?field_regiones=1176" class="santanderes"><span>Santanderes</span></a></li>';
   $output .=     '<li class="disabled-city"><a class="florida"></a><span class="text-disabled"><strong>Próximamente</strong><br>Florida, EEUU</span></li>';
