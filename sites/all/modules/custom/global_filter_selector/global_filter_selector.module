@@ -105,6 +105,10 @@ function global_filter_selector_callback_block(){
 
   $output = '';
 
+  //$zonas = taxonomy_get_tree(taxonomy_vocabulary_machine_name_load('zonas')->vid);
+  
+  
+  
   $output .= '<div id="city_selector">';
   $output .=   '<div class="logo">';
   $output .=     '<img alt="Vivendo.co" src="/sites/all/themes/at-vivendo/images/logos/logo-vivendo.png"/>';
@@ -112,13 +116,13 @@ function global_filter_selector_callback_block(){
   $output .=     '<span style="color:#cd002d">co</span>';
   $output .=   '</div>';
   $output .=   '<div class="intro">';
-  $output .=     '<span class="text-intro">' . t('Encuentre aquí la más completa oferta de vivienda, casas y apartamentos en Colombia y la Florida EEUU.') . '</span>';
+  $output .=     '<span class="text-intro">' . t('Encuentre aquí la más completa oferta de vivienda, casas y apartamentos en Colombia y Florida EEUU.') . '</span>';
   $output .=   '</div>';
   $output .=   '<div class="item-list"><ul>';
-  $output .=     '<li><a href="/?field_regiones=3" class="bogota"><span>Bogot&aacute;&nbsp;<br />Región centro</span></a></li>';
-  $output .=     '<li><a href="/?field_regiones=337" class="cali"><span>Cali, Valle</span></a></li>';
+  $output .=     '<li><a href="/?field_regiones=3" class="bogota"><span>Bogot&aacute;&nbsp;<br />y región centro</span></a></li>';
+  $output .=     '<li><a href="/?field_regiones=337" class="cali"><span>Cali y región sur occidente</span></a></li>';
   $output .=     '<li><a href="/?field_regiones=954" class="costa"><span>Costa Atl&aacute;ntica</span></a></li>';
-  $output .=     '<li><a href="/?field_regiones=769" class="medellin"><span>Medell&iacute;n&nbsp;<br />Antioquia</span></a></li>';
+  $output .=     '<li><a href="/?field_regiones=769" class="medellin"><span>Medell&iacute;n&nbsp;<br />y Antioquia</span></a></li>';
   $output .=     '<li><a href="/?field_regiones=1155" class="ejecafetero"><span>Eje Cafetero</span></a></li>';
   $output .=     '<li><a href="/?field_regiones=1176" class="santanderes"><span>Santanderes</span></a></li>';
   $output .=     '<li class="disabled-city"><a class="florida"></a><span class="text-disabled"><strong>Próximamente</strong><br>Florida, EEUU</span></li>';
