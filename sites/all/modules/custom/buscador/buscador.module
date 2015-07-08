@@ -402,7 +402,7 @@ function buscador_formulario_form($node, &$form_state)
         '#prefix' => '<div id="text-wrapper" class="wrapper" data-url="vivendo-search">',
         '#suffix' => '</div>',
         '#type' => 'textfield',
-        '#title' => 'Buscar por palabra',
+        /*'#title' => 'Buscar por palabra',*/
         '#size' => 29
     );
     
