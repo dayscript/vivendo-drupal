@@ -124,7 +124,7 @@ function global_filter_selector_callback_block(){
     
     if ( $regionDataComplete->field_estado_region['und'][0]['value'] == 'activo' ){
       $name   = '<span>'.$regionDataComplete->name.'</span>';
-      $action = 'href="/?field_regiones='.$regionDataComplete->tid.'"';
+      $action = 'href="/?field_region='.$regionDataComplete->tid.'"';
     } else{
       $name   = '<span class="text-disabled"><strong>Próximamente</strong><br>'.$regionDataComplete->name.'</span>';
       $action = 'class="disabled"';
