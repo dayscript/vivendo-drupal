@@ -92,10 +92,10 @@ function buscador_formulario_form($node, &$form_state)
     );
     
     $form['wrapper']['cambiar_ciudad'] = array(
-	'#markup' => '<a class="link-list-compare" href="'.$base_url.'?clear-global-filters=field_regiones">Cambiar región</a>'
+	'#markup' => '<a class="link-list-compare" href="'.$base_url.'?clear-global-filters=field_region">Cambiar región</a>'
     );
     
-    $value = global_filter_get_session_value('field_regiones');
+    $value = global_filter_get_session_value('field_region');
     $filterCity = $value;
     
     $regions = _load_regions(); 
@@ -474,7 +474,7 @@ function buscador_field_attach_view_alter( &$output, $context ) {
 
 function _get_result_search( $data ) {
   
-  $region = global_filter_get_session_value('field_regiones');
+  $region = global_filter_get_session_value('field_region');
 
   $search = db_select( 'node', 'noPC' )
       ->fields( 'noPC', array('nid') )

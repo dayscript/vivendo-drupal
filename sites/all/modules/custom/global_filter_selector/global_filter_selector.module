@@ -45,7 +45,7 @@ function global_filter_selector_block_info() {
  */
 function global_filter_selector_status(){
 //  print_r($_SESSION);
-  $value = global_filter_get_session_value('field_regiones');
+  $value = global_filter_get_session_value('field_region');
   if(is_array($value) && isset($value[0]))
     return true;
   else
@@ -61,7 +61,7 @@ function global_filter_selector_block_view($delta = '') {
       $block['subject'] = t('Selector de ciudad');
       if (user_access('access content')) {
         if(global_filter_selector_status()){
-          $items[] = array('data' => l("Clear", '',array('query'=>array("clear-global-filters"=>"field_regiones"))));
+          $items[] = array('data' => l("Clear", '',array('query'=>array("clear-global-filters"=>"field_region"))));
         } else{
             drupal_add_js('
               jQuery(document).ready(function(){
