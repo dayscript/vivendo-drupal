@@ -114,7 +114,7 @@ function buscador_formulario_form($node, &$form_state)
       case 954:
         $ciudad = 'Costa Atlántica';
         break;
-      case 769:
+      case 1372:
         $ciudad = 'Medellín';
         break;
       case 1155:
