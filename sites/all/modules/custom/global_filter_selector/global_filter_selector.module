@@ -105,7 +105,7 @@ function global_filter_selector_callback_block(){
 
   $output = '';
 
-  //$zonas = taxonomy_get_tree(taxonomy_vocabulary_machine_name_load('zonas')->vid);
+  $regiones = taxonomy_get_tree(taxonomy_vocabulary_machine_name_load('regiones')->vid);
   
   $output .= '<div id="city_selector">';
   $output .=   '<div class="logo">';
@@ -117,13 +117,34 @@ function global_filter_selector_callback_block(){
   $output .=     '<span class="text-intro">' . t('Encuentre aquí la más completa oferta de vivienda, casas y apartamentos en Colombia y Florida EEUU.') . '</span>';
   $output .=   '</div>';
   $output .=   '<div class="item-list"><ul>';
-  $output .=     '<li><a href="/?field_regiones=3" class="bogota"><span>Bogot&aacute;&nbsp;<br />y región centro</span></a></li>';
+  
+  foreach( $regiones as $region ){
+    
+    $regionDataComplete = taxonomy_term_load($region->tid);
+    
+    if ( $regionDataComplete->field_estado_region['und'][0]['value'] == 'activo' ){
+      $name   = '<span>'.$regionDataComplete->name.'</span>';
+      $action = 'href="/?field_regiones='.$regionDataComplete->tid.'"';
+    } else{
+      $name   = '<span class="text-disabled"><strong>Próximamente</strong><br>'.$regionDataComplete->name.'</span>';
+      $action = 'class="disabled"';
+    }
+    
+    $output .=     '<li>';
+    $output .=       '<a '.$action.'>';
+    $output .=         '<img src="'.image_style_url('images_region_94x94', $regionDataComplete->field_image['und'][0]['uri']).'" alt="'.$regionDataComplete->name.'" title="'.$regionDataComplete->name.'" />';
+    $output .=         $name;
+    $output .=       '</a>';
+    $output .=     '</li>';
+  }
+  
+  /*$output .=     '<li><a href="/?field_regiones=3" class="bogota"><span>Bogot&aacute;&nbsp;<br />y región centro</span></a></li>';
   $output .=     '<li><a href="/?field_regiones=337" class="cali"><span>Cali y región sur occidente</span></a></li>';
   $output .=     '<li><a href="/?field_regiones=954" class="costa"><span>Costa Atl&aacute;ntica</span></a></li>';
   $output .=     '<li><a href="/?field_regiones=1372" class="medellin"><span>Medell&iacute;n&nbsp;<br />y Antioquia</span></a></li>';
   $output .=     '<li><a href="/?field_regiones=1155" class="ejecafetero"><span>Eje Cafetero</span></a></li>';
   $output .=     '<li><a href="/?field_regiones=1176" class="santanderes"><span>Santanderes</span></a></li>';
-  $output .=     '<li class="disabled-city"><a class="florida"></a><span class="text-disabled"><strong>Próximamente</strong><br>Florida, EEUU</span></li>';
+  $output .=     '<li class="disabled-city"><a class="florida"></a><span class="text-disabled"><strong>Próximamente</strong><br>Florida, EEUU</span></li>';*/
   $output .=   '</ul></div>';
   $output .= '</div>';
 

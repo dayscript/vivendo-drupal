@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the vivendo new region feature.
+ */
+
+include_once 'vivendo_new_region.features.inc';

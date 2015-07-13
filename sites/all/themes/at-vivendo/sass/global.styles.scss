@@ -2663,12 +2663,9 @@ h2.pane-title.block-title{
         a{
           vertical-align: bottom;
           width: 120px;
-          padding-top: 123px;
           display: inline-block;
           color: $red_text;
-          background: url("../images/icons/general.png") no-repeat;
-          background-size: 100% auto;
-          height: 45px;
+          height: 167px;
           margin: 0 auto 15px;
           &.bogota{
             background-image: url("../images/icons/bogota.png");
@@ -2691,6 +2688,21 @@ h2.pane-title.block-title{
           &.florida{
             background-image: url("../images/icons/florida.png");
             height: 39px;
+          }
+          &.disabled{
+            width: 264px !important;
+            height: 120px !important;
+            background: #e4e4e4;
+            border-radius: 58px;
+            text-decoration: none;
+            img {
+              float: left;
+            }
+            .text-disabled{
+              padding-top: 35px;    
+              display: block;
+              color: #000;
+            }
           }
         }
         &.disabled-city{
