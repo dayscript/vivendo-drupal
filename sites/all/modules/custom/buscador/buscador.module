@@ -101,22 +101,22 @@ function buscador_formulario_form($node, &$form_state)
     $regions = _load_regions(); 
     
     switch( $value[0] ){
-      case 3:
-        $ciudad = 'Bogotá';
+      case 1463:
+        $ciudad = 'Bogotá y región centro';
         break;
-      case 337: 
-        $ciudad = 'Cali';
+      case 1464: 
+        $ciudad = 'Cali y región sur occidente';
         break;
-      case 954:
+      case 1465:
         $ciudad = 'Costa Atlántica';
         break;
-      case 1372:
-        $ciudad = 'Medellín';
+      case 1466:
+        $ciudad = 'Medellín y Antioquia';
         break;
-      case 1155:
+      case 1468:
         $ciudad = 'Eje Cafetero';
         break;
-      case 1176:
+      case 1467:
         $ciudad = 'Santanderes';
         break;
     }
