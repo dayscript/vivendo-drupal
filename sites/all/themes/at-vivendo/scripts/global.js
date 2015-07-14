@@ -208,11 +208,11 @@ $(window).resize(function(){
          $(this).text( label );
       });
     });
+    
     $('body').each(function(){
-      if(parseInt($(this).innerWidth()) <== 740 ){
+      if( parseInt($(this).innerWidth()) <= 740 ){
         $('#text-wrapper #edit-text').attr('placeholder','BUSQUEDA POR PALABRA');
       }
-      
     });
     
     if(check <= 800){
