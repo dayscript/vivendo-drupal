@@ -749,7 +749,7 @@ body.not-front #highlighted-wrapper {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003727}}
 .view-id-noticias .views-field-field-image {
-  float: none;
+  float: none !important;
   margin: 0 auto;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003730}}
@@ -757,4 +757,10 @@ body.not-front #highlighted-wrapper {
   width: 200px;
   margin: 0 auto;
   display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003737}}
+.view-id-noticias .views-field-view-node a {
+  display: block;
+  padding: 6px 0;
+  text-align: center;
 }

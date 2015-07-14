@@ -725,12 +725,19 @@ body.not-front{
 
 .view-id-noticias{
   .views-field-field-image{
-    float: none;
+    float: none !important;
     margin: 0 auto;
     a{
       width: 200px;
       margin: 0 auto;
       display: block;
+    }
+  }
+  .views-field-view-node{
+    a{
+      display: block;
+      padding: 6px 0;
+      text-align: center;
     }
   }
 }
