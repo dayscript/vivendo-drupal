@@ -398,6 +398,10 @@ a.flex-next {
   }
 }
 
+#nav-wrapper{
+  margin: 0px;
+}
+
 .page-proyectos{
   #page-wrapper{
     #page{
@@ -712,3 +716,9 @@ div.logo{
   float: left;
   }
 }
+
+body.not-front{
+  #highlighted-wrapper{
+    height: 175px;
+  }
+} 
