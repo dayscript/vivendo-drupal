@@ -656,7 +656,9 @@ div#cboxLoadedContent {
   .intro .text-intro{
     font-size: 10px;
   }
-  .item-list ul {
+  .item-list {
+    margin-top: 14px !important;
+    ul {
 
     .disabled-city {
       height: 75px!important;
@@ -666,7 +668,6 @@ div#cboxLoadedContent {
             padding: 0 !important;
             margin: 0;
             margin: 10px 0 0px 0px !important;
-
     }
 
     li {
@@ -675,18 +676,26 @@ div#cboxLoadedContent {
       float: none!important;
       text-align: left;
       a {
-        width: 0px;
-        height: 86px;
-        padding: 0 0px 0px 75px;
+        width: 100%;
+        height: auto;
+        padding: 0;
         margin: 0 0 0 10px;
-      br{display: none;}
+        br{display: none;}
+        img{
+          float: left;
+          max-width: 84px;
+          height: 84px;
+        }
       }
       span{
-        margin: 0px 0 0 26px;
+        margin: 12px 0 0 11px;
         display: inline-block;
+        width: 60%;
         }
       }
   }
+  }
+  
 }
 
 div#cboxTopCenter {

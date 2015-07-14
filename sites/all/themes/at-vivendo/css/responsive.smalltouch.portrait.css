@@ -672,51 +672,62 @@ div#cboxLoadedContent {
 #city_selector .intro .text-intro {
   font-size: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003661}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003659}}
+#city_selector .item-list {
+  margin-top: 14px !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003663}}
 #city_selector .item-list ul .disabled-city {
   height: 75px !important;
   padding: 0 0 0 0 !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003665}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003667}}
 #city_selector .item-list ul .text-disabled {
   padding: 0 !important;
   margin: 0;
   margin: 10px 0 0px 0px !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003672}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003673}}
 #city_selector .item-list ul li {
   display: inline-block;
   width: 83%;
   float: none !important;
   text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003677}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003678}}
 #city_selector .item-list ul li a {
-  width: 0px;
-  height: 86px;
-  padding: 0 0px 0px 75px;
+  width: 100%;
+  height: auto;
+  padding: 0;
   margin: 0 0 0 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003682}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003683}}
 #city_selector .item-list ul li a br {
   display: none;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003684}}
+#city_selector .item-list ul li a img {
+  float: left;
+  max-width: 84px;
+  height: 84px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003690}}
 #city_selector .item-list ul li span {
-  margin: 0px 0 0 26px;
+  margin: 12px 0 0 11px;
   display: inline-block;
+  width: 60%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003692}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003701}}
 div#cboxTopCenter {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003696}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003705}}
 div.logo {
   font-size: 2.8em !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003698}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003707}}
 div.logo img {
   float: left;
 }
