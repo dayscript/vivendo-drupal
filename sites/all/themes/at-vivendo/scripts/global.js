@@ -224,6 +224,13 @@ $(window).resize(function(){
     $('body').each(function(){
       if( parseInt($(this).innerWidth()) <= 740 ){
         $('#text-wrapper #edit-text').attr('placeholder','BUSQUEDA POR PALABRA');
+        $('#mini-panel-footer_4_columnas h4.drop-down-footer').on('click', function(){
+          if($(this).siblings('ul').css('display') == 'none'){
+            $(this).siblings('ul').show();
+          } else {
+            $(this).siblings('ul').hide();
+          }
+        });
       }
     });
     
