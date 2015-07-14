@@ -672,9 +672,10 @@ div#cboxLoadedContent {
 
     li {
       display: inline-block;
-      width: 83%;
-      float: none!important;
+      width: 100%;
+      float: none !important;
       text-align: left;
+      margin: 0;
       a {
         width: 100%;
         height: auto;
@@ -685,6 +686,9 @@ div#cboxLoadedContent {
           float: left;
           max-width: 84px;
           height: 84px;
+        }
+        &.disabled{
+          display: none;
         }
       }
       span{
