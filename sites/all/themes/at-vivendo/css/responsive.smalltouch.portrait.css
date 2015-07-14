@@ -516,7 +516,7 @@ a.flex-next {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003512}}
 #region-wrapper {
-  padding: 0;
+  padding: 0 !important;
   margin: 0;
 }
 
