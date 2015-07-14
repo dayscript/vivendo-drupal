@@ -30,6 +30,13 @@
             $('#mapa').animate({height: "400px"}, 700);
             button.removeClass().addClass('b-up');
 
+          } else if ( $('#highlighted-wrapper').height() === 175 ) {
+
+            $('.front .view-proyectos-destacados').show();
+            $('#highlighted-wrapper').animate({height: "455px"}, 700);
+            $('#mapa').animate({height: "400px"}, 700);
+            button.removeClass().addClass('b-up');
+
           }
 
           event.preventDefault();
