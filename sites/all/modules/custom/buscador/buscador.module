@@ -93,7 +93,7 @@ function buscador_formulario_form($node, &$form_state)
     
     
     $form['wrapper']['cambiar_ciudad'] = array(
-	'#markup' => '<a class="link-list-compare" href="'.$base_url.'?clear-global-filters=field_region">Cambiar región</a>'
+	'#markup' => '<div class="wrapper"><a class="link-list-compare" href="'.$base_url.'?clear-global-filters=field_region">Cambiar región</a></div>'
     );
     $form['wrapper']['filter_global_responsive'] = array(
         '#markup' => '<div id="block-block-18"><div class="filter-search">FILTRO DE BUSQUEDA</div></div>'
