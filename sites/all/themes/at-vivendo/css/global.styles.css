@@ -3652,3 +3652,13 @@ a.link-proyects-more {
 #block-panels-mini-constructoraresponsive {
   display: none;
 }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000034021}}
+.project-link-responsive {
+  display: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000034025}}
+.project-link-desktop {
+  display: block;
+}
