@@ -770,9 +770,9 @@ body.not-front{
 }
 
 .project-link-responsive{
-  display: block;
+  display: block !important;
 }
 
 .project-link-desktop{
-  display: none;
+  display: none !important;
 }

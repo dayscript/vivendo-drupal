@@ -793,10 +793,10 @@ body.not-front #highlighted-wrapper {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003772}}
 .project-link-responsive {
-  display: block;
+  display: block !important;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003776}}
 .project-link-desktop {
-  display: none;
+  display: none !important;
 }
