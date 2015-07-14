@@ -722,3 +722,15 @@ body.not-front{
     height: 175px;
   }
 } 
+
+.view-id-noticias{
+  .views-field-field-image{
+    float: none;
+    margin: 0 auto;
+    a{
+      width: 200px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}
