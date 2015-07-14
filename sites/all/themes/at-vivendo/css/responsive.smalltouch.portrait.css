@@ -764,3 +764,8 @@ body.not-front #highlighted-wrapper {
   padding: 6px 0;
   text-align: center;
 }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.portrait\.scss}line{font-family:\00003747}}
+.view-tutoriales .view-content.ui-accordion .ui-accordion-content {
+  padding: 15px 10px !important;
+}
