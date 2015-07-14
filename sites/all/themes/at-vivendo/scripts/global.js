@@ -19,7 +19,12 @@
           if ( $('#highlighted-wrapper').height() === 455 ) {
 
             $('.front .view-proyectos-destacados').hide();
-            $('#highlighted-wrapper').animate({height: "115px"}, 700);
+            if( parseInt($(this).innerWidth()) > 740 ){
+              $('#highlighted-wrapper').animate({height: "115px"}, 700);
+            } else {
+              $('#highlighted-wrapper').animate({height: "175px"}, 700);
+            }
+            
             $('#mapa').animate({height: "59px"}, 700);
             button.removeClass().addClass('b-down');
 
