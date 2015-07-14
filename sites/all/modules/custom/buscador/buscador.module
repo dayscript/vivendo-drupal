@@ -75,7 +75,6 @@ function buscador_formulario_form($node, &$form_state)
 
     $filterValueDefault = array(
         'ciudad'       => '',
-        'ciudad'       => '',
         'zona'         => 0,
         'tipo'         => 0,
         'constructora' => 0,
@@ -91,8 +90,13 @@ function buscador_formulario_form($node, &$form_state)
         '#suffix' => '</div>',
     );
     
+    
+    
     $form['wrapper']['cambiar_ciudad'] = array(
 	'#markup' => '<a class="link-list-compare" href="'.$base_url.'?clear-global-filters=field_region">Cambiar región</a>'
+    );
+    $form['wrapper']['filter_global_responsive'] = array(
+        '#markup' => '<div id="block-block-18"><div class="filter-search">FILTRO DE BUSQUEDA</div></div>'
     );
     
     $value = global_filter_get_session_value('field_region');

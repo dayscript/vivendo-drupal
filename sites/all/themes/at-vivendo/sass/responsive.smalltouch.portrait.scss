@@ -515,14 +515,11 @@ a.flex-next {
   margin: 0;
   padding: 13px;
   color: #fff;
-  .block-inner {
-    .block-content{
-      .filter-search:after{
-      content:"                         \25bc";
-      white-space: pre-wrap;
-     }
-    }
+  .filter-search:after{
+    content:"                         \25bc";
+    white-space: pre-wrap;
   }
+  
 }
 
 .view-tutoriales{
