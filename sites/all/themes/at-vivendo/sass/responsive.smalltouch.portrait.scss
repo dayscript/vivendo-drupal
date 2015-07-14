@@ -62,11 +62,11 @@ div#leaderboard-wrapper {
 span.toggler{
   div.text{
     float: left;
-    padding: 13px;
+    padding: 18px 13px;
   }
   div.icon{
     text-align: right;
-    padding: 13px;
+    padding: 18px 13px;
   }
 
 }
@@ -137,10 +137,15 @@ a.link-list-compare {
     background: #DD0024;
     border-top: 1px solid;
     margin: 0!important;
+    padding: 8px 0;
     .form-type-textfield{
-      margin: 0 11px!important;
+      margin: 0 5% !important;
+      width: 90%;
       input{
       color:#B7B7B7;
+      padding: 5px;
+      width: auto;
+      border: 1px solid #ccc;
       }
     }
   }
@@ -156,7 +161,9 @@ section#block-views-proyectos-destacados-block {
           .block-content{
             .rtecenter{
               img{
-                height: 68px!important;
+                height: 68px !important;
+                width: 82% !important;
+                margin: 0 auto;
               }
             }
           }
