@@ -208,7 +208,13 @@ $(window).resize(function(){
          $(this).text( label );
       });
     });
-    //$('#text-wrapper #edit-text').attr('placeholder','BUSQUEDA POR PALABRA');
+    $('body').each(function(){
+      if(parseInt($(this).innerWidth()) <== 740 ){
+        $('#text-wrapper #edit-text').attr('placeholder','BUSQUEDA POR PALABRA');
+      }
+      
+    });
+    
     if(check <= 800){
       jQuery('#tipo-wrapper').slideUp();
       jQuery('#constructora-wrapper').slideUp();
