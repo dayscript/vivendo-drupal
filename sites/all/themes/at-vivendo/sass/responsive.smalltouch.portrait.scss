@@ -811,13 +811,14 @@ body.not-front{
         .field-name-field-zona,
         .field-name-field-direccion{
           float: none;
-          width: 90%;
-          margin: 0 5%;
+          width: 100%;
+          margin: 0;
+          overflow: hidden;
         }
       }
     }
     .group-header2{
-      display: none;
+      display: none !important;
     }
     .group-imagenes{
       .flexslider{
@@ -831,6 +832,7 @@ body.not-front{
       .field-name-field-price{
         top: 15px;
         width: 60%;
+        padding: 7px 12px;
         .field-label{
           font-size: 15px;
           float: left;
