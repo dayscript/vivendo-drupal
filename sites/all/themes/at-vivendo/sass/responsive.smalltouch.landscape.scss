@@ -1,6 +1,6 @@
 
 // _base.scss imports _custom.scss and other partials.
-@import "_base";
+@import "base";
 
 /*
  *   Important Information about this CSS File
@@ -12,11 +12,25 @@
  * - Read the _README file in this directory, it contains useful help and other information.
  */
 
-/* Increase the body font size on small touch devices */
-body {
-  font-size: 100%;
-  overflow-y: hidden;
-}
+
+/*@font-face {
+      font-family: 'fontello';
+      src: url('./font/fontello.eot?39246689');
+      src: url('./font/fontello.eot?39246689#iefix') format('embedded-opentype'),
+           url('./font/fontello.woff?39246689') format('woff'),
+           url('./font/fontello.ttf?39246689') format('truetype'),
+           url('./font/fontello.svg?39246689#fontello') format('svg');
+      font-weight: normal;
+      font-style: normal;
+      }*/
+
+
+
+      /* Increase the default font size on small touch devices */
+      body {
+        font-size: 100%;
+        overflow-x:hidden;
+      }
 
 /* =============================================================================
  *   Mobile Menu Toggle
@@ -24,7 +38,7 @@ body {
  *   These are example styles for the menu toggle menu, you can use these in the
  *   relevant responsive stylesheets as required. Modify to suit your design.
  * ========================================================================== */
-.at-mt .at-menu-toggle {
+ .at-mt .at-menu-toggle {
   /* The toggle link */
   h2 {
     margin-bottom: 5px;
@@ -37,6 +51,868 @@ body {
   }
 
   /* Menu items */
+  ul.menu li a {
+    background: #eee;
+    border-bottom: 1px solid #fff;
+  }
+}
+div#leaderboard-wrapper {
+  display: none;
+}
+span.toggler{
+  div.text{
+    float: left;
+    padding: 18px 13px;
+  }
+  div.icon{
+    text-align: right;
+    padding: 18px 13px;
+  }
+
+}
+
+.responsive-menus.responsified span.toggler {
+  background-color: #DD0024;
+  box-shadow: none;
+  border-radius: 0;
+}
+.nav ul li a{
+  background: #DD0024;
+}
+div#pre-content-wrapper {
+  display: none;
+}
+a.link-proyects-more {
+  display: none;
+}
+a.z_more {
+  display: none;
+}
+a.z_less {
+  display: none;
+}
+div#block-buscador-busca-formulario {
+  width: 100%;
+}
+a.link-list-compare {
+  width: 100%;
+  margin: 0 !important;
+  border-top: 1px solid;
+  padding: 13px !important;
+}
+
+#block-buscador-busca-formulario{
+  #zona-wrapper{
+    width: 100%;
+    vertical-align: top;
+    background: #DD0024;
+    border-top: 1px solid;
+    //display: none;
+  }
+  #tipo-wrapper{
+    width: 100%;
+    vertical-align: top;
+    background: #DD0024;
+    border-top: 1px solid;
+    //display: none;
+  }
+  #constructora-wrapper{
+    width: 100%;
+    vertical-align: top;
+    background: #DD0024;
+    border-top: 1px solid;
+    //display: none;
+  }
+  #rango-wrapper{
+    width: 100%;
+    vertical-align: top;
+    background: #DD0024;
+    border-top: 1px solid;
+    margin: 0;
+    //display: none;
+  }
+  #text-wrapper{
+    width: 100%!important;
+    vertical-align: top;
+    background: #DD0024;
+    border-top: 1px solid;
+    margin: 0!important;
+    padding: 8px 0;
+    .form-type-textfield{
+      margin: 0 5% !important;
+      width: 90%;
+      input{
+      color:#B7B7B7;
+      padding: 5px;
+      width: auto;
+      border: 1px solid #ccc;
+      }
+    }
+  }
+}
+section#block-views-proyectos-destacados-block {
+  display: none;
+}
+#header-wrapper {
+  #header{
+    .region-header{
+      #block-block-13{
+        .block-inner{
+          .block-content{
+            .rtecenter{
+              img{
+                height: 68px !important;
+                width: 82% !important;
+                margin: 0 auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.mobile-zone{
+  label{
+    display: none;
+  }
+}
+
+#buscador-wrapper{
+  label{display: none}
+  select {
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+    border: 0;
+    width: 95% !important;
+    padding: 0 13px;
+    option{
+      background-color: #DD0024;
+    }
+  }
+  .wrapper{
+    width: 100%;
+  }
+  .form-item.form-type-select {
+    width: 100%;
+  }
+}
+
+body.front {
+  #content-wrapper {
+    background: none;
+    border-top:0;
+  }
+  #main-content{
+    margin:0;
+  }
+
+  #block-panels-mini-noticias-tutoriales-banners {
+   padding: 10px;
+ }
+ h2.pane-title.block-title{
+  padding: 0;
+}
+.views-field.views-field-field-image {
+  width: 100%;
+  a img{width: 100%;}
+}
+.views-field.views-field-title{
+ .field-content{
+  a{
+    font-size:14px;
+    font-weight: 500;
+  }
+}
+}
+.views-field.views-field-body{
+  p {font-weight: 12px;}
+}
+
+}
+.region.region-three-50-25-25-third {
+  display: none;
+}
+
+#block-panels-mini-herramientas-4-columnas {
+
+  .block-content.content  {
+  display: none;
+  }
+  h2.block-title{
+      font-size: 28px!important;
+  }
+  h2.block-title:after{
+    content:"     \25bc";
+    white-space: pre-wrap;
+  }
+}
+
+/*.text:after {
+  content: "                          \25bc";
+  white-space: pre-wrap;
+}*/
+
+h4.drop-down-footer:after {
+  content: " \25bc";
+  white-space: pre-wrap;
+}
+
+h4.drop-down-footer-secciones:after {
+  content: " \25bc";
+  white-space: pre-wrap;
+}
+h4.drop-down-footer-tools:after {
+  content: " \25bc";
+  white-space: pre-wrap;
+}
+
+
+
+#block-panels-mini-herramientas-4-columnas .block-content img {
+  width: 50px!important;
+  height: 50px!important;
+  float: left;
+  margin-left: 23px;
+  margin-right: 18px;
+}
+
+#block-panels-mini-herramientas-4-columnas .block-content p {
+  display: none;
+}
+
+#block-panels-mini-herramientas-4-columnas .block-content a {
+  display: inherit;
+  font-size: 13px;
+  float: left;
+  width: 100%;
+  text-align: -webkit-left;
+}
+.region .region-four-fourth .block-content h3 {
+  font-size: 13px;
+  float: left;
+  width: 100%;
+  text-align: -webkit-left;
+}
+
+div#block-panels-mini-constructoras-y-testimonio {
+  display: none;
+}
+div#block-panels-mini-constructoraresponsive {
+  display: block;
+  height: 221px;
+}
+a.flex-prev{
+  left: 20%!important;
+}
+a.flex-next {
+  left: 87%!important;
+}
+/*FOOTER*/
+#block-panels-mini-footer-40-60 {
+
+  .region-two-33-66-first h2 {
+    display: none;
+  }
+  .region-two-33-66-second{
+    margin:0;
+    .region-inner .clearfix{
+      margin: 0;
+    }
+    .pane-block-4{
+      .block-content{
+        h4{text-align: center;border: none;}
+        p{text-align: center}
+        p a img {
+          margin: 10px;
+        }
+      }
+    }
+    .block-content{
+      margin-top: 20px;
+      h4{
+        margin: 0;
+        border-bottom: 1px solid #fff;
+        padding: 10px 5px;
+      }
+    }
+  }
+
+  .pane-block-1{
+   .block-content {
+    padding: 19px;
+    font-size: 10px;
+    a{padding: 6px 83px;}
+
+
+  }
+}
+
+
+
+}
+.region-two-33-66-second {
+  .drop-down-footer,.drop-down-footer-secciones,.drop-down-footer-tools{
+    background-color: #DD0024;
+    text-align: center;
+  }
+}
+.ul-content-search,.ul-content-secciones,.ul-content-tools{
+  display: none;
+  li{
+    padding: 5px 5px 5px 10px;
+    background: #C7C7C7;
+    a{color:#000!important;}
+  }
+}
+
+.pane-block-2{
+  .block-inner .block-content{
+    p{font-size: 10px;
+      padding: 23px;
+    }
+  }
+}
+
+.pane-block-3{
+  .block-inner .block-content{
+    p{text-align: center;}
+  }
+}
+
+.pane-block-5,.pane-block-6,.pane-block-7{
+  .block-inner{
+    .block-content{
+      margin: 0!important;
+    }
+  }
+}
+.pane-block-7{
+  .block-inner{
+    .block-content{
+      h4{
+        border: none!important;
+      }
+    }
+  }
+}
+
+#nav-wrapper{
+  margin: 0px;
+}
+
+.page-proyectos{
+  #page-wrapper{
+    #page{
+      #nav-wrapper{
+        margin: 0px;
+      }
+      #highlighted-wrapper{
+        display: inline-block;
+        #block-buscador-busca-formulario{
+          .block-content{
+            #buscador-formulario-form{
+              .up-down{
+                position: relative;
+              }
+            }
+          }
+        }
+      }
+      #content-wrapper{
+        #main-content{
+          #main-content-header{
+            font-size: 12px;
+          }
+          #content{
+            #block-system-main{
+              .view-proyectos{
+                .view-header{
+                  display: none;
+                  .switcher{
+                    display: none;
+                  }
+                }
+                .view-content{
+                  table.sticky-header{
+                    display: none;
+                    thead{display: none!important;}
+                    .views-field-field-area-construida,.views-field-field-alcobas,
+                    .views-field-field-estado,.views-field-field-constructora{
+                      display: none;
+                    }
+
+                  }
+                   table.sticky-enabled{
+                    thead{display: none;}
+                    tbody{
+                      .odd{
+                        .views-field-field-area-construida,.views-field-field-alcobas,
+                        .views-field-field-estado,.views-field-field-constructora{
+                          display: none;
+                        }
+                        img.image-style-escalar-289x66-copy {
+                          display: none;
+                        }
+                      }
+                      .even{
+                        .views-field-field-area-construida,.views-field-field-alcobas,
+                        .views-field-field-estado,.views-field-field-constructora{
+                          display: none;
+                        }
+                        img.image-style-escalar-289x66-copy {
+                          display: none;
+                        }
+                      }
+                    }
+
+                   }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#block-views-clon-de-proyectos-block-1{
+  display: block;
+}
+
+.page-proyectos-list{
+  section#main-content{
+    header{display: none;}
+    #block-system-main{display: none;}
+  }
+
+
+
+  section#block-views-clon-de-proyectos-block-1{
+
+    h2.block-title {
+      background-color: #fff;
+      color: rgb(200, 0, 22);
+      border-bottom: 3px solid rgb(200, 0, 22);
+      margin-bottom: 12px;
+    }
+    .view-clon-de-proyectos{
+      .view-content{
+        .views-row{
+            margin-bottom: 38px;
+            .field-content{
+              a{
+                color: #C80016;
+                font-weight: 700;
+                font-size: 17px;
+                img{
+                  width: 100%;
+                }
+              }
+            }
+            .views-label {
+              float: left;
+              font-weight: 700;
+              margin-right: 9px;
+            }
+          }
+        }
+      }
+    }
+
+}
+
+#region-wrapper{
+  padding: 0 !important;
+  margin: 0;
+}
+
+#block-block-18{
+  display: block;
+  background-color: #DD0024;
+  border-top: 1px solid #fff;
+  margin: 0;
+  padding: 13px;
+  color: #fff;
+  .filter-search:after{
+    content:"                         \25bc";
+    white-space: pre-wrap;
+  }
+  
+}
+
+.view-tutoriales{
+  .view-content{
+    .views-row{
+      .views-field-nothing{
+        .field-content{
+          a{
+            font-size: 1em!important;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/**Styles for modal windows home*/
+#modalBackdrop{
+  width: 100%!important;
+}
+
+#modalContent{
+    width: 92% !important;
+    margin: 4%;
+    left: 0px!important;
+    .modal-forms-modal-content{
+      width: 100%!important;
+      height: 428px!important;
+      .popups-container{
+        .modal-header{
+          display: inline-block;
+          width:100%;
+          .popups-close{
+            right: 14px;
+            position: relative;
+          }
+          #modal-title{
+            height: 25px!important;
+            width: 90%!important;
+            font-size: 22px;
+          }
+        }
+        .modal-scroll{
+          #modal-content{
+            form{div{.webform-component{font-size: 10px!important;}}}
+            width: 95% !important;
+            padding: 0 8px;
+            .webform-client-form-1,.webform-client-form-225{
+              width: 95%!important;
+              .form-item{
+                font-size:9px!important;
+                #edit-submitted-nombre-completo,#edit-submitted-correo-electronico,#edit-submitted-telefono,
+                #edit-submitted-comentarios,#edit-submitted-ciudad{
+                  width: 100%!important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+/**End styles for modal windows home*/
+/*styles for modal window home*/
+#block-calculadoracredito-calculadoracredito-view-modal{
+  .block-inner{
+    .block-content{
+      .contenedor{
+        .block_calculadora{
+
+
+          width: 100%;
+          span{ font-size: 10px;}
+          input{ width: 98%;}
+          .content-sponsor{
+            span{
+              font-size: 26px;
+            }
+          }
+
+          #items_calculadora{
+              width: 100%;
+              padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+//Landing
+ div#colorbox {
+  width: 100% !important;
+  top: 7px !important;
+  height: 702px!important;
+}
+div#cboxWrapper {
+  width: 100%!important;
+  height: 702px!important;
+}
+div#cboxContent {
+   width: 93%!important;
+   height: 702px!important;
+}
+div#cboxLoadedContent {
+  width: 100%!important;
+  height: 702px!important;
+  overflow: scroll!important;
+  overflow-x: hidden!important;
+}
+#city_selector{
+  width: 100%!important;
+ .logo {
+  margin: 0 0;
+  width: 342px;
+  }
+  .intro .text-intro{
+    font-size: 10px;
+  }
+  .item-list {
+    margin-top: 14px !important;
+    ul {
+
+    .disabled-city {
+      height: 75px!important;
+      padding: 0 0 0 0!important;
+      }
+    .text-disabled {
+            padding: 0 !important;
+            margin: 0;
+            margin: 10px 0 0px 0px !important;
+    }
+
+    li {
+      display: inline-block;
+      width: 100%;
+      float: none !important;
+      text-align: left;
+      margin: 0;
+      a {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0 0 0 10px;
+        br{display: none;}
+        img{
+          float: left;
+          max-width: 84px;
+          height: 84px;
+        }
+        &.disabled{
+          display: none;
+        }
+      }
+      span{
+        margin: 12px 0 0 11px;
+        display: inline-block;
+        width: 60%;
+        }
+      }
+  }
+  }
+  
+}
+
+div#cboxTopCenter {
+  display: none;
+}
+//landing
+div.logo{
+  font-size: 2.8em!important;
+  img {
+  float: left;
+  }
+}
+
+body.not-front{
+  #highlighted-wrapper{
+    height: 175px;
+    width: 100%;
+  }
+} 
+
+.view-id-noticias{
+  .views-field-field-image{
+    float: none !important;
+    margin: 0 auto;
+    a{
+      width: 200px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  .views-field-view-node{
+    a{
+      display: block;
+      padding: 6px 0;
+      text-align: center;
+    }
+  }
+}
+
+.view-tutoriales{
+  .view-content.ui-accordion{
+    .ui-accordion-content{
+      padding: 15px 10px !important;
+    }
+  }
+}  
+
+#mini-panel-footer_4_columnas{
+  ul{
+    display: none;
+    li {
+      padding: 10px;
+      background: none repeat scroll 0 0 #EBEBEB;
+      border-bottom: 1px solid #aaa;
+      a {
+        color: #aaa !important;
+      }
+    }
+  } 
+} 
+
+.region-tertiary-content{
+  padding: 0;
+}
+
+.project-link-responsive{
+  display: block !important;
+}
+
+.project-link-desktop{
+  display: none !important;
+}
+
+.view-proyectos{
+  .views-row{
+    width: 90%;
+    margin: 0 5% 25px 5%;
+    .views-field-field-fotos{
+      width: 100% !important;
+      margin: 0 auto;
+      height: auto !important;
+      img{
+        width: 100%;
+      }
+    }
+    .views-field-field-image{
+      width: 100% !important;
+      img{
+        width: 90% !important;
+      }
+    }
+  }
+}  
+
+.node-proyecto{
+  &.view-mode-full{
+    .group-header{
+      .group-header1{
+        width: 90%;
+        margin: 0 5%;
+        .field-name-field-image,
+        .field-name-title,
+        .field-name-field-tipo,
+        .field-name-field-zona,
+        .field-name-field-direccion{
+          float: none;
+          width: 100%;
+          margin: 0;
+          overflow: hidden;
+        }
+      }
+    }
+    .group-header2{
+      display: none !important;
+    }
+    .group-imagenes{
+      .flexslider{
+        .flex-control-nav{
+          display: none;
+          .flex-direction-nav{
+            left: 0 !important;
+          }
+        }
+      }
+      .field-name-field-price{
+        top: 15px;
+        width: 60%;
+        padding: 7px 12px;
+        .field-label{
+          font-size: 15px;
+          float: left;
+        }
+        .field-item{
+          font-size: 16px;
+        }
+      }
+    }
+    .group-share-compare{
+      display: none;
+    }
+    .group-datos{
+      width: 93%;
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+    .group-descripcion{
+      width: 90%;
+      margin: 0 5%;
+    }
+  } 
+} 
+
+#block-menu-menu-volver,
+#block-views-plantas-block,
+#block-simplenews-310--2,
+#secondary-content-wrapper{
+  display: none;
+}
+
+.block-contacto-contructores{
+  .form-text,
+  .form-textarea{
+    width: 100%;
+  }
+} 
+
+
+
+
+/*
+// _base.scss imports _custom.scss and other partials.
+@import "_base";
+
+
+ *   Important Information about this CSS File
+ *
+ * - Do not delete or rename this file, if you do not use it leave it blank (delete
+ *   everything) and the file will be skipped when you enable Production Mode in
+ *   the Global theme settings.
+ *
+ * - Read the _README file in this directory, it contains useful help and other information.
+ 
+
+ Increase the body font size on small touch devices 
+body {
+  font-size: 100%;
+  overflow-y: hidden;
+}
+
+ =============================================================================
+ *   Mobile Menu Toggle
+ *   See your theme settings extensions for how to enable the menu toggle.
+ *   These are example styles for the menu toggle menu, you can use these in the
+ *   relevant responsive stylesheets as required. Modify to suit your design.
+ * ========================================================================== 
+.at-mt .at-menu-toggle {
+   The toggle link 
+  h2 {
+    margin-bottom: 5px;
+
+    a {
+      background: #eee;
+      border: 2px solid #ccc;
+      padding: 2px 10px;
+    }
+  }
+
+   Menu items 
   ul.menu li a {
     background: #eee;
     border-bottom: 1px solid #fefefe;
@@ -86,7 +962,9 @@ body {
       }
     }
   }
-#text-wrapper{display: none!important;}
+#text-wrapper{display: none!important;}*/
+
+
 
 
 
