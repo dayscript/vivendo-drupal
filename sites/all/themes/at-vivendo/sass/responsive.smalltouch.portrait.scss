@@ -62,11 +62,11 @@ div#leaderboard-wrapper {
 span.toggler{
   div.text{
     float: left;
-    padding: 13px;
+    padding: 18px 13px;
   }
   div.icon{
     text-align: right;
-    padding: 13px;
+    padding: 18px 13px;
   }
 
 }
@@ -137,10 +137,15 @@ a.link-list-compare {
     background: #DD0024;
     border-top: 1px solid;
     margin: 0!important;
+    padding: 8px 0;
     .form-type-textfield{
-      margin: 0 11px!important;
+      margin: 0 5% !important;
+      width: 90%;
       input{
       color:#B7B7B7;
+      padding: 5px;
+      width: auto;
+      border: 1px solid #ccc;
       }
     }
   }
@@ -156,7 +161,9 @@ section#block-views-proyectos-destacados-block {
           .block-content{
             .rtecenter{
               img{
-                height: 68px!important;
+                height: 68px !important;
+                width: 82% !important;
+                margin: 0 auto;
               }
             }
           }
@@ -179,8 +186,11 @@ section#block-views-proyectos-destacados-block {
     background-color: rgba(255, 255, 255, 0);
     color: #fff;
     border: 0;
-    width: 100%!important;
+    width: 95% !important;
     padding: 0 13px;
+    option{
+      background-color: #DD0024;
+    }
   }
   .wrapper{
     width: 100%;
@@ -325,6 +335,7 @@ a.flex-next {
       h4{
         margin: 0;
         border-bottom: 1px solid #fff;
+        padding: 10px 5px;
       }
     }
   }
@@ -386,6 +397,10 @@ a.flex-next {
       }
     }
   }
+}
+
+#nav-wrapper{
+  margin: 0px;
 }
 
 .page-proyectos{
@@ -508,6 +523,12 @@ a.flex-next {
     }
 
 }
+
+#region-wrapper{
+  padding: 0 !important;
+  margin: 0;
+}
+
 #block-block-18{
   display: block;
   background-color: #DD0024;
@@ -515,14 +536,11 @@ a.flex-next {
   margin: 0;
   padding: 13px;
   color: #fff;
-  .block-inner {
-    .block-content{
-      .filter-search:after{
-      content:"                         \25bc";
-      white-space: pre-wrap;
-     }
-    }
+  .filter-search:after{
+    content:"                         \25bc";
+    white-space: pre-wrap;
   }
+  
 }
 
 .view-tutoriales{
@@ -643,7 +661,9 @@ div#cboxLoadedContent {
   .intro .text-intro{
     font-size: 10px;
   }
-  .item-list ul {
+  .item-list {
+    margin-top: 14px !important;
+    ul {
 
     .disabled-city {
       height: 75px!important;
@@ -653,27 +673,38 @@ div#cboxLoadedContent {
             padding: 0 !important;
             margin: 0;
             margin: 10px 0 0px 0px !important;
-
     }
 
     li {
       display: inline-block;
-      width: 83%;
-      float: none!important;
+      width: 100%;
+      float: none !important;
       text-align: left;
+      margin: 0;
       a {
-        width: 0px;
-        height: 86px;
-        padding: 0 0px 0px 75px;
+        width: 100%;
+        height: auto;
+        padding: 0;
         margin: 0 0 0 10px;
-      br{display: none;}
+        br{display: none;}
+        img{
+          float: left;
+          max-width: 84px;
+          height: 84px;
+        }
+        &.disabled{
+          display: none;
+        }
       }
       span{
-        margin: 0px 0 0 26px;
+        margin: 12px 0 0 11px;
         display: inline-block;
+        width: 60%;
         }
       }
   }
+  }
+  
 }
 
 div#cboxTopCenter {
@@ -685,4 +716,63 @@ div.logo{
   img {
   float: left;
   }
+}
+
+body.not-front{
+  #highlighted-wrapper{
+    height: 175px;
+  }
+} 
+
+.view-id-noticias{
+  .views-field-field-image{
+    float: none !important;
+    margin: 0 auto;
+    a{
+      width: 200px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  .views-field-view-node{
+    a{
+      display: block;
+      padding: 6px 0;
+      text-align: center;
+    }
+  }
+}
+
+.view-tutoriales{
+  .view-content.ui-accordion{
+    .ui-accordion-content{
+      padding: 15px 10px !important;
+    }
+  }
+}  
+
+#mini-panel-footer_4_columnas{
+  ul{
+    display: none;
+    li {
+      padding: 10px;
+      background: none repeat scroll 0 0 #EBEBEB;
+      border-bottom: 1px solid #aaa;
+      a {
+        color: #aaa !important;
+      }
+    }
+  } 
+} 
+
+.region-tertiary-content{
+  padding: 0;
+}
+
+.project-link-responsive{
+  display: block !important;
+}
+
+.project-link-desktop{
+  display: none !important;
 }

@@ -1978,6 +1978,38 @@ function vivendo_new_region_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-ciudades-field_region'
+  $field_instances['taxonomy_term-ciudades-field_region'] = array(
+    'bundle' => 'ciudades',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_region',
+    'label' => 'Región',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 1,
+    ),
+  );
+
   // Exported field_instance: 'taxonomy_term-regiones-field_estado_region'
   $field_instances['taxonomy_term-regiones-field_estado_region'] = array(
     'bundle' => 'regiones',
@@ -2058,6 +2090,38 @@ function vivendo_new_region_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'taxonomy_term-zonas-field_ciudad'
+  $field_instances['taxonomy_term-zonas-field_ciudad'] = array(
+    'bundle' => 'zonas',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_ciudad',
+    'label' => 'Ciudad',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
       'weight' => 1,
     ),
   );

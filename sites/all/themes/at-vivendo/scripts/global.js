@@ -19,11 +19,23 @@
           if ( $('#highlighted-wrapper').height() === 455 ) {
 
             $('.front .view-proyectos-destacados').hide();
-            $('#highlighted-wrapper').animate({height: "115px"}, 700);
+            if( parseInt($(this).innerWidth()) > 740 ){
+              $('#highlighted-wrapper').animate({height: "115px"}, 700);
+            } else {
+              $('#highlighted-wrapper').animate({height: "175px"}, 700);
+            }
+            
             $('#mapa').animate({height: "59px"}, 700);
             button.removeClass().addClass('b-down');
 
           } else if ( $('#highlighted-wrapper').height() === 115 ) {
+
+            $('.front .view-proyectos-destacados').show();
+            $('#highlighted-wrapper').animate({height: "455px"}, 700);
+            $('#mapa').animate({height: "400px"}, 700);
+            button.removeClass().addClass('b-up');
+
+          } else if ( $('#highlighted-wrapper').height() === 175 ) {
 
             $('.front .view-proyectos-destacados').show();
             $('#highlighted-wrapper').animate({height: "455px"}, 700);
@@ -208,7 +220,20 @@ $(window).resize(function(){
          $(this).text( label );
       });
     });
-    //$('#text-wrapper #edit-text').attr('placeholder','BUSQUEDA POR PALABRA');
+    
+    $('body').each(function(){
+      if( parseInt($(this).innerWidth()) <= 740 ){
+        $('#text-wrapper #edit-text').attr('placeholder','BUSQUEDA POR PALABRA');
+        $('#mini-panel-footer_4_columnas h4.drop-down-footer').on('click', function(){
+          if($(this).siblings('ul').css('display') == 'none'){
+            $(this).siblings('ul').show();
+          } else {
+            $(this).siblings('ul').hide();
+          }
+        });
+      }
+    });
+    
     if(check <= 800){
       jQuery('#tipo-wrapper').slideUp();
       jQuery('#constructora-wrapper').slideUp();
