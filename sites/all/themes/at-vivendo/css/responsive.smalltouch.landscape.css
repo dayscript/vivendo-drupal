@@ -13,7 +13,7 @@
  * - Read the _README file in this directory, it contains useful help and other information.
  */
 /* Increase the body font size on small touch devices */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fabest86\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000316}}
 body {
   font-size: 100%;
   overflow-y: hidden;
@@ -25,111 +25,111 @@ body {
  *   These are example styles for the menu toggle menu, you can use these in the
  *   relevant responsive stylesheets as required. Modify to suit your design.
  * ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fabest86\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000327}}
 .at-mt .at-menu-toggle {
   /* The toggle link */
   /* Menu items */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fabest86\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000329}}
 .at-mt .at-menu-toggle h2 {
   margin-bottom: 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fabest86\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000332}}
 .at-mt .at-menu-toggle h2 a {
   background: #eee;
   border: 2px solid #ccc;
   padding: 2px 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fabest86\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000340}}
 .at-mt .at-menu-toggle ul.menu li a {
   background: #eee;
   border-bottom: 1px solid #fefefe;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000346}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fabest86\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000346}}
 .z_more {
   top: 100px !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fabest86\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000347}}
 .z_less {
   top: 145px !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fabest86\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000348}}
 #header-wrapper {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fabest86\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000349}}
 #nav-wrapper {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fabest86\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000350}}
 #pre-content-wrapper {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fabest86\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000351}}
 #content-wrapper {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fabest86\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000352}}
 #footer-wrapper {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fabest86\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000353}}
 #tertiary-content-wrapper {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fabest86\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000354}}
 #secondary-content-wrapper {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fabest86\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000355}}
 #block-views-proyectos-destacados-block {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fabest86\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000356}}
 #leaderboard-wrapper {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fabest86\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000357}}
 .link-proyects-more {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fabest86\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000358}}
 #block-buscador-busca-formulario {
   max-width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fabest86\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000360}}
 #block-buscador-busca-formulario label {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fabest86\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000361}}
 #block-buscador-busca-formulario form#buscador-formulario-form {
   font-size: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fabest86\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000366}}
 #buscador-wrapper {
   background-color: #DD0024;
   height: 31px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fabest86\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000369}}
 #buscador-wrapper a {
   margin: 0 !important;
   padding: 8px !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000372}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fabest86\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000372}}
 #buscador-wrapper #zona-wrapper, #buscador-wrapper #tipo-wrapper, #buscador-wrapper #constructora-wrapper, #buscador-wrapper #rango-wrapper {
   width: auto;
   background-color: #DD0024;
@@ -137,11 +137,11 @@ body {
   padding: 0 !important;
   border: 0 !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fabest86\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000378}}
 #buscador-wrapper #zona-wrapper .form-type-select, #buscador-wrapper #tipo-wrapper .form-type-select, #buscador-wrapper #constructora-wrapper .form-type-select, #buscador-wrapper #rango-wrapper .form-type-select {
   width: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fabest86\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000380}}
 #buscador-wrapper #zona-wrapper .form-type-select select, #buscador-wrapper #tipo-wrapper .form-type-select select, #buscador-wrapper #constructora-wrapper .form-type-select select, #buscador-wrapper #rango-wrapper .form-type-select select {
   width: 100px !important;
   background-color: #DF181C;
@@ -149,7 +149,7 @@ body {
   border: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fabest86\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.smalltouch\.landscape\.scss}line{font-family:\0000389}}
 #text-wrapper {
   display: none !important;
 }

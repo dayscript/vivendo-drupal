@@ -48,7 +48,7 @@
    * inspector or Firebug to get the classes from the page output if you need
    * more granular control over block alignment and stacking.
    */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.custom\.scss}line{font-family:\0000357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/fabest86\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/responsive\.custom\.scss}line{font-family:\0000357}}
   .region[class*="float-blocks"] .block {
     float: none;
     width: 100%;
