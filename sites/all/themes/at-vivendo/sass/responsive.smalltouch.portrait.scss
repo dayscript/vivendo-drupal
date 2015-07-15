@@ -798,3 +798,74 @@ body.not-front{
     }
   }
 }  
+
+.node-proyecto{
+  &.view-mode-full{
+    .group-header{
+      .group-header1{
+        width: 90%;
+        margin: 0 5%;
+        .field-name-field-image,
+        .field-name-title,
+        .field-name-field-tipo,
+        .field-name-field-zona,
+        .field-name-field-direccion{
+          float: none;
+          width: 90%;
+          margin: 0 5%;
+        }
+      }
+    }
+    .group-header2{
+      display: none;
+    }
+    .group-imagenes{
+      .flexslider{
+        .flex-control-nav{
+          display: none;
+          .flex-direction-nav{
+            left: 0 !important;
+          }
+        }
+      }
+      .field-name-field-price{
+        top: 15px;
+        width: 60%;
+        .field-label{
+          font-size: 15px;
+          float: left;
+        }
+        .field-item{
+          font-size: 16px;
+        }
+      }
+    }
+    .group-share-compare{
+      display: none;
+    }
+    .group-datos{
+      width: 93%;
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+    .group-descripcion{
+      width: 90%;
+      margin: 0 5%;
+    }
+  } 
+} 
+
+#block-menu-menu-volver,
+#block-views-plantas-block,
+#block-simplenews-310--2{
+  display: none;
+}
+
+.block-contacto-contructores{
+  .form-text,
+  .form-textarea{
+    width: 100%;
+  }
+} 
+
+
