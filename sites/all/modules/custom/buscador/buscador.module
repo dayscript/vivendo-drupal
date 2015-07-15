@@ -104,22 +104,6 @@ function buscador_formulario_form($node, &$form_state)
     
     $regions = _load_regions(); 
     
-    $citiesSelect = _load_terms('ciudades', $value);
-    
-    $form['wrapper']['ciudad'] = array(
-        '#prefix' => '<div id="zona-wrapper" class="wrapper">',
-        '#suffix' => '</div>',
-        '#type' => 'select',
-        '#options' => $citiesSelect,
-        '#title' => 'Ciudad',
-        '#default_value' => $citiesSelect[0],
-        '#ajax' => array(
-            'event' => 'change',
-            'callback' => 'reload_buscador',
-            'wrapper' => 'buscador-wrapper',
-        ),
-    );
-    
     switch( $value[0] ){
       case 1463:
         $ciudad = 'Bogotá y región centro';
