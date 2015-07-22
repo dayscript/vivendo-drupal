@@ -135,23 +135,7 @@
 
     resize();
 
-    jQuery('#block-block-18').toggle(
-
-      function(e){
-         jQuery('#tipo-wrapper').slideDown();
-         jQuery('#constructora-wrapper').slideDown();
-         jQuery('#rango-wrapper').slideDown();
-         jQuery('#zona-wrapper').slideDown();
-         e.preventDefault();
-        },
-      function(e){
-         jQuery('#tipo-wrapper').slideUp();
-         jQuery('#constructora-wrapper').slideUp();
-         jQuery('#rango-wrapper').slideUp();
-         jQuery('#zona-wrapper').slideUp();
-         e.preventDefault();
-        }
-    );
+    
 
 
     $('.region-two-33-66-second .drop-down-footer').toggle(
@@ -228,6 +212,26 @@ $(window).resize(function(){
            $('#block-panels-mini-herramientas-4-columnas .block-content.content').slideUp();
            e.preventDefault();
           }
+        );
+
+        jQuery('#block-block-18').toggle(
+
+          function(e){
+             jQuery('#tipo-wrapper').slideDown();
+             jQuery('#constructora-wrapper').slideDown();
+             jQuery('#rango-wrapper').slideDown();
+             jQuery('#zona-wrapper').slideDown();
+             jQuery('#ciudad-wrapper').slideDown();
+             e.preventDefault();
+            },
+          function(e){
+             jQuery('#tipo-wrapper').slideUp();
+             jQuery('#constructora-wrapper').slideUp();
+             jQuery('#rango-wrapper').slideUp();
+             jQuery('#zona-wrapper').slideUp();
+             jQuery('#ciudad-wrapper').slideUp();
+             e.preventDefault();
+            }
         );
       }
     });

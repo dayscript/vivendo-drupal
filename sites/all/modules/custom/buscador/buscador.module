@@ -260,13 +260,17 @@ function buscador_formulario_form($node, &$form_state)
             $filterValue['rango'] = 0;
         }
         $num_rows = $query->countQuery()->execute()->fetchField();
-        if($num_rows>0){
+        /*if($num_rows>0){
           if ( !empty($constructora->field_ciudad) ){
             if ( $filterCity[0] == $constructora->field_ciudad['und'][0]['tid'] ){
               $constructoras_select[$key] = $value . " (" . $num_rows . ")";
             }
           }
           
+        }*/
+        
+        if(array_key_exists($constructora->field_ciudad['und'][0]['tid'], $citiesSelected)){
+          $constructoras_select[$constructora->nid] = $constructora->title; 
         }
         
     }

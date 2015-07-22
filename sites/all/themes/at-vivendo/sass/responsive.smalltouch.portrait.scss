@@ -102,6 +102,14 @@ a.link-list-compare {
 }
 
 #block-buscador-busca-formulario{
+  #ciudad-wrapper{
+    width: 100%;
+    vertical-align: top;
+    background: #DD0024;
+    border-top: 1px solid;
+    margin: 0;
+    //display: none;
+  }
   #zona-wrapper{
     width: 100%;
     vertical-align: top;
@@ -193,7 +201,7 @@ section#block-views-proyectos-destacados-block {
     }
   }
   .wrapper{
-    width: 100%;
+    width: 100% !important;
   }
   .form-item.form-type-select {
     width: 100%;
