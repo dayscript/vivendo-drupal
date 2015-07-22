@@ -99,8 +99,11 @@ function removeMarkers(){
       );
 
       var newCenter = map.getProjection().fromPointToLatLng(worldCoordinateNewCenter);
-
-      map.setCenter(newCenter);
+      
+      if(parseInt($('body').innerWidth()) >= 1024){
+        map.setCenter(newCenter);
+      }
+      
 
       google.maps.event.removeListener(listener);
       

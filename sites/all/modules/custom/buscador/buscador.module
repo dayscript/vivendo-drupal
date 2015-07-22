@@ -135,10 +135,14 @@ function buscador_formulario_form($node, &$form_state)
     foreach ( $zones as $zone ){
       $zoneDetail = taxonomy_term_load( $zone->tid );
       if( $zoneDetail->field_ciudad['und'][0]['tid'] == $cityDefault && $cityDefault > 0 ){
-        $zonesSelected[$zone->tid] = $zone->name; 
+        if ( buscador_confirm_zone_has_project($zone->tid) ){
+          $zonesSelected[$zone->tid] = $zone->name; 
+        }
       } elseif( $cityDefault == 0 ) {
         if(array_key_exists($zoneDetail->field_ciudad['und'][0]['tid'], $citiesSelected)){
-          $zonesSelected[$zone->tid] = $zone->name; 
+          if ( buscador_confirm_zone_has_project($zone->tid) ){
+            $zonesSelected[$zone->tid] = $zone->name; 
+          }
         }
       }
     }
@@ -235,6 +239,7 @@ function buscador_formulario_form($node, &$form_state)
         } elseif (!isset($form_state['values']['zona'])  && $filterValue['zona']>0) {
             $query->condition('field_zona', $filterValue['zona'], '=');
         } else {
+            $query->condition('field_zona', array_keys($zonesSelected), 'IN');
             $filterValue['zona'] = 0;
         }        
         if ((isset($form_state['values']['tipo']) && $form_state['values']['tipo']>0)) {
@@ -260,17 +265,13 @@ function buscador_formulario_form($node, &$form_state)
             $filterValue['rango'] = 0;
         }
         $num_rows = $query->countQuery()->execute()->fetchField();
-        /*if($num_rows>0){
+        if($num_rows>0){
           if ( !empty($constructora->field_ciudad) ){
-            if ( $filterCity[0] == $constructora->field_ciudad['und'][0]['tid'] ){
-              $constructoras_select[$key] = $value . " (" . $num_rows . ")";
+            if ( array_key_exists($constructora->field_ciudad['und'][0]['tid'], $citiesSelected) ){
+              $constructoras_select[$key] = $value /*. " (" . $num_rows . ")"*/;
             }
           }
           
-        }*/
-        
-        if(array_key_exists($constructora->field_ciudad['und'][0]['tid'], $citiesSelected)){
-          $constructoras_select[$constructora->nid] = $constructora->title; 
         }
         
     }
@@ -604,3 +605,24 @@ function buscador_form_alter(&$form, &$form_state, $form_id){
   }
   
 }
+
+
+/*function buscador_confirm_zone_has_constructor( $key ){
+  
+  $query = db_select( 'node', 'cons' )
+      ->fields('cons', array('nid'))
+      ->condition('cons.type', 'constructora')
+      ->condition('cons.status', '1');
+  
+  $query->leftJoin( 'field_data_field_ciudad', 'fz', 'fz.entity_id = cons.nid' );
+  $query->condition( 'fz.field_ciudad_tid', $key, '=' );
+  
+  $count = $query->execute()->rowCount();
+  
+  if ( $count > 0 ) {
+    return 1;
+  } else {
+    return 0;
+  }
+  
+}*/
