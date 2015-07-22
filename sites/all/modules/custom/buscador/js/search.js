@@ -18,7 +18,7 @@
 	    
         element_settings.progress = { 'type' : 'none' };
         element_settings.submit   = { js: true, base: base, data: data };
-        element_settings.url      = Drupal.settings.basePath + 'vivendo-search';
+        element_settings.url      = Drupal.settings.basePath + $(this).closest('#text-wrapper').data('url');
         element_settings.event    = 'KeySearch';
 	
         ajax              = new Drupal.ajax(base, this, element_settings);

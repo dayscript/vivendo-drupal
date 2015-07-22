@@ -492,8 +492,8 @@ function _get_result_search( $data ) {
       ->condition( 'noPC.type', array('proyecto', 'constructora'), 'IN' )
       ->range(0, 15);
 
-  $search->leftJoin( 'field_data_field_regiones', 'region', 'region.entity_id = noPC.nid' );
-  $search->condition( 'region.field_regiones_tid', $region, '=' );
+  $search->leftJoin( 'field_data_field_region', 'region', 'region.entity_id = noPC.nid' );
+  $search->condition( 'region.field_region_tid', $region, '=' );
 
   $search->leftJoin( 'field_data_field_codigo', 'code', 'code.entity_id = noPC.nid' );
   
