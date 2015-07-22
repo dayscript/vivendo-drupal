@@ -155,17 +155,6 @@
         }
     );
 
-    $('#block-panels-mini-herramientas-4-columnas').toggle(
-          function(e){
-           $('#block-panels-mini-herramientas-4-columnas .block-content.content').slideDown();
-           e.preventDefault();
-          },
-          function(e){
-           $('#block-panels-mini-herramientas-4-columnas .block-content.content').slideUp();
-           e.preventDefault();
-          }
-        );
-
 
     $('.region-two-33-66-second .drop-down-footer').toggle(
       function(e){
@@ -232,7 +221,16 @@ $(window).resize(function(){
           }
         });
         
-        
+        $('#block-panels-mini-herramientas-4-columnas').toggle(
+          function(e){
+           $('#block-panels-mini-herramientas-4-columnas .block-content.content').slideDown();
+           e.preventDefault();
+          },
+          function(e){
+           $('#block-panels-mini-herramientas-4-columnas .block-content.content').slideUp();
+           e.preventDefault();
+          }
+        );
       }
     });
     
