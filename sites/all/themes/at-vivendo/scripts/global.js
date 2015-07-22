@@ -239,6 +239,7 @@ $(window).resize(function(){
       jQuery('#constructora-wrapper').slideUp();
       jQuery('#rango-wrapper').slideUp();
       jQuery('#zona-wrapper').slideUp();
+      jQuery('#ciudad-wrapper').slideUp();
     }
   }
 
