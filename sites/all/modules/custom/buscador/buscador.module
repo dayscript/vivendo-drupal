@@ -204,7 +204,7 @@ function buscador_formulario_form($node, &$form_state)
         }
         $num_rows = $query->countQuery()->execute()->fetchField();
         if($num_rows>0)
-            $tipos_select[$key] = $value . " (" . $num_rows . ")";
+            $tipos_select[$key] = $value /*. " (" . $num_rows . ")"*/;
     }
 
     $form['wrapper']['tipo'] = array(
@@ -326,7 +326,7 @@ function buscador_formulario_form($node, &$form_state)
         }
         $num_rows = $query->countQuery()->execute()->fetchField();
         if($num_rows>0)
-            $rangos_select[$key] = $value . " (" . $num_rows . ")";
+            $rangos_select[$key] = $value /*. " (" . $num_rows . ")"*/;
     }
     $form['wrapper']['rango'] = array(
         '#prefix' => '<div id="rango-wrapper" class="wrapper">',
