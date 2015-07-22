@@ -114,7 +114,6 @@ function buscador_formulario_form($node, &$form_state)
     $cityDefault = isset($form_state['values']['ciudad']) ? $form_state['values']['ciudad'] : $cityDefault;
     $filterValue['ciudad'] = $cityDefault;
     
-    
     $form['wrapper']['ciudad'] = array(
       '#prefix' => '<div id="ciudad-wrapper" class="wrapper">',
       '#suffix' => '</div>',
@@ -129,15 +128,18 @@ function buscador_formulario_form($node, &$form_state)
       ),
     );
     
-    
     $zones         = taxonomy_get_tree(taxonomy_vocabulary_machine_name_load('zonas')->vid);
     $zonesSelected = array(0 => 'Todos');
     $zoneDefault   = ($filterValue['zona'] > 0) ? $filterValue['zona'] : 0;
     
     foreach ( $zones as $zone ){
       $zoneDetail = taxonomy_term_load( $zone->tid );
-      if( $zoneDetail->field_ciudad['und'][0]['tid'] == $cityDefault ){
+      if( $zoneDetail->field_ciudad['und'][0]['tid'] == $cityDefault && $cityDefault > 0 ){
         $zonesSelected[$zone->tid] = $zone->name; 
+      } elseif( $cityDefault == 0 ) {
+        if(array_key_exists($zoneDetail->field_ciudad['und'][0]['tid'], $citiesSelected)){
+          $zonesSelected[$zone->tid] = $zone->name; 
+        }
       }
     }
     
@@ -337,7 +339,7 @@ function buscador_formulario_form($node, &$form_state)
     );
     $query = db_select('search_api_db_proyectos', 'p');
     $query->fields('p', array('nid'));
-    if ( (isset($form_state['values']['ciudad'])  && $form_state['values']['ciudad']>0)) {
+    if ( (isset($form_state['values']['ciudad']) && $form_state['values']['ciudad']>0)) {
       $filterValue['ciudad'] = isset($form_state['values']['ciudad']) ? $form_state['values']['ciudad'] : $filterValue['ciudad'];
       $query->condition('field_ciudad', $form_state['values']['ciudad'], '=');
     } elseif ( !isset($form_state['values']['ciudad']) || $form_state['values']['ciudad'] == 0 ) {
