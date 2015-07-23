@@ -122,7 +122,7 @@ function buscador_formulario_form($node, &$form_state)
       '#type' => 'select',
       '#options' => $citiesSelected,
       '#title' => 'Ciudad',
-      '#default_value' => $cityDefault,
+      '#default_value' => asort($cityDefault),
       '#ajax' => array(
           'event' => 'change',
           'callback' => 'reload_buscador',
@@ -157,7 +157,7 @@ function buscador_formulario_form($node, &$form_state)
         '#prefix' => '<div id="zona-wrapper" class="wrapper">',
         '#suffix' => '</div>',
         '#type' => 'select',
-        '#options' => $zonesSelected,
+        '#options' => asort($zonesSelected),
         '#title' => 'Zona',
         '#default_value' => $zoneDefault,
         '#ajax' => array(
@@ -217,7 +217,7 @@ function buscador_formulario_form($node, &$form_state)
         '#prefix' => '<div id="tipo-wrapper" class="wrapper">',
         '#suffix' => '</div>',
         '#type' => 'select',
-        '#options' => $tipos_select,
+        '#options' => asort($tipos_select),
         '#title' => 'Tipo',
         '#default_value' => $default,
         '#ajax' => array(
@@ -282,7 +282,7 @@ function buscador_formulario_form($node, &$form_state)
         '#prefix' => '<div id="constructora-wrapper" class="wrapper">',
         '#suffix' => '</div>',
         '#type' => 'select',
-        '#options' => $constructoras_select,
+        '#options' => asort($constructoras_select),
         '#title' => 'Constructora',
         '#default_value' => $default,
         '#ajax' => array(
