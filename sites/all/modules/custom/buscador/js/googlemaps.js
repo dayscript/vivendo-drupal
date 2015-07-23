@@ -100,7 +100,7 @@ function removeMarkers(){
 
       var newCenter = map.getProjection().fromPointToLatLng(worldCoordinateNewCenter);
       
-      if(parseInt($('body').innerWidth()) >= 1024){
+      if(parseInt(jQuery('body').innerWidth()) >= 1024){
         map.setCenter(newCenter);
       }
       
