@@ -136,7 +136,7 @@ function removeMarkers(){
     loadMap();
     
     if ( window.location.pathname == '/proyectos/list' || window.location.pathname == '/proyectos/grid' ){
-      //jQuery('.view-proyectos').triggerHandler('RefreshView');
+      jQuery('.view-proyectos').triggerHandler('RefreshView');
       jQuery('.b-down').click();
     }
     
