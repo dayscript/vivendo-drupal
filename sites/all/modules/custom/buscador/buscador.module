@@ -116,6 +116,8 @@ function buscador_formulario_form($node, &$form_state)
     if( !array_key_exists($cityDefault, $citiesSelected) ) { $cityDefault = 0; }
     $filterValue['ciudad'] = $cityDefault;
     
+    asort($citiesSelected);
+    
     $form['wrapper']['ciudad'] = array(
       '#prefix' => '<div id="ciudad-wrapper" class="wrapper">',
       '#suffix' => '</div>',
@@ -152,6 +154,8 @@ function buscador_formulario_form($node, &$form_state)
     $zoneDefault = isset($form_state['values']['zona']) ? $form_state['values']['zona'] : $zoneDefault;
     if( !array_key_exists($zoneDefault, $zonesSelected) ) { $zoneDefault = 0; }
     $filterValue['zona'] = $zoneDefault;
+    
+    asort($zonesSelected);
     
     $form['wrapper']['zona'] = array(
         '#prefix' => '<div id="zona-wrapper" class="wrapper">',
@@ -212,6 +216,8 @@ function buscador_formulario_form($node, &$form_state)
         if($num_rows>0)
             $tipos_select[$key] = $value /*. " (" . $num_rows . ")"*/;
     }
+    
+    asort($tipos_select);
 
     $form['wrapper']['tipo'] = array(
         '#prefix' => '<div id="tipo-wrapper" class="wrapper">',
@@ -278,6 +284,8 @@ function buscador_formulario_form($node, &$form_state)
         
     }
 
+    asort($constructoras_select);
+    
     $form['wrapper']['constructora'] = array(
         '#prefix' => '<div id="constructora-wrapper" class="wrapper">',
         '#suffix' => '</div>',
