@@ -1,5 +1,9 @@
 <?php
 
+  function vivendo_user_construct_init(){
+    
+  }
+
   function vivendo_user_construct_menu(){
     
     $items = array();

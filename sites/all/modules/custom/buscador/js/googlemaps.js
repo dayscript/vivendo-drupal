@@ -99,12 +99,8 @@ function removeMarkers(){
       );
 
       var newCenter = map.getProjection().fromPointToLatLng(worldCoordinateNewCenter);
+      map.setCenter(newCenter);
       
-      if(parseInt(jQuery('body').innerWidth()) >= 1024){
-        map.setCenter(newCenter);
-      }
-      
-
       google.maps.event.removeListener(listener);
       
     });
