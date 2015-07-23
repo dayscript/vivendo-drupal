@@ -108,7 +108,10 @@ function buscador_formulario_form($node, &$form_state)
     foreach ( $cities as $city ){
       $cityDetail = taxonomy_term_load( $city->tid );
       if( $cityDetail->field_region['und'][0]['tid'] == $value[0] ){
-        $citiesSelected[$city->tid] = $city->name; 
+        if (buscador_confirm_zone_city_has_project($city->tid, 'ciudad')){
+          $citiesSelected[$city->tid] = $city->name; 
+        }
+        
       }
     }
     
@@ -139,12 +142,12 @@ function buscador_formulario_form($node, &$form_state)
     foreach ( $zones as $zone ){
       $zoneDetail = taxonomy_term_load( $zone->tid );
       if( $zoneDetail->field_ciudad['und'][0]['tid'] == $cityDefault && $cityDefault > 0 ){
-        if ( buscador_confirm_zone_has_project($zone->tid) ){
+        if ( buscador_confirm_zone_city_has_project($zone->tid, 'zona') ){
           $zonesSelected[$zone->tid] = $zone->name; 
         }
       } elseif( $cityDefault == 0 ) {
         if(array_key_exists($zoneDetail->field_ciudad['und'][0]['tid'], $citiesSelected)){
-          if ( buscador_confirm_zone_has_project($zone->tid) ){
+          if ( buscador_confirm_zone_city_has_project($zone->tid, 'zona') ){
             $zonesSelected[$zone->tid] = $zone->name; 
           }
         }
@@ -516,8 +519,8 @@ function _get_result_search( $data ) {
   
   $or = db_or();
 
-  $or->condition( 'noPC.title', $data . '%', 'LIKE' );
-  $or->condition( 'code.field_codigo_value', $data . '%' , 'LIKE' );
+  $or->condition( 'noPC.title', '%' . $data . '%', 'LIKE' );
+  $or->condition( 'code.field_codigo_value', '%' . $data . '%', 'LIKE' );
 
   $search->condition( $or );
 
@@ -569,16 +572,21 @@ function buscardor_ajax() {
   
 }
 
-function buscador_confirm_zone_has_project( $key ){
+function buscador_confirm_zone_city_has_project( $key, $field ){
   
   $query = db_select('node', 'pro')
     ->fields( 'pro', array('nid') )
     ->condition( 'pro.type', 'proyecto', '=' )
     ->condition( 'pro.status', '1', '=' );
 
-  $query->leftJoin( 'field_data_field_zona', 'fz', 'fz.entity_id = pro.nid' );
-  $query->condition( 'fz.field_zona_tid', $key, '=' );
-
+  if ( $field == 'zona' ){
+    $query->leftJoin( 'field_data_field_zona', 'fz', 'fz.entity_id = pro.nid' );
+    $query->condition( 'fz.field_zona_tid', $key, '=' );
+  } elseif( $field == 'ciudad' ){
+    $query->leftJoin( 'field_data_field_ciudad', 'fz', 'fz.entity_id = pro.nid' );
+    $query->condition( 'fz.field_ciudad_tid', $key, '=' );
+  }
+  
   $count = $query->execute()->rowCount();
   
   if ( $count > 0 ) {
@@ -615,24 +623,3 @@ function buscador_form_alter(&$form, &$form_state, $form_id){
   }
   
 }
-
-
-/*function buscador_confirm_zone_has_constructor( $key ){
-  
-  $query = db_select( 'node', 'cons' )
-      ->fields('cons', array('nid'))
-      ->condition('cons.type', 'constructora')
-      ->condition('cons.status', '1');
-  
-  $query->leftJoin( 'field_data_field_ciudad', 'fz', 'fz.entity_id = cons.nid' );
-  $query->condition( 'fz.field_ciudad_tid', $key, '=' );
-  
-  $count = $query->execute()->rowCount();
-  
-  if ( $count > 0 ) {
-    return 1;
-  } else {
-    return 0;
-  }
-  
-}*/
