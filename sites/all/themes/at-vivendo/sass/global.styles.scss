@@ -4030,3 +4030,33 @@ a.link-proyects-more {
 .project-link-desktop{
   display: block;
 }
+
+
+.entitytype-contacto_contructores-form{
+  #field-email-add-more-wrapper{
+    .tabledrag-toggle-weight-wrapper,
+    .clearfix,
+    .field-multiple-drag,
+    .text-full-wrapper label{
+      display: none;
+    }
+    table{
+      border: none;
+      tbody,
+      tr{
+        border: 0 !important;
+        background: transparent !important;
+        td{
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+.node-proyecto-form{
+  #edit-delete{
+    display: none;
+  }
+}
+

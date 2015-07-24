@@ -3668,3 +3668,31 @@ a.link-proyects-more {
 .project-link-desktop {
   display: block;
 }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000034037}}
+.entitytype-contacto_contructores-form #field-email-add-more-wrapper .tabledrag-toggle-weight-wrapper,
+.entitytype-contacto_contructores-form #field-email-add-more-wrapper .clearfix,
+.entitytype-contacto_contructores-form #field-email-add-more-wrapper .field-multiple-drag,
+.entitytype-contacto_contructores-form #field-email-add-more-wrapper .text-full-wrapper label {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000034043}}
+.entitytype-contacto_contructores-form #field-email-add-more-wrapper table {
+  border: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000034045}}
+.entitytype-contacto_contructores-form #field-email-add-more-wrapper table tbody,
+.entitytype-contacto_contructores-form #field-email-add-more-wrapper table tr {
+  border: 0 !important;
+  background: transparent !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000034049}}
+.entitytype-contacto_contructores-form #field-email-add-more-wrapper table tbody td,
+.entitytype-contacto_contructores-form #field-email-add-more-wrapper table tr td {
+  padding: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000034058}}
+.node-proyecto-form #edit-delete {
+  display: none;
+}
