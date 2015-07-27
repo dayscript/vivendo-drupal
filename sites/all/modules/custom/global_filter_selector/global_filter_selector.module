@@ -5,7 +5,7 @@
  */
 
 
-function global_filter_selector_menu(){
+/*function global_filter_selector_menu(){
 
   $items = array();
   
@@ -19,7 +19,7 @@ function global_filter_selector_menu(){
   
   return $items;
   
-}
+}*/
 
 /**
  * Implements hook_help().
@@ -124,7 +124,7 @@ function global_filter_selector_callback_block(){
     if ( $regionDataComplete->field_estado_region['und'][0]['value'] == 'activo' ){
       $name   = '<span>'.$regionDataComplete->name.'</span>';
       $aliasPath = drupal_get_path_alias('taxonomy/term/'.$regionDataComplete->tid);
-      $action = 'href="/region/'.$aliasPath.'"';
+      $action = 'href="?field_region='.$regionDataComplete->tid.'"';
     } else{
       $name   = '<span class="text-disabled"><strong>Próximamente</strong><br>'.$regionDataComplete->name.'</span>';
       $action = 'class="disabled"';
@@ -146,7 +146,7 @@ function global_filter_selector_callback_block(){
 }
 
 
-function global_filter_selector_change_filter($urlRegion){
+/*function global_filter_selector_change_filter($urlRegion){
   
   $urlTerm = explode( '/', drupal_get_normal_path($urlRegion) );
   $region  = array( $urlTerm[2] );
@@ -155,4 +155,4 @@ function global_filter_selector_change_filter($urlRegion){
 
   drupal_goto('/');
   
-}
+}*/
