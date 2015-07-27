@@ -61,6 +61,7 @@ function global_filter_init() {
       elseif (isset($_REQUEST[$name]) && is_string($_REQUEST[$name]) && !isset($_POST[$name])) {
         // URL parameter, if present, overrides all of the below.
         // Example: http://mysite.com?field_country=23,7,12
+        var_dump($name);
         global_filter_set_on_session($name, explode(',', $_REQUEST[$name]));
       }
       else {

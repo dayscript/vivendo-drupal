@@ -3696,3 +3696,12 @@ a.link-proyects-more {
 .node-proyecto-form #edit-delete {
   display: none;
 }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000034064}}
+.page-proyectos-tipo .region-sidebar-second {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/desarrollo\/proyectos\/www\/vivendo-drupal\/sites\/all\/themes\/at-vivendo\/sass\/global\.styles\.scss}line{font-family:\000034068}}
+.page-proyectos-tipo #content-column .content-inner {
+  margin-right: 0 !important;
+}

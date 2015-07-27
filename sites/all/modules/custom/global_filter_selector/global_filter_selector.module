@@ -4,6 +4,23 @@
  * A block module that displays a modal window to select global filter value
  */
 
+
+function global_filter_selector_menu(){
+
+  $items = array();
+  
+  $items['region/%'] = array(
+      'access arguments'  => array( 'access content' ),
+      'page arguments'    => array(1),
+      'page callback'     => 'global_filter_selector_change_filter',
+      'title'             => t('Search link'),
+      'type'              => MENU_CALLBACK
+  );
+  
+  return $items;
+  
+}
+
 /**
  * Implements hook_help().
  *
@@ -76,24 +93,6 @@ function global_filter_selector_block_view($delta = '') {
           $items[] = array('data' => l("Costa Atlántica", null,array('attributes'=>array('class'=>array('costa', 'disabled')))));
           $items[] = array('data' => l("La Florida", null,array('attributes'=>array('class'=>array('florida', 'disabled')))));
         }
-//        $block['content'] = theme('item_list', array('items' => $items));
-//        $block['content'] = "<div class='item-list'><ul>";
-//        $block['content'] .= "<li><a href='/?field_ciudad=1' class='bogota'>Bogot&aacute;<br />Región centro</a></li>";
-//        $block['content'] .= "<li><a href='/?field_ciudad=2' class='cali'>Cali<br />Valle</a></li>";
-//        $block['content'] .= "<li><a href='/?field_ciudad=766' class='costa'>Costa<br />Atl&aacute;ntica</a></li>";
-//        $block['content'] .= "</ul></div>";
-//        $block['content'] .= "<div class='item-list disabled'><div class='soon'>Pr&oacute;ximamente</div><ul>";
-//        $block['content'] .= "<li><a class='medellin'>Medell&iacute;n<br />Antioquia</a></li>";
-//        $block['content'] .= "<li><a class='ejecafetero'>Eje<br />Cafetero</a></li>";
-//        $block['content'] .= "<li><a class='santanderes'>Santanderes<br />&nbsp;</a></li>";
-//        $block['content'] .= "<li><a class='florida'>La Florida EEUU<br />&nbsp;</a></li>";
-//        $block['content'] .= "</ul></div>";
-//        $block['content'] = "<div class='logo'><img alt='Vivendo.co' src='/sites/all/themes/at-vivendo/images/logos/logo-vivendo.png'
-//                              style='border-style:solid; border-width:0px; height:62px; width:71px'><span style='color:#89878c'>vivendo.</span>
-//                              <span style='color:#cd002d'>co</span></div>". $block['content'];
-//        $block['content'] = "<div class='intro'>Encuentre aquí la más completa oferta de vivienda, casas y apartamentos en Colombia y la Florida EEUU.</div>" . $block['content'];
-//        $block['content'] = "<div id='city_selector'>" . $block['content'] . "</div>";
-
           $block['content'] = global_filter_selector_callback_block();
       }
       return $block;
@@ -124,7 +123,8 @@ function global_filter_selector_callback_block(){
     
     if ( $regionDataComplete->field_estado_region['und'][0]['value'] == 'activo' ){
       $name   = '<span>'.$regionDataComplete->name.'</span>';
-      $action = 'href="/?field_region='.$regionDataComplete->tid.'"';
+      $aliasPath = drupal_get_path_alias('taxonomy/term/'.$regionDataComplete->tid);
+      $action = 'href="/region/'.$aliasPath.'"';
     } else{
       $name   = '<span class="text-disabled"><strong>Próximamente</strong><br>'.$regionDataComplete->name.'</span>';
       $action = 'class="disabled"';
@@ -143,4 +143,16 @@ function global_filter_selector_callback_block(){
 
   return $output;
 
+}
+
+
+function global_filter_selector_change_filter($urlRegion){
+  
+  $urlTerm = explode( '/', drupal_get_normal_path($urlRegion) );
+  $region  = array( $urlTerm[2] );
+  
+  global_filter_set_on_session('field_region', $region);
+
+  drupal_goto('/');
+  
 }
