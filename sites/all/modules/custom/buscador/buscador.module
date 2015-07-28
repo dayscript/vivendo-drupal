@@ -102,7 +102,7 @@ function buscador_formulario_form($node, &$form_state)
     $filterCity = $value;
     
     $cities         = taxonomy_get_tree(taxonomy_vocabulary_machine_name_load('ciudades')->vid);
-    $citiesSelected = array(0 => 'Todos');
+    //$citiesSelected = array(0 => 'Todos');
     $cityDefault    = ($filterValue['ciudad'] > 0) ? $filterValue['ciudad'] : 0;
     
     foreach ( $cities as $city ){
@@ -120,6 +120,7 @@ function buscador_formulario_form($node, &$form_state)
     $filterValue['ciudad'] = $cityDefault;
     
     asort($citiesSelected);
+    $citiesSelected = array('todos') + $citiesSelected;
     
     $form['wrapper']['ciudad'] = array(
       '#prefix' => '<div id="ciudad-wrapper" class="wrapper">',
@@ -159,6 +160,7 @@ function buscador_formulario_form($node, &$form_state)
     $filterValue['zona'] = $zoneDefault;
     
     asort($zonesSelected);
+    $zonesSelected = array('todos') + $zonesSelected;
     
     $form['wrapper']['zona'] = array(
         '#prefix' => '<div id="zona-wrapper" class="wrapper">',
@@ -221,6 +223,7 @@ function buscador_formulario_form($node, &$form_state)
     }
     
     asort($tipos_select);
+    $tipos_select = array('todos') + $tipos_select;
 
     $form['wrapper']['tipo'] = array(
         '#prefix' => '<div id="tipo-wrapper" class="wrapper">',
@@ -288,6 +291,7 @@ function buscador_formulario_form($node, &$form_state)
     }
 
     asort($constructoras_select);
+    $constructoras_select = array('todos') + $constructoras_select;
     
     $form['wrapper']['constructora'] = array(
         '#prefix' => '<div id="constructora-wrapper" class="wrapper">',
@@ -450,8 +454,6 @@ function buscador_formulario_form($node, &$form_state)
         '#markup' => ''
     );
     
-    $_SESSION['proyectos']  = $proyectos;
-
     $points = "[";
     $arrayJs = '';
     foreach($proyectos as $proyecto){

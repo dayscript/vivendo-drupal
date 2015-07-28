@@ -153,6 +153,6 @@ function global_filter_selector_callback_block(){
   
   global_filter_set_on_session('field_region', $region);
 
-  drupal_goto('/');
+  return "<div><!--<script>window.location('/');</script>--></div>";
   
 }*/
