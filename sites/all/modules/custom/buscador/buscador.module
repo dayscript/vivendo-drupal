@@ -102,7 +102,6 @@ function buscador_formulario_form($node, &$form_state)
     $filterCity = $value;
     
     $cities         = taxonomy_get_tree(taxonomy_vocabulary_machine_name_load('ciudades')->vid);
-    $citiesSelected = array(0 => 'Todos');
     $cityDefault    = ($filterValue['ciudad'] > 0) ? $filterValue['ciudad'] : 0;
     
     foreach ( $cities as $city ){
@@ -119,8 +118,7 @@ function buscador_formulario_form($node, &$form_state)
     if( !array_key_exists($cityDefault, $citiesSelected) ) { $cityDefault = 0; }
     $filterValue['ciudad'] = $cityDefault;
     
-    asort($citiesSelected);
-    //$citiesSelected = array('todos') + $citiesSelected;
+    $citiesSelected = _order_options_selected( $citiesSelected );
     
     $form['wrapper']['ciudad'] = array(
       '#prefix' => '<div id="ciudad-wrapper" class="wrapper">',
@@ -159,8 +157,7 @@ function buscador_formulario_form($node, &$form_state)
     if( !array_key_exists($zoneDefault, $zonesSelected) ) { $zoneDefault = 0; }
     $filterValue['zona'] = $zoneDefault;
     
-    asort($zonesSelected);
-    //$zonesSelected = array('todos') + $zonesSelected;
+    $zonesSelected = _order_options_selected( $zonesSelected );
     
     $form['wrapper']['zona'] = array(
         '#prefix' => '<div id="zona-wrapper" class="wrapper">',
@@ -222,8 +219,7 @@ function buscador_formulario_form($node, &$form_state)
             $tipos_select[$key] = $value /*. " (" . $num_rows . ")"*/;
     }
     
-    asort($tipos_select);
-    //$tipos_select = array('todos') + $tipos_select;
+    $tipos_select = _order_options_selected( $tipos_select );
 
     $form['wrapper']['tipo'] = array(
         '#prefix' => '<div id="tipo-wrapper" class="wrapper">',
@@ -290,8 +286,7 @@ function buscador_formulario_form($node, &$form_state)
         
     }
 
-    asort($constructoras_select);
-    //$constructoras_select = array('todos') + $constructoras_select;
+    $constructoras_select = _order_options_selected( $constructoras_select );
     
     $form['wrapper']['constructora'] = array(
         '#prefix' => '<div id="constructora-wrapper" class="wrapper">',
@@ -623,5 +618,21 @@ function buscador_form_alter(&$form, &$form_state, $form_id){
     
     
   }
+  
+}
+
+
+function _order_options_selected( $opt ){
+  
+  asort($opt);
+  
+  $keys     = array_keys( $opt );
+  $newOrder = array(0 => 'Todos');
+  
+  for( $i=0; $i<count($keys); $i++ ){
+    $newOrder[ $keys[$i] ] = $opt[ $keys[$i] ];
+  }
+  
+  return $newOrder;
   
 }
