@@ -102,7 +102,7 @@ function buscador_formulario_form($node, &$form_state)
     $filterCity = $value;
     
     $cities         = taxonomy_get_tree(taxonomy_vocabulary_machine_name_load('ciudades')->vid);
-    //$citiesSelected = array(0 => 'Todos');
+    $citiesSelected = array(0 => 'Todos');
     $cityDefault    = ($filterValue['ciudad'] > 0) ? $filterValue['ciudad'] : 0;
     
     foreach ( $cities as $city ){
