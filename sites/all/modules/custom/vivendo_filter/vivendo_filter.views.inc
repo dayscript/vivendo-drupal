@@ -6,8 +6,6 @@
     
     $filterValue = $_SESSION['filterValue'];
     
-    dpm($query);
-    
     if ( isset($filterValue['zona']) ) {
 
       if ( $view->name == 'proyectos' && ($view->display_handler->display->id === 'page_1' || $view->display_handler->display->id === 'page') ) {
