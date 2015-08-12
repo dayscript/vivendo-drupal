@@ -158,8 +158,8 @@
       
       $attributes = array(
 	  'attributes' => array(
-	      'class'=> array('link-compare', 'disable', 'use-ajax' )
-	  )
+            'class'=> array('link-compare', 'disable', 'use-ajax' )
+        )
       );
       
     }
@@ -170,7 +170,8 @@
     ajax_deliver( array('#type' => 'ajax', '#commands' => $commands) );
     
   }
-    
+  
+  
   function vivendo_compare_project_remove( $nId ) {
     
     if ( !isset($_SESSION) ) { session_start(); }
