@@ -33,21 +33,21 @@
         array('data' => t('Zona'), 'field' => 'zone_name', 'sort' => 'ASC'),
         array('data' => t('Constructora'), 'field' => 'construct_name', 'sort' => 'ASC'),
         array('data' => t('Estado'), 'field' => 'node_status', 'sort' => 'ASC'),
-        array('data' => t('Fecha de creación'), 'field' => 'node.created', 'sort' => 'ASC'),
+        array('data' => t('Fecha de creación'), 'field' => 'node_created', 'sort' => 'ASC'),
     );
     
     for( $i=0; $i<count($result); $i++ ){
       
       $table['rows'] = array(
-          $result[$i]->field_data_field_codigo_value,
-          $result[$i]->node_title,
-          $result[$i]->field_data_field_email_node_entity_type,
-          $result[$i]->region_name,
-          $result[$i]->city_name,
-          $result[$i]->zone_name,
-          $result[$i]->construct_name,
-          $result[$i]->node_status,
-          $result[$i]->node.created,
+          array( 'data' => $result[$i]->field_data_field_codigo_value ),
+          array( 'data' => $result[$i]->node_title ),
+          array( 'data' => $result[$i]->field_data_field_email_node_entity_type ),
+          array( 'data' => $result[$i]->region_name ),
+          array( 'data' => $result[$i]->city_name ),
+          array( 'data' => $result[$i]->zone_name ),
+          array( 'data' => $result[$i]->construct_name ),
+          array( 'data' => $result[$i]->node_status ),
+          array( 'data' => $result[$i]->node.created ),
       );
       
     }
