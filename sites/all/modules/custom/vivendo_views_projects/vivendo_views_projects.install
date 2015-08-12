@@ -1,0 +1,39 @@
+<?php
+
+  function vivendo_views_projects_schema(){
+    
+    $schema['vivendo_views_projects'] = array(
+        'description' => '',
+        'fields'      => array(
+            'vt_id'     => array(
+                'type'        => 'serial',
+                'not null'    => TRUE,
+                'description' => 'Primary Key: Unique person ID.',
+            ),
+            'entity_id' => array(
+                'type'        => 'int',
+                'not null'    => TRUE,
+                'default'     => 0,
+                'description' => '',
+            ),
+            'bundle'    => array(
+                'type'        => 'varchar',
+                'length'      => 255,
+                'not null'    => TRUE,
+                'default'     => '',
+                'description' => '',
+            ),
+            'created'   => array(
+                'type'        => 'varchar',
+                'length'      => 255,
+                'not null'    => TRUE,
+                'default'     => '',
+                'description' => '',
+            )
+        ),
+        'primary key' => array('vt_id'),
+    );
+    
+    return $schema;
+    
+  }

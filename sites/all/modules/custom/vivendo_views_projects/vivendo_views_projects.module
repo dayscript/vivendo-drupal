@@ -1,0 +1,35 @@
+<?php
+
+
+  function vivendo_views_projects_init(){
+    
+    _views_projects_insert();
+    
+  }
+
+  
+  function _views_projects_insert(){
+    
+    $nid = arg(1);
+    
+    if ( is_numeric($nid) ){
+      
+      $node = node_load($nid);
+      
+      if ( $node->type == 'proyecto' ){
+        
+        $result = db_insert( 'vivendo_views_projects' )
+            ->fields(array(
+                'created'   => REQUEST_TIME,
+                'bundle'    => 'proyecto',
+                'entity_id' => $nid
+            ))
+            ->execute();
+        
+      }
+      
+    }
+    
+  }
+  
+  
