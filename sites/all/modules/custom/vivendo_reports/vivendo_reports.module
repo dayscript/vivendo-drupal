@@ -95,7 +95,7 @@
         ORDER BY node_created DESC LIMIT 60
         OFFSET 0";
     
-    $query  = db_select();
+    $query  = db_query( $sql );
     $result = $query->fetchAll();
     
     return $result;
