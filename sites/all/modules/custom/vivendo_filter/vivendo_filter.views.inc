@@ -6,6 +6,8 @@
     
     $filterValue = $_SESSION['filterValue'];
     
+    //dpm($_REQUEST['changed']);
+    
     if ( isset($filterValue['zona']) ) {
 
       if ( $view->name == 'proyectos' && ($view->display_handler->display->id === 'page_1' || $view->display_handler->display->id === 'page') ) {
@@ -98,6 +100,22 @@
       }
       
       
-    } 
+    } elseif ( $view->name == 'buscador_de_proyectos' && $view->display_handler->display->id === 'page' ){
+      
+      if ( isset($_REQUEST['changed']) ){
+        
+        $conditions = $query->where[2]['conditions'];
+        
+        for( $i=0; $i<count($conditions); $i++ ){
+          if ( $conditions[$i]['operator'] == 'formula' ){
+            $conditions[$i] = NULL;
+            unset($conditions[$i]);
+            $query->where[2]['conditions'] = $conditions;
+          }
+        }
+
+      }
+      
+    }
     
   }

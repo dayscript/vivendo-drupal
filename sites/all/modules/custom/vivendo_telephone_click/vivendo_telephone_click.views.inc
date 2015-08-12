@@ -17,11 +17,20 @@
     
     function render( $row ){
       
-      $clicks = db_select( 'vivendo_telephone', 'vt' )
+      $query = db_select( 'vivendo_telephone', 'vt' )
           ->fields('vt')
-          ->condition( 'entity_id', $row->nid, '=' )
-          ->execute()
-          ->rowCount();
+          ->condition( 'entity_id', $row->nid, '=' );
+      
+      if ( isset($_REQUEST['changed']) ){
+        $dates = $_REQUEST['changed'];
+        if ( !empty($dates['min']) ){
+          $min = strtotime((string)$dates['min']);
+          $max = strtotime((string)$dates['max']);
+          $query->condition( 'created', array($min, $max), 'BETWEEN' );
+        }
+      }
+      
+      $clicks = $query->execute()->rowCount();
       
       return $clicks;
       

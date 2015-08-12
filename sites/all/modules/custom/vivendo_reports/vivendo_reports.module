@@ -20,14 +20,13 @@
   
   function vivendo_reports_project_callback(){
     
-    $result = _query_list_project();
     $table  = array();
     $output = '';
     
     $table['header'] = array(
-        array('data' => t('Codigo'), 'field' => 'field_data_field_codigo_value', 'sort' => 'ASC'),
         array('data' => t('Projecto'), 'field' => 'node_title', 'sort' => 'ASC'),
         array('data' => t('Email'), 'field' => 'field_data_field_email_node_entity_type', 'sort' => 'ASC'),
+        array('data' => t('Codigo'), 'field' => 'field_data_field_codigo_value', 'sort' => 'ASC'),
         array('data' => t('Región'), 'field' => 'region_name', 'sort' => 'ASC'),
         array('data' => t('Ciudad'), 'field' => 'city_name', 'sort' => 'ASC'),
         array('data' => t('Zona'), 'field' => 'zone_name', 'sort' => 'ASC'),
@@ -36,18 +35,21 @@
         array('data' => t('Fecha de creación'), 'field' => 'node_created', 'sort' => 'ASC'),
     );
     
-    for( $i=0; $i<count($result); $i++ ){
+    $result = _query_list_project($table['header']);
+    
+    //for( $i=0; $i<count($result); $i++ ){
+    while( $node = db_fetch_object($result) ){
       
-      $table['rows'] = array(
-          array( 'data' => $result[$i]->field_data_field_codigo_value ),
-          array( 'data' => $result[$i]->node_title ),
-          array( 'data' => $result[$i]->field_data_field_email_node_entity_type ),
-          array( 'data' => $result[$i]->region_name ),
-          array( 'data' => $result[$i]->city_name ),
-          array( 'data' => $result[$i]->zone_name ),
-          array( 'data' => $result[$i]->construct_name ),
-          array( 'data' => $result[$i]->node_status ),
-          array( 'data' => $result[$i]->node.created ),
+      $table['rows'][] = array(
+          $node->node_title,
+          $node->field_data_field_email_node_entity_type,
+          $node->field_data_field_codigo_value,
+          $node->region_name,
+          $node->city_name,
+          $node->zone_name,
+          $node->construct_name,
+          $node->node_status,
+          $node->node.created,
       );
       
     }
@@ -60,9 +62,9 @@
   }
   
   
-  function _query_list_project(){
+  function _query_list_project( $header ){
     
-    $sql = "SELECT node.nid AS nid,
+    $query = "SELECT node.nid AS nid,
         node.title AS node_title,
         node.status AS node_status,
         node.created AS node_created,
@@ -91,12 +93,10 @@
         LEFT JOIN field_data_field_zona AS field_zona ON node.nid = field_zona.entity_id
         LEFT JOIN field_data_field_email AS field_email ON node.nid = field_email.entity_id
         LEFT JOIN field_data_field_constructora AS field_constructora ON node.nid = field_constructora.entity_id
-        WHERE node.type = 'proyecto'
-        ORDER BY node_created DESC LIMIT 60
-        OFFSET 0";
+        WHERE node.type = 'proyecto'";
     
-    $query  = db_query( $sql );
-    $result = $query->fetchAll();
+    $query .= tablesort_sql($header, 'node_title DESC');
+    $results = pager_query($query, '30');
     
     return $result;
     
