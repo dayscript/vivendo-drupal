@@ -100,7 +100,8 @@
       }
       
       
-    } elseif ( $view->name == 'buscador_de_proyectos' && $view->display_handler->display->id === 'page' ){
+    } elseif ( ($view->name == 'buscador_de_proyectos' && $view->display_handler->display->id === 'page') 
+            || ($view->name == 'buscador_de_proyectos' && $view->display_handler->display->id === 'page_1') ){
       
       if ( isset($_REQUEST['changed']) ){
         

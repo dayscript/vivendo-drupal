@@ -50,25 +50,28 @@
     
     function render( $row ){
       
-      /*$query = db_select 
-      *
-      $query = db_select( 'vivendo_views_projects', 'vp' )->fields('vp');
-          
-      
-      $query->leftJoin( 'field_data_field_contructora', 'fco', 'fco.entity_id = vp.' )
+      $betweenDate = '';
+      $result      = array();
+      $sql         = '';
       
       if ( isset($_REQUEST['changed']) ){
         $dates = $_REQUEST['changed'];
         if ( !empty($dates['min']) ){
           $min = strtotime((string)$dates['min']);
           $max = strtotime((string)$dates['max']);
-          $query->condition( 'created', array($min, $max), 'BETWEEN' );
+          $betweenDate = "AND viewsProject.created BETWEEN '".$min."' AND '".$max."'";
         }
       }
       
-      $clicks = $query->execute()->rowCount();
+      $sql = "SELECT SUM((SELECT COUNT(*) AS totalViews FROM vivendo_views_projects AS "
+          ."viewsProject WHERE viewsProject.entity_id = project.nid".$betweenDate.") ) AS totalViewsProjectByConstruct "
+          ."FROM node AS project LEFT JOIN field_data_field_constructora AS field_cons ON "
+          ."field_cons.entity_id = project.nid WHERE project.nid IN (SELECT DISTINCT entity_id "
+          ."FROM vivendo_views_projects) AND field_cons.field_constructora_target_id = '".$row->nid."'";
       
-      return $clicks;*/
+      $result = db_query($sql)->fetchAll();
+      
+      return $result[0]->totalViewsProjectByConstruct;
       
     }
     
