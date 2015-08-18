@@ -170,8 +170,8 @@ section#block-views-proyectos-destacados-block {
           .block-content{
             .rtecenter{
               img{
-                height: 68px !important;
-                width: 82% !important;
+                height: 79px !important;
+                width: auto !important;
                 margin: 0 auto;
               }
             }
@@ -424,7 +424,7 @@ a.flex-next {
           .block-content{
             #buscador-formulario-form{
               .up-down{
-                position: relative;
+                position: absolute;
               }
             }
           }
@@ -880,3 +880,17 @@ body.not-front{
 } 
 
 
+#block-block-13{
+  width: 100%;
+}
+
+.gm-style-iw{
+  &+div{
+    &+img.close{
+      width: 15px;
+      height: 15px;
+      top: 80px;
+      right: 31px;
+    }
+  }
+}

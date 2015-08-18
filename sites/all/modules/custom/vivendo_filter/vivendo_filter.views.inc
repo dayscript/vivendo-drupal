@@ -14,7 +14,7 @@
 
         if ( $filterValue['ciudad'] > 0 ) {
           $query->where[1]['conditions'][2]['operator'] = '=';
-          $query->where[1]['conditions'][3]['value']    = $filterValue['ciudad'];
+          $query->where[1]['conditions'][2]['value']    = $filterValue['ciudad'];
         }
         
         if ( $filterValue['zona'] > 0 ) {
