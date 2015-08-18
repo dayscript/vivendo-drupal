@@ -33,3 +33,13 @@
   }
   
   
+  function vivendo_views_projects_views_api() {
+    
+    return array(
+        'api'  => 3,
+        'path' => drupal_get_path( 'module',  'vivendo_views_projects' )
+    );
+    
+  }
+  
+  
